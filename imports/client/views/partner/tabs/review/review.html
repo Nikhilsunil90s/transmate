@@ -1,0 +1,23 @@
+<template name="PartnerReview">
+	<section class="ui very padded segment score">
+		<div class="ui list">
+			<div class="item">
+				<i class="star icon"></i>
+				<div class="content full">
+					<h3 class="section-header">
+						{{_ 'partner.review.title'}}
+					</h3>
+					{{> PartnerScoreCard accountId=accountId personal=true}}
+					{{> PartnerScoreCard accountId=accountId personal=false}}
+				</div>
+			</div>
+		</div>
+		<footer class="ui segment">
+			{{#ModalTrigger template='PartnerReviewModal' name=account.name}}
+				<button class="ui primary button">
+					<i class="plus icon"></i> {{_ 'partner.review.add'}}
+				</button>
+			{{/ModalTrigger}}
+		</footer>
+	</section>
+</template>

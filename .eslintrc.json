@@ -1,0 +1,147 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "node": true,
+    "meteor": true,
+    "mocha": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "plugin:meteor/recommended", "prettier", "prettier/react", "plugin:react/recommended", "plugin:react-hooks/recommended", "plugin:storybook/recommended"],
+
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "settings": {
+    "import/core-modules": ["meteor"],
+    "import/resolver": "meteor",
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "detect",
+      "flowVersion": "0.53"
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "unused-imports/no-unused-imports": "warn",
+    // "unused-imports/no-unused-vars": ["warn", { "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }],
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "prettier/prettier": "error",
+    "new-cap": [
+      "error",
+      {
+        "capIsNewExceptions": ["Match", "Match.ObjectIncluding", "Match.Where", "Match.Optional"]
+      }
+    ],
+    "max-classes-per-file": ["error", 1],
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+    ],
+    "lines-around-comment": [
+      2,
+      {
+        "beforeLineComment": true,
+        "allowObjectStart": true,
+        "allowBlockStart": true,
+        "ignorePattern": "#region|#endregion"
+        //"exceptions": ["#region*", "#endregion"]
+      }
+    ],
+    "spaced-comment": [
+      2,
+      "always",
+      {
+        "exceptions": ["#endregion"],
+        "markers": ["#region"]
+      }
+    ],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": ["_collection", "_id", "__"]
+      }
+    ],
+    "no-extra-boolean-cast": [0],
+    // "camelcase": [
+    //   2,
+    //   { "allow": ["before_save", "after_save", "before_create"] }
+    // ],
+    "meteor/template-names": [2, "pascal-case"],
+    "no-console": "off",
+    "no-shadow": [
+      2,
+      {
+        "allow": ["error", "err", "result", "obj"]
+      }
+    ],
+    "import/no-cycle": [0],
+    // Disallow namespace imports
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-namespace.md
+    "import/no-namespace": [2],
+    // Enforce a convention in module import order
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
+    "import/order": [
+      2,
+      {
+        "groups": [
+          ["builtin", "external"],
+          ["internal", "parent", "sibling", "index"]
+        ]
+        // "newlines-between": "always",
+      }
+    ],
+    // Require a newline after the last import/require in a group
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md
+    "import/newline-after-import": [2],
+    // Require modules with a single export to use a default export
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
+    "import/prefer-default-export": [0],
+    // Relax AirBNB import rules
+    "import/extensions": [0],
+    "import/no-absolute-path": [0],
+    "import/no-extraneous-dependencies": [0],
+    "import/no-named-as-default": [0],
+    "import/no-unresolved": [0],
+    "react/prop-types": 0,
+    "react/display-name": 0,
+    "react/no-array-index-key": 0,
+    "react/require-default-props": 0,
+    "react/forbid-prop-types": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "react/destructuring-assignment": 0,
+    "react/sort-comp": 0,
+    "react/jsx-no-bind": 0
+  },
+  "plugins": ["prettier", "meteor", "import", "react", "unused-imports"],
+  "overrides": [
+    {
+      "files": ["imports/**/*.js", "imports/**/*.jsx"]
+    },
+
+    {
+      // or whatever matches stories specified in .storybook/main.js
+      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+      "rules": {}
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+.ui.raised.card {
+    # box-shadow: none;
+    # background-color: #f2f4f8;
+    border-radius: 5px;
+}
+
+.ui.cards > .card, .ui.card {
+    width: 317px;
+  }
+

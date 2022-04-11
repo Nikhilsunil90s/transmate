@@ -1,0 +1,11 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@boxShadow: none;
+@minHeight: 1em;
+
+@secondaryPointingBorderWidth: 0;
+@secondaryPointingItemHorizontalPadding: 2em;
+
+@paginationMinWidth: 24px;

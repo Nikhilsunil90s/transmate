@@ -1,0 +1,233 @@
+enum PRICE_REQUEST_TYPE {
+  spot
+  contract
+}
+
+enum PRICE_REQUEST_ACTIONS {
+  request
+  setToDraft
+  archive
+  delete
+}
+
+type ChargeAmountType {
+  value: Float
+  unit: String
+}
+
+type ChargeLineType {
+  # id: String!
+  chargeId: String!
+  name: String!
+  costId: String
+  amount: ChargeAmountType
+  comment: String
+}
+
+type SimpleBidType {
+  shipmentId: String!
+  date: Date
+  won: Date
+  lost: Date
+  chargeLines: [ChargeLineType]
+  settings: JSONObject
+  offered: Boolean
+  notes: String
+}
+
+type PriceRequestBidderType {
+  accountId: String!
+  name: String
+  notified: Date
+  won: Date
+  lost: Date
+  viewed: Boolean
+  bid: Boolean
+  bidOpened: Date
+  priceListId: String
+  userIds: [String]
+  firstSeen: Date
+  lastSeen: Date
+  notes: String
+  simpleBids: [SimpleBidType]
+  contacts: [AccountContactType]
+}
+
+type PriceRequestItemType {
+  shipmentId: String
+  number: String
+  params: JSONObject
+}
+
+type PriceRequestSettingsType {
+  templateId: String
+  templateSettings: JSONObject
+}
+type PriceRequestFreeDaysType {
+  condition: String
+  demurrage: Float
+  detention: Float
+}
+
+type PriceRequestRequirementsType {
+  customsClearance: Boolean
+  freeDays: PriceRequestFreeDaysType
+}
+
+type PriceRequest {
+  id: String
+  creatorId: String
+  customerId: String
+  requestedBy: String
+  version: Int
+  title: String
+  type: String
+  status: String
+  currency: String
+  dueDate: Date
+  settings: PriceRequestSettingsType
+  bidders: [PriceRequestBidderType]
+  items: [PriceRequestItemType]
+  notes: String
+  analyseData: [JSONObject]
+  requirements: JSONObject
+
+  # projected fields (from query)
+  requester: Boolean
+  requestedByName: String
+  partners: String # list of partners is a comma delimited string here
+  biddersInRequest: Int
+  bids: Int
+  customer: AccountTypeD
+  customerName: String
+  numberOfItems: Int
+  wons: Int
+  ref: String
+  calculation: JSONObject
+  bid: Boolean
+  won: Date
+  lost: Date
+}
+
+type CreatePriceRequestResponse {
+  priceRequestId: String
+  priceRequest: PriceRequest
+  errors: [JSONObject]
+  validItems: Int
+  shipments: [ShipmentAggr] # update priceRequestId & links in cache!!
+}
+
+type AddMatchingBiddersPriceRequestResponse {
+  priceRequest: PriceRequest
+  suggestedCarriers: [JSONObject]
+  bestPartners: [String]
+  selectedPartners: [String]
+}
+
+type updatePriceRequestBiddersResponse {
+  priceRequest: PriceRequest
+  accountsAdded: Int
+  accountsRemoved: Int
+  warnings: [JSONObject]
+  errors: [String]
+}
+
+input PriceRequestItemInput {
+  shipmentId: String
+  params: JSONObject
+}
+
+input UpdatePriceRequestInput {
+  priceRequestId: String!
+  update: JSONObject
+}
+
+input UpdatePriceRequestStatusInput {
+  priceRequestId: String!
+  action: PRICE_REQUEST_ACTIONS
+}
+
+input PostponePriceRequestInput {
+  priceRequestId: String!
+  dueDate: Date!
+}
+
+input updatePriceRequestBiddersInput {
+  priceRequestId: String!
+  partnerIds: [String]!
+}
+
+input ChargeAmountInput {
+  value: Float
+  unit: String
+}
+
+input ChargeLineInput {
+  chargeId: String!
+  name: String!
+  costId: String
+  amount: ChargeAmountInput
+  comment: String
+}
+
+input SimpleBidItemsInput {
+  shipmentId: String!
+  notes: String
+  chargeLines: [ChargeLineInput]
+}
+
+input PlaceSimpleBidPriceRequestInput {
+  priceRequestId: String!
+  items: [SimpleBidItemsInput]
+}
+
+input EditBidPriceRequestUpdatesInput {
+  notes: String
+}
+
+input EditBidPriceRequestInput {
+  priceRequestId: String!
+  updates: EditBidPriceRequestUpdatesInput
+}
+
+input getPriceRequestViewInput {
+  viewKey: String
+  filters: JSONObject
+}
+
+input addItemsToRequestInput {
+  priceRequestId: String!
+  items: [PriceRequestItemInput]
+}
+
+extend type Query {
+  getPriceRequest(priceRequestId: String!): PriceRequest
+  getPriceRequestItems(priceRequestId: String!): [ShipmentAggr]
+  getPriceRequestView(input: getPriceRequestViewInput): [PriceRequest]
+  getPricerequestSummary(shipmentId: String!): PriceRequest # loaded in shipment
+  getPriceRequestInsights(priceRequestId: String!): PriceRequest
+}
+
+extend type Mutation {
+  createPriceRequest(
+    type: PRICE_REQUEST_TYPE
+    dueDate: Date
+    title: String
+    items: [PriceRequestItemInput]
+  ): CreatePriceRequestResponse
+  updatePriceRequest(input: UpdatePriceRequestInput!): PriceRequest
+  addItemsToRequest(input: addItemsToRequestInput): CreatePriceRequestResponse
+  updateBidderTSPriceRequest(priceRequestId: String!): String
+  updatePriceRequestStatus(input: UpdatePriceRequestStatusInput!): PriceRequest
+  addMatchingBiddersPriceRequest(
+    priceRequestId: String!
+  ): AddMatchingBiddersPriceRequestResponse
+  postponePriceRequest(input: PostponePriceRequestInput!): PriceRequest
+  updatePriceRequestBidders(
+    input: updatePriceRequestBiddersInput!
+  ): updatePriceRequestBiddersResponse
+  placeSimpleBidPriceRequest(
+    input: PlaceSimpleBidPriceRequestInput!
+  ): PriceRequest
+  editBidPriceRequest(input: EditBidPriceRequestInput!): PriceRequest
+}

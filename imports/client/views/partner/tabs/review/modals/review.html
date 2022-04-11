@@ -1,0 +1,118 @@
+<template name="PartnerReviewModal">
+	{{#Modal title=(_ 'partner.review.modal.title') autofocus=false}}
+		<div class="content">
+			<div class="ui form">
+				<div class="two fields">
+					{{> UIMonthPicker name='period.from' text='From'}}
+					{{> UIMonthPicker name='period.to' text='To'}}
+				</div>
+				<h4>{{_ 'partner.review.safety.title' }}</h4>
+				<div class="ui divided list">
+					<div class="item">
+						<div class="right floated content">
+							<div class="field">
+								{{> Rating name='safety' value=safety}}
+							</div>
+						</div>
+						<div class="content">
+							<i class="ui grey chevron right icon"></i>
+							{{_ 'partner.review.safety.Q1' name}}
+						</div>
+					</div>
+				</div>
+				<h4>{{_ 'partner.review.quality.title' }}</h4>
+				<div class="ui divided list">
+					<div class="item">
+						<div class="right floated content">
+							{{> Rating name='quality.q1' value=quality.q1}}
+						</div>
+						<div class="content">
+							<i class="ui grey chevron right icon"></i>
+							{{_ 'partner.review.quality.Q1' name}}
+						</div>
+					</div>
+					<div class="item">
+						<div class="right floated content">
+							{{> Rating name='quality.q2' value=quality.q2}}
+						</div>
+						<div class="content">
+							<i class="ui grey chevron right icon"></i>
+							{{_ 'partner.review.quality.Q2' name}}
+						</div>
+					</div>
+					<div class="item">
+						<div class="right floated content">
+							{{> Rating name='quality.q3' value=quality.q2}}
+						</div>
+						<div class="content">
+							<i class="ui grey chevron right icon"></i>
+							{{_ 'partner.review.quality.Q3' name}}
+						</div>
+					</div>
+				</div>
+				<h4>{{_ 'partner.review.cost.title' }}</h4>
+				<div class="ui divided list">
+					<div class="item">
+						<div class="right floated content">
+							{{> Rating name='cost.q1' value=cost.q1}}
+						</div>
+						<div class="content">
+							<i class="ui grey chevron right icon"></i>
+							{{_ 'partner.review.cost.Q1' name}}
+						</div>
+					</div>
+					<div class="item">
+						<div class="right floated content">
+							{{> Rating name='cost.q2' value=cost.q2}}
+						</div>
+						<div class="content">
+							<i class="ui grey chevron right icon"></i>
+							{{_ 'partner.review.cost.Q2' name}}
+						</div>
+					</div>
+				</div>
+				<h4>{{_ 'partner.review.performance.title' }}</h4>
+				<div class="ui divided list">
+					<div class="item">
+						<div class="right floated content">
+							{{> Rating name='performance.q1' value=performance.q1}}
+						</div>
+						<div class="content">
+							<i class="ui grey chevron right icon"></i>
+							{{_ 'partner.review.performance.Q1' name}}
+						</div>
+					</div>
+					<div class="item">
+						<div class="right floated content">
+							{{> Rating name='performance.q2' value=performance.q2}}
+						</div>
+						<div class="content">
+							<i class="ui grey chevron right icon"></i>
+							{{_ 'partner.review.performance.Q2' name}}
+						</div>
+					</div>
+					<div class="item">
+						<div class="right floated content">
+							{{> Rating name='performance.q3' value=performance.q3}}
+						</div>
+						<div class="content">
+							<i class="ui grey chevron right icon"></i>
+							{{_ 'partner.review.performance.Q3' name}}
+						</div>
+					</div>
+					<div class="item">
+						<div class="right floated content">
+							{{> Rating name='performance.q4' value=performance.q4}}
+						</div>
+						<div class="content">
+							<i class="ui grey chevron right icon"></i>
+							{{_ 'partner.review.performance.Q4' name name}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{{> ModalActions saveLabel='partner.review.modal.save'}}
+	{{/Modal}}
+</template>

@@ -1,0 +1,158 @@
+@import "{}/imports/client/styles/colors.import.less";
+@import "{}/imports/client/styles/sizes.import.less";
+@import "{}/imports/client/styles/footer.import.less";
+@import "{}/imports/client/styles/sections.import.less";
+
+@sectionVerticalPadding: 30px;
+
+main.Shipment {
+  .main-fixed-footer;
+  // .aside-autohide-footer;
+
+  > div > div {
+    height: auto;
+    overflow: initial;
+  }
+
+  > div div.container {
+    padding-bottom: 90px;
+  }
+
+  aside {
+    position: sticky;
+    top: 0;
+  }
+
+  .map {
+    padding: 0;
+    margin-bottom: 40px;
+
+    >div {
+      height: 5 * @baseSize;
+      width: 100%;
+    }
+  }
+
+  .date i,
+  .date label {
+    opacity: 0.5;
+    color: @purpleColor;
+  }
+
+  .partners {
+    .ui.cards {
+      width: 100%;
+
+      >.card {
+        width: calc(~"33.3% - 14px");
+      }
+    }
+  }
+
+  .stages {
+    margin-top: 3em;
+
+    .stage {
+      // overflow: hidden;
+
+      h3 .status {
+        margin-left: 2em;
+        color: @blue;
+      }
+
+      &.draft {
+
+        .column.pickup,
+        .column.delivery,
+        .column.partner .relative {
+          border: 1px solid transparent;
+
+          &.editable:hover {
+            border: 1px solid @borderColor;
+
+            .icon {
+              visibility: visible !important;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      form {
+        margin-top: 2em;
+      }
+
+      footer {
+        margin: 0 -40px -30px;
+        padding-left: 40px;
+        background: fade(@blue, 10%);
+        color: @blue;
+      }
+    }
+  }
+
+  .stage {
+    box-shadow: inset 10px 0 0 0 @blue;
+
+    &.error {
+      box-shadow: inset 10px 0 0 0 @errorColor;
+    }
+
+    .buttons {
+      i.right {
+        opacity: 0.3;
+        cursor: pointer;
+        background: #e9edf4;
+      }
+
+      i.menu {
+        font-size: 40px;
+        height: 43px;
+      }
+    }
+  }
+
+  .icon-sections;
+
+  section.documents {
+    .ui.list>.item>i.icon {
+      padding-right: 0.5em;
+      color: @primaryColor;
+    }
+  }
+
+  section.carriers {
+    .costs {
+      tr.declined {
+        td {
+          color: fade(@textColor, 30%);
+        }
+      }
+
+      td.response {
+        .approved {
+          color: @blue;
+        }
+
+        .declined {
+          color: @redColor;
+        }
+      }
+    }
+  }
+}
+
+// TODO [#258]: move style to general page
+
+.float.top.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  //width: 4em;
+  //height: 4em;
+  z-index: 1;
+  transition: border-color 0.1s ease;
+}

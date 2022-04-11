@@ -1,0 +1,15 @@
+@import '{}/imports/client/styles/sizes.import.less';
+
+main.Reporting {
+  >div>div {
+    height: 100%;
+  }
+
+  .ui.tabs.menu {
+    margin-bottom: 0;
+  }
+
+  .reportContainer {
+    height: calc(~"100% - "@tabsHeight );
+  }
+}

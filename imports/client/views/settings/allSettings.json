@@ -1,0 +1,127 @@
+{
+  "menuGroups": ["user", "accountAdmin", "accountData"],
+  "menu": [
+    {
+      "key": "user-profile",
+      "parent": "user",
+      "accessLevel": "user",
+      "template": "SettingsUserProfile",
+      "icon": "user"
+    },
+    {
+      "key": "security",
+      "parent": "user",
+      "accessLevel": "user",
+      "template": "SettingsUserSecurity",
+      "icon": "key"
+    },
+    {
+      "key": "notifications",
+      "parent": "user",
+      "accessLevel": "user",
+      "template": "SettingsUserNotifications",
+      "icon": "alarm"
+    },
+    {
+      "key": "preferences",
+      "parent": "user",
+      "accessLevel": "user",
+      "template": "SettingsUserPreferences",
+      "icon": "clog"
+    },
+    {
+      "key": "account-profile",
+      "parent": "accountAdmin",
+      "accessLevel": "admin",
+      "template": "AccountPortal",
+      "icon": "globe"
+    },
+    {
+      "key": "account-entities",
+      "parent": "accountAdmin",
+      "accessLevel": "admin",
+      "template": "AccountEntities",
+      "icon": "balance scale"
+    },
+    {
+      "key": "account-users",
+      "parent": "accountAdmin",
+      "accessLevel": "admin",
+      "template": "AccountUsers",
+      "icon": "users"
+    },
+    {
+      "key": "fuel",
+      "parent": "accountData",
+      "accessLevel": "canEditFuelModel",
+      "template": "SettingsFuel",
+      "icon": "tint"
+    },
+    {
+      "key": "master-data",
+      "parent": "accountData",
+      "accessLevel": "admin",
+      "template": "SettingsMasterData",
+      "icon": "tag",
+      "items": [
+        {
+          "key": "conversions"
+        },
+        {
+          "key": "projects"
+        },
+        {
+          "key": "data"
+        }
+      ]
+    },
+    {
+      "key": "projects",
+      "icon": "tag",
+      "parent": "master-data",
+      "template": "SettingsMasterDataProjects"
+    },
+    {
+      "key": "data",
+      "icon": "tag",
+      "parent": "master-data",
+      "template": "SettingsMasterDataGeneral"
+    }
+  ],
+  "nonActiveMenuItems": [
+    {
+      "key": "activity",
+      "parent": "accountAdmin",
+      "accessLevel": "admin",
+      "template": "AccountActivity",
+      "icon": "stopwatch"
+    },
+    {
+      "key": "billing",
+      "parent": "accountAdmin",
+      "accessLevel": "admin",
+      "template": "AccountBilling",
+      "icon": "credit card outline"
+    },
+    {
+      "key": "workflows",
+      "parent": "accountData",
+      "accessLevel": "admin",
+      "template": "SettingsWorkflows",
+      "icon": "puzzle piece"
+    },
+    {
+      "key": "data-sources",
+      "parent": "accountData",
+      "accessLevel": "admin",
+      "template": "SettingsDataSources",
+      "icon": "server"
+    },
+    {
+      "key": "conversions",
+      "icon": "tag",
+      "parent": "master-data",
+      "template": "SettingsMasterDataConversions"
+    }
+  ]
+}

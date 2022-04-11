@@ -1,0 +1,43 @@
+{
+  "shipments": {
+    "label": "Shipments",
+    "reportId": "1eN1afyyI5tVXfezw4McbC2soCQErozgk",
+    "dataSetId": "shipment_latest_unique_with_total_costs_and_bids_archive",
+    "filterKeys": {
+      "dateCreated": {
+        "label": "created date",
+        "type": "date",
+        "operators": ["greater", "less", "between"]
+      },
+      "date_pickup": {
+        "label": "pickup date",
+        "type": "date",
+        "operators": ["greater", "less", "between"]
+      }
+    }
+  },
+  "shipments_bids": {
+    "label": "Shipments with Bids",
+    "reportId": "60b13e5a-f5b6-4ce2-a6bd-27612bb59f05",
+    "dataSetId": "shipment_latest_unique_with_total_costs_and_bids_archive",
+    "onlyAccountTypes": ["shipper"]
+  },
+  "carrier_bid_performance": {
+    "label": "Bidding performance",
+    "reportId": "374c3086-4b5a-4a20-a648-bf189189c0d2",
+    "dataSetId": "price_requests_bids_and_shipments",
+    "onlyAccountTypes": ["carrier"]
+  },
+  "spend_per_lane": {
+    "label": "Spend per Lane",
+    "reportId": "d7aadc1d-bae2-48cc-ae5e-6f6134875269",
+    "dataSetId": "shipment_latest_unique_with_total_costs_and_bids_archive",
+    "onlyAccountTypes": ["shipper"]
+  },
+  "carrier_bidding_status": {
+    "label": "Bidding Carriers",
+    "reportId": "4b99f01f-22b5-4782-9010-443d5e612181",
+    "dataSetId": "price_requests_latest_unique_flat",
+    "onlyAccountTypes": ["shipper"]
+  }
+}

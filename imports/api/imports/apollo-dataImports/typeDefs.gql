@@ -1,0 +1,49 @@
+enum DATA_IMPORT_TYPE {
+  address
+  partners
+  invoice
+}
+
+type DataImportRow {
+  id: String
+  data: JSONObject
+  status: String
+  result: JSONObject
+  failures: [JSONObject]
+  log: [JSONObject]
+}
+
+type DataImportReference {
+  invoiceId: String
+}
+
+type DataImport {
+  id: String
+  accountId: String
+  data: [JSONObject]
+  errors: [JSONObject]
+  references: DataImportReference
+  type: DATA_IMPORT_TYPE
+  userId: String
+
+  # projected:
+  rows: [DataImportRow]
+}
+
+input DataImportReferenceInput {
+  invoiceId: String
+}
+
+input DataImportInput {
+  type: DATA_IMPORT_TYPE!
+  data: [JSONObject]!
+  references: DataImportReferenceInput
+}
+
+extend type Query {
+  getDataImport(importId: String!): DataImport
+}
+
+extend type Mutation {
+  startDataImport(input: DataImportInput!): String
+}

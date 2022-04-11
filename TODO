@@ -1,0 +1,20 @@
+2019-07-25:philip: price list> as rates are limited, we need a warning sign if not all rates are loaded or if the total amount is exceeding the loaded amount.
+2019-11-19:philip: price request> validity period should be similar to shipment -> or ignore validity for spot shipments
+2019-12-16:philip: stage change carrier manuall -> check if costs are still valid -> pull costs of carrier that was removed?
+2019-12-17:philip: Analysis -> add testing & move to services
+2019-12-17:philip: Shipment, Stage, Item edi.error -> still in use??? i don't hink so
+2019-12-17:philip: switchpoint still working??
+2019-12-17:philip: access control on account> user section (only admin & super admin);
+2019-12-17:phlip: "account.link" still in use?
+
+testing:
+- price list grid helper functions -> test them separately
+- Analysis
+
+cypress:
+- account & partnership
+- simulation
+- switchpoint
+
+run prettier:
+prettier --config .prettierrc.json --write imports/**/*.js

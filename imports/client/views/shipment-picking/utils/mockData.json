@@ -1,0 +1,706 @@
+[
+  {
+    "id": "2jG2mZFcaFzqaThcr",
+    "status": "draft",
+    "pickingStatus": "packed",
+    "pickup": {
+      "location": {
+        "latLng": {
+          "lat": 50.8888189,
+          "lng": 4.458519900000056
+        },
+        "countryCode": "BE",
+        "zipCode": "1930",
+        "name": "Globex Belgium",
+        "addressId": "j958tYA872PAogTDq",
+        "address": {
+          "street": "Leonardo da Vincilaan",
+          "number": "7",
+          "city": "Zaventem",
+          "state": "Vlaanderen"
+        }
+      },
+      "date": 1508284800000,
+      "datePlanned": 1508284800000,
+      "dateScheduled": null,
+      "dateActual": null
+    },
+    "delivery": {
+      "location": {
+        "latLng": {
+          "lat": 40.3061528,
+          "lng": -3.465709199999992
+        },
+        "countryCode": "ES",
+        "zipCode": "28500",
+        "name": "Globex Spain",
+        "addressId": "WJNLceXYjFBdYL4YQ",
+        "address": {
+          "street": "Avenida de Madrid",
+          "number": "43",
+          "city": "Arganda del Rey",
+          "state": "Comunidad de Madrid"
+        }
+      },
+      "date": 1508371200000,
+      "datePlanned": 1508371200000,
+      "dateScheduled": null,
+      "dateActual": null
+    },
+    "shipperId": "S65957",
+    "accountId": "S65957",
+    "number": "Q7SQYEPY",
+    "references": {
+      "number": "shipper reference #",
+      "booking": null,
+      "carrier": null,
+      "consignee": null,
+      "bof": null,
+      "fa": null,
+      "container": null,
+      "cmr": null
+    },
+    "nestedItems": [
+      {
+        "id": "oaXMFZchcXeMe52Hd",
+        "type": "HU",
+        "itemType": "custom",
+        "description": "Box 1",
+        "level": 0,
+        "parentItemId": null,
+        "labelUrl": "labelUrl",
+        "references": {
+          "order": null,
+          "delivery": null,
+          "containerNo": null,
+          "truckId": null,
+          "trailerId": null,
+          "document": null,
+          "seal": null
+        },
+        "DG": false,
+        "quantity": {
+          "code": "BOX",
+          "amount": 1,
+          "description": "Parcel"
+        },
+        "weight_net": 0.1,
+        "weight_gross": 0.1,
+        "weight_unit": "kg",
+        "temperature": {
+          "condition": "-/- 18c",
+          "range": {
+            "from": null,
+            "to": null,
+            "unit": null
+          }
+        },
+        "dimensions": {
+          "length": 60,
+          "width": 60,
+          "height": 60,
+          "uom": "cm"
+        },
+        "isPackingUnit": true
+      },
+      {
+        "id": "oaXMFZchcXeMe52XX",
+        "type": "HU",
+        "itemType": "custom",
+        "description": "pie 2",
+        "level": 0,
+        "parentItemId": null,
+        "labelUrl": "",
+        "references": {
+          "order": null,
+          "delivery": null,
+          "containerNo": null,
+          "truckId": null,
+          "trailerId": null,
+          "document": null,
+          "seal": null
+        },
+        "DG": false,
+        "quantity": {
+          "code": "BOX",
+          "amount": 1,
+          "description": "Box"
+        },
+        "weight_net": 0.25,
+        "weight_gross": 0.25,
+        "weight_unit": "kg",
+        "temperature": {
+          "condition": "-/- 18c",
+          "range": {
+            "from": null,
+            "to": null,
+            "unit": null
+          }
+        },
+        "dimensions": {
+          "length": 60,
+          "width": 60,
+          "height": 60,
+          "uom": "cm"
+        },
+        "isPackingUnit": true
+      },
+      {
+        "id": "oaXMFZchcXeMe52YY",
+        "type": "HU",
+        "itemType": "custom",
+        "description": "pie 3",
+        "level": 1,
+        "parentItemId": "oaXMFZchcXeMe52XX",
+        "references": {
+          "order": null,
+          "delivery": null,
+          "containerNo": null,
+          "truckId": null,
+          "trailerId": null,
+          "document": null,
+          "seal": null
+        },
+        "DG": true,
+        "quantity": {
+          "code": "PC",
+          "amount": 1,
+          "description": "Piece"
+        },
+        "weight_net": 0.1,
+        "weight_gross": 0.1,
+        "weight_unit": "kg",
+        "temperature": {
+          "condition": "-/- 18c",
+          "range": {
+            "from": null,
+            "to": null,
+            "unit": null
+          }
+        },
+        "dimensions": {
+          "length": null,
+          "width": null,
+          "height": null,
+          "uom": null
+        },
+        "isPicked": true
+      },
+      {
+        "id": "oaXMFZchcXeMe52ZZ",
+        "type": "HU",
+        "itemType": "custom",
+        "description": "pie 4",
+        "level": 0,
+        "parentItemId": null,
+        "references": {
+          "order": null,
+          "delivery": null,
+          "containerNo": null,
+          "truckId": null,
+          "trailerId": null,
+          "document": null,
+          "seal": null
+        },
+        "DG": false,
+        "quantity": {
+          "code": "PC",
+          "amount": 2,
+          "description": "Piece"
+        },
+        "weight_net": 0.25,
+        "weight_gross": 0.25,
+        "weight_unit": "kg",
+        "temperature": {
+          "condition": "-/- 18c",
+          "range": {
+            "from": null,
+            "to": null,
+            "unit": null
+          }
+        },
+        "dimensions": {
+          "length": null,
+          "width": null,
+          "height": null,
+          "uom": null
+        },
+        "isPicked": false
+      },
+      {
+        "id": "oaXMFZchcXeMe52DD",
+        "type": "HU",
+        "itemType": "custom",
+        "description": "pie 5",
+        "level": 0,
+        "parentItemId": null,
+        "references": {
+          "order": null,
+          "delivery": null,
+          "containerNo": null,
+          "truckId": null,
+          "trailerId": null,
+          "document": null,
+          "seal": null
+        },
+        "DG": false,
+        "quantity": {
+          "code": "PC",
+          "amount": 1,
+          "description": "Piece"
+        },
+        "weight_net": 0.25,
+        "weight_gross": 0.25,
+        "weight_unit": "kg",
+        "temperature": {
+          "condition": "-/- 18c",
+          "range": {
+            "from": null,
+            "to": null,
+            "unit": null
+          }
+        },
+        "dimensions": {
+          "length": null,
+          "width": null,
+          "height": null,
+          "uom": null
+        },
+        "isPicked": false
+      },
+      {
+        "id": "oaXMFZchcXeMe5212",
+        "type": "HU",
+        "itemType": "custom",
+        "description": "pie",
+        "level": 1,
+        "parentItemId": "oaXMFZchcXeMe52DD",
+        "references": {
+          "order": null,
+          "delivery": null,
+          "containerNo": null,
+          "truckId": null,
+          "trailerId": null,
+          "document": null,
+          "seal": null
+        },
+        "DG": false,
+        "quantity": {
+          "code": "PC",
+          "amount": 1,
+          "description": "Piece"
+        },
+        "weight_net": 11000,
+        "weight_gross": 11000,
+        "weight_unit": "kg",
+        "temperature": {
+          "condition": null,
+          "range": {
+            "from": null,
+            "to": null,
+            "unit": null
+          }
+        },
+        "dimensions": {
+          "length": null,
+          "width": null,
+          "height": null,
+          "uom": null
+        },
+        "isPicked": false
+      }
+    ]
+  },
+  {
+    "id": "2jG2mZFcaFzqaThXX",
+    "status": "draft",
+    "pickingStatus": "none",
+    "pickup": {
+      "location": {
+        "latLng": {
+          "lat": 50.8888189,
+          "lng": 4.458519900000056
+        },
+        "countryCode": "BE",
+        "zipCode": "1930",
+        "name": "Globex Belgium",
+        "addressId": "j958tYA872PAogTDq",
+        "address": {
+          "street": "Leonardo da Vincilaan",
+          "number": "7",
+          "city": "Zaventem",
+          "state": "Vlaanderen"
+        }
+      },
+      "date": 1508284800000,
+      "datePlanned": 1508284800000,
+      "dateScheduled": null,
+      "dateActual": null
+    },
+    "delivery": {
+      "location": {
+        "latLng": {
+          "lat": 40.3061528,
+          "lng": -3.465709199999992
+        },
+        "countryCode": "ES",
+        "zipCode": "28500",
+        "name": "Globex Spain",
+        "addressId": "WJNLceXYjFBdYL4YQ",
+        "address": {
+          "street": "Avenida de Madrid",
+          "number": "43",
+          "city": "Arganda del Rey",
+          "state": "Comunidad de Madrid"
+        }
+      },
+      "date": 1508371200000,
+      "datePlanned": 1508371200000,
+      "dateScheduled": null,
+      "dateActual": null
+    },
+    "shipperId": "S65957",
+    "accountId": "S65957",
+    "number": "Q7SQYEPY",
+    "references": {
+      "number": "shipper reference #",
+      "booking": null,
+      "carrier": null,
+      "consignee": null,
+      "bof": null,
+      "fa": null,
+      "container": null,
+      "cmr": null
+    },
+    "nestedItems": [
+      {
+        "id": "oaXMFZchcXeMe5212",
+        "type": "HU",
+        "itemType": "custom",
+        "description": "pie",
+        "level": 1,
+        "parentItemId": "oaXMFZchcXeMe52DD",
+        "references": {
+          "order": null,
+          "delivery": null,
+          "containerNo": null,
+          "truckId": null,
+          "trailerId": null,
+          "document": null,
+          "seal": null
+        },
+        "DG": false,
+        "quantity": {
+          "code": "PC",
+          "amount": 1,
+          "description": "Piece"
+        },
+        "weight_net": 0.25,
+        "weight_gross": 0.25,
+        "weight_unit": "kg",
+        "temperature": {
+          "condition": null,
+          "range": {
+            "from": null,
+            "to": null,
+            "unit": null
+          }
+        },
+        "dimensions": {
+          "length": null,
+          "width": null,
+          "height": null,
+          "uom": null
+        },
+        "isPicked": false
+      },
+      {
+        "id": "oaXMFZchcXeMe52Hd",
+        "type": "HU",
+        "itemType": "custom",
+        "description": "pie",
+        "level": 0,
+        "parentItemId": null,
+        "references": {
+          "order": null,
+          "delivery": null,
+          "containerNo": null,
+          "truckId": null,
+          "trailerId": null,
+          "document": null,
+          "seal": null
+        },
+        "DG": true,
+        "quantity": {
+          "code": "PC",
+          "amount": 2,
+          "description": "Piece"
+        },
+        "weight_net": 0.25,
+        "weight_gross": 0.25,
+        "weight_unit": "kg",
+        "temperature": {
+          "condition": "-/- 18c",
+          "range": {
+            "from": null,
+            "to": null,
+            "unit": null
+          }
+        },
+        "dimensions": {
+          "length": null,
+          "width": null,
+          "height": null,
+          "uom": null
+        },
+        "isPicked": false
+      },
+      {
+        "id": "oaXMFZchcXeMe52H1",
+        "type": "HU",
+        "itemType": "custom",
+        "description": "pie",
+        "level": 1,
+        "parentItemId": "oaXMFZchcXeMe52Hd",
+        "references": {
+          "order": null,
+          "delivery": null,
+          "containerNo": null,
+          "truckId": null,
+          "trailerId": null,
+          "document": null,
+          "seal": null
+        },
+        "DG": false,
+        "quantity": {
+          "code": "PC",
+          "amount": 2,
+          "description": "Piece"
+        },
+        "weight_net": 0.25,
+        "weight_gross": 0.25,
+        "weight_unit": "kg",
+        "temperature": {
+          "condition": "-/- 18c",
+          "range": {
+            "from": null,
+            "to": null,
+            "unit": null
+          }
+        },
+        "dimensions": {
+          "length": null,
+          "width": null,
+          "height": null,
+          "uom": null
+        },
+        "isPicked": false
+      },
+      {
+        "id": "oaXMFZchcXeMe52H2",
+        "type": "HU",
+        "itemType": "custom",
+        "description": "pie",
+        "level": 0,
+        "parentItemId": null,
+        "references": {
+          "order": null,
+          "delivery": null,
+          "containerNo": null,
+          "truckId": null,
+          "trailerId": null,
+          "document": null,
+          "seal": null
+        },
+        "DG": false,
+        "quantity": {
+          "code": "PC",
+          "amount": 2,
+          "description": "Piece"
+        },
+        "weight_net": 0.25,
+        "weight_gross": 0.25,
+        "weight_unit": "kg",
+        "temperature": {
+          "condition": "-/- 18c",
+          "range": {
+            "from": null,
+            "to": null,
+            "unit": null
+          }
+        },
+        "dimensions": {
+          "length": null,
+          "width": null,
+          "height": null,
+          "uom": null
+        },
+        "isPicked": false
+      },
+      {
+        "id": "oaXMFZchcXeMe52XX",
+        "type": "HU",
+        "itemType": "custom",
+        "description": "pie",
+        "level": 0,
+        "parentItemId": null,
+        "references": {
+          "order": null,
+          "delivery": null,
+          "containerNo": null,
+          "truckId": null,
+          "trailerId": null,
+          "document": null,
+          "seal": null
+        },
+        "DG": false,
+        "quantity": {
+          "code": "PC",
+          "amount": 1,
+          "description": "PC"
+        },
+        "weight_net": 0.25,
+        "weight_gross": 0.25,
+        "weight_unit": "kg",
+        "temperature": {
+          "condition": "-/- 18c",
+          "range": {
+            "from": null,
+            "to": null,
+            "unit": null
+          }
+        },
+        "dimensions": {
+          "length": null,
+          "width": null,
+          "height": null,
+          "uom": null
+        },
+        "isPicked": false
+      },
+      {
+        "id": "oaXMFZchcXeMe52YY",
+        "type": "HU",
+        "itemType": "custom",
+        "description": "pie",
+        "level": 0,
+        "parentItemId": null,
+        "references": {
+          "order": null,
+          "delivery": null,
+          "containerNo": null,
+          "truckId": null,
+          "trailerId": null,
+          "document": null,
+          "seal": null
+        },
+        "DG": false,
+        "quantity": {
+          "code": "PC",
+          "amount": 2,
+          "description": "Piece"
+        },
+        "weight_net": 0.25,
+        "weight_gross": 0.25,
+        "weight_unit": "kg",
+        "temperature": {
+          "condition": "-/- 18c",
+          "range": {
+            "from": null,
+            "to": null,
+            "unit": null
+          }
+        },
+        "dimensions": {
+          "length": null,
+          "width": null,
+          "height": null,
+          "uom": null
+        },
+        "isPicked": false
+      },
+      {
+        "id": "oaXMFZchcXeMe52ZZ",
+        "type": "HU",
+        "itemType": "custom",
+        "description": "pie",
+        "level": 0,
+        "parentItemId": null,
+        "references": {
+          "order": null,
+          "delivery": null,
+          "containerNo": null,
+          "truckId": null,
+          "trailerId": null,
+          "document": null,
+          "seal": null
+        },
+        "DG": false,
+        "quantity": {
+          "code": "PC",
+          "amount": 2,
+          "description": "Piece"
+        },
+        "weight_net": 0.25,
+        "weight_gross": 0.25,
+        "weight_unit": "kg",
+        "temperature": {
+          "condition": "-/- 18c",
+          "range": {
+            "from": null,
+            "to": null,
+            "unit": null
+          }
+        },
+        "dimensions": {
+          "length": null,
+          "width": null,
+          "height": null,
+          "uom": null
+        },
+        "isPicked": false
+      },
+      {
+        "id": "oaXMFZchcXeMe52DD",
+        "type": "HU",
+        "itemType": "custom",
+        "description": "pie",
+        "level": 0,
+        "parentItemId": null,
+        "references": {
+          "order": null,
+          "delivery": null,
+          "containerNo": null,
+          "truckId": null,
+          "trailerId": null,
+          "document": null,
+          "seal": null
+        },
+        "DG": false,
+        "quantity": {
+          "code": "PC",
+          "amount": 1,
+          "description": "Piece"
+        },
+        "weight_net": 0.25,
+        "weight_gross": 0.25,
+        "weight_unit": "kg",
+        "temperature": {
+          "condition": "-/- 18c",
+          "range": {
+            "from": null,
+            "to": null,
+            "unit": null
+          }
+        },
+        "dimensions": {
+          "length": null,
+          "width": null,
+          "height": null,
+          "uom": null
+        },
+        "isPicked": false
+      }
+    ]
+  }
+]

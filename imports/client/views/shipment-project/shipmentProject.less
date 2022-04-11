@@ -1,0 +1,31 @@
+@import "{}/imports/client/styles/footer.import.less";
+@import "{}/imports/client/styles/sections.import.less";
+
+@sectionVerticalPadding: 30px;
+
+main.ShipmentProject {
+  // .main-fixed-footer;
+  .icon-sections;
+
+  > div > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ui.secondary.pointing.menu.tabs {
+    flex-shrink: 0;
+  }
+
+  .column.location .relative {
+    border: 1px solid transparent;
+
+    &.editable:hover {
+      border: 1px solid @borderColor;
+
+      .icon {
+        visibility: visible !important;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "fomantic-ui": "^2.8.3"
+  },
+  "deprecated": false,
+  "description": "rebuild semantic-js & semantic-ui with gulp",
+  "devDependencies": {
+    "gulp": "4.0.2"
+  }
+}

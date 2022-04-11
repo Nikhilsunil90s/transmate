@@ -1,0 +1,68 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { Form } from "semantic-ui-react";
+import { DateTimeComboWithTZ } from "./DateInput.jsx";
+
+<Meta
+  title="Components/Forms/dateInputWithTZ"
+  component={DateTimeComboWithTZ}
+/>
+
+# Date Input with Timezone
+
+The date time component has an additional toggle to switch between the location's timezone and the user's timezone.
+Clicking on the timeZone would toggle between the location's timeZone and own timezone.
+When no location timeZone is available, the timeZone is disabled and the the user timezone is shown.
+
+## without only the user's timezone:
+
+<Canvas>
+  <Story name="timeZoneWithoutTimeZone">
+    <Form>
+      <DateTimeComboWithTZ />
+    </Form>
+  </Story>
+</Canvas>
+
+## with a locationTimeZone
+
+The toggle should be available and the user can switch between timeZones:
+
+<Canvas>
+  <Story name="timeZoneWithTimeZone">
+    <Form>
+      <DateTimeComboWithTZ
+        locationTimeZone="Asia/Shanghai"
+        onChange={console.log}
+      />
+    </Form>
+  </Story>
+</Canvas>
+
+When entering / saving the data, we should keep track of both timezones, the one of the location and the one of the user.
+When a user enters a timezone (without alteration of TZ), it will always be parsed in its own timezone.
+
+When we toggle, we just need to keep track of what is entered (with respect to the selected TZ) and what is displayed.
+In order to keep the entered dateTime correct we do the following:
+
+1. set the current DateTimeValue to the entered TZ
+2. update the value according to the Input
+3. convert back to the user TZ
+4. trigger Onchange / update state value
+
+!! state Value is always the dateTime in the user timeZone!!
+
+## with a locationTimeZone entry resulting in date difference
+
+The toggle should be available and the user can switch between timeZones:
+
+<Canvas>
+  <Story name="timeZoneWithTimeZoneTriggersDateChange">
+    <Form>
+      <DateTimeComboWithTZ
+        value={new Date("2021-09-09 22:30")}
+        locationTimeZone="Asia/Shanghai"
+        onChange={console.log}
+      />
+    </Form>
+  </Story>
+</Canvas>

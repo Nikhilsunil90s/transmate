@@ -1,0 +1,394 @@
+@import "{}/imports/client/styles/colors.import.less";
+
+@import "{}/imports/client/styles/footer.import.less";
+@import "{}/imports/client/styles/icons.less";
+@import "{}/imports/client/styles/sizes.import.less";
+
+body,
+#react-root {
+  overflow: hidden;
+}
+
+.mainSubWrapper {
+  display: flex;
+
+  > div {
+    flex-grow: 1
+  }
+
+  > aside {
+    flex-shrink: 0;
+  }
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  > header {
+    display: flex;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: @headerHeight;
+    background: white;
+    color: @textColor; // Edge gives header color white
+
+    a.logo {
+      display: flex;
+      width: @baseSize;
+      height: @headerHeight;
+      justify-content: center;
+
+      background: @signaturePurpleColor;
+    }
+
+    form[role="search"] {
+      flex: 1;
+      margin: 17px 25px 0;
+
+      .icon.input i.icon {
+        opacity: 1;
+        color: @infoHeaderColor;
+      }
+
+      .ui.input input {
+        line-height: normal;
+      }
+    }
+  }
+
+  nav.ui.vertical.menu {
+    width: @baseSize;
+    top: @baseSize;
+    height: 100%;
+
+    .item {
+      padding-left: 0;
+      padding-right: 0;
+      height: @baseSize;
+      font-size: 20px;
+      text-align: center;
+
+      transition: opacity 0.3s;
+
+      &:not(.active) {
+        opacity: 0.5;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      > .submenu-icon {
+        font-size: 12px;
+        position: absolute;
+        right: 0;
+        line-height: 40px;
+        top: 15%;
+      }
+    }
+
+    .item.support {
+      position: fixed;
+      bottom: 0;
+      width: @baseSize;
+      height: @baseSize;
+      background: fade(white, 7%);
+    }
+
+    .item.dropdown:not(.hover) > .menu {
+      display: none;
+    }
+
+    .item.dropdown:hover > .menu {
+      display: block;
+    }
+
+    .item.dropdown {
+      > .menu {
+        background: transparent;
+        position: absolute;
+        transition: transform 0.15s 0.7s ease, opacity 0.15s 0.7s ease,
+          -webkit-transform 0.15s 0.7s ease;
+        padding-left: 6px;
+        // this element competes with "tooltip", and tooltip has z-index of 1900
+        z-index: 1901;
+      }
+    }
+
+    .dropdown-menu {
+      background: black;
+      padding: 0.833em 1em;
+
+      &--item {
+        font-size: 1rem;
+        margin: 0;
+        height: auto;
+        text-align: initial;
+        padding: 10px 0;
+      }
+    }
+  }
+
+  > .contentContainer > div {
+    flex: 1;
+    display: flex;
+    margin: @baseSize 0 0 @baseSize;
+  }
+
+  main,
+  main > div,
+  aside {
+    height: calc(~"100vh - " @headerHeight);
+  }
+
+  main > div {
+    max-width: calc(~"100vw - " @baseSize); // menu width
+    flex: 1;
+    width: 100%;
+
+    div.padding {
+      padding: 30px;
+    }
+
+    div.centered {
+      text-align: center;
+      color: red;
+    }
+
+    div.container {
+      width: auto;
+      padding: 0 @basePadding @basePadding;
+    }
+  }
+
+  main > div,
+  aside {
+    overflow: auto;
+
+    .content {
+      min-height: calc(~"100% - " @footerHeight + 1px);
+
+      &.ui.segment {
+        margin-bottom: 0; // override to prevent scrollbar
+      }
+    }
+
+    > footer {
+      height: @footerHeight;
+
+      // override
+      &.ui.segment {
+        margin-top: 0;
+        box-shadow: none;
+        margin-bottom: 0;
+      }
+
+      > div:first-child,
+      > div:last-child {
+        flex-basis: 30%;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  main {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .btn-floating.add {
+      position: absolute;
+      right: 40px;
+      top: 20px;
+      background-color: @secondaryColor;
+    }
+
+    ul.dropdown-content {
+      width: 200px !important;
+
+      a {
+        color: @primaryColor;
+        font-size: 14px;
+        font-weight: 500;
+
+        i {
+          position: relative;
+          top: 6px;
+          margin-right: 0.5em;
+          color: #cccccc;
+        }
+      }
+    }
+
+    footer {
+      &.ui.segment {
+        // Add top border on main footer
+        // (otherwise it looks weird when scrolling over white areas)
+        height: @footerHeight + 1px; // to compensate for border
+        border-top: 1px solid @pageBackground;
+
+        background-color: tint(@pageBackground, 50%);
+      }
+
+      .ui.basic.button,
+      .ui.basic.button:hover,
+      .ui.basic.button:focus {
+        // No border around basic buttons. We like it clean!
+        box-shadow: none !important;
+      }
+    }
+
+    // @media all and (min-height: @fixedFooterFrom) {
+    .main-fixed-footer;
+    // }
+  }
+
+  main,
+  aside {
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0;
+
+      .button {
+        margin-left: 10px;
+        // font-size: 11px;
+        line-height: 10px;
+
+        &.basic {
+          color: rgba(0, 0, 0, 0.4) !important;
+
+          &:hover {
+            color: rgba(0, 0, 0, 0.5) !important;
+            background: transparent !important;
+          }
+
+          &:active {
+            box-shadow: none;
+          }
+        }
+      }
+
+      .status {
+        text-align: right;
+        margin: 0 10px 0 0;
+        font-size: 12px;
+        color: fade(@textColor, 60%);
+      }
+    }
+  }
+
+  aside {
+    width: 0;
+    //transition: width 0.5s cubic-bezier( 1, 0, .57, .83 );
+    -webkit-font-smoothing: antialiased;
+    background-color: @asideColor;
+
+    &.expanded {
+      min-width: @asideMinWidth;
+      width: @asideWidth;
+    }
+    &.minimized {
+      width: @asideMinimized;
+      min-width: 0;
+      transition: width 600ms ease-out;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+      font-size: 20px;
+    }
+
+    h4 {
+      margin: 0 0 5px;
+      font-size: 16px;
+
+      + .sub {
+        font-size: 13px;
+      }
+    }
+
+    h5 {
+      margin: 2.85em 0 1.12em;
+      font-size: inherit;
+      opacity: 0.4;
+      font-weight: 600;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    > .ui.very.padded.segment {
+      padding: @baseSize;
+    }
+
+    .meta {
+      opacity: 0.5;
+    }
+
+    .item-icon {
+      margin: 2rem 0;
+      line-height: 1.8;
+
+      i {
+        top: 1px;
+      }
+
+      div {
+        margin-left: 40px;
+      }
+
+      + .item-icon {
+        margin-top: 2.5rem;
+      }
+    }
+
+    footer {
+      justify-content: flex-end;
+
+      &.ui.segment {
+        background-color: tint(@asideColor, 50%);
+      }
+    }
+  }
+
+  // Make the page scroll as a whole on smaller screens, to avoid having awkward
+  // scrollbars everywhere
+  @media all and (max-height: @panelScrollFrom) {
+    main,
+    main > .contentContainer,
+    aside {
+      overflow: visible;
+      height: auto;
+      min-height: calc(~"100vh - " @footerHeight);
+    }
+
+    > .contentContainer {
+      overflow: auto;
+      height: 100vh;
+    }
+
+    // Fix weird 1px aside footer offset
+    aside > .content > div {
+      min-height: calc(~"100% - " @footerHeight);
+    }
+  }
+}
+
+.pusher > .ui.sidebar {
+  // -webkit-font-smoothing: antialiased;
+  background-color: @asideColor;
+}
+
+.pushable > .ui.sidebar {
+  // -webkit-font-smoothing: antialiased;
+  background-color: @asideColor;
+}

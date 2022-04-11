@@ -1,0 +1,29 @@
+@import "{}/imports/client/styles/sizes.import.less";
+
+main.Tenderify {
+  .icon-sections;
+
+  .segment.stretch {
+    @tabsHeight: 75px;
+    @veryPaddedSegmentPadding: 45px;
+    height: calc(
+      ~"100vh - " @headerHeight + @footerHeight + @tabsHeight + @basePadding + 1px
+    );
+  }
+
+  div.relative {
+    &.editable:hover {
+      .icon {
+        visibility: visible !important;
+        cursor: pointer;
+      }
+    }
+  }
+  td .relative {
+    padding: 0;
+  }
+
+  td.noTopPadding {
+    padding-top: 0 !important;
+  }
+}

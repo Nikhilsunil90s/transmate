@@ -1,0 +1,96 @@
+enum SCOPE_SOURCE_TYPE {
+  tender
+  simulation
+  priceList
+  import
+  input
+}
+
+enum SCOPE_DOCUMENT_TYPE {
+  tender
+  simulation
+}
+
+type ZoneType {
+  CC: String
+  from: String
+  to: String
+}
+
+type AddressLocationZonesType {
+  addressIds: [String]
+  address: [JSONObject] # denormalization
+  locationIds: [String]
+  location: [JSONObject] # denormalization
+  zones: [ZoneType]
+}
+
+type ScopeQuantityType {
+  count: Float
+  amount: Float
+  equipment: Float
+  currentCost: Float
+  leadTime: Float
+}
+
+type ScopeDetail {
+  id: String
+  name: String
+
+  tenderId: String
+  accountId: String
+
+  laneId: String!
+  volumeGroupId: String
+  volumeRangeId: String
+  goodsDG: Boolean
+  equipmentId: String
+
+  # de-normalization:
+  lanes: JSONObject
+  volumes: JSONObject
+  equipments: JSONObject
+
+  quantity: ScopeQuantityType
+  shipmentIds: [String]
+
+  updated: ByType
+}
+
+type CopyScopeResponse {
+  definition: [String]
+}
+
+input GetScopeInput {
+  type: SCOPE_DOCUMENT_TYPE!
+  documentId: String!
+}
+
+input CopyScopeInput {
+  masterType: SCOPE_SOURCE_TYPE!
+  masterId: String!
+  referenceId: String!
+  referenceType: SCOPE_SOURCE_TYPE!
+}
+
+input ScopeDataSourceInput {
+  masterType: SCOPE_SOURCE_TYPE!
+  masterId: String!
+}
+
+input ScopeShipQueryInput {
+  masterId: String
+  masterType: SCOPE_DOCUMENT_TYPE
+  query: JSONObject
+}
+
+extend type Query {
+  getScope(input: GetScopeInput!): [ScopeDetail]
+  getScopeShipData(input: ScopeShipQueryInput!): Boolean # should be mutation
+}
+
+extend type Mutation {
+  copyScope(input: CopyScopeInput!): CopyScopeResponse
+  scopeDataFromSource(input: ScopeDataSourceInput!): JSONObject
+  scopeGenerateDataFill(input: ScopeDataSourceInput!): JSONObject
+}

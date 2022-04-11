@@ -1,0 +1,51 @@
+@import "{}/imports/client/styles/sizes.import.less";
+@import "{}/imports/client/styles/footer.import.less";
+@import "{}/imports/client/styles/colors.import.less";
+
+main.Shipments {
+  .main-fixed-footer;
+  .main-fixed-footer-and-toolbar;
+
+  tr {
+    cursor: pointer;
+  }
+
+  td {
+    white-space: nowrap;
+  }
+
+  a.tip {
+    display: inline-block;
+    line-height: 1.75em;
+    color: @headerColor;
+    border-bottom: 1px dashed tint(@headerColor, 75%);
+  }
+
+  header {
+    .ui.basic.button,
+    .ui.basic.button:hover,
+    .ui.basic.button:focus {
+      // No border around basic buttons. We like it clean!
+      box-shadow: none !important;
+    }
+
+    .button {
+      margin-left: 10px;
+      // font-size: 11px;
+      line-height: 10px;
+
+      &.basic {
+        color: rgba(0, 0, 0, 0.4) !important;
+
+        &:hover {
+          color: @primaryColor !important;
+          background: transparent !important;
+        }
+
+        &:active {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

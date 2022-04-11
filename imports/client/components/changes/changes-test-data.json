@@ -1,0 +1,36 @@
+{
+  "id": "2jG2mZFcaFzqaThcr",
+  "changes": [
+    {
+      "id": "377625cce0ab6b6b30e0dd9f53bbb9b691a410ec",
+      "userId": "dH842ByGTEvhLmRxY",
+      "collection": "shipments",
+      "ts": "2021-01-21T10:48:16.987Z",
+      "change": "added",
+      "keys": ["references"],
+      "docId": "2jG2mZFcaFzqaThcr",
+      "detail": { "references": { "number": "TN 2021|01|008" } }
+    },
+    {
+      "id": "0a374e47bf075226505f4324265e4edff100786a",
+      "userId": "dH842ByGTEvhLmRxY",
+      "collection": "shipments",
+      "ts": "2021-01-20T08:45:48.125Z",
+      "change": "deleted",
+      "keys": ["delivery"],
+      "docId": "2jG2mZFcaFzqaThcr",
+      "detail": { "delivery": {} }
+    },
+    {
+      "id": "24e743f408a5ca7aabe3753f5275b4511c84a0d6",
+      "userId": "dH842ByGTEvhLmRxY",
+      "collection": "shipments",
+      "ts": "2021-01-20T08:42:48.125Z",
+      "change": "updated",
+      "keys": ["delivery", "updated"],
+      "docId": "2jG2mZFcaFzqaThcr",
+      "detail": { "delivery": { "date": "2021-01-24T23:00:11.442Z" }, "updated": { "by": "dH842ByGTEvhLmRxY", "at": "2021-01-20T08:42:48.110Z" } }
+    },
+    { "id": 1, "userId": "jsBor6o3uRBTFoRQY", "collection": "shipment", "docId": "2jG2mZFcaFzqaThcr", "ts": "2017-10-18T08:57:51.701Z", "change": "created", "keys": ["*"], "detail": {} }
+  ]
+}

@@ -1,0 +1,228 @@
+<template name="introDemo">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/intro.min.js"></script>
+	<script type="text/javascript">
+		
+		var demoRunning = false;
+		var demoPages;
+		autostart();
+
+		function autostart() {
+			Tracker.autorun(function () {
+				var steps = [];
+
+				FlowRouter.watchPathChange();
+
+				if (!demoPages || demoPages.includes(FlowRouter.getRouteName())) {
+					
+					Meteor.call('getDemoStatus', (error, demoList) => {
+						if (demoList && demoList.length > 0) {
+							demoPages = demoList;
+							var currentDemo = demoList[0];
+							console.log("switch to demo!", currentDemo)
+							switch (currentDemo) {
+								
+								case "dashboard":
+									if (FlowRouter.getRouteName() != currentDemo) {
+										break
+									}
+
+									steps = [{
+										intro: "This will guide you through the application, lets load some demo data!"
+									},
+									{
+										element: document.querySelector('.cards'),
+										intro: "This your dashboard, you have a quick overview of your shipments, partners, tenders and pricelists.",
+									},
+									{
+										element: document.querySelector('.icon-compass'),
+										intro: "We will start with looking at the shipments, you can start with shipments here.",
+										position: 'right'
+									}
+
+									]
+									break;
+								case "shipments":
+									if (FlowRouter.getRouteName() != currentDemo) {
+										break
+									}
+
+									steps = [{
+
+										intro: "Let's start the shipment overview demo! We loaded some demo data."
+									},
+									{
+										element: document.querySelector('.Shipments'),
+										intro: "Now you see your shipments list, it contains all shipments that are open (not yet archived). You can customise the columns and data shown.",
+
+									},
+									{
+										element: document.querySelector('div.ui.dropdown.view'),
+										intro: "Here you can create your own filters so you only see the shipments that you want to see.",
+
+									},
+
+									{
+										element: document.querySelectorAll('tr.odd')[0],
+										intro: "Click on a shipment line to go into detail of a shipment or click continue, and see the different items related to this shipment.",
+										position: 'bottom'
+									}
+									];
+									
+									break;
+								case "shipment":
+									if (FlowRouter.getRouteName() != currentDemo) {
+										break;
+									}
+
+									steps = [{
+
+										intro: "We opened a demo shipment, let's explore this one!"
+									},
+									{
+										element: document.querySelector('.map-canvas'),
+										intro: 'the route of the shipment (air/sea/road).',
+									},
+									{
+										element: document.querySelector('.partners'),
+										intro: 'These are the partners that have access to this shipment(you, forwarder, carrier...).',
+									},
+									{
+										element: document.querySelector('.stages'),
+										intro: 'This block will show all the stages, a shipment can have multiple stages, ie from port to hub and from hub to your warehosue.',
+									},
+									{
+										element: document.querySelector('.goods'),
+										intro: 'This block will show the goods. Goods are expressed in pallets, kg, pieces or equipment (ie container). Will be used to calculate the cost and is a mandatory part.',
+									},
+									{
+										element: document.querySelector('.carriers'),
+										intro: 'you can allocate manually or automatically a carrier to the shipment. only active partners can be selected.',
+									},
+									{
+										element: document.querySelector('.references'),
+										intro: 'in the reference section you can add any info linked to this shipment, this can be seen by your partners.',
+									},
+									{
+										element: document.querySelector('.documents'),
+										intro: 'You can upload documents here. When the mobile app is used scans of CMRs will be appearing here also in real time!',
+									},
+									{
+										intro: 'End of the demo, let us know if you have any issues! Use the chat function!',
+									}
+
+									]
+									break;
+
+							}
+
+							if (currentDemo && FlowRouter.getRouteName() == currentDemo && demoRunning ==
+								false) {
+								let counter = 0;
+								const checkExist = setInterval(function () {
+
+									if (currentDemo == "dashboard" && $('.cards').is(":visible") &&
+										FlowRouter.getRouteName() == currentDemo) {
+
+										clearInterval(checkExist);
+										if (demoRunning == false) {
+											console.log("start dashboard demo!");
+											setTimeout(() => startIntro(demoList, steps), 1000);
+											demoRunning = true
+										}
+									} else if (currentDemo == "shipments" && $(
+										'tbody > tr:nth-child(1) > td:nth-child(2)').is(
+											":visible") && FlowRouter.getRouteName() == currentDemo) {
+
+										clearInterval(checkExist);
+										if (demoRunning == false) {
+											console.log("start shipments list demo!");
+											setTimeout(() => startIntro(demoList, steps), 2000);
+											demoRunning = true
+										}
+									} else if (currentDemo == "shipment" && $(".stage").is(
+										":visible") && $(".map-canvas").is(":visible") && FlowRouter
+											.getRouteName() == currentDemo) {
+
+										clearInterval(checkExist);
+										if (demoRunning == false) {
+											console.log("start shipment demo!");
+											setTimeout(() => startIntro(demoList, steps), 2000);
+											demoRunning = true
+										}
+									} else {
+										
+										counter += 1;
+										if (counter > 20) {
+											
+											clearInterval(checkExist);
+										}
+									}
+								}, 500); // check every x00ms
+							}
+
+
+						}
+					})
+				}
+			})
+		}
+
+
+		function startIntro(demoList, steps) {
+			demoRunning = true;
+			var currentDemo = demoList[0]
+			var intro = introJs();
+
+
+			intro.setOptions({
+
+				steps: steps,
+				showStepNumbers: false,
+				exitOnEsc: true,
+				showBullets: false,
+				scrollToElement: true,
+				nextLabel: 'Next',
+				prevLabel: 'Prev',
+				skipLabel: 'End tour',
+				doneLabel: 'Done',
+				disableInteraction: true
+
+			});
+
+
+
+			intro.onchange(function (targetElement) {
+
+
+				if (this._currentStep == 1 && currentDemo == "dashboard") {
+					Meteor.call("copyDemoShipments", {
+						qty: 10
+					}, console.log);
+
+				}
+
+				if (this._currentStep == steps.length - 1 && demoList.length > 1) {
+					intro.setOption("doneLabel", "Go To Next Demo");
+				}
+
+			}).start()
+				.onbeforechange(function (targetElem) {
+
+				})
+
+				.oncomplete(function (targetElem) {
+					Meteor.call("setDemoStatus", {
+						demoFinished: currentDemo
+					}, (result, error) => {
+						demoRunning = false;
+						FlowRouter.reload();
+					})
+
+				})
+				.onexit(function (targetElem) {
+					demoRunning = false;
+
+				});
+		}
+	</script>
+</template>

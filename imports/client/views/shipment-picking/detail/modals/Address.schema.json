@@ -1,0 +1,15 @@
+{
+  "title": "ChangeParcelAddressInput",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "companyName": { "type": "string" },
+    "phoneNumber": { "type": "string" },
+    "zipCode": { "type": "string" },
+
+    "street": { "type": "string" },
+    "number": { "type": "string" },
+    "city": { "type": "string" }
+  },
+  "required": []
+}

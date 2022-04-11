@@ -1,0 +1,25 @@
+name: Merge Tenderify
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - develop
+
+jobs:
+  auto-merge:
+    name: Merge develop into tenderify
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set Git config
+      run: |
+          git config --local user.email "jan@transmate.eu"
+          git config --local user.name "Github Actions"
+    - name: Merge develop back to tenderify
+      run: |
+          git fetch --unshallow
+          git checkout feature/036-reboot-tenderify
+          git pull
+          git merge --no-ff develop -m "Auto-merge develop back to tenderify"
+          git push

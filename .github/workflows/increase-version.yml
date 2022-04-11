@@ -1,0 +1,56 @@
+ 
+name: "increase version and publish after deploy to live"
+
+on:
+  workflow_dispatch:
+  workflow_run:
+      workflows: ["Build and Deploy Transmate App"]
+      branches: [master]
+      types: 
+        - completed
+jobs:
+
+  bump-version:
+    name: "Bump Version on master"
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    env:
+      GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN_GIT }}
+    # if: "!contains(github.event.head_commit.message, 'ci: version bump') && 
+    # !contains(github.event.head_commit.message, 'chore(release):') && github.event.workflow_run.conclusion == 'success'"
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          cache: npm
+          registry-url: https://npm.pkg.github.com/
+      - run: |
+          git config --global user.email "support@transmate.eu"
+          git config --global user.name "Transmate"
+      - name: install release it
+        run: npm install --global release-it
+      - name: tag release 
+        run: release-it "minor" --ci --no-npm.publish
+      - name: get-npm-version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@master
+      # - name: Create Sentry release
+      #   run: |
+      #     curl https://sentry.io/api/hooks/release/builtin/2627328/3203c3824d0f694040b4772bcde29dba2284adb949d36eef73d979ee8b4a8f83/  -X POST  -H "Content-Type: application/json" -d "{\"version\": \"$VERSION\"}"
+
+      #   env:
+      #     VERSION: ${{ steps.package-version.outputs.current-version}}
+      # - name: try upload of source maps
+      #   run: |
+      #     curl -sL https://sentry.io/get-cli/ | bash
+      #     #sentry-cli --auth-token ${{ secrets.SENTRY_AUTH_TOKEN}}
+      #     sentry-cli releases files ${{ steps.package-version.outputs.current-version}} upload-sourcemaps --rewrite .deploy/bundle/programs/web.browser
+      #     sentry-cli releases files ${{ steps.package-version.outputs.current-version}} upload-sourcemaps --rewrite .deploy/bundle/programs/web.browser.legacy
+      #     sentry-cli releases files ${{ steps.package-version.outputs.current-version}} upload-sourcemaps --rewrite .deploy/bundle/programs/server
+      #     sentry-cli releases finalize ${{ steps.package-version.outputs.current-version}}
+      #   env: 
+      #     SENTRY_ORG=transmate
+      #     SENTRY_PROJECT=transmate-app
+      #     SENTRY_NO_PROGRESS_BAR=1
+      #     SENTRY_AUTH_TOKEN=${{ secrets.SENTRY_AUTH_TOKEN}}

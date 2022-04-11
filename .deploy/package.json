@@ -1,0 +1,22 @@
+{
+  "name": "app-bundle",
+  "version": "1.0.0",
+  "main": "main.js",
+  "engines": {
+    "node": "14",
+    "npm": "7"
+  },
+  "scripts": {
+    "start": "env-cmd -r env.js -e default -- node main.js",
+    "build-env-script": "export NODE_ENV='production' && webpack --config webpack.config.js",
+    "ibmlog": "cf logs $CF_APP_NAME",
+    "ibmlog-recent": "cf logs $CF_APP_NAME --recent"
+  },
+  "devDependencies": {
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}

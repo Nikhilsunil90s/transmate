@@ -1,0 +1,50 @@
+enum ReportTopicType {
+  priceRequest
+}
+
+type ReportType {
+  reportId: String
+  dataSetId: String
+  label: String
+  key: String
+  filterKeys: JSONObject
+  isPublic: Boolean
+}
+
+type DownloadReportResultType {
+  result: [JSONObject]
+}
+
+input DownloadReportQueryInput {
+  from: Date
+  to: Date
+  bidStatus: [String]
+  role: String
+}
+
+input DownloadReportInput {
+  topic: ReportTopicType
+  query: DownloadReportQueryInput
+}
+
+input ReportFiltersInput {
+  analysisId: String
+}
+
+input ReportEmbedURLInput {
+  dataSetId: String!
+  reportId: String!
+  filters: ReportFiltersInput
+}
+
+input ReportDownloadURLInput {
+  dataSetId: String!
+  filters: JSONObject
+}
+
+extend type Query {
+  getReports: [ReportType]
+  getReportData(input: DownloadReportInput!): DownloadReportResultType
+  getReportEmbedURL(input: ReportEmbedURLInput): String
+  getReportDownloadURL(input: ReportDownloadURLInput!): String # method: "report.getDownloadURL"
+}

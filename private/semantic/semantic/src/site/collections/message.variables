@@ -1,0 +1,7 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@borderWidth: 1;
+@borderRadius: 0.285714rem;
+
+@headerFontSize: 1em;

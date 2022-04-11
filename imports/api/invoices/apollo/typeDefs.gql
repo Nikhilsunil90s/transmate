@@ -1,0 +1,160 @@
+enum INVOICE_ROLE {
+  customer
+  vendor
+}
+type InvoiceAmountType {
+  value: Float
+  currency: String
+}
+
+type InvoiceCostsType {
+  code: String
+  description: String
+  costId: String
+}
+
+type InvoiceShipmentCostsType {
+  base: Float
+  additional: Float
+  fuel: Float
+  total: Float
+  hasUnmappedCosts: Boolean
+  fuelPct: Float
+  exchangeDate: Date
+}
+
+type InvoiceDateMatchType {
+  match: Boolean
+  invExchDate: Date
+  shipExchDate: Date
+}
+
+type InvoiceShipmentType {
+  shipmentId: String
+  invoiceItemId: String
+  number: String
+  invoice: InvoiceShipmentCostsType
+  calculated: InvoiceShipmentCostsType
+  hasCosts: Boolean
+  hasInvoiceCosts: Boolean
+  dateMatch: InvoiceDateMatchType
+  delta: Float
+  deltaFuelPct: Float
+}
+
+type InvoiceTotalSummaryType {
+  base: Float
+  fuel: Float
+  total: Float
+}
+
+type InvoiceTotalType {
+  dateMismatch: Float
+  invHasCostCount: Float
+  shipHasCostCount: Float
+  largeDeltaCount: Float
+  shipCount: Float
+  shipment: InvoiceTotalSummaryType
+  invoice: InvoiceTotalSummaryType
+  delta: Float
+}
+
+type InvoicePartnerType {
+  id: String
+  name: String
+}
+
+type Invoice {
+  id: String!
+  clientId: String
+  creatorId: String
+  sellerId: String
+  status: String
+  date: Date
+  number: String
+  amount: InvoiceAmountType
+  costs: [InvoiceCostsType]
+  importId: String
+  hasUpload: Boolean
+
+  # calculated & projected fields:
+  itemCount: Int
+  client: InvoicePartnerType
+  seller: InvoicePartnerType
+  invoiceCurrency: String
+
+  shipments: [InvoiceShipmentType] # == invoice.items
+  costItems: [CostsType] # == invoice.items.costs filtered for a shipmentId
+  totals: InvoiceTotalType
+  subtotal: Float # shipment costs projection
+}
+
+input InvoiceOverviewInput {
+  partnerId: String
+  status: String # status of the invoice
+}
+
+input ShipmentCostItemInput {
+  id: String # shipmentId
+  costs: [ShipmentCostInput]
+}
+input AddShipmentCostItemInput {
+  invoiceId: String!
+  items: [ShipmentCostItemInput]
+}
+
+input CreateInvoiceInput {
+  partnerId: String!
+  number: String
+  date: Date
+  role: INVOICE_ROLE
+}
+
+input MapInvoiceCostItemInput {
+  description: String!
+  costId: String!
+}
+
+input MapInvoiceCostInput {
+  invoiceId: String!
+  updates: [MapInvoiceCostItemInput]!
+}
+
+input GetInvoiceReportInput {
+  invoiceId: String
+  invoiceIds: [String]
+  carrierIds: [String]
+}
+
+input ResetCurrencyExchangeRatesInput {
+  invoiceId: String!
+  shipmentIds: [String] #optional
+}
+
+type getInvoiceReportResult {
+  result: [JSONObject]
+}
+
+input UpdateInvoiceInput {
+  invoiceId: String!
+  update: JSONObject!
+}
+
+extend type Query {
+  getShipmentsWithoutInvoice(invoiceId: String!): [ShipmentAggr]
+  getInvoiceOverview(filters: InvoiceOverviewInput): [Invoice]
+  getInvoice(invoiceId: String!): Invoice
+  getInvoiceReport(query: GetInvoiceReportInput!): getInvoiceReportResult
+}
+
+extend type Mutation {
+  createInvoice(input: CreateInvoiceInput!): Invoice
+  updateInvoice(input: UpdateInvoiceInput!): Invoice
+  addShipmentCostItems(input: AddShipmentCostItemInput): Boolean
+  resetInvoiceCostMapping(invoiceId: String!): Invoice
+  mapInvoiceCosts(input: MapInvoiceCostInput!): Invoice
+  resetCurrencyExchangeRatesFromInvoice(
+    input: ResetCurrencyExchangeRatesInput!
+  ): Boolean
+  recalculateInvoiceTotal(invoiceId: String!): Invoice
+}

@@ -1,0 +1,44 @@
+/*******************************
+        User Overrides
+*******************************/
+body [data-tooltip][data-position="right center"],
+body [data-tooltip][data-position="left center"] {
+  &:after {
+    transform: translateY(-40%) !important;
+  }
+  &:after,
+  &:before {
+    opacity: 0;
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+
+  &:hover:after {
+    opacity: 1;
+    transform: translateY(-50%) !important;
+  }
+}
+
+body [data-tooltip][data-position="left center"] {
+  &:before,
+  &:after {
+    right: 115%;
+  }
+  &:before {
+    margin-right: 0;
+  }
+}
+
+// Undo overrides by .ui.menu .item:before
+body .ui.vertical.menu [data-tooltip].item:before {
+  left: 100%;
+  top: 50%;
+  width: 0.71428571em;
+  height: 0.71428571em;
+  background-color: @tooltipInvertedBackground !important;
+}
+body .ui.vertical.menu [data-tooltip].item:first-child:before {
+  display: block !important;
+}

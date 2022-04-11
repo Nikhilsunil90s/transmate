@@ -1,0 +1,98 @@
+//@import "/client/lib/semantic-ui/site/collections/form.variables.import.less";
+@import "{}/imports/client/styles/colors.import.less";
+@import "{}/imports/client/styles/sizes.import.less";
+
+@gutterWidth: 30px; // get from form.variables
+
+body .input-address {
+  position: relative;
+
+  .ui.icon.input > .icon {
+    color: @darkBlueColor;
+    opacity: 1;
+  }
+
+  /* Display address as text next to input */
+  &:not(.selected) > .display-text {
+    display: none;
+  }
+
+  .display-text {
+    width: 100%;
+    line-height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .options {
+    position: absolute;
+    width: calc(~"100% - " 2 * @inputHorizontalPadding);
+    margin-left: @gutterWidth / 2;
+    margin-top: 37px;
+    z-index: 10;
+
+    /* 'inherited' from Materialize .input-field */
+    border: 1px solid @borderColor;
+    border-radius: 4px;
+    background: white;
+
+    /* Options list */
+    display: none;
+    &.expanded {
+      display: block;
+    }
+
+    .group label,
+    .option,
+    .group .btn-basic {
+      padding: 10px 15px;
+    }
+
+    .group {
+      label {
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        color: #cccccc;
+        font-size: 14px;
+      }
+
+      & + .group {
+        border-top: 1px solid #f6f5f8;
+      }
+
+      .create-address,
+      .create-address:hover {
+        box-shadow: none !important;
+      }
+    }
+
+    .option {
+      cursor: pointer;
+
+      .name {
+        display: inline-block;
+        min-width: 25%;
+      }
+
+      &:hover {
+        background: #f6f6f6;
+      }
+
+      &.locode {
+        .name {
+          display: inline;
+        }
+
+        .code {
+          opacity: 0.3;
+
+          &:before {
+            content: "— ";
+          }
+        }
+      }
+    }
+  }
+}

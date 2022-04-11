@@ -1,0 +1,86 @@
+scalar Date
+scalar Any
+scalar StringOrInt
+scalar JSON
+scalar JSONObject
+
+type LatLngType {
+  lat: Float
+  lng: Float
+}
+
+type LocodeType {
+  id: String
+  code: String
+  name: String
+  function: String
+}
+
+type AmountType {
+  value: Float
+  currency: String
+  rate: Float
+  currencyDate: Date
+}
+
+type ByType {
+  by: String
+  at: Date
+  atms: Int
+}
+
+type ItemMaterialType {
+  description: String
+}
+
+type ItemType {
+  id: String
+  condition: JSONObject
+  DG: Boolean
+  material: ItemMaterialType
+  quantity: Int
+  quantity_unit: String
+  quantity_unit_description: String
+  weight_net: Float
+  weight_gross: Float
+  weight_unit: String
+  description: String
+  references: JSONObject
+}
+
+type AddressAnnotation {
+  externalId: String
+  ediId: String
+  name: String
+  coding: JSONObject
+}
+
+type ItemUnitType {
+  type: String
+  name: String
+  code: String
+  unitType: String
+  taxKeys: JSONObject
+}
+
+input CarrierUpdateInput {
+  id: String
+  name: String
+  type: String
+}
+
+input PlannerPartnerInput {
+  id: String
+  name: String
+}
+
+extend type Query {
+  getCarriers(includeOwnAccount: Boolean): [AccountType]
+  getOpenPriceRequests: [PriceRequest]
+}
+
+query dummy {
+  getShipmentById(shipmentId: "") {
+    id
+  }
+}

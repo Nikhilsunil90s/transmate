@@ -1,0 +1,122 @@
+type AddressValidatedType {
+  by: String
+  confidence: String
+  isValidated: Boolean
+}
+
+type AddressAnnotationCodingType {
+  code: String
+  vendorId: String
+  ediId: String
+  color: String
+}
+
+type AddressAnnotationSafetyType {
+  instructions: String
+  pbm: [String]
+}
+
+type AddressAnnotationType {
+  id: String
+  name: String
+  partnerId: String
+  coding: AddressAnnotationCodingType
+  externalId: String
+  notes: String
+
+  safety: AddressAnnotationSafetyType
+  type: String
+  certificates: [String]
+  hours: String
+  contacts: [AccountContactType]
+}
+
+type Address {
+  id: String
+  aliases: [String]
+  annotation: AddressAnnotationType
+  linkedAccounts: [String]
+  validated: AddressValidatedType
+  input: String
+  street: String
+  number: String
+  bus: String
+  zip: String
+  city: String
+  state: String
+  country: String
+  countryCode: String
+  location: LatLngType
+  timeZone: String
+
+  # resolvers
+  name: String
+
+  # projections:
+  addressName: String
+  addressLine: String
+  addressFormatted: String
+
+  linkedAccountsCount: Int
+}
+
+type AddressLocationType {
+  address: Address
+  location: Location
+}
+
+type SearchAddressResultItem {
+  id: String
+  name: String
+  formatted: String
+  isGlobal: Boolean
+  timeZone: String
+}
+
+type searchAddressResult {
+  book: [SearchAddressResultItem]
+  global: [SearchAddressResultItem]
+  locode: [SearchAddressResultItem]
+}
+
+input searchAddressOptions {
+  excludeGlobal: Boolean
+  excludeLocodes: Boolean
+}
+
+input searchAddressInput {
+  query: String!
+  options: searchAddressOptions
+}
+
+input SaveAddressContactsInput {
+  addressId: String!
+  partnerId: String!
+  contacts: [AccountContactInput]
+}
+
+input AnnotateAddressInput {
+  addressId: String!
+  updates: JSONObject
+}
+
+input getAddressOverviewInput {
+  viewKey: String
+  nameFilter: String
+}
+
+extend type Query {
+  getAddress(addressId: String!, accountId: String): Address
+  getAddressOverview(input: getAddressOverviewInput!): [Address] # "address.overview"
+  getLocationInfo(id: String!, type: String!): AddressLocationType
+  getAddresses(addressIds: [String]!): [Address]
+  validateAddress(input: String!): Address
+  searchAddress(input: searchAddressInput!): searchAddressResult
+}
+
+extend type Mutation {
+  linkAddress(addressId: String!, name: String!, update: JSONObject): Address
+  saveAddressContacts(input: SaveAddressContactsInput!): Boolean
+  removeAddress(addressId: String!): Boolean # replaces "address.remove"
+  annotateAddress(input: AnnotateAddressInput!): Address # replaces "address.annotate",
+}

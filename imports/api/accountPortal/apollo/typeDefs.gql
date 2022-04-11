@@ -1,0 +1,97 @@
+type ProfileFleetType {
+  type: String
+  count: Float
+}
+
+type ProfileTurnoverType {
+  value: Float
+  unit: String
+}
+
+type ProfileServiceType {
+  FTL: Boolean
+  LTL: Boolean
+  express: Boolean
+  generalCargo: Boolean
+  FCL: Boolean
+  LCL: Boolean
+  packed: Boolean
+  air: Boolean
+}
+
+type PortalContact {
+  type: String
+  name: String
+  phone: String
+  mail: String
+  status: String
+}
+
+type PortalLocation {
+  name: String
+  street: String
+  cc: String
+  city: String
+  zip: String
+  locationType: [String]
+}
+
+type PortalDestinations {
+  cc: String!
+  pct: Float
+}
+
+type PortalProfile {
+  id: String
+  name: String
+  description: String
+  banner: String
+  logo: String
+  established: Int
+  fleet: [ProfileFleetType]
+  turnover: ProfileTurnoverType
+  notes: String
+  service: ProfileServiceType
+  services: [String]
+  certificates: [String]
+  industries: [String]
+  website: String
+
+  contacts: [PortalContact]
+  locations: [PortalLocation]
+  destinations: [PortalDestinations]
+}
+
+type GetPortalProfileResponse {
+  profile: PortalProfile
+
+  # projections:
+  canEdit: Boolean
+  activeUser: PortalContact
+}
+
+input GetPortalDataInput {
+  id: String!
+  userKey: String # hash of the user if authenticated
+}
+
+input UpdatePortalDataInput {
+  id: String!
+  userKey: String! # hash of the user if authenticated
+  updates: JSONObject
+}
+
+input UnsubscribePortalContactInput {
+  id: String!
+  userKey: String # hash of the user if authenticated
+  email: String # optional email for user
+}
+
+extend type Query {
+  getPortalData(input: GetPortalDataInput!): GetPortalProfileResponse
+}
+
+extend type Mutation {
+  updatePortalData(input: UpdatePortalDataInput!): PortalProfile
+  unSubscribePortalContact(input: UnsubscribePortalContactInput!): Boolean
+}

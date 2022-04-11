@@ -1,0 +1,27 @@
+@import "{}/imports/client/styles/sizes.import.less";
+
+@colWidths: 80px;
+@colPadding: 9.6px + 4px;
+
+main.PriceList .segment.rates {
+  @tabsHeight: 75px;
+  @veryPaddedSegmentPadding: 45px;
+  height: calc(
+    ~"100vh - " @headerHeight + @footerHeight + @tabsHeight + //2*@veryPaddedSegmentPadding +
+      @basePadding + 1px
+  );
+
+  // placeholder
+  .gridPlaceHolder {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: calc(~"100%" - 2 * @veryPaddedSegmentPadding);
+    height: calc(
+      ~"100vh - " @headerHeight + @footerHeight + @tabsHeight + 2 * @veryPaddedSegmentPadding +
+        @basePadding + 1px
+    );
+    justify-content: center;
+    text-align: center;
+  }
+}

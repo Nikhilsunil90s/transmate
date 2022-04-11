@@ -1,0 +1,152 @@
+type ShipmentItemQuantityType {
+  amount: Int
+  code: String
+  description: String
+}
+
+type ShipmentItemReferenceType {
+  order: String
+  delivery: String
+  containerNo: String
+  truckId: String
+  trailerId: String
+  document: String
+  seal: String
+  trackingNumber: String
+}
+
+type ShipmentItemMaterialType {
+  id: String
+  description: String
+}
+
+type ShipmentItemTemperatureRangeType {
+  from: Float
+  to: Float
+  unit: String
+}
+
+type ShipmentItemTemperatureType {
+  condition: String
+  range: ShipmentItemTemperatureRangeType
+}
+
+type ShipmentItemDimensionType {
+  length: Float
+  width: Float
+  height: Float
+  uom: String
+}
+
+type ShipmentItemTaxableType {
+  type: String
+  quantity: Float
+}
+
+type ShipmentItemCalcSettingType {
+  costRelevant: Boolean
+  itemize: Boolean
+  keys: JSONObject
+  linkField: String
+}
+
+type ShipmentItemCustomsType {
+  HScode: String
+  countryOfOrigin: String
+  value: Float
+  currency: String
+}
+type ShipmentItemType {
+  id: String
+  shipmentId: String
+  parentItemId: String
+  level: Int
+  quantity: ShipmentItemQuantityType
+  type: String
+  itemType: String
+  number: String
+  description: String
+  commodity: String
+  references: ShipmentItemReferenceType
+  material: ShipmentItemMaterialType
+  DG: Boolean
+  DGClassType: String
+  temperature: ShipmentItemTemperatureType
+  weight_net: Float
+  weight_tare: Float
+  weight_gross: Float
+  weight_unit: String
+  dimensions: ShipmentItemDimensionType
+  customs: ShipmentItemCustomsType
+  taxable: [ShipmentItemTaxableType]
+  calcSettings: ShipmentItemCalcSettingType
+  notes: String
+
+  isPicked: Boolean
+  isPackingUnit: Boolean
+  labelUrl: String
+}
+
+input SaveShipmentItemInput {
+  id: String
+  shipmentId: String!
+  parentItemId: String
+  level: Int
+  quantity: JSONObject
+  type: String
+  itemType: String
+  number: String
+  description: String
+  commodity: String
+  references: JSONObject
+  material: JSONObject
+  DG: Boolean
+  DGClassType: String
+  temperature: JSONObject
+  weight_net: Float
+  weight_tare: Float
+  weight_gross: Float
+  weight_unit: String
+  dimensions: JSONObject
+  taxable: [JSONObject]
+  calcSettings: JSONObject
+  customs: JSONObject
+  notes: String
+}
+
+input ItemInput {
+  condition: String
+}
+
+input ChangeShipmentItemParentNodeInput {
+  shipmentId: String
+  id: String
+  targetParentItemId: String
+}
+
+input DeleteShipmentItemInput {
+  id: String
+}
+
+input GetShipmentItemsInput {
+  shipmentId: String!
+  level: Int
+}
+
+input SplitShipmentItemInput {
+  shipmentItemId: String!
+  amount: Float!
+}
+
+extend type Query {
+  getShipmentItems(input: GetShipmentItemsInput!): [ShipmentItemType]
+}
+
+extend type Mutation {
+  saveShipmentItem(input: SaveShipmentItemInput): ShipmentAggr
+  changeShipmentItemParentNode(
+    input: ChangeShipmentItemParentNodeInput
+  ): ShipmentAggr
+  deleteShipmentItem(input: DeleteShipmentItemInput): ShipmentAggr
+  splitShipmentItem(input: SplitShipmentItemInput!): ShipmentAggr
+}

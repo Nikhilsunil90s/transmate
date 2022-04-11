@@ -1,0 +1,22 @@
+@import "{}/imports/client/styles/sections.import.less";
+@import "{}/imports/client/styles/sizes.import.less";
+@import '{}/imports/client/styles/footer.import.less';
+
+main.PartnerInvoice {
+  .icon-sections;
+  .main-fixed-footer;
+}
+
+main.PartnerInvoice .report {
+  height: calc(~"100vh - " @headerHeight + @footerHeight + 1px);
+
+  iframe {
+    margin-top: 1px;
+    border: none;
+    height: 100%;
+  }
+
+  #powerbi-container {
+    height: calc(~"100% - 1px");
+  }
+}

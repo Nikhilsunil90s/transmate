@@ -1,0 +1,7 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@gutterWidth: 30px;
+@rowDistance: 15px;
+//@disabledBackground: tint( @pageBackground, 25% );
+@disabledBackground: #f5f7fa;

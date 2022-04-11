@@ -1,0 +1,348 @@
+{
+    "pinRowData": [
+        {
+            "0": "Multiplier",
+            "1": "shipment",
+            "2": "shipment",
+            "3": "shipment"
+        }
+    ],
+    "rowData": [
+        {
+            "0": "01 Araba/Álava",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "02 Albacete",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "03 Alicante",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "04 Almería",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "05 Ávila",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "06 Badajoz",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "07 Balearic Islands",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "08 Barcelona",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "09 Burgos",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "10 Cáceres",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "11 Cádiz",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "12 Castellón",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "13 Ciudad Real",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "14 Córdoba",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "15 A Coruña",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "16 Cuenca",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "17 Girona",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "18 Granada",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "19 Guadalajara",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "20 Gipuzkoa",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "21 Huelva",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "22 Huesca",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "23 Jaén",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "24 León",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "25 Lleida",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "26 La Rioja (formerly Logroño)",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "27 Lugo",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "28 Madrid",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "29 Málaga",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "30 Murcia",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "31 Navarre",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "32 Ourense",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "33 Asturias (formerly Oviedo)",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "34 Palencia",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "35 Las Palmas",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "36 Pontevedra",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "37 Salamanca",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "38 Santa Cruz de Tenerife",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "39 Cantabria (formerly Santander)",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "40 Segovia",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "41 Seville",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "42 Soria",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "43 Tarragona",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "44 Teruel",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "45 Toledo",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "46 Valencia",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "47 Valladolid",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "48 Bizkaia",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "49 Zamora",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "50 Zaragoza",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "51 Ceuta",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "0": "52 Melilla",
+            "1": null,
+            "2": null,
+            "3": null
+        },
+        {
+            "1": null,
+            "2": null,
+            "3": null
+        }
+    ],
+    "columnDefs": [
+        {
+            "headerName": "",
+            "field": "0",
+            "editable": false
+        },
+        {
+            "headerName": "0 - 30",
+            "field": "1"
+        },
+        {
+            "headerName": "30 - 250",
+            "field": "2"
+        },
+        {
+            "headerName": "250 - 1000",
+            "field": "3"
+        }
+    ]
+}

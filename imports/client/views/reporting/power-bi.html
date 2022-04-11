@@ -1,0 +1,14 @@
+<template name="AnalyticsPowerBI">
+	<div>
+		<div class="ui secondary pointing tabs menu">
+			<div class="header item">{{_ 'dashboard.tabs.title'}}</div>
+			{{#each tabs}}
+				<a href="{{pathFor 'analytics' section=.}}" class="item {{tabActive .}}">
+					{{_ (tabLabel .)}}
+				</a>
+			{{/each}}
+		</div>
+
+		{{> ReportPowerBI config=powerBiConfig}}
+	</div>
+</template>

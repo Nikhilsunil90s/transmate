@@ -1,0 +1,23 @@
+type PriceListTemplate {
+  id: String
+	title: String
+	description: String
+
+  # called in UI?
+	# public: Boolean
+  # status: String
+  # currency: String
+	# category: String
+	# type: String
+	# mode: String
+	# template: PLTemplateType
+	# uoms: UOMDefinitionType
+	# defaultLeadTime: LeadTimeDefinitionType
+	# terms: PaymentTermsType
+  # shipments: [PriceListShipmentsType]
+  # charges: [ChargeDefinitionType]
+}
+
+extend type Query {
+  getPriceListTemplates: [PriceListTemplate]
+}

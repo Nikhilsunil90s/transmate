@@ -1,0 +1,1946 @@
+{
+    "_id": "99YJtYKPbhZZZTW3b",
+    "base": "kg",
+    "creatorId": "S79207",
+    "customerId": "S79207",
+    "carrierId": "C44056",
+    "template": {
+        "type": "road"
+    },
+    "title": "Demo Schenker Pricelist 2019 copy",
+    "currency": "EUR",
+    "category": "standard",
+    "type": "contract",
+    "mode": "road",
+    "validFrom": ISODate("2018-01-01T00:00:00.000Z"),
+    "validTo": ISODate("2021-12-31T00:00:00.000Z"),
+    "uoms": {
+        "allowed": [
+            "kg"
+        ]
+    },
+    "lanes": [],
+    "volumes": [],
+    "leadTimes": [
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "c66ySj",
+                "name": "01 Araba/Álava",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "01000",
+                            "to": "01999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "AwBqm2",
+                "name": "02 Albacete",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "02000",
+                            "to": "02999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "fY3vuL",
+                "name": "03 Alicante",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "03000",
+                            "to": "03999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "PimYLZ",
+                "name": "04 Almería",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "04000",
+                            "to": "04999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "LuGHXa",
+                "name": "05 Ávila",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "05000",
+                            "to": "05999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "fXu8gz",
+                "name": "06 Badajoz",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "06000",
+                            "to": "06999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "NFHQxN",
+                "name": "07 Balearic Islands",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "07000",
+                            "to": "07999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "d7Giqh",
+                "name": "08 Barcelona",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "08000",
+                            "to": "08999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "EFtpMg",
+                "name": "09 Burgos",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "09000",
+                            "to": "09999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "3EPTNy",
+                "name": "10 Cáceres",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "10000",
+                            "to": "10999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "GLGRqo",
+                "name": "11 Cádiz",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "11000",
+                            "to": "11999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "4JZk9m",
+                "name": "12 Castellón",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "12000",
+                            "to": "12999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "kiHHyP",
+                "name": "13 Ciudad Real",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "13000",
+                            "to": "13999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "ktKj73",
+                "name": "14 Córdoba",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "14000",
+                            "to": "14999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "KjgATB",
+                "name": "15 A Coruña",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "15000",
+                            "to": "15999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "nsN7zq",
+                "name": "16 Cuenca",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "16000",
+                            "to": "16999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "TJkJP2",
+                "name": "17 Girona",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "17000",
+                            "to": "17999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "aGNziq",
+                "name": "18 Granada",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "18000",
+                            "to": "18999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "YKPFF4",
+                "name": "19 Guadalajara",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "19000",
+                            "to": "19999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "hJZpBy",
+                "name": "20 Gipuzkoa",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "20000",
+                            "to": "20999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "MDpTGL",
+                "name": "21 Huelva",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "21000",
+                            "to": "21999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "vPzYrJ",
+                "name": "22 Huesca",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "22000",
+                            "to": "22999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "ESNmdz",
+                "name": "23 Jaén",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "23000",
+                            "to": "23999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "DbPFt4",
+                "name": "24 León",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "24000",
+                            "to": "24999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "FQ2iXg",
+                "name": "25 Lleida",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "25000",
+                            "to": "25999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "aCgZkk",
+                "name": "26 La Rioja (formerly Logroño)",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "26000",
+                            "to": "26999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "qk4Jch",
+                "name": "27 Lugo",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "27000",
+                            "to": "27999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "GFYMPd",
+                "name": "28 Madrid",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "28000",
+                            "to": "28999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "ptM66c",
+                "name": "29 Málaga",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "29000",
+                            "to": "29999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "WSG63s",
+                "name": "30 Murcia",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "30000",
+                            "to": "30999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "NZTrJc",
+                "name": "31 Navarre",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "31000",
+                            "to": "31999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "FyDSkL",
+                "name": "32 Ourense",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "32000",
+                            "to": "32999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "iLvtgX",
+                "name": "33 Asturias (formerly Oviedo)",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "33000",
+                            "to": "33999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "dz6X87",
+                "name": "34 Palencia",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "34000",
+                            "to": "34999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "XLp3u5",
+                "name": "35 Las Palmas",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "35000",
+                            "to": "35999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "6mGNAM",
+                "name": "36 Pontevedra",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "36000",
+                            "to": "36999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "D4Dk2Z",
+                "name": "37 Salamanca",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "37000",
+                            "to": "37999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "PsfMR9",
+                "name": "38 Santa Cruz de Tenerife",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "38000",
+                            "to": "38999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "ttoPgr",
+                "name": "39 Cantabria (formerly Santander)",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "39000",
+                            "to": "39999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "M9n93g",
+                "name": "40 Segovia",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "40000",
+                            "to": "40999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "coGepH",
+                "name": "41 Seville",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "41000",
+                            "to": "41999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "ZkFtqE",
+                "name": "42 Soria",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "42000",
+                            "to": "42999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "fqQXJT",
+                "name": "43 Tarragona",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "43000",
+                            "to": "43999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "whRrBN",
+                "name": "44 Teruel",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "44000",
+                            "to": "44999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "RnMTBe",
+                "name": "45 Toledo",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "45000",
+                            "to": "45999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "aawCoH",
+                "name": "46 Valencia",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "46000",
+                            "to": "46999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "xChtWp",
+                "name": "47 Valladolid",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "47000",
+                            "to": "47999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "nrskMe",
+                "name": "48 Bizkaia",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "48000",
+                            "to": "48999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "9sDpxM",
+                "name": "49 Zamora",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "49000",
+                            "to": "49999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "TejysG",
+                "name": "50 Zaragoza",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "50000",
+                            "to": "50999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "TBmbNx",
+                "name": "51 Ceuta",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "51000",
+                            "to": "51999"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "leadTimeHours": 72,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly",
+            "rules": {},
+            "lane": {
+                "id": "ra2mKJ",
+                "name": "52 Melilla",
+                "from": {
+                    "zones": [
+                        {
+                            "CC": "BE",
+                            "from": "*",
+                            "to": ""
+                        }
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "52000",
+                            "to": "52999"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "defaultLeadTime": {
+        "leadTimeHours": 168,
+        "days": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "frequency": "weekly"
+    },
+    "specialRequirements": [],
+    "terms": {
+        "days": 30,
+        "condition": "days"
+    },
+    "carrierName": "DBS DB Schenker",
+    "summary": {
+        "laneCount": 52,
+        "rateCount": 156
+    },
+    "updates": [
+        {
+            "action": "created",
+            "userId": "4bt8YeyxfCbThrdDK",
+            "accountId": "C44056",
+            "ts": ISODate("2020-01-31T01:02:42.634Z")
+        },
+        {
+            "action": "duplicateStructureAndData",
+            "userId": "4bt8YeyxfCbThrdDK",
+            "accountId": "C44056",
+            "ts": ISODate("2020-01-31T01:02:43.686Z")
+        }
+    ],
+    "updated": {
+        "by": "4bt8YeyxfCbThrdDK",
+        "at": ISODate("2020-01-31T01:02:43.809Z"),
+        "price_lists": "synced"
+    },
+    "created": {
+        "by": "4bt8YeyxfCbThrdDK",
+        "at": ISODate("2020-01-31T01:02:42.582Z")
+    },
+    "status": "draft",
+    "deleted": false
+}

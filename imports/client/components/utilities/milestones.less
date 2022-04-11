@@ -1,0 +1,38 @@
+.milestones {
+  .milestone {
+    cursor: pointer;
+
+    i {
+      font-weight: bold;
+      opacity: 0.5;
+      letter-spacing: -0.02em;
+    }
+
+    position: relative;
+    margin-left: 20px;
+    padding-left: 30px;
+    padding-bottom: 3em;
+
+    border-left: 1px solid tint(black, 85%);
+
+    > .icon {
+      position: absolute;
+      top: 0;
+      left: -15px;
+      //font-size: 24px;
+      background-color: white;
+      opacity: 1;
+      color: tint(black, 70%);
+    }
+
+    &.button,
+    &.button .icon {
+      color: @primaryColor;
+      cursor: pointer;
+    }
+
+    &:last-of-type {
+      border-left-color: transparent;
+    }
+  }
+}

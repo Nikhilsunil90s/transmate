@@ -1,0 +1,6 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@fontWeight: 400;
+@backgroundColor: #e7ebef;
+@color: rgba(60, 60, 60, 0.7);

@@ -1,0 +1,11 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@border: none;
+@borderRadius: 0;
+@borderWidth: 0; // to clear offset
+@boxShadow: none;
+@attachedBorder: @border;
+
+@paddedSegmentPadding: 30px;
+@veryPaddedSegmentPadding: 45px;

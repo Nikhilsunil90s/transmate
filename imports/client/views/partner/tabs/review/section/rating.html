@@ -1,0 +1,53 @@
+<template name="PartnerScoreCard">
+	<div>
+		{{#if score}}
+			<div class="ui grid">
+				<div class="six wide column">
+					<table class="ui table">
+						<thead>
+							<tr>
+								<th>
+									<div class="header">
+										{{#if personal}}
+											My Score
+										{{else}}
+											Global Score
+										{{/if}}
+									</div>
+								</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tr>
+							<td class="one wide column">
+								<div class="ui centered card score">
+									<div class="content">
+										<h1 class="ui header">
+											<i class="empty star icon"></i>
+											<div class="content">
+												{{avg score}}
+											</div>
+										</h1>
+									</div>
+								</div>
+							</td>
+							<td class="fifteen wide column">
+								<div class="ui horizontal segments">
+									{{#each score}}
+										<div class="ui segment">
+											<div class="header">{{label}}</div>
+											<p>({{value}})</p>
+											{{> Rating value=rating disabled=true size='large'}}
+										</div>
+									{{/each}}
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		{{else}}
+			{{_ 'partner.review.empty'}}
+		{{/if}}
+	</div>
+</template>

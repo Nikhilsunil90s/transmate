@@ -1,0 +1,62 @@
+{
+  "csvUploadData": [
+    {
+      "shipment": {
+        "number": "MATCHING",
+        "shipperRef": "shipperRef",
+        "carrierRef": "carrierRef"
+      },
+      "costs": [
+        {
+          "amount": {
+            "value": "100",
+            "currency": "EUR",
+            "rate": "1"
+          },
+          "description": "testing rate",
+          "code": "FRT"
+        }
+      ],
+      "rowNum": 1
+    },
+    {
+      "shipment": {
+        "number": "NOT-MATCHING",
+        "shipperRef": "shipperRef",
+        "carrierRef": "carrierRef"
+      },
+      "costs": [
+        {
+          "amount": {
+            "value": "200",
+            "currency": "USD",
+            "rate": "0.98"
+          },
+          "description": "testing fuel rate",
+          "code": "FUEL"
+        }
+      ],
+      "rowNum": 2
+    },
+    {
+      "shipment": {
+        "number": "MATCHING",
+        "shipperRef": "shipperRef",
+        "carrierRef": "carrierRef"
+      },
+      "costs": [
+        {
+          "amount": {
+            "value": "200",
+            "currency": "USD",
+            "rate": "0.98"
+          },
+          "description": "testing fuel rate",
+          "code": "FUEL"
+        }
+      ],
+      "rowNum": 3
+    }
+  ],
+  "workersDocuments": []
+}

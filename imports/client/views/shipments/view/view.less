@@ -1,0 +1,79 @@
+@import '{}/imports/client/styles/sizes.import.less';
+@import '{}/imports/client/styles/footer.import.less';
+
+
+main.ShipmentsView {
+	.main-fixed-footer;
+
+	header {
+		&.ui.segment {
+			background: fade( white, 50% );
+		}
+
+		.ui.input {
+			font-size: 13px;
+		}
+	}
+
+	.ui.header {
+		&:extend(.ui.form .field > label all);
+
+		margin: 2em 0 1em;
+		line-height: 2em;
+
+		&.dividing {
+			margin: 0 0 1.5em;
+		}
+
+		&.group.shipment {
+			display: none;
+		}
+	}
+
+	.add-button {
+		margin: @basePadding * 2;
+		text-align: center;
+	}
+
+	.filter-input {
+		display: flex;
+		align-items: center;
+		margin-bottom: 1em;
+
+		> .dropdown {
+			height: 34px;
+		}
+
+		.dropdown.name {
+			white-space: nowrap;
+		}
+
+		.dropdown.disabled {
+			opacity: 1 !important;
+		}
+
+		.dropdown.fluid {
+			height: 34px;
+			padding-top: 0;
+			padding-bottom: 0;
+			margin-left: .25em;
+			background: fade( white, 50% ) !important;
+
+			&:hover {
+				background: white !important;
+			}
+
+			.text {
+				line-height: 32px;
+				width: 95%;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			.menu {
+				width: 100%;
+			}
+		}
+	}
+}

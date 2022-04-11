@@ -1,0 +1,44 @@
+/*******************************
+     User Global Variables
+*******************************/
+@fontName: 'Open Sans';
+@fontSmoothing: none;
+@importGoogleFonts: true;
+@googleFontSizes: '300,400,600,700';
+@lineHeight: unit( 24/@fontSize, em );
+@basePadding: 30px;
+
+@headerFont: @fontName, sans-serif;
+@headerFontWeight: 300;
+@pageFont: @fontName, sans-serif;
+
+@primaryColor: @blue;
+@secondaryColor: @purple;
+
+@teal: #0CC2AA;
+@green: #94BA2E;
+@darkBlue: #2185d0;
+@blue: #3FA2F7;
+//@green: @blue;
+// @purple: #7250A4;
+@purple: #483074;
+@darkWhite: #e9edf4;
+
+@pageBackground: #F2F4F8;
+@asideColor: #E9EDF4;
+@textColor: #3C4144;
+@disabledTextColor: fade( @textColor, 30% );
+@inputPlaceholderColor: #919191;
+@inputPlaceholderFocusColor: @inputPlaceholderColor;
+
+@emSize: 15px;
+@fontSize: 14px;
+
+@smallSize: (12 / 14);
+@h1: 20px;
+@h2: 18px;
+
+// This is the same size, but in px instead of rem
+@medium: 14px;
+
+@disabledOpacity: .8;

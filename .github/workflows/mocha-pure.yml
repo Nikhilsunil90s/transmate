@@ -1,0 +1,46 @@
+name: Pure JS mocha tests
+
+on:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - "**.md"
+      - "**.yml"
+
+jobs:
+
+  mocha-pure:
+    runs-on: ubuntu-latest
+    env:
+      DOPPLER_TOKEN : ${{secrets.DOPPLER_TOKEN_METEOR_DEV}}
+      DOPPLER_TOKEN_METEOR_DEV: ${{ secrets.DOPPLER_TOKEN_METEOR_DEV}}
+      LOCAL_REDIS: redis://localhost:6379 # set by redis action
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{secrets.DEPLOY_TOKEN_GIT}}
+          submodules: recursive
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: npm
+      - name: Start Redis
+        uses: supercharge/redis-github-action@1.4.0
+        with:
+          redis-version: 5
+      - name: set npm key for reading npm packages from github
+        run: echo "//npm.pkg.github.com/:_authToken=\"${{ secrets.DEPLOY_TOKEN_GIT }}\"" >> ~/.npmrc
+        # this will only install root packages not submodules (is missing bq ie)
+      - name: install npm packages
+        run: npm ci
+
+      - name: set env for test meteor
+        run: |
+          export TOOL_NODE_FLAGS="--max-old-space-size=6072"
+          export NODE_OPTIONS="--max_old_space_size=6072"
+      - name: testPureMocha
+        run: npm run test-pure-js-ci
+
+
+ 

@@ -1,0 +1,9 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+// @borderRadius: 20px;
+@fontWeight: 600;
+@basicFontWeight: @fontWeight;
+@basicBorderSize: 1px;
+@basicColoredBorderSize: @basicBorderSize;
+@attachedBoxShadow: none;

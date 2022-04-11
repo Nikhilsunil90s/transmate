@@ -1,0 +1,42 @@
+@import "{}/imports/client/styles/sections.import.less";
+@import "{}/imports/client/styles/footer.import.less";
+
+main.PriceRequest {
+  .icon-sections;
+  .main-fixed-footer;
+
+  .analytics {
+    table.detail {
+      i {
+        color: #3fa2f7;
+      }
+
+      span.supsub {
+        sup {
+          position: relative;
+          top: -0.5em;
+        }
+
+        sub {
+          position: relative;
+          top: 0.5em;
+          left: -1.5em;
+          /* This will vary with font... */
+        }
+      }
+    }
+  }
+
+  .relative {
+    border: 1px solid transparent;
+
+    &.editable:hover {
+      border: 1px solid @borderColor;
+      cursor: pointer;
+
+      .icon {
+        visibility: visible !important;
+      }
+    }
+  }
+}

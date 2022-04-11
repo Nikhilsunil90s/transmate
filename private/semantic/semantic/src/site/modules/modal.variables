@@ -1,0 +1,16 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+@borderRadius: 8px;
+@headerBorder: none;
+@boxShadow: none;
+@actionBorder: none;
+
+@headerColor: @primaryColor;
+@headerFontWeight: normal;
+@headerVerticalPadding: 1.75rem;
+@headerHorizontalPadding: 35px;
+
+@contentPadding: 35px;
+@buttonDistance: 0.5em;

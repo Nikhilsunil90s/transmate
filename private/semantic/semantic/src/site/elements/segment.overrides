@@ -1,0 +1,11 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui[class*="very padded"].segment {
+	footer {
+		margin: @veryPaddedSegmentPadding -@veryPaddedSegmentPadding -@veryPaddedSegmentPadding;
+		box-shadow: none;
+	}
+}
+

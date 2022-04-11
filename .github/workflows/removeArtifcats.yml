@@ -1,0 +1,24 @@
+name: "Delete old artifacts"
+on:
+  schedule:
+    - cron: "0 1 * * 0" # every sunday
+
+jobs:
+  delete_artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: kolpav/purge-artifacts-action@v1
+        with:
+          token: ${{ secrets.TODO_GITHUB_TOKEN }}
+          expire-in: 1 day # Setting this to 0 will delete all artifacts
+
+  del_runs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          token: ${{ secrets.DEPLOY_TOKEN_GIT }}
+          repository: ${{ github.repository }}
+          retain_days: 30
+          keep_minimum_runs: 0

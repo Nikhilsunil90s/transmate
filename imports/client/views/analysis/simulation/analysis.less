@@ -1,0 +1,59 @@
+@import "{}/imports/client/styles/sizes.import.less";
+
+main.Analysis,
+.analysis-shipments-modal {
+  .cheaper {
+    color: #3fa2f7;
+  }
+}
+
+main.Analysis {
+  .ui.steps {
+    min-height: @baseSize; // keep size while loading
+  }
+
+  .savings {
+    text-align: right;
+
+    > div {
+      margin-bottom: 0.5em;
+
+      .action.input {
+        > button {
+          min-width: 200px;
+          text-align: right;
+        }
+
+        > input {
+          width: 150px;
+        }
+      }
+    }
+
+    strong {
+      font-size: 0.8em;
+    }
+  }
+
+  .cost.details.tooltip {
+    &:after {
+      text-align: right;
+      min-width: 17em;
+    }
+  }
+
+  .segment.report {
+    @stepsHeight: @baseSize + 2 * @basePadding;
+    height: calc(~"100vh - " @headerHeight + @stepsHeight + @basePadding + 1px);
+    padding: 0;
+  }
+  .segment.data {
+    @stepsHeight: @baseSize + 2 * @basePadding;
+    min-height: calc(
+      ~"100vh - " @headerHeight + @stepsHeight + @basePadding + @footerHeight + 1px
+    );
+  }
+  .reportContainer {
+    height: calc(~"100% - " @tabsHeight);
+  }
+}

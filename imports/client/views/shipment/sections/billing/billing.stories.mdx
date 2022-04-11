@@ -1,0 +1,43 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import ShipmentBilling from "./Billing";
+
+<Meta title="Shipment/Segments/billing" component={ShipmentBilling} />
+
+## billing module
+
+Billing module is used for forwarders that manage shipments
+
+- they can import the cost(s) from shipment costs
+- they can add or remove fees
+- the can see if it has been added to an invoice yes or no
+
+## data structure
+
+Billing items are a sum of:
+
+- total Freight cost -> this is the sum to the billing currency of the customer of all freight costs
+- additional items (invoiced or not)
+- invoiced items with total
+
+the difference is what is still to be billed.
+
+when we have no invoice items:
+
+- freight cost = sum...
+
+when we have invoiced items:
+
+- freight cost = sum - all invoiced freight items
+
+The total freight cost is a dynamic field... after biling new items can be added.
+When an invoice is generated, we need to record the items that were billed.
+
+## visibility
+
+- only visible for owner (== forwarder) -> the accountId should be the forwarder in this case.
+
+<Story id="shipment-segments-billing--basic" />
+
+## modal
+
+Adding an additional billing item:

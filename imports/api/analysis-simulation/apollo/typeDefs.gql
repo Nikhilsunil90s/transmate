@@ -1,0 +1,65 @@
+enum ANALYSIS_SIMULATION_STEPS {
+  options
+  data
+  start
+  results
+  report
+}
+
+type AnalysisSimulationPriceList {
+  id: String
+  carrierId: String
+  carrierName: String
+  title: String
+}
+
+type AnalysisSimulation {
+  id: String
+  analysisId: String
+  name: String
+  steps: [ANALYSIS_SIMULATION_STEPS]
+  created: ByType
+  accountId: String
+  params: JSONObject
+  status: String
+  scanning: Boolean
+  updated: ByType
+  deleted: Boolean
+  scope: JSONObject
+  priceLists: [AnalysisSimulationPriceList]
+  worker: String
+  aggregates: JSONObject
+}
+
+input SimulationDetailInput {
+  rowData: JSONObject
+  update: JSONObject
+}
+
+input SimulationUpdateInput {
+  analysisId: String!
+  update: JSONObject
+}
+
+input SimulationPriceListItemInput {
+  id: String!
+  title: String!
+  carrierId: String
+  carrierName: String
+}
+
+input SimulationPriceListInput {
+  analysisId: String!
+  priceLists: [SimulationPriceListItemInput]!
+}
+
+extend type Mutation {
+  simulationStart(analysisId: String!): AnalysisSimulation
+  simulationSaveDetail(
+    analysisId: String!
+    updates: [SimulationDetailInput]!
+  ): Boolean
+  simulationSaveUpdate(input: SimulationUpdateInput!): String
+  simulationSavePriceLists(input: SimulationPriceListInput!): AnalysisSimulation
+  simulationNextStep(analysisId: String!, nextStep: String): String
+}

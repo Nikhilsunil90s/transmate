@@ -1,0 +1,296 @@
+enum ACCOUNT_TYPE {
+  shipper
+  carrier
+  provider
+}
+
+enum PARTNERSHIP_ACTION {
+  accept
+  reject
+  deactivate
+}
+
+enum PARTNER_ANNOTATE_ROOT {
+  profile
+  coding
+  notes
+}
+
+enum ITEM_UNIT_TYPE {
+  TU
+  HU
+  UOM
+}
+
+type AccountType {
+  id: String
+  name: String
+  type: String
+  key: String
+  logo: String
+
+  # projection:
+  annotation: AccountAnnotation
+}
+
+type AccountEntitiesType {
+  code: String
+  name: String
+  address: String
+  zipCode: String
+  city: String
+  country: String
+  UID: String
+  registrationNumber: String
+  EORI: String
+  VAT: String
+  email: String
+}
+
+type AccountTheme {
+  colors: [String]
+}
+
+type AccountPartnership {
+  status: String
+  requestor: Boolean
+}
+
+# no field resolvers here:
+type AccountTypeD {
+  id: String
+  name: String
+  type: String
+  key: String
+
+  # own fields
+  description: String
+  logo: String
+  banner: String
+  theme: AccountTheme
+  profile: JSONObject
+  features: [String]
+  entities: [AccountEntitiesType]
+
+  isFavorite: Boolean # resolver
+  # projections
+  annotation: AccountAnnotation # needs to be projected in query!
+  partnership: AccountPartnership # needs to be projected in query!
+  status: String
+  users: [User]
+}
+
+type AccountAnnotationNotes {
+  text: String
+  date: Date
+}
+
+type AccountRating {
+  average: Float
+}
+type AccountAnnotation {
+  profile: JSONObject
+  coding: JSONObject
+  notes: AccountAnnotationNotes
+  ratings: AccountRating
+}
+
+type AccountSettingsItemTypes {
+  type: ITEM_UNIT_TYPE
+  name: String
+  description: String
+  code: String
+  unitType: String
+  taxKeys: JSONObject
+  isPackingUnit: Boolean
+  dimensions: ShipmentItemDimensionType
+}
+
+type AccountSettingsCostCenterType {
+  id: String
+  label: String
+}
+
+type AccountSettings {
+  id: String
+  projectCodes: [ProjectCodeType]
+  projectYears: [Int]
+  itemUnits: [AccountSettingsItemTypes]
+  roles: JSONObject
+  roleNames: [String]
+  tags: [String]
+  costs: [CostType]
+  importTypes: [String]
+  costCenters: [AccountSettingsCostCenterType]
+}
+
+type AccountContactEventsType {
+  event: String
+  timestamp: Date
+}
+
+type AccountContactType {
+  contactType: String
+  type: String
+  firstName: String
+  lastName: String
+  phone: String
+  mail: String
+  linkedId: String
+  token: String
+  userId: String
+  events: [AccountContactEventsType]
+}
+
+type DirectorySearchOptions {
+  services: [String]
+  certificates: [String]
+}
+
+type UserCreatedResponse {
+  userId: String
+  url: String
+}
+
+input AccountContactInput {
+  contactType: String
+  type: String
+  firstName: String
+  lastName: String
+  phone: String
+  mail: String!
+  linkedId: String
+  userId: String
+}
+
+input AccountInviteInput {
+  type: ACCOUNT_TYPE!
+  role: String
+  company: String!
+  sendInvite: Boolean
+  email: String
+  firstName: String
+  lastName: String
+}
+input AccountAnnotateInput {
+  partnerId: String!
+  update: JSONObject
+  root: PARTNER_ANNOTATE_ROOT
+}
+
+input DirectorySearchFilterInput {
+  name: String
+  partners: Boolean
+  favorites: Boolean
+  services: String
+  certificates: String
+  location: String
+  destination: String
+}
+
+input DirectorySearchInput {
+  filter: DirectorySearchFilterInput
+  limit: Int!
+}
+
+input addToFavoritesInput {
+  partnerId: String!
+  add: Boolean!
+}
+
+input AccountSettingsUpdates {
+  roles: [String]
+  charges: [String]
+  projectCodes: [JSONObject]
+  projectYears: [Int]
+  emails: JSONObject # templates
+  itemUnits: [JSONObject]
+  tags: [String]
+  costs: [JSONObject]
+}
+
+input AccountUpdateInput {
+  entities: [JSONObject]
+}
+
+input NewUserUserDataInput {
+  email: String!
+  first: String!
+  last: String!
+}
+
+input NewUserUserOptionsInput {
+  sendMail: Boolean
+}
+
+input NewUserInput {
+  user: NewUserUserDataInput!
+  options: NewUserUserOptionsInput
+}
+
+input UserRoleUpdateInput {
+  userId: String!
+  role: String!
+  remove: Boolean
+}
+
+input UserEntityUpdateInput {
+  userId: String!
+  entity: String!
+  remove: Boolean
+}
+
+input UpdateAccountCostSettingInput {
+  id: String
+  cost: String!
+  group: String!
+}
+
+input CreateUserOptionInput {
+  sendInvite: Boolean
+  invokingAccountId: String
+}
+
+input CreateUserByContactInput {
+  partnerId: String!
+  contact: AccountContactInput!
+  options: CreateUserOptionInput
+}
+
+extend type Query {
+  getAccountSettings: AccountSettings
+  getAccountUsers: AccountTypeD
+  getOwnAccount: AccountTypeD
+  getSettingsItemTypes(includeBaseUOMS: Boolean): [AccountSettingsItemTypes]
+  getPartner(partnerId: String!): AccountTypeD
+  getPartners(
+    types: [ACCOUNT_TYPE]
+    includeOwnAccount: Boolean
+    includeInactive: Boolean
+    excludeAccounts: [String]
+  ): [AccountTypeD]
+  searchDirectory(input: DirectorySearchInput!): [AccountTypeD]
+  getSearchOptionsDirectory: DirectorySearchOptions
+  getProfile(accountId: String!): JSONObject
+  getAccountPlanners: [User]
+}
+
+extend type Mutation {
+  inviteAccount(input: AccountInviteInput!): AccountTypeD
+  createPartnership(partnerId: String!): AccountTypeD
+  updatePartnership(
+    partnerId: String!
+    action: PARTNERSHIP_ACTION!
+  ): AccountTypeD
+  annotatePartner(input: AccountAnnotateInput!): AccountTypeD
+  addToFavorites(input: addToFavoritesInput!): AccountTypeD
+  updateAccountSettings(updates: AccountSettingsUpdates!): AccountSettings
+  updateAccount(updates: AccountUpdateInput!): AccountTypeD
+  removeUserFromAccount(userId: String!): AccountTypeD
+  addUserToAccount(input: NewUserInput!): AccountTypeD
+  updateUserRole(input: UserRoleUpdateInput!): User # updated doc with role
+  updateUserEntities(input: UserEntityUpdateInput!): User # updated doc with entitity
+  removeAccountSettingsCost(id: String!): Boolean
+  upsertAccountSettingsCost(input: UpdateAccountCostSettingInput!): String
+  createUserByContact(input: CreateUserByContactInput!): UserCreatedResponse
+}

@@ -1,0 +1,42 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 14px 0em;
+  font-family: "Open Sans", sans-serif;
+  background: #ffffff;
+  font-weight: normal;
+  border: 0px solid rgba(34, 36, 38, 0.15);
+  box-shadow: none;
+  border-radius: 0.26666667rem;
+  min-height: 1em;
+}
+
+.ui.link.menu .item:hover,
+.ui.menu .dropdown.item:hover,
+.ui.menu .link.item:hover,
+.ui.menu a.item:hover {
+  cursor: pointer;
+  background: none;
+  color: rgba(0, 0, 0, 0.95);
+}
+
+.ui.compact.menu {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.ui.vertical.inverted.menu .menu .item,
+.ui.vertical.inverted.menu .menu .item a:not(.ui) {
+  color: rgba(255, 255, 255, 0.9);
+}

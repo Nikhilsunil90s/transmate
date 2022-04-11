@@ -1,0 +1,179 @@
+type TenderBidControl {
+  priceLists: [String]
+  itemCount: Int
+  offeredCount: Int
+  emptyCount: Int
+  errors: [JSONObject]
+}
+
+type TenderBidTenderRevenue {
+  value: Float
+  currency: String
+}
+
+type TenderBidTenderInfo {
+  stage: String
+  receivedDate: Date
+  dueDate: Date
+  currentRound: Int
+  totalRounds: Int
+  volume: Float
+  volumeUOM: String
+  revenue: TenderBidTenderRevenue
+}
+
+type TenderBidPartnerManagementContact {
+  userId: String
+  role: String
+}
+
+type TenderBidPartnerManagement {
+  segment: String
+  accountNumbers: [String]
+  internalContacts: [TenderBidPartnerManagementContact]
+}
+
+type TenderBidSource {
+  type: String
+  documents: [DocumentType]
+}
+
+type TenderBidPartnerInfo {
+  id: String
+  name: String
+  management: TenderBidPartnerManagement
+  contacts: [AccountContactType]
+}
+
+type TenderBidContactsType {
+  userId: String
+  role: String
+}
+type TenderBidUpdate {
+  action: String
+  data: JSONObject
+  ts: Date
+  userId: String
+}
+
+# type TenderBidOfferItemFile {
+#   ETag: String
+#   Location: String
+#   key: String
+#   Key: String
+#   Bucket: String
+# }
+
+type TenderBidOfferItem {
+  version: Int
+  ts: Date
+  validFrom: Date
+  validTo: Date
+  file: String
+}
+
+type TenderBidOfferInfo {
+  latest: TenderBidOfferItem
+  history: [TenderBidOfferItem]
+}
+
+type TenderBidWorker {
+  isRunning: Boolean
+  action: String
+  current: Int
+  total: Int
+}
+
+type TenderBidSettings {
+  priceListIds: [String]
+  conversions: [UOMConversion]
+}
+
+type TenderBid {
+  id: String
+  name: String
+  number: String
+  status: String
+  accountId: String
+
+  source: TenderBidSource
+  contacts: [TenderBidContactsType]
+
+  tender: TenderBidTenderInfo
+  partner: TenderBidPartnerInfo
+  offer: TenderBidOfferInfo
+  updates: [TenderBidUpdate]
+  created: ByType
+
+  settings: TenderBidSettings
+
+  bidControl: TenderBidControl
+  worker: TenderBidWorker
+
+  # projection:
+  mappings: [TenderBidMapping]
+}
+
+input tenderBidSelectPartnerInput {
+  tenderBidId: String!
+  partnerId: String!
+  name: String
+}
+
+input tenderBidRemoveDocumentInput {
+  tenderBidId: String!
+  documentId: String!
+}
+
+input tenderBidAddDocumentInput {
+  tenderBidId: String!
+  document: JSONObject # meta, store, id
+}
+
+input TenderBidRevenueInput {
+  value: Float
+  unit: String
+}
+
+input updateTenderBidTenderFieldsInput {
+  receivedDate: Date
+  dueDate: Date
+  currentRound: Int
+  totalRounds: Int
+  volume: Float
+  volumeUOM: String
+  revenue: TenderBidRevenueInput
+}
+
+input updateTenderBidSettingsInput {
+  priceListIds: [String]
+}
+
+input updateTenderBidFieldsInput {
+  # which fields can be updated?
+  name: String
+  tender: updateTenderBidTenderFieldsInput
+
+  # also used for settings:
+  settings: updateTenderBidSettingsInput
+}
+
+input updateTenderBidInput {
+  tenderBidId: String!
+  updates: updateTenderBidFieldsInput!
+}
+
+extend type Query {
+  getTenderBidOverview(viewKey: String!): [TenderBid]
+  getTenderBid(tenderBidId: String!): TenderBid
+}
+
+extend type Mutation {
+  createTenderBid: TenderBid
+  updateTenderBid(input: updateTenderBidInput!): TenderBid
+  tenderBidSelectPartner(input: tenderBidSelectPartnerInput!): TenderBid
+  tenderBidGenerateOfferSheet(tenderBidId: String!): TenderBid # "tenderify.generateOffer"
+  tenderBidRemoveDocument(input: tenderBidRemoveDocumentInput!): TenderBid
+  tenderBidAddDocument(input: tenderBidAddDocumentInput!): TenderBid
+  tenderBidAutoSelectPricelists(tenderBidId: String!): TenderBid # selected list of pricelists
+}

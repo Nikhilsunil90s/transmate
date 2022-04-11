@@ -1,0 +1,31 @@
+type Workflow {
+  id: String
+  name: String
+  status: String
+  created: ByType
+}
+
+input getWorkflowsInput {
+  query: JSONObject
+}
+
+input createWorkFlowReferencesInput {
+  type: String
+  id: String
+}
+
+input createWorkFlowInput {
+  references: createWorkFlowReferencesInput
+  workflow: JSONObject
+  data: JSONObject
+  accountId: String # sometimes the workflow is started for a different account!
+}
+
+extend type Query {
+  getWorkflows(input: getWorkflowsInput): [Workflow]
+}
+
+extend type Mutation {
+  deleteWorkflow(workflowId: String!): Boolean
+  createWorkFlow(input: createWorkFlowInput!): Boolean
+}

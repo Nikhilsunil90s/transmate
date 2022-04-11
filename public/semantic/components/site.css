@@ -1,0 +1,248 @@
+/*!
+ * # Fomantic-UI - Site
+ * http://github.com/fomantic/Fomantic-UI/
+ *
+ *
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+             Page
+*******************************/
+
+@import url('https://fonts.googleapis.com/css?family=Open Sans:300,400,600,700&subset=latin&display=swap');
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 15px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-width: 320px;
+  background: #F2F4F8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.71428571em;
+  color: #3C4144;
+}
+
+
+/*******************************
+             Headers
+*******************************/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.28571429em;
+  margin: calc(2rem - 0.1428571428571429em) 0 1rem;
+  font-weight: 300;
+  padding: 0;
+}
+h1 {
+  min-height: 1rem;
+  font-size: 20px;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 1.28571429rem;
+}
+h4 {
+  font-size: 1.07142857rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child {
+  margin-top: 0;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child {
+  margin-bottom: 0;
+}
+
+
+/*******************************
+             Text
+*******************************/
+
+p {
+  margin: 0 0 1em;
+  line-height: 1.71428571em;
+}
+p:first-child {
+  margin-top: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+/*-------------------
+        Links
+--------------------*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+a:hover {
+  color: #1e70bf;
+  text-decoration: none;
+}
+
+
+/*******************************
+         Scrollbars
+*******************************/
+
+
+
+/*******************************
+          Highlighting
+*******************************/
+
+
+/* Site */
+::-webkit-selection {
+  background-color: #CCE2FF;
+  color: #3C4144;
+}
+::-moz-selection {
+  background-color: #CCE2FF;
+  color: #3C4144;
+}
+::selection {
+  background-color: #CCE2FF;
+  color: #3C4144;
+}
+
+/* Form */
+textarea::-webkit-selection,
+input::-webkit-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: #3C4144;
+}
+textarea::-moz-selection,
+input::-moz-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: #3C4144;
+}
+textarea::-moz-selection, input::-moz-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: #3C4144;
+}
+textarea::selection,
+input::selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: #3C4144;
+}
+
+/* Force Simple Scrollbars */
+body ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+}
+body ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+}
+body ::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+body ::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.15);
+}
+body ::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 135, 139, 0.8);
+}
+
+/* Inverted UI */
+body .ui.inverted:not(.dimmer)::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+}
+body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.15);
+}
+body .ui.inverted:not(.dimmer)::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+
+/*******************************
+        Global Overrides
+*******************************/
+
+
+
+/*******************************
+         Site Overrides
+*******************************/
+
+.text.white {
+  color: #FFFFFF;
+}
+.text.grey {
+  color: #767676;
+}
+.text.black {
+  color: #1B1C1D;
+}
+.text.yellow {
+  color: #FBBD08;
+}
+.text.teal {
+  color: #0CC2AA;
+}
+.text.red {
+  color: #DB2828;
+}
+.text.purple {
+  color: #483074;
+}
+.text.pink {
+  color: #E03997;
+}
+.text.orange {
+  color: #F2711C;
+}
+.text.green {
+  color: #94BA2E;
+}
+.text.blue {
+  color: #3FA2F7;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}

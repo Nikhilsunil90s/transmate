@@ -1,0 +1,7 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@itemLineHeight: @lineHeight;
+
+@relaxedItemVerticalPadding: .8em;
+@veryRelaxedItemVerticalPadding: 1.2em;

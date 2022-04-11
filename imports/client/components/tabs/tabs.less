@@ -1,0 +1,37 @@
+@import "{}/imports/client/styles/colors.import.less";
+@import "{}/imports/client/styles/sizes.import.less";
+
+.app main {
+  .ui.secondary.pointing.menu.tabs {
+    margin-bottom: 0;
+    padding-left: (@baseSize / 2);
+
+    > .header.item,
+    .item:first-child {
+      padding-left: 0;
+      margin-left: 0;
+    }
+
+    .item {
+      margin-left: 1.7em;
+      margin-right: 1.7em;
+      padding-left: 0.05em;
+      padding-right: 0.05em;
+      height: @tabsHeight;
+      font-size: 13px;
+      letter-spacing: 0;
+      color: fade(@textColor, 60%);
+      transition: color 0.3s;
+
+      &:hover {
+        color: fade(@textColor, 80%);
+      }
+
+      &.active {
+        color: @darkBlueColor;
+        border-color: transparent;
+        // font-weight: normal;
+      }
+    }
+  }
+}

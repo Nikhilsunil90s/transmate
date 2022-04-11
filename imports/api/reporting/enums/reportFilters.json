@@ -1,0 +1,78 @@
+{
+  "shipment_latest_unique_with_total_costs_and_bids_archive": {
+    "dateCreated": {
+      "label": "created date",
+      "type": "date",
+      "operators": ["greater", "less", "between"]
+    },
+    "date_pickup": {
+      "label": "pickup date",
+      "type": "date",
+      "operators": ["greater", "less", "between"]
+    },
+    "date_delivery": {
+      "label": "delivery date",
+      "type": "date",
+      "operators": ["greater", "less", "between"]
+    },
+    "hasPriceRequest": {
+      "label": "has price request?",
+      "type": "boolean",
+      "operators": ["equal"]
+    },
+    "shipFromCountryCode": {
+      "label": "shipFromCountryCode",
+      "type": "text"
+    },
+    "shipToCountryCode": {
+      "label": "shipToCountryCode",
+      "type": "text"
+    },
+    "status": {
+      "type": "text",
+      "operators": [ "equal", "not_equal"]
+    }
+  },
+
+  "price_requests_bids_and_shipments": {
+    "date_pickup": {
+      "label": "pickup date",
+      "type": "date",
+      "operators": ["greater", "less", "between"]
+    },
+    "date_delivery": {
+      "label": "delivery date",
+      "type": "date",
+      "operators": ["greater", "less", "between"]
+    },
+    "totalCost": {
+      "label": "total cost",
+      "type": "number",
+
+      "fieldSettings": {
+        "min": 1,
+        "max": 10000
+      },
+      "preferWidgets": ["slider", "rangeslider"]
+    }
+  },
+  "price_requests_latest_unique_flat":{
+    "dueDate": {
+      "label": "pickup date",
+      "type": "date",
+      "operators": ["greater", "less", "between"]
+    },
+    "fromCC": {
+      "label": "shipFromCountryCode",
+      "type": "text"
+    },
+    "toCC": {
+      "label": "shipToCountryCode",
+      "type": "text"
+    },
+    "requestedByEmail":	{
+      "label": "requested by (email)",
+      "type": "text"
+    }
+  }
+}

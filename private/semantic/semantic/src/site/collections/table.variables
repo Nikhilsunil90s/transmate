@@ -1,0 +1,25 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@borderRadius: 3px;
+@borderWidth: 1px;
+@borderColor: @pageBackground;
+@rowBorder: 1px solid @pageBackground;
+
+@headerBackground: tint( @pageBackground, 50% );
+@headerBorder: 1px solid @pageBackground;
+@headerColor: tint( @textColor, 25% );
+@headerFontWeight: normal;
+
+@selectableBackground: tint( @pageBackground, 35% );
+
+@medium: 13px;
+@HoTinputLineHeight: 43px;
+
+// HoT
+@HoTHighlightcolor: #f5f6f9;
+
+// rate grid
+@gridHeaderBGColor: #f9fafc;
+
+

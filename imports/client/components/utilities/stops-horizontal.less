@@ -1,0 +1,17 @@
+.stops.horizontal .item {
+  text-align: center;
+  position: relative;
+  width: 90px;
+  vertical-align: top;
+}
+
+.stops.horizontal .item:not(:last-child):after {
+  position: absolute;
+  content: "";
+  right: -30%;
+  top: 0%;
+  width: 50%;
+  height: 16px !important;
+  border-bottom: 1px solid tint(black, 85%) !important;
+  visibility: visible !important;
+}

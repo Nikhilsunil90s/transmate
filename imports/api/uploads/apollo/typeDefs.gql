@@ -1,0 +1,31 @@
+extend type Query {
+  getSignedUploadUrl(
+    directive: String
+    file: UploadFileMetaInput
+    meta: UploadMetaInput
+  ): UploadSignedData
+}
+
+type UploadSignedData {
+  key: String
+  bucket: String
+  region: String
+  signedUrl: String!
+  downloadUrl: String
+}
+
+input UploadFileMetaInput {
+  size: Int
+  name: String
+  type: String
+}
+
+input UploadMetaInput {
+  accountId: String
+  userId: String
+  invoiceId: String
+  id: String
+  shipmentId: String
+  tenderId: String
+  tenderBidId: String
+}

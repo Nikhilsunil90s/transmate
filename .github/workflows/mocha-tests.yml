@@ -1,0 +1,61 @@
+name: Meteor mocha testing
+
+on:
+  workflow_dispatch:
+  workflow_run:
+      workflows: ["Pure JS mocha tests"]
+      branches: [develop, master]
+      types: 
+        - completed
+
+
+jobs:
+
+  mocha:
+    runs-on: ubuntu-latest
+    env:
+      DOPPLER_TOKEN : ${{secrets.DOPPLER_TOKEN_METEOR_DEV}}
+      DOPPLER_TOKEN_METEOR_DEV: ${{ secrets.DOPPLER_TOKEN_METEOR_DEV}}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{secrets.DEPLOY_TOKEN_GIT}}
+          submodules: recursive
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: npm
+      - name: Start Redis
+        uses: supercharge/redis-github-action@1.4.0
+        with:
+          redis-version: 5
+      - name: set npm key for reading npm packages from github
+        run: echo "//npm.pkg.github.com/:_authToken=\"${{ secrets.DEPLOY_TOKEN_GIT }}\"" >> ~/.npmrc
+
+
+      - name: install meteor
+        # only install meteor if bin isn't found
+        run: -v meteor >/dev/null 2>&1 || curl https://install.meteor.com | /bin/sh
+      - name: check Meteor versions
+        run: |
+          echo "Meteor version:"
+          # this forces Meteor to download whatever release your project is using
+          meteor --version
+          which meteor
+          echo "Meteor node version:"
+          meteor node -v
+          echo "Meteor npm version:"
+          meteor npm -v
+
+        # this will only install root packages not submodules (is missing bq ie)
+      - name: install npm packages
+        run: meteor npm ci
+
+      - name: set env for test meteor
+        run: |
+          export TOOL_NODE_FLAGS="--max-old-space-size=6072"
+          export NODE_OPTIONS="--max_old_space_size=6072"
+      - name: test_circleci
+        run: npm run test_circleci
+

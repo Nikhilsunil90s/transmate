@@ -1,0 +1,24 @@
+type DashboardLocationdata {
+  name: String
+  location: LatLngType
+}
+
+type ShipmentCountType {
+  planned: Int
+  completed: Int
+  started: Int
+  draft: Int
+}
+
+type DashboardData {
+  addressLocations: [DashboardLocationdata]
+  priceListCount: Int
+  priceRequestCount: Int
+  invoiceCount: Int
+  shipmentCount: ShipmentCountType
+  tenderCount: Int
+}
+
+extend type Query {
+  getDashboardData: DashboardData
+}

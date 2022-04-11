@@ -1,0 +1,57 @@
+type SettingsTenderifyMappingInputType {
+  type: String #list
+  source: String # countryCodes, currency
+}
+
+type SettingsTenderifyMappingKeys {
+  k: String
+  parent: String
+  group: String
+  type: String
+  label: String
+  description: String
+  sequence: Int
+  mappingFunction: String
+  input: SettingsTenderifyMappingInputType
+}
+
+type WorkflowTypeInput {
+  id: String
+  label: String
+  type: String
+}
+
+type mappingListOptions {
+  services: [String]
+  equipments: [String]
+  multipliers: [String]
+}
+
+type WorkflowType {
+  id: String
+  status: String
+  created: ByType
+
+  # to remove (moved to settings)
+  label: String
+  inputs: [WorkflowTypeInput]
+}
+
+type Settings {
+  id: String
+
+  # tenderify:
+  mappingKeys: [SettingsTenderifyMappingKeys]
+  mapBlocks: [String]
+  mappingParents: [String]
+  mappingStoreOptions: [String]
+  mappingStoreOptionsDefault: String
+  mappingListOptions: mappingListOptions
+
+  # workflows:
+  workflowTypes: [WorkflowType]
+}
+
+extend type Query {
+  getSettings(key: String!): Settings
+}

@@ -1,0 +1,24 @@
+@import "{}/imports/client/styles/colors.import.less";
+@import "{}/imports/client/styles/sizes.import.less";
+@import "{}/imports/client/styles/footer.import.less";
+
+.DataImport {
+  .main-fixed-footer;
+
+  .dataTable td:not([colspan]) {
+    position: relative;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .dataTable td a.error {
+    display: inline-block;
+    max-width: 35vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: @errorColor;
+    text-transform: lowercase;
+    border-bottom: 1px solid;
+  }
+}

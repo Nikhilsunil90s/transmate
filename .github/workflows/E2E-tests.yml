@@ -1,0 +1,94 @@
+name: E2E testing
+
+on:
+  pull_request:
+    branches:
+      - master
+      - develop
+      - release
+  #   branches-ignore:
+  #     - "**"
+  # push:
+  #   branches:
+  #     - master
+  #   paths-ignore:
+  #     - "**.md"
+
+jobs:
+  cypress:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{secrets.DEPLOY_TOKEN_GIT}}
+          submodules: recursive
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: npm
+      - name: set npm key for reading npm packages from github
+        run: echo "//npm.pkg.github.com/:_authToken=\"${{ secrets.DEPLOY_TOKEN_GIT }}\"" >> ~/.npmrc
+
+      - name: install meteor
+        # only install meteor if bin isn't found
+        run: -v meteor >/dev/null 2>&1 || curl https://install.meteor.com | /bin/sh
+      - name: check Meteor versions
+        run: |
+          echo "Meteor version:"
+          # this forces Meteor to download whatever release your project is using
+          meteor --version
+          which meteor
+          echo "Meteor node version:"
+          meteor node -v
+          echo "Meteor npm version:"
+          meteor npm -v
+
+        # this will only install root packages not submodules (is missing bq ie)
+      - name: install npm packages
+        run: meteor npm i
+      - name: generate settings file
+        run: echo $settings > settings.json
+        env:
+          settings: ${{ secrets.METEOR_SETTINGS }}
+      - name: set env for test meteor
+        run: |
+          export TOOL_NODE_FLAGS="--max-old-space-size=6072"
+          export NODE_OPTIONS="--max_old_space_size=6072"
+
+      # doesn;t work ???
+      # # confirm there is no Cypress installed
+      # - run: npx cypress cache path
+      # # should return empty list of installed versions
+      # - run: npx cypress cache list
+
+
+      # - name: install other npm packages
+      #   run: npm install start-server-and-test cypress-file-upload
+      # # now let's install Cypress binary
+      # - run: npx cypress install
+      # - run: npx cypress cache list
+      # and run Cypress tests
+
+      # then we do it directly;
+      - name: install additional npm packages
+        run: npm install cypress start-server-and-test cypress-file-upload @cypress/webpack-preprocessor  @cypress/code-coverage
+
+      - name: cypress run
+        run: export RESET_DATABASE=TRUE && npm run test:e2e:CI
+      - name: Archive test screenshots
+        uses: actions/upload-artifact@v1
+        with:
+          name: screenshots
+          path: .testing/cypress/screenshots
+        if: ${{ failure() }}
+  # cleanup:
+  #   runs-on: ubuntu-latest
+  #   needs: cypress
+  #   steps:
+  #     - name: remove artifacts
+  #       uses: geekyeggo/delete-artifact@v1.3.0
+  #       with:
+  #         name: git
+  #         failOnError: false

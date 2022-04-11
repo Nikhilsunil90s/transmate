@@ -1,0 +1,9 @@
+{
+  "extends": "@istanbuljs/nyc-config-babel",
+  "report-dir": "./.coverage",
+  "temp-dir": "./.testing/nyc-output",
+  "include": ["./imports/**"],
+  "exclude": ["./imports/api/_jsonSchemas/**/*.*", "./global/**", "**/*.json"],
+  "reporter": ["html", "text"],
+  "all": true
+}

@@ -1,0 +1,6 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.category.search > .results .category > .name {
+  line-height: @resultLineHeight;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "worker-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "14",
+    "npm": "7"
+  },
+  "dependencies": {
+    "@bull-board/api": "^3.9.0",
+    "@bull-board/express": "^3.9.0",
+    "@transmate-eu/ibm-function-basis": "^2.3.20",
+    "bull": "^3.20.0",
+    "debug": "^4.3.1",
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.0",
+    "ioredis": "^4.28.2"
+  },
+  "scripts": {
+    "test": "node test",
+    "start": "export REDIS_URL='redis://localhost:6379' && node index.js"
+  }
+}

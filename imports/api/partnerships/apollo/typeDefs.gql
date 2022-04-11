@@ -1,0 +1,8 @@
+input getPartnersViewInput {
+  viewKey: String
+  filters: JSONObject
+}
+
+extend type Query {
+  getPartnersView(input: getPartnersViewInput!): [AccountTypeD]
+}

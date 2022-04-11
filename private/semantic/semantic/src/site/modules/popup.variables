@@ -1,0 +1,8 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@tooltipDuration: .15s .7s;
+@headerFontSize: @small;
+@popupDistanceAway: 15px;
+@borderWidth: 0;

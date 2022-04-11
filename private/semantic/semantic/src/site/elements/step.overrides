@@ -1,0 +1,24 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+@basePadding: 30px;
+@baseSize: 60px;
+
+main .ui.steps,
+main .ui.steps:first-child {
+	margin: @basePadding 0;
+}
+
+.ui.steps {
+	.step {
+		height: @baseSize;
+
+		> .icon {
+			color: @iconColor;
+		}
+	}
+	.step:first-child {
+		padding-left: 1.8em;
+	}
+}

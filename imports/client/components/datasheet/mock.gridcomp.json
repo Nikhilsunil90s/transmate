@@ -1,0 +1,1308 @@
+{
+    "gridrows": [
+        [
+            {
+                "label": "Multiplier"
+            },
+            {
+                "keys": {
+                    "laneId": "yEuMxg"
+                },
+                "label": "Granada",
+                "fieldName": "Lanes",
+                "field": "laneId",
+                "key": "yEuMxg"
+            },
+            {
+                "keys": {
+                    "laneId": "DHMZJE"
+                },
+                "label": "Huelva",
+                "fieldName": "Lanes",
+                "field": "laneId",
+                "key": "DHMZJE"
+            },
+            {
+                "keys": {
+                    "laneId": "77jrgq"
+                },
+                "label": "Lleida",
+                "fieldName": "Lanes",
+                "field": "laneId",
+                "key": "77jrgq"
+            },
+            {
+                "keys": {
+                    "laneId": "2XdwHd"
+                },
+                "label": "Madrid",
+                "fieldName": "Lanes",
+                "field": "laneId",
+                "key": "2XdwHd"
+            }
+        ]
+    ],
+    "gridcols": [
+        [
+            {
+                "keys": {
+                    "volumeGroupId": "aTmCfn",
+                    "volumeRangeId": "k7REAw"
+                },
+                "label": "1 - 5",
+                "fieldName": "Ranges",
+                "field": "volumeRangeId",
+                "key": "k7REAw"
+            },
+            {
+                "keys": {
+                    "volumeGroupId": "aTmCfn",
+                    "volumeRangeId": "wDr2mw"
+                },
+                "label": "5 - 10",
+                "fieldName": "Ranges",
+                "field": "volumeRangeId",
+                "key": "wDr2mw"
+            },
+            {
+                "keys": {
+                    "volumeGroupId": "aTmCfn",
+                    "volumeRangeId": "Ant3aM"
+                },
+                "label": "11 - 15",
+                "fieldName": "Ranges",
+                "field": "volumeRangeId",
+                "key": "Ant3aM"
+            },
+            {
+                "keys": {
+                    "volumeGroupId": "aTmCfn",
+                    "volumeRangeId": "a4AL5w"
+                },
+                "label": "16 - 20",
+                "fieldName": "Ranges",
+                "field": "volumeRangeId",
+                "key": "a4AL5w"
+            },
+            {
+                "keys": {
+                    "volumeGroupId": "aTmCfn",
+                    "volumeRangeId": "EBeXEH"
+                },
+                "label": "20 - 25",
+                "fieldName": "Ranges",
+                "field": "volumeRangeId",
+                "key": "EBeXEH"
+            },
+            {
+                "keys": {
+                    "volumeGroupId": "aTmCfn",
+                    "volumeRangeId": "4oRMGL"
+                },
+                "label": "25 - 99",
+                "fieldName": "Ranges",
+                "field": "volumeRangeId",
+                "key": "4oRMGL"
+            }
+        ],
+        [
+            {
+                "field": "multiplier",
+                "fieldName": "Multiplier",
+                "fieldType": "attr",
+                "defaultValue": "shipment",
+                "type": "dropdown",
+                "value": "pal",
+                "isHeader": true,
+                "isColHeader": true,
+                "isRowHeader": false
+            },
+            {
+                "field": "multiplier",
+                "fieldName": "Multiplier",
+                "fieldType": "attr",
+                "defaultValue": "shipment",
+                "type": "dropdown",
+                "value": "pal",
+                "isHeader": true,
+                "isColHeader": true,
+                "isRowHeader": false
+            },
+            {
+                "field": "multiplier",
+                "fieldName": "Multiplier",
+                "fieldType": "attr",
+                "defaultValue": "shipment",
+                "type": "dropdown",
+                "value": "pal",
+                "isHeader": true,
+                "isColHeader": true,
+                "isRowHeader": false
+            },
+            {
+                "field": "multiplier",
+                "fieldName": "Multiplier",
+                "fieldType": "attr",
+                "defaultValue": "shipment",
+                "type": "dropdown",
+                "value": "pal",
+                "isHeader": true,
+                "isColHeader": true,
+                "isRowHeader": false
+            },
+            {
+                "field": "multiplier",
+                "fieldName": "Multiplier",
+                "fieldType": "attr",
+                "defaultValue": "shipment",
+                "type": "dropdown",
+                "value": "pal",
+                "isHeader": true,
+                "isColHeader": true,
+                "isRowHeader": false
+            },
+            {
+                "field": "multiplier",
+                "fieldName": "Multiplier",
+                "fieldType": "attr",
+                "defaultValue": "shipment",
+                "type": "dropdown",
+                "value": "pal",
+                "isHeader": true,
+                "isColHeader": true,
+                "isRowHeader": false
+            }
+        ]
+    ],
+    "data": [
+        [
+            "pal",
+            "pal",
+            "pal",
+            "pal",
+            "pal",
+            "pal"
+        ],
+        [
+            110,
+            107,
+            104,
+            101,
+            98,
+            96
+        ],
+        [
+            105,
+            102,
+            99,
+            97,
+            95,
+            93
+        ],
+        [
+            120,
+            117,
+            114,
+            111,
+            108,
+            105
+        ],
+        [
+            115,
+            112,
+            109,
+            106,
+            103,
+            100
+        ]
+    ],
+    "templInfo": {
+        "rows": [
+            {
+                "field": "laneId"
+            }
+        ],
+        "cols": [
+            {
+                "field": "volumeRangeId"
+            },
+            {
+                "field": "multipliers"
+            }
+        ],
+        "page": [
+            {
+                "field": "volumeGroupId"
+            }
+        ],
+        "tabs": [
+            "rates",
+            "ratesAdditional",
+            "volumes",
+            "leadTimes",
+            "fuel",
+            "notes",
+            "logic",
+            "conversions"
+        ]
+    },
+    "security": {
+        "canEdit": true,
+        "canEditRateInGrid": true,
+        "canEditCurrencyInGrid": true,
+        "canEditMultiplierInGrid": true,
+        "canEditLaneInGrid": true,
+        "canEditEquipmentInGrid": true,
+        "canEditVolumesInGrid": true,
+        "canEditCharge": true,
+        "canModifyGridStructure": true,
+        "canAddGridComments": true,
+        "canFillOut": true
+    },
+    "doc": {
+        "_id": "n8pYLq3LEzZDHqYS4",
+        "title": "Belgium - Spain - Standard",
+        "template": {
+            "type": "road"
+        },
+        "customerId": "S65957",
+        "carrierId": "C69205",
+        "mode": "road",
+        "category": "standard",
+        "type": "contract",
+        "currency": "EUR",
+        "validFrom": "2018-09-03T00:00:00.000Z",
+        "validTo": "2019-09-04T00:00:00.000Z",
+        "terms": {
+            "days": 30,
+            "condition": "days"
+        },
+        "specialRequirements": [],
+        "uoms": {
+            "allowed": [
+                "pal"
+            ]
+        },
+        "status": "draft",
+        "created": {
+            "by": "jsBor6o3uRBTFoRQY",
+            "at": "2018-09-04T19:51:21.092Z"
+        },
+        "creatorId": "S65957",
+        "defaultLeadTime": {
+            "leadTimeHours": 24,
+            "days": [
+                true,
+                true,
+                true,
+                true,
+                true,
+                false,
+                false
+            ],
+            "frequency": "weekly"
+        },
+        "volumes": [
+            {
+                "uom": "pal",
+                "serviceLevel": "LTL",
+                "ranges": [
+                    {
+                        "from": 1,
+                        "to": 5,
+                        "id": "k7REAw"
+                    },
+                    {
+                        "from": 5,
+                        "to": 10,
+                        "id": "wDr2mw"
+                    },
+                    {
+                        "from": 11,
+                        "to": 15,
+                        "id": "Ant3aM"
+                    },
+                    {
+                        "from": 16,
+                        "to": 20,
+                        "id": "a4AL5w"
+                    },
+                    {
+                        "from": 20,
+                        "to": 25,
+                        "id": "EBeXEH"
+                    },
+                    {
+                        "from": 25,
+                        "to": 99,
+                        "id": "4oRMGL"
+                    }
+                ],
+                "id": "aTmCfn"
+            }
+        ],
+        "lanes": [
+            {
+                "name": "Granada",
+                "from": {
+                    "addressIds": [
+                        "j958tYA872PAogTDq"
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "18000",
+                            "to": "18999"
+                        }
+                    ]
+                },
+                "incoterm": "FCA",
+                "id": "yEuMxg"
+            },
+            {
+                "name": "Huelva",
+                "from": {
+                    "addressIds": [
+                        "j958tYA872PAogTDq"
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "21000",
+                            "to": "21999"
+                        }
+                    ]
+                },
+                "incoterm": "FCA",
+                "id": "DHMZJE"
+            },
+            {
+                "name": "Lleida",
+                "from": {
+                    "addressIds": [
+                        "j958tYA872PAogTDq"
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "25000",
+                            "to": "25999"
+                        }
+                    ]
+                },
+                "incoterm": "FCA",
+                "id": "77jrgq"
+            },
+            {
+                "name": "Madrid",
+                "from": {
+                    "addressIds": [
+                        "j958tYA872PAogTDq"
+                    ]
+                },
+                "to": {
+                    "zones": [
+                        {
+                            "CC": "ES",
+                            "from": "28000",
+                            "to": "28999"
+                        }
+                    ]
+                },
+                "incoterm": "FCA",
+                "id": "2XdwHd"
+            }
+        ],
+        "fuelIndexId": "9Wwis9MDy2hhXi2tb",
+        "carrierName": "Joep Transport"
+    },
+    "priceListId": "n8pYLq3LEzZDHqYS4",
+    "pageFilters": [
+        {
+            "keys": {
+                "volumeGroupId": "aTmCfn"
+            },
+            "label": "LTL [pal]",
+            "fieldName": "Volume Groups",
+            "field": "volumeGroupId",
+            "key": "aTmCfn",
+            "options": [
+                {
+                    "key": "aTmCfn",
+                    "label": "LTL [pal]"
+                }
+            ],
+            "value": "aTmCfn"
+        }
+    ],
+    "params": {
+        "volumeGroupId": "aTmCfn"
+    },
+    "empty": false,
+    "gridcolsKeys": [
+        {
+            "volumeGroupId": "aTmCfn",
+            "volumeRangeId": "k7REAw"
+        },
+        {
+            "volumeGroupId": "aTmCfn",
+            "volumeRangeId": "wDr2mw"
+        },
+        {
+            "volumeGroupId": "aTmCfn",
+            "volumeRangeId": "Ant3aM"
+        },
+        {
+            "volumeGroupId": "aTmCfn",
+            "volumeRangeId": "a4AL5w"
+        },
+        {
+            "volumeGroupId": "aTmCfn",
+            "volumeRangeId": "EBeXEH"
+        },
+        {
+            "volumeGroupId": "aTmCfn",
+            "volumeRangeId": "4oRMGL"
+        }
+    ],
+    "gridrowsKeys": [
+        {
+            "label": "Multiplier"
+        },
+        {
+            "laneId": "yEuMxg"
+        },
+        {
+            "laneId": "DHMZJE"
+        },
+        {
+            "laneId": "77jrgq"
+        },
+        {
+            "laneId": "2XdwHd"
+        }
+    ],
+    "base": [
+        [
+            {
+                "field": "multiplier",
+                "fieldName": "Multiplier",
+                "fieldType": "attr",
+                "defaultValue": "shipment",
+                "type": "dropdown",
+                "value": "pal",
+                "isHeader": true,
+                "isColHeader": true,
+                "isRowHeader": false
+            },
+            {
+                "field": "multiplier",
+                "fieldName": "Multiplier",
+                "fieldType": "attr",
+                "defaultValue": "shipment",
+                "type": "dropdown",
+                "value": "pal",
+                "isHeader": true,
+                "isColHeader": true,
+                "isRowHeader": false
+            },
+            {
+                "field": "multiplier",
+                "fieldName": "Multiplier",
+                "fieldType": "attr",
+                "defaultValue": "shipment",
+                "type": "dropdown",
+                "value": "pal",
+                "isHeader": true,
+                "isColHeader": true,
+                "isRowHeader": false
+            },
+            {
+                "field": "multiplier",
+                "fieldName": "Multiplier",
+                "fieldType": "attr",
+                "defaultValue": "shipment",
+                "type": "dropdown",
+                "value": "pal",
+                "isHeader": true,
+                "isColHeader": true,
+                "isRowHeader": false
+            },
+            {
+                "field": "multiplier",
+                "fieldName": "Multiplier",
+                "fieldType": "attr",
+                "defaultValue": "shipment",
+                "type": "dropdown",
+                "value": "pal",
+                "isHeader": true,
+                "isColHeader": true,
+                "isRowHeader": false
+            },
+            {
+                "field": "multiplier",
+                "fieldName": "Multiplier",
+                "fieldType": "attr",
+                "defaultValue": "shipment",
+                "type": "dropdown",
+                "value": "pal",
+                "isHeader": true,
+                "isColHeader": true,
+                "isRowHeader": false
+            }
+        ],
+        [
+            {
+                "_id": "dXShrTrSgjDNrYQF5",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 110,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "yEuMxg"
+                    },
+                    {
+                        "volumeRangeId": "k7REAw"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "LiZPnJ5kokhtH7bKG",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 107,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "yEuMxg"
+                    },
+                    {
+                        "volumeRangeId": "wDr2mw"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "ywDLM6aSGo3TdXCvT",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 104,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "yEuMxg"
+                    },
+                    {
+                        "volumeRangeId": "Ant3aM"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "CWabxxksv5haKriMY",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 101,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "yEuMxg"
+                    },
+                    {
+                        "volumeRangeId": "a4AL5w"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "laneId": "yEuMxg",
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "CAzRSjsm93fxesQPd",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 98,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "yEuMxg"
+                    },
+                    {
+                        "volumeRangeId": "EBeXEH"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "laneId": "yEuMxg",
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "DEfS4i27iLDdXMvcj",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 96,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "yEuMxg"
+                    },
+                    {
+                        "volumeRangeId": "4oRMGL"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "laneId": "yEuMxg",
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            }
+        ],
+        [
+            {
+                "_id": "48gnie4ujxcxz2AJE",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 105,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "DHMZJE"
+                    },
+                    {
+                        "volumeRangeId": "k7REAw"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "laneId": "DHMZJE",
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "KhcJCspGtobwSuZZy",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 102,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "DHMZJE"
+                    },
+                    {
+                        "volumeRangeId": "wDr2mw"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "wN8Ghm9XD7Tb9FovE",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 99,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "DHMZJE"
+                    },
+                    {
+                        "volumeRangeId": "Ant3aM"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "jTupbintMpwRr7crE",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 97,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "DHMZJE"
+                    },
+                    {
+                        "volumeRangeId": "a4AL5w"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "boPYncyzfdtet4NpR",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 95,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "DHMZJE"
+                    },
+                    {
+                        "volumeRangeId": "EBeXEH"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "DQKoagFaoLZbqCZJA",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 93,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "DHMZJE"
+                    },
+                    {
+                        "volumeRangeId": "4oRMGL"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "laneId": "DHMZJE",
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            }
+        ],
+        [
+            {
+                "_id": "HnjfznpkRqHkzcsHE",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 120,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "77jrgq"
+                    },
+                    {
+                        "volumeRangeId": "k7REAw"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "t6rTcfg9EFAeHoJux",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 117,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "77jrgq"
+                    },
+                    {
+                        "volumeRangeId": "wDr2mw"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "QoDQv8E98x7axfn7f",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 114,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "77jrgq"
+                    },
+                    {
+                        "volumeRangeId": "Ant3aM"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "9nRevS3DN5T7AKzip",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 111,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "77jrgq"
+                    },
+                    {
+                        "volumeRangeId": "a4AL5w"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "laneId": "77jrgq",
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "9LQScFD3zQ6NDrjPy",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 108,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "77jrgq"
+                    },
+                    {
+                        "volumeRangeId": "EBeXEH"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "laneId": "77jrgq",
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "Xx9PFXoeiffhi26zy",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 105,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "77jrgq"
+                    },
+                    {
+                        "volumeRangeId": "4oRMGL"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            }
+        ],
+        [
+            {
+                "_id": "f2P9iEAiWM8JrcT9f",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 115,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "2XdwHd"
+                    },
+                    {
+                        "volumeRangeId": "k7REAw"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "QayED6kW6Zhh6cvLv",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 112,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "2XdwHd"
+                    },
+                    {
+                        "volumeRangeId": "wDr2mw"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "asY7tNL4oaTwDGNdq",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 109,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "2XdwHd"
+                    },
+                    {
+                        "volumeRangeId": "Ant3aM"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "MGYAzYhmpCZZmeH6E",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 106,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "2XdwHd"
+                    },
+                    {
+                        "volumeRangeId": "a4AL5w"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "HedKq7nv6qZfukCic",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 103,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "2XdwHd"
+                    },
+                    {
+                        "volumeRangeId": "EBeXEH"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            },
+            {
+                "_id": "Kx7coL2e8PsoTtSG8",
+                "priceListId": "n8pYLq3LEzZDHqYS4",
+                "type": "calculated",
+                "costId": "o6fLThAWhaWW3uDaj",
+                "multiplier": "pal",
+                "amount": {
+                    "value": 100,
+                    "unit": "EUR"
+                },
+                "meta": {
+                    "source": "table"
+                },
+                "rules": [
+                    {
+                        "laneId": "2XdwHd"
+                    },
+                    {
+                        "volumeRangeId": "4oRMGL"
+                    },
+                    {
+                        "volumeGroupId": "aTmCfn"
+                    }
+                ],
+                "updated": {
+                    "price_lists_rates": "synced"
+                },
+                "fieldType": "rate"
+            }
+        ]
+    ],
+    "unmatched": [
+        {
+            "_id": "DJZPhMzmLngg49jXS",
+            "priceListId": "n8pYLq3LEzZDHqYS4",
+            "name": "success fee",
+            "type": "calculated",
+            "costId": "d2FNtiSkP23MaLwiq",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 10,
+                "unit": "%"
+            },
+            "rules": [],
+            "laneId": null,
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "_id": "2BMeyzTRHYsAKDHLM",
+            "priceListId": "n8pYLq3LEzZDHqYS4",
+            "name": "Booking Cost",
+            "type": "calculated",
+            "costId": "5kfrk35RJYc4Gja36",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 5,
+                "unit": "EUR"
+            },
+            "rules": [],
+            "laneId": null,
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        }
+    ]
+}

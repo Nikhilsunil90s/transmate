@@ -1,0 +1,10 @@
+export { default as EquipmentTab } from "./Equipments";
+export { default as FuelTab } from "./Fuel";
+export { default as GeneralTab } from "./General";
+export { default as LaneTab } from "./Lanes";
+export { default as LeadTimeTab } from "./LeadTime";
+export { default as NoteTab } from "./Notes";
+export { default as RateTab } from "./Rates";
+export { default as RateListTab } from "./RatesList";
+export { default as VolumeTab } from "./Volumes";
+export { default as ConversionsTab } from "./Conversions";

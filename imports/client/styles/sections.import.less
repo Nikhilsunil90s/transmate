@@ -1,0 +1,57 @@
+@import '{}/imports/client/styles/colors.import.less';
+//@import "{}/client/lib/semantic-ui/site/elements/segment.variables.import.less";
+
+
+@veryPaddedSegmentPadding: 45px; // get from segment.variables
+
+.icon-sections {
+	section {
+		&.basic {
+			margin: 0;
+		}
+
+		&.ui.segment {
+			border-radius: 2px;
+		}
+
+		em,
+		.empty {
+			margin: 1em 0 1.5em;
+		}
+
+		.empty {
+			cursor: pointer;
+			// color: @greenColor;
+			color: #d4d2d5;
+		}
+
+		h3.section-header {
+			i {
+				color: #ccc;
+				margin-left: .5em;
+				cursor: pointer;
+			}
+
+			&:not(:first-of-type) {
+				margin-top: @veryPaddedSegmentPadding;
+			}
+		}
+
+		> .list > .item {
+			> .icon {
+				color: @blue;
+				font-size: 18px;
+				line-height: 14px;
+			}
+
+			> .content {
+				width: 100%;
+			}
+		}
+
+		label .delete.icon {
+			cursor: pointer;
+			color: #ccc;
+		}
+	}
+}

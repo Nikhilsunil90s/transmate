@@ -1,0 +1,7 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@shadowBoxShadow: none;
+@borderRadius: 0;
+@headerFontSize: @relativeMedium;
+@headerLineHeightOffset: 0;

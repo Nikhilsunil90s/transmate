@@ -1,0 +1,101 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+
+.ui.modal {
+  border-radius: 8px;
+}
+
+/* Small */
+.ui.small.modal > .header:not(.ui) {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #f9fafb;
+}
+
+.ui.basic.modal {
+  border-radius: 8px;
+}
+.ui.basic.modal > .header,
+.ui.basic.modal > .content,
+.ui.basic.modal > .actions {
+  background-color: transparent;
+}
+.ui.basic.modal > .header {
+
+  border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.ui.modal > .actions {
+
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.ui.modal {
+  // .header + .content {
+  //   padding-top: 1rem;
+  //   border-radius: 1rem;
+  // }
+
+  .input-field,
+  p {
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+  }
+
+  p {
+    margin-bottom: 2em;
+  }
+
+  .tabs-header {
+    padding: 1.5rem;
+  }
+  .ui.secondary.pointing.menu {
+    padding: 0 @contentPadding - 25px;
+
+    .item {
+      padding: 25px;
+      color: fade( #777, 70% );
+
+      &.active {
+        color: @primaryColor;
+      }
+    }
+
+    /* Only show active tab content */
+    & + .content > div:not( .active ) {
+      display: none;
+    }
+  }
+
+  > .content > .ui.secondary.pointing.menu {
+    margin-left: -@contentPadding;
+    margin-right: -@contentPadding;
+  }
+
+  .content.transparent + .content {
+    border-top: 1px solid #EBEBEB;
+  }
+
+  /* Mini Modal Width */
+  &.mini {
+    width: 400px;
+    margin: 0 0 0 -200px;
+
+    .actions {
+      text-align: center;
+    }
+  }
+
+  .actions {
+    .ui.basic.button,
+    .ui.basic.button:hover,
+    .ui.basic.button:focus {
+      // No border around basic buttons. We like it clean!
+      box-shadow: none !important;
+    }
+  }
+}

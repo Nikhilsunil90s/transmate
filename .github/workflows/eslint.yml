@@ -1,0 +1,30 @@
+name: Eslint
+
+on:
+  workflow_dispatch:
+  workflow_run:
+      workflows: ["Pure JS mocha tests"]
+      branches: [develop, master]
+      types: 
+        - completed
+
+
+jobs:
+
+  eslint:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{secrets.DEPLOY_TOKEN_GIT}}
+          submodules: recursive
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: npm
+      - name: set npm key for reading npm packages from github
+        run: echo "//npm.pkg.github.com/:_authToken=\"${{ secrets.DEPLOY_TOKEN_GIT }}\"" >> ~/.npmrc
+      - run: npm ci
+      - uses: eslint/github-action@v0

@@ -1,0 +1,89 @@
+enum SHIPMENT_MODES {
+  road
+  ocean
+  air
+}
+
+enum SHIPMENT_SERVICE_LEVELS {
+  LTL
+  FTL
+}
+
+type RouteInsightResultStep {
+  CO2: Float
+  cost: Float
+  days: Float
+  from: JSONObject
+  hours: Float
+  km: Float
+  mode: String
+  to: JSONObject
+  type: String
+}
+
+type RouteInsightResult {
+  kg: Float
+  steps: [RouteInsightResultStep]
+  totalCO2: Float
+  totalCost: Float
+  totalHours: Float
+  totalKm: Float
+  totalLeadtime: Int
+  warnings: [String]
+}
+
+type RouteInsights {
+  air: [RouteInsightResult]
+  road: [RouteInsightResult]
+  sea: [RouteInsightResult]
+}
+
+type OceanDistancePort {
+  index: String
+  km: Float
+  lat: Float
+  lng: Float
+  nm: Float
+  port: String
+}
+
+type OceanDistance {
+  confidence: Float
+  from: String
+  km: Float
+  nm: Float
+  nodes: JSONObject
+  ports: [OceanDistancePort]
+  to: String
+}
+
+input ToolsEquipmentInput {
+  code: String
+  amount: Float
+}
+
+input ToolsGoodsInputQuantity {
+  amount: Float
+  code: String
+}
+
+input GetRouteInsightsInput {
+  from: ShipmentLocationInput!
+  to: ShipmentLocationInput!
+  mode: SHIPMENT_MODES
+  serviceLevel: SHIPMENT_SERVICE_LEVELS
+  targetCurrency: String
+  equipment: ToolsEquipmentInput
+  goods: ToolsGoodsInputQuantity
+  currency: String
+}
+
+input GetOceanDistanceInput {
+  from: String!
+  to: String!
+}
+
+extend type Mutation {
+  getRouteInsights(input: GetRouteInsightsInput!): RouteInsights
+  getOceanDistance(input: GetOceanDistanceInput!): OceanDistance
+}

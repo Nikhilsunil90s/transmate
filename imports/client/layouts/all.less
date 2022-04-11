@@ -1,0 +1,67 @@
+@import "{}/imports/client/styles/colors.import.less";
+// removed as this messes with semantic layout:
+//.green:not(.icon) {
+//  background-color: @greenColor !important;
+//}
+.green-text {
+  color: @greenColor !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-text {
+  color: @errorColor;
+
+  ul li {
+    margin-left: 1.2em;
+    list-style-type: initial;
+  }
+}
+
+body {
+  letter-spacing: 0.015em;
+  -webkit-font-smoothing: antialiased;
+}
+
+em {
+  color: #d4d2d5;
+}
+
+th {
+  font-weight: 400;
+  color: fade(black, 54%);
+}
+
+td,
+th {
+  padding: 18px;
+}
+
+.section-header {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.item-icon {
+  position: relative;
+
+  > i {
+    position: absolute;
+    top: 0;
+  }
+
+  > div,
+  > div.row {
+    margin-left: 35px;
+
+    > label {
+      display: block;
+      font-size: inherit;
+    }
+  }
+}

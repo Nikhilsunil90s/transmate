@@ -1,0 +1,27 @@
+{
+    "data": [
+        {
+            "id": "bS7DWfRe7eE3vkrjz",
+            "title": "Demo Pricelist BE-ES",
+            "carrierId": "C25419",
+            "carrierName": "DBS DB Schenker",
+            "alias": "Ab"
+        }
+    ],
+    "rowH": false,
+    "columns": [
+        {
+            "data": "carrierId",
+            "readOnly": true
+        },
+        {
+            "data": "carrierName",
+            "readOnly": true
+        },
+        {
+            "data": "alias",
+            "type": "text"
+        }
+    ],
+    "settings": {}
+}

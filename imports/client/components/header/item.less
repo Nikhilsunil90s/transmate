@@ -1,0 +1,75 @@
+@import "{}/imports/client/styles/colors.import.less";
+@import "{}/imports/client/styles/sizes.import.less";
+
+header > .item {
+  position: absolute;
+  top: -1px;
+  height: @headerHeight;
+  background: white;
+  z-index: 1;
+}
+
+header > .menu .item::before {
+  // removes line between the menu items
+  width: 0 !important;
+}
+
+header > .item {
+  left: @baseSize;
+  width: calc(~"100% - " @baseSize); // minus logo width
+  padding-left: 25px;
+  font-size: 13px;
+  letter-spacing: -0.0015em;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  transition: opacity 0.4s;
+
+  > .main,
+  > .aside {
+    display: flex;
+
+    > div + div {
+      margin-left: @metaMargin;
+    }
+
+    .meta {
+      margin-left: "5px";
+      color: fade(@textColor, 60%);
+
+      &.right {
+        margin-left: auto;
+        margin-right: @metaMargin;
+      }
+
+      .important {
+        color: @primaryColor;
+      }
+    }
+  }
+
+  > .main {
+    flex: 1;
+    padding-bottom: 2px; // for optical vertical centering
+  }
+
+  > .aside {
+    min-width: 360px;
+    width: 25vw;
+
+    padding: 0 @metaMargin;
+  }
+
+  // Make sure the buttons (user, notifications) are on top
+  + div,
+  + div + div {
+    z-index: 1;
+  }
+}
+
+header:hover,
+header.searching {
+  > .item {
+    opacity: 0;
+  }
+}

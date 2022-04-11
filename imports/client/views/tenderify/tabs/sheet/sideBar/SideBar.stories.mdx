@@ -1,0 +1,47 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { TenderifySidebar } from "./SideBar";
+import { MockedProvider } from "@apollo/client/testing";
+import {
+  dummyProps,
+  priceListQueryMock,
+  priceListSelectMock
+} from "./storyData";
+
+<Meta title="Tenderify/Sidebar" component={TenderifySidebar} />
+
+export const Template = args => (
+  <MockedProvider
+    mocks={[...priceListQueryMock, ...priceListSelectMock]}
+    addTypename={false}
+  >
+    <TenderifySidebar {...args} />
+  </MockedProvider>
+);
+
+# Bid Control
+
+Bid control summarizes some key figures:
+
+- last updated sheet
+- last generated offer
+- customer info (e.g. tier)
+- total volume in tender + %allocation
+- total expected revenue (from the sheet that is)
+
+The bid control allows some grouped actions on the UBS.
+
+- (re)calculate the costs based on rate cards
+- calculate fuel corrections
+- calculate volume conversion corrections
+- (re)calculate revenue
+
+the panel shows the linked rate cards from which prices were collected
+
+- rate cards
+- add rate cards (will be picked up for calculation)
+
+<Canvas>
+  <Story name="basic" args={dummyProps}>
+    {Template.bind({})}
+  </Story>
+</Canvas>

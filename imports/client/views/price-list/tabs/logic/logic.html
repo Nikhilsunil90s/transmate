@@ -1,0 +1,33 @@
+<template name="PriceListLogicTab">
+	<section class="ui very padded segment notes">
+		<div class="ui form">
+			<h4 class="ui dividing header">Vendor settings</h4>
+			<div class="two fields">
+				<div class="ten wide field">
+					{{> Input
+						label='Vendor service name'
+						value='Business Parcel'
+					}}
+				</div>
+				<div class="six wide field">
+					{{> Input
+						label='Vendor service code'
+						value='BP'
+					}}
+				</div>
+			</div>
+			{{> Checkbox
+				name='rules.allowReturns'
+				label='Allow returns'
+				value=rules.allowReturns
+			}}
+			<!--
+			constraints:
+			add constraints-->
+			<h4 class="ui dividing header">Allocation rules</h4>
+			
+			<div class="ui basic button">add rule</div>
+		</div>
+		<div class="ui primary button">save</div>
+	</section>
+</template>

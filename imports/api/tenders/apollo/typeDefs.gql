@@ -1,0 +1,327 @@
+enum TENDER_BIDDER_ALLOWED_INPUT {
+  bids
+  requirements
+  priceLists
+  documents
+  NDAresponse
+  ts
+  userIds
+}
+
+enum TENDER_UPDATE_STATUS_ACTION {
+  release
+  setToDraft
+  setToReview
+  close
+  cancel
+}
+
+type TenderNDAType {
+  required: Boolean
+  type: String
+  documentId: String
+}
+
+type TenderNotesType {
+  introduction: String
+  procedure: String
+}
+
+type TenderContactsType {
+  userId: String
+  role: String
+}
+
+type TenderRequirements {
+  id: String
+  type: String
+  title: String
+  details: String
+  responseType: String
+  responseOptions: [String]
+}
+
+type TenderParamsBidType {
+  types: [String]
+  priceListId: String
+}
+
+type TenderParamsType {
+  bid: TenderParamsBidType
+  query: JSONObject
+  NDA: TenderNDAType
+}
+
+type TenderCalculationType {
+  status: String
+  type: String
+  message: String
+  result: String
+}
+
+type TenderTimelineType {
+  title: String
+  details: String
+  date: Date
+}
+
+type TenderBidGroupsQuantityType {
+  scopeCount: Float
+  shipCount: Float
+  totalAmount: Float
+  avgAmount: Float
+  minAmount: Float
+  maxAmount: Float
+  stdevAmount: Float
+  currentAvgLeadtime: Float
+}
+
+type TenderBidGroupsType {
+  id: String
+  pickupCountry: String
+  pickupZip: String
+  pickupLocode: String
+  pickupName: String
+  deliveryCountry: String
+  deliveryZip: String
+  deliveryLocode: String
+  deliveryName: String
+  equipment: String
+  # DG
+  # DG class
+  # conditions
+  shipmentIds: [String]
+  quantity: TenderBidGroupsQuantityType
+}
+
+type TenderPackagesType {
+  pickupCountry: String
+  bidGroups: [TenderBidGroupsType]
+
+  #   // todo: keep this block???
+  #   priceLists: {
+  #     type: Array,
+  #     optional: true
+  #   },
+  #   "priceLists.$": {
+  #     type: new SimpleSchema({
+  #       // Either a price list or uploaded document
+  #       priceListId: {
+  #         type: String,
+  #         regEx: SimpleSchema.RegEx.Id,
+  #         optional: true
+  #       },
+  #       documentId: {
+  #         type: String,
+  #         regEx: SimpleSchema.RegEx.Id,
+  #         optional: true
+  #       },
+  #       accountId: {
+  #         type: String,
+  #         regEx: SimpleSchema.RegEx.AccountId
+  #       },
+  #       added: {
+  #         type: ByAtSchema
+  #       },
+  #       status: {
+  #         type: String,
+  #         allowedValues: ["submitted", "accepted", "declined"]
+  #       },
+  #       reason: {
+  #         type: String,
+  #         optional: true
+  #       }
+  #     })
+  #   }
+  # })
+}
+
+type TenderBiddersContactType {
+  name: String
+  mail: String
+}
+
+type TenderBiddersRequirementResponse {
+  id: String
+  responseStr: String
+  responseBool: Boolean
+}
+
+type TenderBiddersPriceListResponse {
+  id: String
+  title: String
+}
+
+type TenderBiddersNDAResponse {
+  accepted: Boolean
+  doc: JSONObject
+  ts: ByType
+}
+
+type TenderBiddersDocumentType {
+  id: String
+  name: String
+}
+
+type TenderBiddersType {
+  accountId: String
+  name: String
+  userIds: [String]
+  contacts: [AccountContactType]
+  bids: [String]
+  requirements: [TenderBiddersRequirementResponse]
+  priceLists: [TenderBiddersPriceListResponse]
+  documents: [TenderBiddersDocumentType]
+  NDAresponse: TenderBiddersNDAResponse
+  firstSeen: Date
+  lastSeen: Date
+  notified: Date
+  bid: Date
+}
+
+type TenderFAQType {
+  title: String
+  details: String
+}
+
+type TenderActivityType {
+  generateScope: Boolean
+  calculating: Boolean
+}
+
+type Tender {
+  id: String
+  number: String
+  title: String
+  status: String
+  steps: [String]
+  notes: TenderNotesType
+  accountId: String
+  contacts: [TenderContactsType]
+  documentIds: [String]
+  requirements: [TenderRequirements]
+
+  params: TenderParamsType
+  calculation: TenderCalculationType
+  timeline: [TenderTimelineType]
+
+  scope: JSONObject #scope schema
+  # this is an aggregation of the scope:
+  packages: [TenderPackagesType]
+
+  bidders: [TenderBiddersType]
+
+  FAQ: [TenderFAQType]
+  activity: TenderActivityType
+  created: ByType
+  updated: ByType
+  released: ByType
+
+  # projected fields:
+  isOwner: Boolean
+  isBidder: Boolean
+  carrierCount: Int
+  #priceLists
+  documents: [DocumentType]
+}
+
+input TenderDetailItemInput {
+  tenderId: String!
+  name: String!
+  laneId: String!
+  volumeGroupId: String
+  volumeRangeId: String
+  goodsDG: Boolean
+  equipmentId: String
+}
+
+input TenderDetailQuantityInput {
+  amount: Float
+  count: Float
+  leadTime: Float
+  currentCost: Float
+}
+
+input SaveTenderDetailInput {
+  item: TenderDetailItemInput
+  update: TenderDetailQuantityInput
+}
+
+input SaveTenderBiddersInput {
+  tenderId: String
+  partnerIds: [String]
+}
+
+input UpdateTenderAttachmentInput {
+  tenderId: String!
+  id: String
+  attachment: JSONObject
+}
+
+type TenderUpdateBiddersResponseSuccess {
+  accountsAdded: Int
+  accountsRemoved: Int
+}
+
+type TenderUpdateBiddersResponse {
+  errors: [String]
+  success: TenderUpdateBiddersResponseSuccess
+}
+
+input TenderUpdateBidInput {
+  tenderId: String!
+  topic: TENDER_BIDDER_ALLOWED_INPUT!
+  update: JSONObject # when array => {array: [...]}
+}
+
+input TenderUpdateBidderDetailInput {
+  tenderId: String!
+  topic: TENDER_BIDDER_ALLOWED_INPUT!
+  partnerId: String!
+  update: JSONObject
+}
+
+input UpdateTenderInput {
+  tenderId: String!
+  update: JSONObject!
+  reset: Boolean
+}
+
+input UpdateTenderStatusInput {
+  tenderId: String!
+  action: TENDER_UPDATE_STATUS_ACTION!
+}
+
+input duplicateTenderInput {
+  tenderId: String!
+  keepData: Boolean
+}
+
+type TenderBidFixedPriceListResponse {
+  myBid: TenderBiddersType
+  priceListId: String
+}
+
+extend type Query {
+  getTenders(viewKey: String): [Tender]
+  getTender(tenderId: String!): Tender
+  getOwnTenders: [Tender]
+}
+
+extend type Mutation {
+  createTender(data: JSONObject!): Tender
+  duplicateTender(input: duplicateTenderInput!): Tender
+  updateTender(input: UpdateTenderInput): Tender
+  saveTenderDetails(input: [SaveTenderDetailInput]!): String
+  setBidderTimeStamp(tenderId: String!): String
+  saveBidders(input: SaveTenderBiddersInput!): TenderUpdateBiddersResponse
+  tenderBidFixedPriceList(tenderId: String!): TenderBidFixedPriceListResponse
+  tenderUpdateBid(input: TenderUpdateBidInput!): TenderBiddersType
+  tenderUpdateBidderDetail(
+    input: TenderUpdateBidderDetailInput!
+  ): TenderBiddersType
+  addAttachmentTender(input: UpdateTenderAttachmentInput!): Tender
+  removeAttachmentTender(input: UpdateTenderAttachmentInput!): Tender
+  updateTenderStatus(input: UpdateTenderStatusInput!): Tender
+  generateTenderPackages(tenderId: String!): Tender
+}

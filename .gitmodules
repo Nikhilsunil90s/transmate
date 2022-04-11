@@ -1,0 +1,3 @@
+[submodule "imports/api/_jsonSchemas"]
+	path = imports/api/_jsonSchemas
+	url = https://github.com/transmate-eu/transmateSchemas.git

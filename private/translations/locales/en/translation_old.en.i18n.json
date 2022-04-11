@@ -1,0 +1,3101 @@
+{
+  "general": {
+    "modes": {
+      "road": "Road",
+      "ocean": "Ocean",
+      "rail": "Rail",
+      "air": "Air",
+      "multi": "Multi"
+    },
+    "user": "User",
+    "dangerousGoodsClass": "Dangerous Goods Class",
+    "goodsCondition": "Goods Condition",
+    "shippingMode": "Shipping mode",
+    "lane": "Lane",
+    "volume": "Volume",
+    "y_n": "(Y/N)",
+    "equipment": "Equipment",
+    "time": {
+      "ago": "%s ago"
+    }
+  },
+  "error": {
+    "accounts": {
+      "Login forbidden": "Credentials are incorrect!"
+    }
+  },
+  "browser": {
+    "getchrome": "Get Chrome",
+    "options": "Using Transmate requires a modern and up to date browser, like Google Chrome, Mozilla Firefox or Microsoft Edge.",
+    "title": "Your browser is not supported"
+  },
+  "search": {
+    "form": {
+      "title": "Search",
+      "stage": "Stage Number",
+      "shipment": "Shipment Number",
+      "vehicle": "License Plate",
+      "shipper": "Shipper",
+      "button": "Search"
+    }
+  },
+  "tab": {
+    "analysis": "Analysis",
+    "bid": "Bid Manager",
+    "dashboard": "Dashboard",
+    "tender": "Tender (RFQ)",
+    "invoice": "Invoice",
+    "projects": "Projects"
+  },
+  "dashboard": {
+    "account": {},
+    "add": {
+      "stage": "Confirm Stage",
+      "note": "Add Note",
+      "partner": "Create Partner"
+    },
+    "addresses": {
+      "request": "New price list requests"
+    },
+    "articles": {},
+    "card": {
+      "invoices": {
+        "title": "Invoices",
+        "info": "<b>__count__</b> open invoices"
+      },
+      "shipments": {
+        "title": "Shipments",
+        "info": "<b>__count__</b> shipments"
+      },
+      "tenders": {
+        "title": "Freight tenders",
+        "info": "<b>__count__</b> open tenders"
+      },
+      "priceLists": {
+        "title": "Rate cards",
+        "info": "<b>__count__</b> active rate cards"
+      },
+      "priceRequests": {
+        "title": "Price Requests",
+        "info": "<b>__count__</b> active price requests"
+      }
+    },
+    "shipments": {},
+    "tabs": {
+      "title": "Dashboards",
+      "invoices": "Invoices",
+      "shipments": "Shipments",
+      "accrual": "Transport accrual",
+      "service": "Service level",
+      "profile": "Carrier profile",
+      "tenderify": "Tenderify"
+    },
+    "tasks": {},
+    "tools": {},
+    "partners": {
+      "create": "Create your first partnership",
+      "go": "Go to partnerships",
+      "request": "__count__ new partner request",
+      "subtitleActive": "partner",
+      "subtitleInactive": "You don’t have partners yet.",
+      "subtitleActive_plural": "partners",
+      "request_plural": "__count__ new partner requests"
+    },
+    "priceLists": {
+      "approve": "New price list for approval",
+      "create": "Create your first price list",
+      "go": "Go to price lists",
+      "request": "New price list requests",
+      "subtitleActive": "price list",
+      "subtitleInactive": "You don’t have price lists yet.",
+      "subtitleActive_plural": "price lists",
+      "approve_plural": "__count__ price lists for approval"
+    },
+    "settings": {
+      "go": "Go to settings",
+      "subtitle": "Create users, maintain your portal, etc..."
+    },
+    "tenders": {
+      "active": "active tender",
+      "go": "Go to tenders",
+      "inactive": "You don’t have tenders yet.",
+      "active_plural": "active tenders",
+      "create": "Create your first tender"
+    },
+    "todo": {
+      "header": "To do list",
+      "sub": "Overview"
+    },
+    "performance": {
+      "header": "Delivery Performance",
+      "sub": "Track & Trace"
+    },
+    "open": {
+      "header": "Shipments",
+      "sub": "Overview"
+    },
+    "fleet": {
+      "header": "Fleet overview",
+      "sub": "Overview"
+    }
+  },
+  "partner": {
+    "billing": {
+      "invoice": {
+        "actions": {},
+        "comments": {
+          "title": "Conversations"
+        },
+        "cost": {
+          "code": "Code",
+          "description": "Description",
+          "type": "Type"
+        },
+        "costs": {
+          "modal": {
+            "close": "Close",
+            "title": "Shipment costs overview",
+            "add": "Quick add"
+          },
+          "amount": "Amount",
+          "description": "Cost",
+          "invoice": "Invoice",
+          "shipment": "Shipment",
+          "total": {
+            "delta": "Delta",
+            "shipment": "Total calculated cost",
+            "invoice": "Total cost invoiced"
+          },
+          "change": "This will update all cost mappings with this discription. Are you sure?"
+        },
+        "details": {
+          "actions": {
+            "credit": "Request credit note",
+            "settle": "Settle credit note",
+            "shipment": "Open shipment"
+          },
+          "add": "Upload details",
+          "modal": {
+            "save": "Upload"
+          },
+          "status": {},
+          "empty": "Upload the details of your invoice to check against the price list."
+        },
+        "document": {
+          "file": "File",
+          "info": "You can upload pdf, png or jpg files.",
+          "modal": {
+            "title": "Upload invoice document"
+          },
+          "types": {
+            "${key}": "__ignore__",
+            "credit": "Credit Note",
+            "invoice": "Invoice",
+            "other": "Other"
+          }
+        },
+        "documents": {
+          "add": "Upload document"
+        },
+        "import": {
+          "info_options": {}
+        },
+        "modal": {},
+        "roles": {
+          "customer": "Customer",
+          "vendor": "Vendor"
+        },
+        "shipment": {
+          "number": "Shipment",
+          "invoiced": "Invoiced",
+          "lookup": {
+            "title": "Price List lookup",
+            "base": "Base",
+            "fuel": "Fuel",
+            "additional": "Additional",
+            "total": "Total cost"
+          },
+          "delta": "Delta",
+          "status": "Status"
+        },
+        "status": "Status",
+        "tabs": {
+          "${tab}": "__ignore__",
+          "view": "View",
+          "analytics": "Analytics",
+          "general": "General",
+          "data": "Detail",
+          "upload": "Import"
+        },
+        "errors": "Errors",
+        "open": "Open errors",
+        "settle": "Resolve",
+        "settled": "Resolved"
+      },
+      "invoices": {
+        "title": "Invoices"
+      }
+    },
+    "button": {
+      "copy-link": "Copy link"
+    },
+    "directory": {
+      "addManually": "Add missing carrier",
+      "clearSearch": "Clear",
+      "add": {
+        "title": "Add partner to directory",
+        "create": "Create new ",
+        "description": "Partner %s will be created in the directory."
+      },
+      "card": {
+        "validated": "Validated",
+        "invite": "Invite",
+        "invited": "Invited",
+        "sent": "Partnership invitation sent.",
+        "priceRequest": "Request Price",
+        "info": "Info",
+        "noDescription": "No description found."
+      }
+    },
+    "form": {
+      "import": {
+        "info_options": {}
+      },
+      "title_import": "Import partners"
+    },
+    "header": {
+      "shipments": "__count__ shipment"
+    },
+    "import": {},
+    "invite": {
+      "roles": {
+        "customs": "Customs",
+        "forwarder": "Forwarder",
+        "warehouse": "Warehouse"
+      },
+      "types": {
+        "carrier": "Carrier",
+        "provider": "Provider",
+        "shipper": "Shipper"
+      }
+    },
+    "link": {
+      "add": "Add",
+      "id": "Partner ID",
+      "validate": "Validate"
+    },
+    "overview": {
+      "headers": {},
+      "title": "Partners",
+      "names": {
+        "allInvoices": "All Invoices",
+        "myPartners": "My Partners",
+        "openInvoices": "Open Invoices"
+      }
+    },
+    "profile": {
+      "coding": {},
+      "contacts": {
+        "mail": "Mail",
+        "phone": "Phone",
+        "title": "Contacts",
+        "edit": "Edit contact",
+        "remove": "Remove contact"
+      },
+      "description": {
+        "empty": "No services added yet"
+      },
+      "general": {},
+      "locations": {
+        "title": "Locations"
+      },
+      "services": {
+        "empty": "No services added yet",
+        "title": "Services"
+      },
+      "websites": {
+        "title": "Websites"
+      },
+      "certificates": {
+        "empty": "No certificate added yet",
+        "text": "Add certificates",
+        "title": "Certificates"
+      },
+      "documents": {
+        "empty": "No documents uploaded yet"
+      },
+      "footprint": {
+        "edit": "Edit footprint",
+        "empty": "No footprint added yet",
+        "title": "Footprint"
+      },
+      "notes": {
+        "edited": "Last edited on %s",
+        "empty": "You have not added any notes yet",
+        "title": "My notes"
+      },
+      "title": "Profile"
+    },
+    "review": {
+      "${category}": {},
+      "cost": {
+        "Q1": "Pricing for materials and/or services was appropriate",
+        "Q2": "%s managed work within budgetary constraints.",
+        "title": "Cost"
+      },
+      "modal": {
+        "save": "Save"
+      },
+      "performance": {
+        "Q1": "%s met scheduling/delivery expectations and commitments.",
+        "Q2": "Technical ability and expertise of %s is strong.",
+        "Q3": "Quality of service meets expectations.",
+        "Q4": "Communications with %s were appropriate, accurate, and timely. %s is timely in responding to any complaints.",
+        "title": "Performance"
+      },
+      "quality": {
+        "Q1": "%s evidences a strong Quality System in place, evidence of continuous improvement programs.",
+        "Q2": "%s maintains a concern for quality in meeting customer expectations.",
+        "Q3": "%s and %s’s representatives conduct business with professionalism.",
+        "title": "Quality"
+      },
+      "safety": {
+        "Q1": "%s evidences strong commitment to safety and/or environmental compliance",
+        "title": "Safety"
+      },
+      "subscript": "Based on %s votes"
+    },
+    "tabs": {
+      "${tab}": "__ignore__",
+      "profile": "Profile",
+      "notes": "Notes",
+      "performance": "Performance",
+      "billing": "Billing",
+      "review": "Review"
+    },
+    "description": "More information about partnerships.",
+    "empty": {
+      "description": "This partner hasn’t added a description yet."
+    }
+  },
+  "shipments": {
+    "overview": {},
+    "view": {
+      "column": {
+        "group": {
+          "dates": "Dates",
+          "entities": "Entity",
+          "locations": "Locations",
+          "partners": "Partners",
+          "references": "References",
+          "costs": "Costs",
+          "invoices": "Invoices",
+          "projects": "Projects"
+        }
+      },
+      "filter": {
+        "group": {
+          "flag": "Flags",
+          "fixed": "Fixed value",
+          "location": "Location",
+          "period": "Period (date range)",
+          "partner": "Partner",
+          "input": "Custom input"
+        },
+        "type": {
+          "fixed": {},
+          "location": {
+            "search": "Search..."
+          },
+          "partner": {
+            "search": "Search..."
+          },
+          "period": {
+            "${value}": "__ignore__",
+            "-d": "Yesterday",
+            "d": "Today",
+            "+d": "Tomorrow",
+            "-w": "Last week",
+            "w": "This week",
+            "+w": "Next week",
+            "-m": "Last month",
+            "m": "This month",
+            "+m": "Next month"
+          }
+        },
+        "inout": "Inbound/outbound"
+      },
+      "settings": {},
+      "change_tooltip": "Configure view (change columns or filters)",
+      "default": {
+        "name": "All Shipments"
+      }
+    },
+    "views": {},
+    "status": {
+      "empty": "No shipments match this view",
+      "info": "Displaying _START_-_END_ of _TOTAL_ shipments"
+    }
+  },
+  "shipment": {
+    "${dir}": {},
+    "${s}": {},
+    "access": {},
+    "carrier-select": {
+      "insights": {},
+      "request": {
+        "button": "Request"
+      },
+      "tabs": {}
+    },
+    "changes": {},
+    "costParams": {
+      "customsClearance": {}
+    },
+    "costs": {
+      "decline": {
+        "codes": {
+          "wrong": "Wrong cost",
+          "agreement": "Cost outside agreement",
+          "force": "Force majeure",
+          "other": "Others"
+        },
+        "save": "Decline"
+      },
+      "subTotal": {
+        "shipment": "Total calculated",
+        "invoice": "Total invoiced"
+      },
+      "table": {},
+      "total": {},
+      "title": "Shipment costs",
+      "empty": "Click here to add shipment costs",
+      "cost_type": "Cost",
+      "charge": "charge",
+      "curr": "currency",
+      "info": "Improve carrier reports using shipment costs.",
+      "base rate": "Base Rate",
+      "diesel surcharge": "Diesel surcharge",
+      "count_short": "# Costs",
+      "count": "Amount of cost Items",
+      "delta": "Delta"
+    },
+    "date": {
+      "actual": {
+        "pickup": "Actual Loading Date",
+        "delivery": "Actual Delivery Date"
+      },
+      "parts": {
+        "pickup": "Pickup",
+        "delivery": "Delivery",
+        "start": "Start",
+        "end": "End",
+        "documents": "Documents",
+        "departure": "Departure",
+        "scheduled": "Scheduled",
+        "actual": "Actual"
+      },
+      "planned": {
+        "delivery": "Planned delivery",
+        "loading": "Planned pick-up",
+        "pickup": "Planned pick-up"
+      },
+      "scheduled": {
+        "pickup": "Scheduled Loading Date",
+        "delivery": "Scheduled Delivery Date"
+      }
+    },
+    "delivery": {
+      "date": "Delivery date",
+      "_": "Delivery",
+      "time": "Delivery time"
+    },
+    "details": {
+      "creation": "Creation",
+      "history": "History",
+      "number": "Shipment nr. %s"
+    },
+    "documents": {
+      "options": {}
+    },
+    "edi": {
+      "error": {}
+    },
+    "entities": {
+      "code": {
+        "label": "Code"
+      },
+      "country": {
+        "label": "Country"
+      },
+      "email": {
+        "label": "primary mail"
+      }
+    },
+    "flag": {},
+    "form": {
+      "cost": {
+        "title": {},
+        "descriptions": {
+          "waiting": "Waiting hours",
+          "toll": "Toll",
+          "tax": "Tax",
+          "demurrage": "Demurrage costs",
+          "express": "Express service",
+          "driver": "Extra driver",
+          "others": "Others"
+        },
+        "comments": "Comments"
+      },
+      "costs": {
+        "button": {
+          "additional": "Additional costs"
+        },
+        "costs": {
+          "add": {},
+          "title": "Shipment costs",
+          "description": "Description",
+          "type": "Type",
+          "base": "Base rate",
+          "fuel": "Fuel correction",
+          "source": "Source",
+          "comments": "Comments",
+          "cost": "Cost",
+          "total": "Total shipment cost",
+          "update_confirm": "This action will update the shipment costs. Proceed?"
+        },
+        "insights": {},
+        "priceRequest": {
+          "view": "View linked price request"
+        },
+        "reset": {},
+        "serviceLevel": {},
+        "equipment": {
+          "label": "Equipment",
+          "type": "Type",
+          "number": "Num"
+        },
+        "select": "Select carrier"
+      },
+      "document": {
+        "types": {
+          "pack": "Packing list",
+          "ship": "Shipping list",
+          "order": "Order document",
+          "bill": "Bill of lading",
+          "cinv": "Commercial invoice",
+          "cmr": "CMR",
+          "ins": "Insurance documents",
+          "exp": "Export Declaration (B13A)",
+          "origin": "Certificate of origin",
+          "anlyses": "Certificate of analyses",
+          "tsca": "Toxic Substances Control Act (TSCA) Form",
+          "fcc": "U.S. FCC Form 740",
+          "delivery": "Delivery note",
+          "picture": "Picture",
+          "other": "Others"
+        },
+        "type": "Type"
+      },
+      "driver": {
+        "instructions": "Special instructions to driver"
+      },
+      "item": {
+        "calcSettings": {},
+        "dimensions": {
+          "enter_height": "Enter height",
+          "enter_length": "Enter length",
+          "enter_width": "Enter width",
+          "uom": "Dimensions UoM"
+        },
+        "quantityType": {},
+        "references": {},
+        "temperature": {},
+        "_": "Item",
+        "adr": "ADR",
+        "class_type": "Class type",
+        "condition": "Temperature condition",
+        "empty": "This field may not be empty",
+        "enter_weight": "Enter weight",
+        "gross_weight": "Gross Weight",
+        "net_weight": "Net Weight",
+        "save": "Update Load",
+        "unit": {
+          "${unit}": "__ignore__",
+          "cm": "cm",
+          "m": "m",
+          "m3": "Cubic meter",
+          "lm": "Loading meter",
+          "ft3": "Cubic foot",
+          "lf": "Loading foot",
+          "kg": "Kilogram",
+          "pound": "Pound",
+          "ton": "Ton",
+          "mton": "Metric Ton",
+          "pcs": "Pieces",
+          "l": "Litres",
+          "gal": "U.S. gallon",
+          "roll": "Rolls",
+          "box": "Boxes",
+          "pal": "Pallets",
+          "ft": "ft",
+          "inch": "Inch",
+          "ctr": "Container"
+        },
+        "weight": "Goods weight",
+        "title": "Item",
+        "taxable": {
+          "add": "Add"
+        },
+        "uom": "UoM",
+        "lm": "LM",
+        "m3": "M3",
+        "hazmat": "DANGEROUS GOODS FLAG"
+      },
+      "itemNew": {
+        "confirm": {
+          "no": "No"
+        },
+        "modal": {}
+      },
+      "nonConformance": {
+        "event": {},
+        "occurance": {},
+        "owner": {},
+        "reason": {},
+        "control": {
+          "label": "Owner",
+          "text": "Under whose control did it happen?"
+        },
+        "date": "Incident date",
+        "time": "Time",
+        "title": {},
+        "createdBy": "Created By",
+        "public": "Public",
+        "value": "Non-conformance"
+      },
+      "reference": {
+        "title": {}
+      },
+      "tags": {},
+      "note": {
+        "value": "Note",
+        "title": {},
+        "type": "Note type"
+      },
+      "partner": {
+        "role": "Shipper's role",
+        "select": "Select Stakeholder"
+      },
+      "items": "Items",
+      "title_new": "Create new shipment",
+      "shipper": {
+        "header": "Shipper",
+        "name": "Shipper name"
+      },
+      "consignee": {
+        "header": "Consignee",
+        "name": "Consignee name"
+      },
+      "pickup": {
+        "title": "Pick-up date",
+        "date": "Pick-up date",
+        "time": "Pick-up time",
+        "timeslot_required": "Time slot booking required?",
+        "timeslot": "Time slot instructions"
+      },
+      "delivery": {
+        "title": "Delivery date",
+        "date": "Delivery date",
+        "time": "Delivery time",
+        "timeslot_required": "Time slot booking required?",
+        "timeslot": "Time slot instructions"
+      },
+      "stages": {
+        "header": "Stages",
+        "empty": "This shipment doesn't have any stages yet."
+      },
+      "carrier": {
+        "title": "Select carrier",
+        "carrier": "Carrier",
+        "leadTime": "Lead-time",
+        "cost": "Shipment cost",
+        "select": "Select"
+      },
+      "baseCost": {
+        "title": {},
+        "type": "Reference type",
+        "value": "Reference"
+      },
+      "references": "References",
+      "nonConformances": "Non-conformances",
+      "notes": "Notes",
+      "release": "Release shipment"
+    },
+    "goods": {
+      "title": "Goods",
+      "totalFooter": "Totals"
+    },
+    "hasPriceRequest": {},
+    "header": {},
+    "history": {
+      "created": "Shipment created",
+      "draft": "Shipment in draft",
+      "planned": "Shipment planned",
+      "allocated": "Shipment allocated to driver: ",
+      "started": "Shipment started",
+      "pickup": {
+        "arrival": "Arrived at pick-up location",
+        "departure": "Departed at pick-up location"
+      },
+      "delivery": {
+        "arrival": "Arrived at delivery location",
+        "departure": "Departed at delivery location"
+      },
+      "non-conformance": "Non conformance added",
+      "document": "Document uploaded",
+      "completed": "Shipment completed"
+    },
+    "links": {
+      "types": {
+        "${dir}": "__ignore__",
+        "projectInbound": "Project - Inbound",
+        "projectOutbound": "Project - Outbound",
+        "priceRequest": "Price request"
+      }
+    },
+    "mass": {
+      "${action}": {},
+      "archive": {
+        "confirm": "Are you sure you want to archive __count__ shipments?",
+        "successMsg": "<b>__success__</b> shipments were archived, __errors__ could not be archived",
+        "tooltip": "Archive",
+        "tooltipText": "Archives all selected shipments. Archived shipments are kept in the database for reporting."
+      },
+      "cancel": {
+        "confirm": "Are you sure you want to cancel __count__ shipments?",
+        "successMsg": "<b>__count__</b> shipments were canceled, , __errors__ could not be cancelled",
+        "tooltip": "Cancel",
+        "tooltipText": "Deletes all selected shipments that are in <b>draft</b> status."
+      },
+      "copy": {
+        "confirm": "Are you sure you want to copy __count__ shipments?",
+        "successMsg": "<b>__count__</b> shipments were copied, , __errors__ could not be cancelled",
+        "tooltip": "Copy",
+        "tooltipText": "Copies all selected shipments."
+      },
+      "delete": {
+        "confirm": "Are you sure you want to delete __count__ shipments?",
+        "successMsg": "<b>__count__</b> shipments were deleted, , __errors__ could not be deleted",
+        "tooltip": "Delete",
+        "tooltipText": "Deletes all selected shipments that are in <b>draft</b> status. Deleted shipments are removed from the database and reports."
+      }
+    },
+    "nonConformances": {
+      "table": {},
+      "empty": "Add a non-conformance"
+    },
+    "notes": {
+      "_": "Notes",
+      "empty": "Add notes to your shipment",
+      "BookingNotes": "Booking notes",
+      "PlanningNotes": "Planning notes",
+      "LoadingNotes": "Loading notes",
+      "UnloadingNotes": "Unloading notes",
+      "OtherNotes": "Other notes",
+      "TemperatureControl": "Temperature Control"
+    },
+    "partners": {},
+    "pickup": {
+      "date": "Pick-up date",
+      "_": "Pick-up",
+      "time": "Pick-up time"
+    },
+    "project": {},
+    "references": {
+      "_": "Reference",
+      "empty": "Reference data can be used to identify the shipment during the different nodes in the shipment process. Click here to add a reference.",
+      "carrier": "Carrier reference",
+      "consignee": "Consignee reference",
+      "bof": "Bill of Lading",
+      "fa": "FA Tracking ID",
+      "container": "Container ID",
+      "cmr": "CMR Number",
+      "planner": "Planner"
+    },
+    "stage": {
+      "carrier": {
+        "msgTitle": "Warning",
+        "msgTxt": "When manually changing a carrier, you will reset all costs associated with this stage. If you want to automatically calculate costs and assign carriers, please use the carrier select tool in the section below."
+      },
+      "confirm": {
+        "departure": "Actual departure"
+      },
+      "date": {},
+      "draft": {},
+      "driver": {},
+      "menu": {
+        "update_carrier": "Update carrier",
+        "events": "Events",
+        "details": "More Details",
+        "clear": "Clear Stages"
+      },
+      "merge": {},
+      "planned": {},
+      "release": {
+        "action": {},
+        "error": {
+          "title": "Can't release yet"
+        }
+      },
+      "modes": {
+        "${mode}": "__ignore__",
+        "road": "Road",
+        "ocean": "Ocean",
+        "air": "Air",
+        "rail": "Rail"
+      }
+    },
+    "tooltip": {
+      "date": {
+        "pickup": "Requested pickup",
+        "delivery": "Requested delivery"
+      },
+      "${topic}": {
+        "${stop}": "__ignore__"
+      }
+    },
+    "updates": {
+      "created": "Shipment created",
+      "document": "Document added",
+      "planned": "Shipment planned",
+      "started": "Shipment started",
+      "items": "Shipment items updated",
+      "assigned": "Shipment assigned",
+      "pickup": {
+        "arrival": "Goods are loaded at location __location.name__"
+      },
+      "delivery": {
+        "arrival": "Goods are delivered at location __location.name__"
+      },
+      "completed": "Shipment finished"
+    },
+    "equipments": {
+      "0": {
+        "_": "Equipment",
+        "quantity": "Quantity",
+        "type": "Type"
+      },
+      "buildButton": "Plan equipment",
+      "empty": "There is no equipment set for this shipment.",
+      "eraseButton": "Remove planning",
+      "modal": {
+        "references": "References",
+        "title": "Equipment",
+        "type": "Equipment type",
+        "typePlaceholder": "Type",
+        "quantity": "Count"
+      },
+      "table": {
+        "quantity": "Quantity",
+        "reference": "Reference",
+        "shipmentLink": "Link",
+        "total": "Totals",
+        "type": "Equipment type",
+        "weight": "Weight"
+      },
+      "title": "Equipments"
+    },
+    "item": {
+      "dimensions": "Dimensions",
+      "title": "Goods",
+      "material": "Material"
+    },
+    "error": {
+      "release": {
+        "description": "You need to add load details in the \"Goods\" section first.",
+        "title": "Oops... missing data",
+        "button": "Add Load Details"
+      }
+    },
+    "carriers": "Carrier",
+    "_": "Shipment",
+    "number": "Number",
+    "created": {
+      "_": "Creation",
+      "at": "Timestamp",
+      "by": "User"
+    },
+    "stages": "Stages",
+    "serviceLevel": "Service level",
+    "planner": "Planner",
+    "mode": "Mode",
+    "priceList": "Price List",
+    "invoices": {
+      "title_short": "Invoiced",
+      "title": "Total amount invoiced",
+      "count_short": "Count",
+      "count": "Count of invoice items",
+      "number": "Invoice number",
+      "number_short": "Inv. number",
+      "status": "Invoice status",
+      "status_short": "Inv. status"
+    },
+    "flags": "Flags",
+    "tracking": "Track via external API"
+  },
+  "form": {
+    "confirm": {},
+    "empty": {
+      "note": "Please add your notes here"
+    },
+    "shipments": {
+      "query": {
+        "dates": {
+          "title": "Dates"
+        },
+        "from": "From",
+        "modeText": "Select mode",
+        "to": "To",
+        "uom": {
+          "default": "Select",
+          "label": "UOM",
+          "title": "Unit of measure"
+        },
+        "ctrTypes": "Container types"
+      },
+      "zones": {
+        "address": "Address",
+        "locations": "Selected locations",
+        "zone": "Zone"
+      }
+    },
+    "error": {
+      "email": "Enter a valid mail address",
+      "requiredField": "%s is a required field",
+      "required_generic": "Please fill out all required fields."
+    },
+    "no": "No",
+    "search": "Search",
+    "yes": "Yes",
+    "saved": "Saved",
+    "ok": "Ok",
+    "update": "Update",
+    "draft": "Save draft",
+    "create": "Create",
+    "selectZones": {
+      "address": "Address",
+      "zone": "Zone",
+      "locations": "Selected locations"
+    },
+    "shipmentQuery": {
+      "from": "From",
+      "to": "To",
+      "dates": {
+        "title": "Dates",
+        "from": "From date",
+        "to": "To date"
+      },
+      "carriers": "Carriers",
+      "mode": "Shipping mode",
+      "modeText": "Select mode"
+    }
+  },
+  "stage": {
+    "form": {
+      "instructions": "Special instructions to driver",
+      "license": "License plate",
+      "button": {
+        "add": "Add stage"
+      },
+      "title": {
+        "add": "Create stage"
+      },
+      "location": {
+        "a": "Loading",
+        "b": "Destination",
+        "c": "Location",
+        "d": "Custom"
+      },
+      "number": "Stage number",
+      "type": "Shipment type",
+      "types": {
+        "full_truck": "Full Truck Load"
+      },
+      "dock": "Dock number",
+      "warehouse": "Warehouse ID"
+    },
+    "_": "Stage",
+    "vehicleId": "Truck license plate",
+    "trailerId": "Trailer licence plate",
+    "carrierId": "carrier",
+    "carrier": {
+      "_": "Carrier",
+      "id": "Carrier ID",
+      "name": "Carrier name"
+    },
+    "dates": {
+      "_": "Date/time",
+      "pickup": {
+        "arrival": {
+          "_": "Pickup arrival",
+          "planned": "Planned pickup arrival",
+          "scheduled": "Scheduled pickup arrival",
+          "actual": "Actual pickup arrival"
+        },
+        "_": "Stage start",
+        "start": {
+          "_": "Loading start",
+          "planned": "Planned loading start",
+          "scheduled": "Scheduled loading start",
+          "actual": "Actual loading start"
+        },
+        "departure": {
+          "_": "Departure",
+          "planned": "Planned departure",
+          "scheduled": "Scheduled departure",
+          "actual": "Actual departure"
+        }
+      },
+      "delivery": {
+        "_": "Stage end",
+        "arrival": {
+          "_": "Delivery arrival",
+          "planned": "Planned delivery arrival",
+          "scheduled": "Scheduled delivery arrival",
+          "actual": "Actual delivery arrival"
+        },
+        "departure": {
+          "_": "Delivery departure",
+          "planned": "Planned delivery departure",
+          "scheduled": "Scheduled delivery departure",
+          "actual": "Actual delivery departure"
+        }
+      }
+    },
+    "equipment": {
+      "_": "Equipment",
+      "quantity": "Quantity",
+      "type": "Type"
+    },
+    "equipments": {
+      "_": "Equipment",
+      "quantity": "Quantity",
+      "type": "Type"
+    },
+    "to": {
+      "_": "To address",
+      "addressId": "To address",
+      "id": "To Location ID",
+      "name": "To Location name",
+      "locode": "To UN Locode",
+      "portName": "To Port Name",
+      "address": {
+        "_": "Address",
+        "city": "To City",
+        "street": "To Street",
+        "number": "To Number",
+        "zip": "To Zip code",
+        "country": "To Country"
+      }
+    },
+    "from": {
+      "_": "From address",
+      "addressId": "From address",
+      "id": "From Location ID",
+      "name": "From Location name",
+      "locode": "From UN Locode",
+      "portName": "From Port Name",
+      "address": {
+        "_": "Address",
+        "city": "From City",
+        "street": "From Street",
+        "number": "From Number",
+        "zip": "From Zip code",
+        "country": "From Country"
+      }
+    },
+    "mode": "Shipping mode"
+  },
+  "item": {
+    "volume": {
+      "${unit}": "__ignore__",
+      "_": "Volume",
+      "kg": "Kg",
+      "lm": "Lm",
+      "m": "m",
+      "cm": "cm",
+      "m3": "m³",
+      "l": "L",
+      "pal": "Pal",
+      "ctr": "Container"
+    },
+    "_": "Item",
+    "number": "Number",
+    "material": {
+      "_": "Material",
+      "id": "ID",
+      "description": "Description"
+    },
+    "quantity": "Quantity",
+    "quantity_unit": "Quantity UoM",
+    "weight_net": "Net Weight",
+    "weight_gross": "Gross Weight",
+    "weight_unit": "Weight UoM"
+  },
+  "account": {
+    "portal": {
+      "certificates": {
+        "types": {
+          "AEO": "AEO (Authorised Economic Operator)",
+          "BREEAM": "BREEAM (Building Research Establishment Environmental Assessment Method)",
+          "CAGE": "CAGE (Commercial and Government Entity code)"
+        },
+        "add": "Add certificate",
+        "text": "Select or enter certificates or rewards (you can add your own)",
+        "title": "My Certificates",
+        "description": "service Description",
+        "info": "Add your certificates here, these will be displayed on your public profile page"
+      },
+      "locations": {
+        "types": {
+          "warehouse": "Warehouse",
+          "crossDocking": "Cross Docking",
+          "office": "Office",
+          "factory": "Production site"
+        },
+        "add": "Add Location",
+        "description": "Description",
+        "descriptionEmpty": "No description added",
+        "empty": "Add your locations here, these will be displayed on your public profile page",
+        "mode": "This site serves:",
+        "modes": {
+          "${mode}": "__ignore__",
+          "road": "Road",
+          "ocean": "Ocean",
+          "air": "Air",
+          "rail": "Rail",
+          "multi": "Multi"
+        },
+        "name": "name",
+        "PC": "Postal code",
+        "place": "Place",
+        "selectMode": "Select mode",
+        "selectType": "Select type",
+        "title": "My Locations",
+        "type": "Location Type",
+        "edit": "Edit Location"
+      },
+      "services": {
+        "types": {
+          "#{type}": "__ignore__",
+          "warehouse": "Warehousing",
+          "crossDocking": "Cross docking",
+          "transport": "Transport",
+          "VA": "Value added logistics",
+          "other": "Other",
+          "refrigeration": "Refrigerated transport"
+        },
+        "add": "Add service",
+        "header": "Services",
+        "info": "Add your services here, these will be displayed on your public profile page",
+        "text": "Select or enter services (you can add your own)",
+        "title": "My Services"
+      },
+      "banner": "Upload directory banner",
+      "contacts": {
+        "add": "Add contact",
+        "empty": "You have not defined any contacts yet",
+        "title": "Contacts",
+        "types": {
+          "${type}": "__ignore__",
+          "general": "General Contact",
+          "booking": "Booking Contact",
+          "sales": "Sales",
+          "other": "Other"
+        },
+        "firstName": "First Name",
+        "lastName": "Last Nam",
+        "mail": "Email",
+        "phone": "Phone",
+        "type": "Type",
+        "edit": "Edit contact"
+      },
+      "description": "Company description",
+      "documents": {
+        "add": "Add document",
+        "empty": "You haven't uploaded any documents yet.",
+        "info": "Add company presentation or any document here (pdf only).",
+        "title": "Documents"
+      },
+      "footprint": {
+        "info": "Which countries do you ship to? Add them to your public profile here.",
+        "title": "My footprint"
+      },
+      "help": "Learn more about your personal track & trace page",
+      "info": "Customize your track & trace page by claiming a personal address and setting your logo. Learn more about your",
+      "logo": "Upload logo",
+      "name": "%s Name",
+      "nameEmpty": "Please fill in a name",
+      "slugError": "Please enter a valid prefix (no special characters or spaces allowed)",
+      "slugText": "Set your url (4-16 characters, no spaces)",
+      "website": {
+        "add": "Add website",
+        "empty": "You don't have any sites yet",
+        "info": "Add information on your website here.",
+        "title": "My websites",
+        "edit": "Edit website"
+      },
+      "page": "My public page"
+    },
+    "profile": {
+      "contacts": {
+        "types": {
+          "general": "General Contact",
+          "booking": "Booking Contact",
+          "sales": "Sales",
+          "other": "Other"
+        },
+        "empty": "No contacts added yet"
+      },
+      "location": {},
+      "locations": {
+        "empty": "No locations added yet"
+      },
+      "services": {
+        "text": "Add services"
+      },
+      "website": {},
+      "websites": {
+        "empty": "No websites added yet"
+      },
+      "general": {
+        "title": "Portal"
+      },
+      "certificates": {
+        "empty": "No certificate added yet",
+        "text": "Add certificates",
+        "title": "Certificates"
+      },
+      "description": {
+        "title": "Description",
+        "empty": "No services added yet"
+      },
+      "documents": {
+        "empty": "No documents uploaded yet"
+      },
+      "footprint": {
+        "edit": "Edit footprint",
+        "empty": "No footprint added yet",
+        "title": "Footprint"
+      },
+      "notes": {
+        "edited": "Last edited on %s",
+        "empty": "You have not added any notes yet",
+        "title": "My notes"
+      },
+      "title": "Profile"
+    },
+    "tabs": {},
+    "details": {
+      "created": "Created %s",
+      "number": "Account nr. %s"
+    }
+  },
+  "address": {
+    "form": {
+      "hours": {
+        "edit": "Change opening hours"
+      },
+      "import": {
+        "info_options": {}
+      },
+      "link": {},
+      "notes": {
+        "edit": "Edit notes",
+        "empty": "No notes added yet"
+      },
+      "safety": {
+        "pbm": {
+          "${item}": "__ignore__",
+          "mouth": "Mouth",
+          "body": "Body",
+          "hand": "Hand",
+          "ears": "Ear",
+          "eye": "Eye",
+          "feet": "Feet",
+          "head": "Head"
+        }
+      },
+      "tab": {
+        "${tab}": "__ignore__"
+      },
+      "tabs": {
+        "${tab}": "__ignore__",
+        "info": "Address",
+        "notes": "Notes",
+        "profile": "Profile"
+      },
+      "contact": {
+        "selectType": "Select type",
+        "addContact": "Add contact",
+        "contactTitle": "Title",
+        "empty": "No contacts yet",
+        "emptyField": "No contact info",
+        "entermail": "Enter mail address",
+        "enterphone": "Enter phone",
+        "firstname": "First name",
+        "lastname": "Last name",
+        "mail": "Mail",
+        "mailAlert": "Alert",
+        "name": "Name",
+        "phone": "Phone",
+        "title": "My contacts",
+        "titles": {
+          "${value}": "__ignore__",
+          "mr": "Mr.",
+          "mrs": "Mrs.",
+          "miss": "Miss",
+          "sir": "Sir",
+          "dr": "Dr."
+        },
+        "type": "Type",
+        "types": {
+          "${type}": "__ignore__",
+          "general": "General contact",
+          "planning": "Planning",
+          "other": "Other",
+          "reception": "Reception",
+          "sales": "Sales department",
+          "purchasing": "Purchasing department"
+        }
+      },
+      "add": "Add",
+      "certificates": {
+        "add": "Add certificates",
+        "empty": "No Certificates entered yet",
+        "text": "Add certificates by entering the names here",
+        "title": "Certificates"
+      },
+      "edit": "Edit",
+      "id": "Location ID",
+      "location": {
+        "claim": "Claim this location",
+        "claimed": "This location is claimed by",
+        "helpClaim": "Claims are verified before publishing.",
+        "pending": "This location has been claimed, pending verification",
+        "claimConfirm": "Are you sure you want to claim this address? If you claim this address, the locaiton will be associated with your account."
+      },
+      "title": {},
+      "type": "Type"
+    },
+    "header": {
+      "shipments": "__count__ shipment"
+    },
+    "import": {
+      "button": "Import"
+    },
+    "input": {
+      "book": "Your address book",
+      "create": "Create a new location",
+      "global": "Did you mean...",
+      "locode": "UN Locode"
+    },
+    "overview": {
+      "title": "Locations"
+    }
+  },
+  "edi": {
+    "aside": {},
+    "mapping": {},
+    "steps": {
+      "errorFree": {},
+      "import": {},
+      "jobs": {},
+      "mapping": {},
+      "process": {},
+      "done": {
+        "title": "Done!"
+      }
+    },
+    "error": {
+      "invalid": "__field__ is invalid: \"__value__\" ",
+      "required": "__field__ is required",
+      "unknown": "Unknown __field__ found: \"__value__\" ",
+      "count": {
+        "field": "__count__ field",
+        "field_plural": "__count__ fields",
+        "item": "__count__ item",
+        "item_plural": "__count__ items",
+        "stage": "__count__ stage",
+        "stage_plural": "__count__ stages"
+      }
+    }
+  },
+  "enroll": {
+    "description": "Choose a password to get started.",
+    "no_match": "Passwords do not match",
+    "old_password": "Old password",
+    "password": "Password",
+    "repeat": "Repeat",
+    "requirements": "Password must be at least 6 characters",
+    "reset": {
+      "description": "Choose a new password.",
+      "save": "Reset password",
+      "title": "Reset your password",
+      "link": "Reset password"
+    },
+    "save": "Set password",
+    "title": "Welcome to Transmate",
+    "oldPassword": "Old password"
+  },
+  "track": {
+    "progress": "Shipment progress",
+    "updates": "Status updates"
+  },
+  "price": {
+    "list": {
+      "${topic}": {},
+      "activate": {},
+      "approve": {},
+      "archive": {},
+      "aside": {
+        "actions": {},
+        "edit": "Edit details",
+        "attachments": "Attachments",
+        "specialRequirements": "Special Requirements",
+        "remarks": "Remarks",
+        "status": "Status",
+        "partner": "Partner",
+        "baseUnit": "Base Unit",
+        "country": "Country",
+        "fromZones": "From zones",
+        "locations": "From locations",
+        "destinations": "To locations"
+      },
+      "charge": {
+        "edit": "Edit charge",
+        "view": "View charge"
+      },
+      "conversions": {
+        "range": {
+          "title": "range"
+        },
+        "edit": "Edit UOM conversion",
+        "multiplierAbbr": "Mult.",
+        "max": "Max",
+        "min": "Min"
+      },
+      "deactivate": {},
+      "decline": {},
+      "delete": {},
+      "draft": {},
+      "equipment": {
+        "edit": "Edit equipment group",
+        "view": "View equipment group",
+        "remove": "Are you sure you want to remove this lane? This will remove %s rates from your priceList. This action is irreversable"
+      },
+      "export": {},
+      "footer": {
+        "saved": "Saved: %s"
+      },
+      "form": {
+        "${topic}": {},
+        "baseUnit": {
+          "${unit}": "__ignore__",
+          "label": "Base Unit",
+          "pal": "Euro Pallet",
+          "kg": "Weight (kg)",
+          "m3": "Cubic meter",
+          "lm": "Loading Meter",
+          "l": "Liter",
+          "ctr": "Container",
+          "parcel": "Parcel",
+          "pc": "Piece"
+        },
+        "carrier": {},
+        "category": {
+          "express": " Express",
+          "standard": "Standard"
+        },
+        "days": {
+          "days": "Days",
+          "eom": "Days month end"
+        },
+        "header": "Price list information",
+        "lead": {
+          "legend": {
+            "ftl": "Pick-up day FTL"
+          }
+        },
+        "partner": {},
+        "requirements": {
+          "title": "Special requirements and documents"
+        },
+        "serviceLevel": {
+          "LTL": "LTL",
+          "FTL": "FTL",
+          "FCL": "FCL",
+          "LCL": "LCL",
+          "express": "express",
+          "lineHaul": "lineHaul",
+          "parcel": "parcel"
+        },
+        "setPublic": {
+          "checkBox": "Make public",
+          "checkbox": "Make price list publicly available"
+        },
+        "submit": "Save price list",
+        "templates": {
+          "default": "List",
+          "air": "Air",
+          "road": "Road",
+          "ocean": "Ocean",
+          "oceanList": "Ocean (list)",
+          "custom": "Custom",
+          "spot": "Spot"
+        },
+        "terms": {},
+        "transportMode": {
+          "air": "Air",
+          "multi": "Multi",
+          "ocean": "Ocean",
+          "rail": "Rail",
+          "road": "Road"
+        },
+        "type": {
+          "contract": "Contract",
+          "spot": "Spot"
+        },
+        "units": {
+          "subTitle": "Allowed units of measure",
+          "title": "Units/conversions"
+        },
+        "zone": {
+          "add": "Add zone range",
+          "error": {
+            "overlap": "Some ranges overlap with existing zones (__ranges__)."
+          },
+          "title": {
+            "add": "Add zone",
+            "edit": "Edit zone"
+          },
+          "tools": {
+            "upload": {
+              "info": "Need help? Check the article for instructions and upload templates.",
+              "warning": {
+                "header": "Warning",
+                "info": "There is no overlap check when uploading files. Please make sure that zones are not overlapping."
+              },
+              "popup": "Upload",
+              "help": "Upload zones from a file"
+            },
+            "flashFill": {
+              "popup": "Flash fill zones",
+              "help": "Automatically generate zones by step"
+            },
+            "trash": {
+              "popup": "Remove",
+              "help": "Remove all created zones",
+              "confirm": "Are you sure you want to remove all zones?"
+            }
+          }
+        },
+        "ctrTypes": {
+          "select": "Select types..."
+        },
+        "createdBy": "Created by",
+        "rateType": {
+          "label": "Rate type",
+          "contract": "Contract",
+          "spot": "Spot",
+          "${key}": "__ignore__"
+        },
+        "specialRequirements": "Special Requirements",
+        "zoneRange": {
+          "title": {
+            "add": "Create zone range"
+          },
+          "warning": {
+            "header": "Warning: some zone ranges are not consistent.",
+            "body": "Please check the following zone ranges:"
+          },
+          "zoneFrom": "Start range with postal codes starting with",
+          "zoneTo": "End range with postal codes starting with",
+          "error": {
+            "header": "This zone range is invalid",
+            "startOfRange": "Make sure that the start of the range is not less than",
+            "endOfRange": "and the end of the range is not more than"
+          }
+        },
+        "zoneRangeFill": {
+          "from": "Zip from",
+          "step": "Stepsize",
+          "title": "Flash fill zones",
+          "to": "Zip to"
+        },
+        "attachments": "Attachments",
+        "remarks": "Additional information",
+        "request": "Request price list",
+        "statusOptions": {
+          "${key}": "__ignore",
+          "open": "Open",
+          "closed": "Closed",
+          "draft": "Draft",
+          "canceled": "Canceled",
+          "offered": "Offered"
+        },
+        "title_edit": "Edit price list",
+        "title_request": "New price list request",
+        "ctrType": "Container type",
+        "toCountry": "To country",
+        "portOrigin": "Origin port",
+        "portDestination": "Destination port",
+        "route": "Route",
+        "incoterm": "Incoterms",
+        "incoterms": {
+          "EXW": "Ex Works",
+          "FCA": "Free Carrier",
+          "CPT": "Carriage Paid To",
+          "CIP": "Carriage and Insurance paid to",
+          "DAT": "Delivered At Terminal",
+          "DAP": "Delivered At Place",
+          "DDP": "Delivered Duty Paid",
+          "FAS": "Free Alongside Ship",
+          "FOB": "Free On Board",
+          "CFR": "Cost and Freight",
+          "CIF": "Cost, Insurance and Freight"
+        },
+        "fromLocations": "From locations",
+        "toLocations": "To locations",
+        "pricingConditions": "Pricing conditions",
+        "requirement": {
+          "label": "Requirement",
+          "select": "Select"
+        },
+        "additionalCost": {
+          "title": {
+            "add": "Additional Pricing"
+          },
+          "type": "Pricing type",
+          "types": {
+            "fixed": "Fixed",
+            "input": "Input"
+          },
+          "cost": "Cost type",
+          "name": "Name",
+          "value": "Value",
+          "multiplier": "Multiplier",
+          "multipliers": {
+            "shipment": "Per shipment",
+            "uom": "Per %s",
+            "stop": "Per stop",
+            "stage": "Per stage",
+            "hour": "Per hour",
+            "ctr": "Per container",
+            "bl": "Per bill of lading"
+          },
+          "ctrType": "Container type",
+          "ctrTypes": {
+            "all": "All"
+          },
+          "min": "Minimum",
+          "max": "Maximum"
+        },
+        "volumeRange": {
+          "add": "Add volume range",
+          "title": {
+            "add": "Create volume range"
+          },
+          "warning": {
+            "header": "Warning: some volume ranges are not consistent.",
+            "body": "Please check the following volume ranges:"
+          },
+          "quantityFrom": "Quantity from",
+          "quantityTo": "Quantity To",
+          "multiplier": "Multiplier",
+          "multipliers": {
+            "uom": "Per %s",
+            "shipment": "Per Shipment"
+          },
+          "error": {
+            "header": "This volume range is invalid",
+            "startOfRange": "Make sure that the start of the range is not less than",
+            "endOfRange": "and the end of the range is not more than",
+            "overlapping": "It is overlapping with zone %s-%s"
+          },
+          "tools": {
+            "flashFill": {
+              "popup": "Flash fill volume brackets",
+              "help": "Automatically generate volume brackets by step",
+              "from": "From",
+              "to": "To",
+              "step": "Step size"
+            },
+            "trash": {
+              "popup": "Remove",
+              "help": "Remove all weight brackets",
+              "confirm": "Are you sure you want to remove all brackets?"
+            },
+            "upload": {
+              "popup": "Upload",
+              "help": "Upload brackets from a file",
+              "info": "Need help? Check the article for instructions and upload templates."
+            }
+          }
+        },
+        "container": {
+          "add": "Add cost",
+          "modal": {
+            "title": "Add cost",
+            "type": "Cost type",
+            "name": "Description"
+          }
+        }
+      },
+      "fuel": {
+        "index": {}
+      },
+      "header": {},
+      "import": {
+        "info_options": {}
+      },
+      "lane": {
+        "address": {
+          "placeholder": "Enter addres or UNLocode",
+          "description": "One or more exact addresses or location codes."
+        },
+        "zone": {
+          "header": "Zone range",
+          "add": "Add zone range",
+          "description": "One or more ranges of zipcodes or country codes."
+        },
+        "${tab}": "__ignore__",
+        "incoterm": "Incoterm",
+        "portOfLoading": "Port of loading",
+        "portOfDischarge": "Port of discharge",
+        "set": "Set lane",
+        "edit": "Edit lane",
+        "view": "View lane",
+        "remove": "Are you sure you want to remove this lane? This will remove %s rates from your priceList. This action is irreversable"
+      },
+      "leadTime": {
+        "copy": {},
+        "duration": {
+          "day": "days",
+          "hour": "hours",
+          "days": "days",
+          "hours": "hours"
+        },
+        "fri": "Fri",
+        "mon": "Mon",
+        "sat": "Sat",
+        "sun": "Sun",
+        "thu": "Thu",
+        "tue": "Tue",
+        "wed": "Wed",
+        "LTL": "Lead Time LTL",
+        "FTL": "Lead Time FTL"
+      },
+      "overview": {
+        "title": "Rate cards",
+        "analysis": "Analysis"
+      },
+      "rate": {
+        "range": "Volume range",
+        "rule": {},
+        "value": "Value",
+        "multipliers": {
+          "shipment": "Per shipment",
+          "uom": "Per %s",
+          "stop": "Per stop",
+          "stage": "Per stage",
+          "hour": "Per hour",
+          "ctr": "Per container",
+          "bl": "Per bill of lading"
+        },
+        "min/max": "Min/max",
+        "edit": "Edit rate",
+        "view": "View rate",
+        "meta": {
+          "leg": "Leg"
+        }
+      },
+      "releaseForApproval": {},
+      "shipment": {
+        "fromCC": "From Ctry",
+        "fromZone": "Origin",
+        "toCC": "To Ctry",
+        "toZone": "Destination",
+        "goods": "Goods",
+        "equipments": "Equipments"
+      },
+      "status": {},
+      "tab": {
+        "lanes": "Lanes",
+        "volumes": "Volumes",
+        "rates": "Rates",
+        "ratesAdditional": "Additional costs",
+        "leadTimes": "Lead time",
+        "additional": "Additional Cost",
+        "equipments": "Equipment",
+        "fuel": "Fuel",
+        "general": "General",
+        "notes": "Notes",
+        "logic": "Settings",
+        "conversions": "UOM conversions"
+      },
+      "template": {},
+      "volume": {
+        "group": {},
+        "range": {},
+        "remove": "Are you sure you want to remove this volume group? This will remove %s rates from your priceList. This action is irreversable",
+        "edit": "Edit volume group",
+        "view": "View volume group"
+      },
+      "cancel": {
+        "action": "Cancel request",
+        "confirm": "Are you sure you want to cancel this price list request?"
+      },
+      "edit": {
+        "action": "Edit"
+      },
+      "release": {
+        "action": "Release"
+      },
+      "zone": {
+        "add": "Add zone",
+        "name": "Zone",
+        "ranges": "Postal codes"
+      },
+      "request": {
+        "baseUnit": "Allowed units of measure",
+        "selectCarriers": "Carriers",
+        "selectCarriersText": "Select the partners you want to receive this price list request.",
+        "selectedCarriers": "Selected Carriers",
+        "priceRequest": "Price request",
+        "information": "Information"
+      },
+      "confirm": "Are you sure you want to modify this price list?",
+      "comment": {
+        "view": "View comment",
+        "edit": "Edit comment"
+      },
+      "legend": "Prices are in __currency__, volumes in __base__"
+    },
+    "request": {
+      "analytics": {
+        "details": {
+          "empty": {},
+          "info": {
+            "totalCost": "Total cost",
+            "leadTime": "Lead time",
+            "isCheapest": "Is cheapest",
+            "isFastest": "Is fastest"
+          }
+        },
+        "main": {},
+        "summary": {
+          "acceptance": "Acceptance",
+          "minCost": "Best price",
+          "minLeadTime": "Best lead time"
+        }
+      },
+      "archive": {},
+      "autoAdd": {},
+      "bidders": {
+        "table": {
+          "action": {},
+          "contacts": "Contacts",
+          "${text}": "__ignore__",
+          "actions": "Actions",
+          "email": "Email?",
+          "bid": "Offered?",
+          "won": "Won?",
+          "partner": "Partner",
+          "viewed": "Viewed?",
+          "expanding": " ",
+          "viewNotes": "View notes"
+        },
+        "action": {
+          "delete": "Remove this partner from the list.",
+          "view": "View the offer of this partner"
+        }
+      },
+      "bidding": {
+        "myBid": "My offer",
+        "button": "Add offer"
+      },
+      "bidSimple": {
+        "confirmBidMsg": "This action will generate a price list that will be presented to the shipper. Proceed?",
+        "offerBtn": "Place offer",
+        "updateBtn": "Update offer"
+      },
+      "data-single": {
+        "title": "Shipment summary"
+      },
+      "data": {
+        "add": "Add item",
+        "table": {
+          "canEdit": "Add an item to the price request.",
+          "description": "Click on link to see details.",
+          "empty": "There is no request data to show.",
+          "link": "Details",
+          "linkExplain": "Click to see shipment details!"
+        }
+      },
+      "delete": {},
+      "draft": {},
+      "form": {
+        "settings": {
+          "canEditAdditionalCosts": "Allow bidder to add or modify additional costs (i.e. costs that are not applicable in the rate grid such as demurrage or other event based costs)",
+          "canEditCurrency": "Allow bidder to modify currencies",
+          "canEditMultiplier": "Allow bidder to modify charge multipliers",
+          "canEditCharges": "Allow the bidder to add/remove charges",
+          "canEditLanes": "Allow the bidder to modify lane structure",
+          "canEditLeadTimes": "Allow the bidder to modify leadTimes",
+          "canCommentRates": "Allow the bidder to give a comment on each rate"
+        },
+        "save": "Save",
+        "statusOptions": {
+          "${status}": "__ignore__",
+          "${key}": "__ignore__",
+          "draft": "Draft",
+          "requested": "Requested",
+          "won": "Won",
+          "lost": "Lost",
+          "allocated": "Allocated",
+          "placeYourBid": "Place A Bid",
+          "allBidsReceived": "All Bids Received",
+          "partialBidsReceived": "Some Bids Received",
+          "archived": "Archived",
+          "closed": "Closed",
+          "canceled": "Canceled",
+          "deleted": "Deleted",
+          "expired": "Expired",
+          "offered": "Offered"
+        },
+        "currency": "Currency",
+        "rateType": {
+          "${key}": "__ignore__",
+          "label": "Label",
+          "spot": "Spot",
+          "contract": "Contract"
+        },
+        "title": "General",
+        "bidderStatus": "Bidder Info",
+        "noBidPossible": "No Bid possible",
+        "requestedBy": "Requested by"
+      },
+      "general": {},
+      "mass": {
+        "button": {},
+        "modal": {
+          "create": {},
+          "existing": {}
+        }
+      },
+      "partner": {
+        "modal": {}
+      },
+      "request": {},
+      "requirements": {},
+      "settings": {
+        "postpone": {}
+      },
+      "tab": {
+        "${tab}": "__ignore__",
+        "partners": "Partners",
+        "general": "General",
+        "data": "Data",
+        "analytics": "Analytics"
+      },
+      "table": {
+        "description": {
+          "${to}": {},
+          "bidder": {
+            "won": "You won this bid!",
+            "lost": "You lost this bid!",
+            "placeYourBid": "The customer is waiting for your bid!",
+            "offered": "Your placed your offer for this price request, please wait for the customer to evaluate your bid!",
+            "expired": "expired"
+          },
+          "requester": {
+            "requested": "No bids yet...",
+            "expired": "Expired without receiving any bids, check/adapt and resend if needed.",
+            "allBidsReceived": "You received all bids, let's allocate!",
+            "allocated": "This Price Request is closed, a bidder has been selected.",
+            "draft": "Price Request has not yet been send out.",
+            "partialBidsReceived": "You received some bids, wait for the others to arrive!"
+          }
+        }
+      },
+      "overview": {
+        "title": "Price Requests"
+      },
+      "forApproval": {
+        "onSuccessMsg": "Request has been set for approval."
+      },
+      "items": {
+        "refresh": "Refresh",
+        "table": {
+          "${text}": "__ignore__",
+          "CC": "country",
+          "equipment": "Equipment",
+          "from": "From",
+          "goods": "Goods",
+          "lock": "This item is linked to a shipment.",
+          "loCode": "UNLOCODE",
+          "to": "To",
+          "zip": "Zip code",
+          "forShipment": "Shipment?"
+        }
+      },
+      "bidder": {
+        "title": "My Offer"
+      },
+      "deactivate": {
+        "action": "Deactiveate",
+        "confirm": "Are you sure you want to deactivate this request?"
+      }
+    },
+    "switchPoint": {
+      "form": {}
+    },
+    "lookup": {
+      "description": {
+        "carrier": {
+          "all": "All carriers",
+          "title": "Carrier"
+        },
+        "currency": "Currency",
+        "title": "Description",
+        "name": "Price list name"
+      },
+      "empty": "No price found for your query",
+      "requestnew": "Request a price",
+      "result": {
+        "carrier": "Carrier",
+        "cost": "Cost",
+        "days": "__count__ day",
+        "leadTime": "Lead Time",
+        "mode": "Mode",
+        "serviceLevel": "Service Level",
+        "title": "Price List",
+        "days_plural": "__count__ days",
+        "baseCost": "Base rate",
+        "totalCost": "Total"
+      },
+      "results": {
+        "title": "Results"
+      },
+      "search": "Search",
+      "serviceLevel": "Service level",
+      "tabs": {
+        "${tab}": "__ignore__",
+        "filter": "Filters",
+        "quantity": "Quantity",
+        "route": "Route",
+        "items": "Items",
+        "options": "Options"
+      },
+      "title": "Price lookup",
+      "fullLoad": "Full load only",
+      "equipment": {
+        "label": "Equipment",
+        "type": "Type",
+        "number": "Num"
+      },
+      "goods": {
+        "qty": "Quantity",
+        "title": "Goods",
+        "type": "Shipment type",
+        "ltl": "LTL",
+        "ftl": "FTL",
+        "ctr": {
+          "label": "Container",
+          "number": "Containers",
+          "type": "Type"
+        }
+      },
+      "lane": {
+        "title": "Lane"
+      }
+    },
+    "overview": {
+      "priceLists": "Price Lists",
+      "priceRequests": "Price Requests"
+    }
+  },
+  "analysis": {
+    "${type}": {
+      "header": {}
+    },
+    "about": {},
+    "button": {},
+    "scope": {},
+    "simulation": {
+      "button": {
+        "new": "New price analysis",
+        "run": "Run"
+      },
+      "priceLists": {
+        "none": "No price lists found that match the lanes in your dataset.",
+        "process": "Process"
+      },
+      "steps": {
+        "${key}": {},
+        "${step}": {
+          "sub": "__ignore__",
+          "title": "__ignore__"
+        },
+        "data": {
+          "title": "Data",
+          "sub": "Select base data"
+        },
+        "options": {
+          "title": "Options",
+          "sub": "Select price lists"
+        },
+        "start": {
+          "title": "Run",
+          "sub": "Start the analysis"
+        },
+        "results": {
+          "title": "Results",
+          "sub": "Results summary"
+        },
+        "report": {
+          "title": "Explore",
+          "sub": "Explore the results"
+        }
+      },
+      "table": {
+        "header": {
+          "from": "From",
+          "to": "To",
+          "sl": "SL",
+          "lt": "Lead time",
+          "cost": "Cost",
+          "shipmentId": "Shipment",
+          "milkrun": "Milkrun"
+        },
+        "item": {},
+        "days": "days",
+        "ltCurrent": "Current LT",
+        "ltNew": "Lead Time",
+        "notSlower": "%s of all shipments are within the current lead time.",
+        "baseCost": "Base rate",
+        "totalCost": "Total",
+        "cheapest": "This carrier offers the cheapest service based on base shipments",
+        "fastest": "This carrier offers the fastest service based on base shipments"
+      },
+      "total": {},
+      "header": {
+        "item": "Simulation analysis"
+      },
+      "summary": "__count__ shipment, __cost__, potential savings: __percent__%",
+      "from": "From zone",
+      "to": "To zones",
+      "created": "Analysis started",
+      "status": {
+        "info": "Displaying _START_-_END_ of _TOTAL_ price analyses",
+        "empty": "Press the button to start a first price analysis"
+      },
+      "form": {
+        "title_new": "Create new price analysis",
+        "uploadNotice": "Upload your base file before analysis",
+        "uploadTitle": "Upload file",
+        "uploadButton": "Upload base file",
+        "TMDataTitle": "Query Data",
+        "TMData": "Get data from your Transmate account",
+        "TMQuery": "Get data"
+      },
+      "loading": {
+        "data": "Loading data",
+        "process": "Running analysis",
+        "aggregate": "Aggregating data"
+      }
+    },
+    "switchPoint": {
+      "details": {},
+      "form": {
+        "currencyHP": "Select currency",
+        "intervalMax": "Limit",
+        "laneGenerate": {
+          "button": "Generate"
+        },
+        "modal": {},
+        "priceLists": {
+          "text": "Filter"
+        },
+        "uom": "UoM",
+        "intervalMaxPH": "enter limit",
+        "confirm": "Are you sure? This will reset your analysis."
+      },
+      "results": {},
+      "header": {
+        "item": "Switch point analysis"
+      },
+      "summary": "__count__ lane"
+    },
+    "types": {
+      "${t}": "__ignore__",
+      "simulation-v2": "Cost simulation",
+      "custom": "Analysis"
+    },
+    "simulation-v2": {
+      "header": {
+        "item": "Simulation analysis"
+      }
+    },
+    "custom": {
+      "header": {
+        "item": "Analysis"
+      }
+    }
+  },
+  "nonConformance": {
+    "reasonCode": {
+      "event": {
+        "DT": "Delay in date & time",
+        "EQ": "Equipment",
+        "PR": "Product",
+        "DO": "Documentation/Order process",
+        "SH": "SHE incident"
+      },
+      "occurance": {
+        "B": "Before Loading",
+        "L": "During loading",
+        "T": "During transit",
+        "D": "During delivery",
+        "A": "After delivery"
+      },
+      "owner": {
+        "H": "Haulier/Carrier",
+        "S": "Shipper",
+        "X": "Beyond anyone",
+        "C": "Customer"
+      },
+      "reason": {
+        "1": "Breakdown",
+        "2": "Cancellation",
+        "3": "Cleaning station",
+        "4": "Cleanliness/not fit",
+        "5": "Communication/instructions",
+        "6": "Congestion in traffic",
+        "7": "Congestion of bays",
+        "8": "Crossover",
+        "9": "Documents missing/ IT failure",
+        "10": "equipment accident",
+        "11": "Force of nature",
+        "12": "Incorrect",
+        "13": "Lack of storage capacity",
+        "14": "Load securing",
+        "15": "Near miss",
+        "16": "Not available",
+        "17": "Packaging damaged",
+        "18": "Previous (un)loading point",
+        "19": "Product comtaminated/damaged",
+        "20": "Public authorities",
+        "21": "Quantity",
+        "22": "Seal compromised",
+        "23": "Spill",
+        "24": "Strike",
+        "25": "Surveyor",
+        "26": "Temperature",
+        "27": "Terminal, rail, shipping line",
+        "28": "Theft/vandalism",
+        "29": "Unsafe condition",
+        "30": "Wrong behaviour"
+      },
+      "${event}": "__ignore__",
+      "${item}": "__ignore__"
+    }
+  },
+  "cost": {
+    "${group}": {},
+    "display": "__group__ » __cost__",
+    "connection": {
+      "_": "Connection",
+      "access": "Access fee",
+      "collection": "collection fee",
+      "congestionSurcharge": "congestion surcharge",
+      "deliveryCharges": "delivery charges",
+      "exportCharges": "export charges",
+      "extendedAreaCharge": "extended area charge",
+      "forwarding": "forwarding fee",
+      "handlingCharge": "handling charge",
+      "other": "other connection fees",
+      "peakSeasonSurcharge": "peak season surcharge",
+      "quarantine": "quarantine",
+      "return": "return charge",
+      "storage": "storage charge",
+      "terminalHandlingCharge": "terminal handling charge",
+      "terminals": "terminal charge",
+      "transfer": "transfer fee",
+      "transit": "transit fee",
+      "transshipment": "transshipment fee",
+      "warehouse": "warehouse charge"
+    },
+    "currency": {
+      "_": "Currency",
+      "currencyAdjustment": "currency adjustment fee",
+      "exchange": "exchange fee",
+      "other": "other",
+      "surcharge": "surcharge"
+    },
+    "customs": {
+      "_": "Customs",
+      "adjustment": "adjustment",
+      "anti-dumping": "anti-dumping charges",
+      "checking": "checking fee",
+      "clearance": "clearance fee",
+      "customClearance": "custom clearance fee",
+      "declaration": "declaration fee",
+      "document": "document fee",
+      "duty": "duty",
+      "inspection": "inspection fee",
+      "license": "license fee",
+      "other": "other",
+      "overtime": "overtime",
+      "penalty": "penalty",
+      "permit": "permit",
+      "transfer": "transfer charges",
+      "warehouse": "warehouse charges"
+    },
+    "documentation": {
+      "_": "Documentation",
+      "certificate": "certificate",
+      "charge": "charge",
+      "correction": "correction fee",
+      "createDocument": "document creation fee",
+      "documentation": "documentation charges",
+      "entry": "entry fee",
+      "invoice": "invoice fee",
+      "other": "other",
+      "returns": "documentation returns",
+      "transfer": "docuemntation transfer"
+    },
+    "freight": {
+      "_": "Freight",
+      "freight": "freight",
+      "adjustment": "adjustment",
+      "doorToPortTransport": "Inland charges",
+      "other": "other",
+      "transport-inland": "Inland Transport"
+    },
+    "fuel": {
+      "_": "Fuel",
+      "bunkerCharge": "bunker charge",
+      "carbonCharge": "carbon charge",
+      "fuelSurcharge": "fuel surcharge",
+      "lowSulphurSurcharge": "low sulphur surcharge",
+      "other": "other"
+    },
+    "goods": {
+      "_": "Goods",
+      "classification": "classification",
+      "dangerousGoods": "dangerous goods",
+      "dimensions": "dimensions",
+      "dry-ice": "dry-ice",
+      "environmentalCharges": "environmental charges",
+      "inspection": "inspection",
+      "insurance": "insurance",
+      "other": "other",
+      "packaging": "packaging",
+      "penalty": "penalty",
+      "security": "security",
+      "weight": "weight"
+    },
+    "other": {
+      "_": "Other",
+      "government": "government",
+      "license": "license",
+      "other": "other"
+    },
+    "service": {
+      "_": "Service",
+      "agency": "agency",
+      "broker": "broker",
+      "call": "call",
+      "checking": "checking",
+      "confirmation": "confirmation",
+      "consolidatedCharge": "consolidated charge",
+      "entry": "entry",
+      "exportService": "export service",
+      "fax": "fax",
+      "importService": "import service",
+      "insurance": "insurance",
+      "labeling": "labeling",
+      "latePayment": "late payment",
+      "lookupInformation": "lookup information",
+      "notification": "notification",
+      "other": "other",
+      "payments": "payments",
+      "permit": "permit",
+      "proofOfDelivery": "proof of delivery",
+      "protest": "protest",
+      "refund": "refund",
+      "reporting": "reporting",
+      "securityCharge": "security charge",
+      "serviceCharge": "service charge",
+      "surcharge": "surcharge",
+      "tracking": "tracking",
+      "portHandlingDestination": "Port Handling Destination",
+      "portHandlingOrigin": "Port Handling Origin"
+    },
+    "tax": {
+      "_": "Tax",
+      "irTax": "IR tax",
+      "otherTax": "other tax",
+      "roadTax": "road tax",
+      "vat": "vat"
+    }
+  },
+  "upgrade": {
+    "button": {},
+    "feature": {}
+  },
+  "countries": {
+    "select": "Select country"
+  },
+  "tender": {
+    "actions": {
+      "release": "Are you sure you want to release the tender? - This action will send out invite emails to all participants.",
+      "setToDraft": "Are you sure you want to put the tender in draft status? - Participants will loose access.",
+      "setToReview": "Are you sure you want to put the tender in review status? - Participants will still be able to access their bids, but are not allowed to make any changes.",
+      "close": "Are you sure you want to close the tender? - Participants will loose access.",
+      "cancel": "Are you sure you want to cancel this tender? - The tender will no longer be available for bidders, this action is irreversable"
+    },
+    "contact": {
+      "delete": "Delete",
+      "roles": {
+        "owner": "Tender owner",
+        "manager": "Tender manager",
+        "follower": "Tender follower",
+        "analyst": "Tender analyst"
+      }
+    },
+    "conversation": {
+      "new": "New conversation",
+      "title": "Title",
+      "broadcast": "Broadcast",
+      "message": "Message",
+      "participants": "Participants",
+      "subject": "Subject",
+      "submit": "Submit"
+    },
+    "dashboard": {
+      "detail": {},
+      "grid": {
+        "firstSeen": "First seen",
+        "lastSeen": "Last seen"
+      },
+      "status": "status",
+      "warning": {
+        "${status}": "__ignore__",
+        "draft": "Warning when setting your tender back to draft all bidders will loose access. Proceed?",
+        "open": "Warning: when setting the status to open, all bidders will be notified and can place their bids. Proceed?",
+        "review": "Waring: when setting the status to review, no new bids can be received. Bidders will still be able to view their bids. Proceed? ",
+        "closed": "Warning: when setting the status to closed, no new bids can be received. Bidders will still be able to view their bids. Proceed? ",
+        "canceled": "Warning: when setting the status to canceled, the bidders will be notified and will no longer have access to the tender. Proceed?"
+      }
+    },
+    "document": {},
+    "FAQ": {},
+    "footer": {
+      "cancel": {},
+      "close": {},
+      "draft": {},
+      "next": "Next",
+      "review": {},
+      "status": {}
+    },
+    "header": {},
+    "milestone": {
+      "delete": "Delete"
+    },
+    "NDA": {},
+    "options": {},
+    "overview": {
+      "title": "Tenders",
+      "warning": {
+        "access": "No access",
+        "accessLong": "No access to this tender, please request permission."
+      }
+    },
+    "partner": {},
+    "profile": {
+      "bidder": {},
+      "package": {
+        "volume": {
+          "max": "Max",
+          "min": "Min",
+          "stddev": "Stddev"
+        },
+        "uom": "Unit of measure: __uom__",
+        "delivery": "Destination"
+      },
+      "actions": {
+        "create": "Create price list",
+        "upload": "Upload price list",
+        "delete": "Delete",
+        "decline": "Decline",
+        "accept": "Accept",
+        "release": "Release"
+      },
+      "decline": {
+        "placeholder": "Add a reason..."
+      }
+    },
+    "requirement": {
+      "legend": {},
+      "responseTypes": {
+        "${type}": "__ignore__",
+        "YN": "yes/no",
+        "list": "Option list",
+        "text": "Free text"
+      },
+      "delete": "Delete",
+      "hard": "Hard requirement",
+      "soft": "Soft requirement"
+    },
+    "summary": {
+      "grid": {}
+    },
+    "tabs": {
+      "dashboard": "Dashboard",
+      "introduction": "General",
+      "NDA": "NDA",
+      "requirements": "Requirements",
+      "scope": "Scope",
+      "data": "Data",
+      "profile": "Shipment profile",
+      "partners": "Partners",
+      "analytics": "Analytics",
+      "conversations": "Conversations"
+    },
+    "analytics": {
+      "empty": "A shipment profile has to be configured first."
+    },
+    "contacts": "Contacts",
+    "upload": {
+      "file": "Price List (.xls, .pdf, ...)",
+      "button": "Upload"
+    },
+    "deadline": "Deadline",
+    "status": {
+      "accepted": "Accepted",
+      "declined": "Declined",
+      "declined_reason": "Declined: %s"
+    }
+  },
+  "notifications": {},
+  "notification": {
+    "${type}": {},
+    "shipment": {
+      "received": "New shipment <strong>#__number__</strong> received from <strong>__account__</strong>",
+      "canceled": "Shipment <strong>#__number__</strong> has been canceled",
+      "createdFromWorker": "__numberOfShipments__ shipments created",
+      "delayed": "Shipment <strong>#__number__</strong> is delayed <strong>__minutes__</strong> minutes",
+      "note": "<strong>__note__</strong> added to shipment <strong>#__number__</strong>",
+      "reference": "<strong>__reference__</strong> added to shipment <strong>#__number__</strong>",
+      "updatedFromWorker": "__numberOfShipments__ shipments updated"
+    },
+    "stage": {
+      "eta": "ETA updated for shipment <strong>#__number__</strong>",
+      "late": "Shipment <strong>#__number__</strong> will be <strong>__count__</strong> minute late",
+      "late_plural": "Shipment <strong>#__number__</strong> will be <strong>__count__</strong> minutes late"
+    },
+    "document": {
+      "added": "<strong>__document__</strong> added to shipment <strong>#__number__</strong>"
+    },
+    "non-conformance": {
+      "added": "Non conformance added on shipment <strong>#__number__</strong>"
+    },
+    "partnership": {
+      "requested": "Partnership request from <strong>__account__</strong>",
+      "accepted": "You are now connected with <strong>__account__</strong>",
+      "rejected": "<strong>__account__</strong> rejected your partnership request"
+    },
+    "price-list": {
+      "approved": "<strong>__account__</strong> approved price list <strong>__title__</strong>",
+      "declined": "<strong>__account__</strong> declined price list <strong>__title__</strong>",
+      "released": "<strong>__account__</strong> has released a price list for approval",
+      "requested": "Price list request from <strong>__account__</strong>",
+      "request-cancelled": "<strong>__account__</strong> canceled the price list request"
+    },
+    "price-request": {
+      "bidWon": "You have won the bid for price request __ref__ for <strong>__account__</strong>",
+      "bidLost": "You have lost the bid for price request __ref__for <strong>__account__</strong>",
+      "canceledFromWorker": "Price request __ref__ was canceled by <strong>__account__</strong>",
+      "ended": "Price request __ref__ bid time has ended",
+      "endedWithoutBids": "Price request __ref__ bid time has ended without any bids",
+      "modifiedFromWorker": "Price request __ref__ was modified.",
+      "requested": "Price request requested __ref__  by <strong>__account__</strong>",
+      "cancelled": "Price request __ref__  was cancelled by <strong>__account__</strong>",
+      "suspended": "Suspended price request__ref__  from <strong>__account__</strong>",
+      "request-cancelled": "<strong>__account__</strong> canceled the price request __ref__ ",
+      "spotReceived": "Spot request for price request __ref__ was received",
+      "bidReceived": "<strong>__account__</strong> has __status__ a bid for price request __ref__"
+    },
+    "tender": {
+      "released": "<strong>__account__</strong> released a tender for <strong>__title__</strong>",
+      "submitted": "<strong>__account__</strong> submitted a price list for tender <strong>__title__</strong>",
+      "accepted": "A price list you submitted for tender <strong>__title__</strong> has been approved",
+      "declined": "A price list you submitted for tender <strong>__title__</strong> has been declined"
+    },
+    "import": {
+      "done": "Import of <strong>__count__ shipment</strong> completed",
+      "done_plural": "Import of <strong>__count__ shipments</strong> completed",
+      "failed": "Import completed, <strong>__count__ error</strong> encountered",
+      "failed_plural": "Import completed, <strong>__count__ errors</strong> encountered"
+    }
+  },
+  "scope": {
+    "data": {},
+    "seasonality": {
+      "month": "Monthly",
+      "none": "No seasonality",
+      "title": "Seasonality",
+      "week": "Weekly"
+    },
+    "stops": {
+      "types": {
+        "${stopType}": "__ignore__",
+        "portOfLoading": "Port of loading",
+        "portOfDischarge": "Port of discharge",
+        "hub": "hub",
+        "stop": "stop"
+      }
+    }
+  },
+  "conversation": {
+    "comments": {}
+  },
+  "components": {
+    "countdown": {
+      "days": "days",
+      "hours": "hours",
+      "minutes": "min",
+      "seconds": "sec"
+    },
+    "currency": {},
+    "goods": {
+      "default": "kg",
+      "placeholder": "Quantity"
+    },
+    "equipment": {
+      "label": "Equipment",
+      "subTitle": "Equipment search",
+      "type": "Type"
+    }
+  },
+  "${group}": {},
+  "info": {},
+  "tools": {
+    "oceanDistance": {
+      "aside": {
+        "history": {}
+      },
+      "message": {}
+    },
+    "priceLookup": {
+      "aside": {
+        "history": {}
+      },
+      "lane": {
+        "${dir}": {},
+        "from": {
+          "date": "Date",
+          "location": "Pickup location",
+          "time": "Time"
+        },
+        "to": {
+          "date": "Date",
+          "location": "Delivery location",
+          "time": "Time"
+        }
+      },
+      "message": {},
+      "partner": {},
+      "result": {},
+      "results": {},
+      "tabs": {}
+    },
+    "routeInsights": {
+      "aside": {
+        "history": {}
+      },
+      "delivery": {},
+      "message": {},
+      "pickup": {}
+    }
+  },
+  "settings": {
+    "data": {
+      "costs": {},
+      "masterData": {},
+      "tags": {}
+    },
+    "entities": {
+      "modal": {
+        "save": "Save"
+      },
+      "invoicingEmail": "mail",
+      "add": "New Entity"
+    },
+    "fuel": {
+      "index": {
+        "modal": {
+          "add": "Create new index",
+          "edit": "Update index"
+        }
+      },
+      "period": {
+        "modal": {
+          "add": "Add period"
+        }
+      },
+      "add": "Add index",
+      "removeConfirm": "Are you sure you want to remove this fuel model?"
+    },
+    "tabGroups": {
+      "${key}": "__ignore",
+      "user": "User settings",
+      "accountAdmin": "Account settings",
+      "accountData": "Data settings"
+    },
+    "tabs": {
+      "account-profile": "Account profile",
+      "account-entities": "Legal entities",
+      "activity": "Activity",
+      "billing": "Billing",
+      "data-sources": "Data connections",
+      "fuel": "Fuel models",
+      "notifications": "Notifications",
+      "master-data": "Master data",
+      "preferences": "Preferences",
+      "user-profile": "Profile",
+      "account-users": "Users",
+      "security": "Security",
+      "workflows": "Workflows"
+    },
+    "user": {
+      "modal": {},
+      "preferences": {
+        "notifications": {}
+      },
+      "avatar": "Avatar",
+      "roles": {
+        "${role}": "__igonre__",
+        "user": "User",
+        "admin": "Admin",
+        "driver": "Driver",
+        "planner": "Planner",
+        "address": "Address Mod.",
+        "partners": "Partners Mod.",
+        "accounting": "Accounting",
+        "purchaser": "Purchaser",
+        "analyst": "Analyst"
+      },
+      "title": "User"
+    },
+    "users": {
+      "modal": {
+        "add": "Create user",
+        "edit": "Update user",
+        "reset": "Reset password",
+        "role": "Role",
+        "roleSelect": "Select role(s)"
+      },
+      "title": "Users",
+      "info": "When you add a user, an email with login instructions will be sent to them automatically."
+    },
+    "userSecurity": {
+      "password": {
+        "title": "Change password"
+      }
+    },
+    "${key}": {
+      "title": "__ignore__"
+    }
+  },
+  "tenderify": {
+    "accessControl": {
+      "modal": {},
+      "title": "AccessControl",
+      "user": {
+        "name": "Name",
+        "role": "Role",
+        "roles": {
+          "owner": "Owner",
+          "manager": "Manager",
+          "follower": "Follower",
+          "analyst": "Analyst"
+        }
+      },
+      "section": {
+        "title": "Access control"
+      }
+    },
+    "data": {
+      "empty": "There is no data",
+      "emptyTitle": "No data"
+    },
+    "mapping": {
+      "editRawData": {
+        "title": "Edit raw data"
+      },
+      "empty": "There is currently no mapping data set up. Add mapping data by clicking the add icon and selecting a source.",
+      "emptyTitle": "No mapping data found",
+      "header": {
+        "add": "Add",
+        "addBtn": "Add sub-field",
+        "fill": "Fill-out field",
+        "multi": {
+          "relative": "Relative",
+          "target": "Target"
+        },
+        "noSubFields": "There are no subfields selected",
+        "original": "Original",
+        "parentType": "Parent",
+        "target": "Target",
+        "title": "Header Mapping"
+      },
+      "modal": {},
+      "removeBtn": "Remove mapping",
+      "values": {
+        "empty": "We could not find any corresponding values for this block. Make sure the headers are properly mapped to this category to generate the mapping values.",
+        "emptyTitle": "No mapping found",
+        "modal": {
+          "flag": "Rember for future mappings?",
+          "message": "Store this value map & apply to the entire sheet?",
+          "origin": "Original value",
+          "store": "Store?",
+          "storeOptions": {
+            "ignore": "Just apply once, don't store",
+            "file": "Just this file",
+            "account": "Use this for all my future mappings",
+            "partnership": "Use this for all future mappings of this partner"
+          },
+          "target": "Target value",
+          "title": "Apply mapping"
+        },
+        "title": "Mapping"
+      }
+    },
+    "offer": {
+      "generate": "Generate offer",
+      "overview": "Offer overview",
+      "valid": {
+        "from": "Valid from",
+        "to": "Valid to"
+      }
+    },
+    "partner": {
+      "accountNumbers": "(Internal) Account numbers",
+      "contacts": {
+        "title": "Partner contacts:"
+      },
+      "empty": "There is no partner selected.",
+      "internalContacts": {
+        "title": "Account managers:"
+      },
+      "modal": {},
+      "name": "Name",
+      "segment": "Segment",
+      "title": "Partner"
+    },
+    "requirements": {
+      "modal": {}
+    },
+    "round": {
+      "title": "Round",
+      "dueIn": "Due In",
+      "receivedDate": "Received On"
+    },
+    "section": {
+      "general": {
+        "title": "General"
+      },
+      "mapping": {
+        "definition": {
+          "header": "Header Def.",
+          "headerEdit": "Edit header map",
+          "name": "Source name",
+          "sheet": "Source sheet",
+          "sheetSelect": "Select sheet",
+          "type": "Source type"
+        },
+        "generateSheet": {
+          "btn": "Go",
+          "label": "Generate bidding sheet"
+        },
+        "header": {
+          "accordion": "Edit Mapping",
+          "add": "Add",
+          "original": "Original",
+          "target": "Target",
+          "title": "Header mapping"
+        },
+        "rerunMapping": {
+          "btn": "Generate",
+          "label": "(Re)run data mapping"
+        },
+        "title": "Mapping",
+        "values": {
+          "${topic}": "__ignore__",
+          "title": "Value mapping",
+          "charges": "Charge mappings",
+          "equipments": "Equipment definitions",
+          "goods": "Goods definitions",
+          "lanes": "Lane definitions",
+          "volumes": "Volume definitions"
+        },
+        "modal": {
+          "label": "Select a file to reference from",
+          "title": "Add mapping"
+        },
+        "editRawData": {
+          "title": "Edit datasheet"
+        },
+        "empty": "We could not find any corresponding values for this block. Make sure the headers are properly mapped to this category to generate the mapping values.",
+        "emptyTitle": "No mapping found",
+        "emptytitle": "No mapping found"
+      },
+      "source": {
+        "documents": {
+          "add": "Add",
+          "title": "Source Documents"
+        },
+        "title": "Source"
+      }
+    },
+    "status": "Status",
+    "tender": {
+      "dueIn": "Due in",
+      "name": "Name",
+      "receivedDate": "Received on",
+      "revenue": "Projected Revenue",
+      "volume": "Projected Volume"
+    },
+    "workflow": {
+      "title": "Workflow",
+      "add": "Add step",
+      "empty": "No workflow steps are defined.",
+      "modal": {
+        "date": "Due date",
+        "details": "Details",
+        "title": "Edit Workflow step"
+      }
+    },
+    "overview": {
+      "add": "New"
+    }
+  },
+  "workflow": {
+    "modal": {},
+    "task": {
+      "events": {
+        "price-request-requested": "Price request for __customerName__."
+      },
+      "references": {
+        "priceRequest": "Price request",
+        "tender": "Tender"
+      },
+      "types": {
+        "approval": "Approval",
+        "task": "Task"
+      }
+    }
+  },
+  "feed": {
+    "actions": {
+      "update": "Updated document",
+      "addWorkflow": "Added a new Workflow",
+      "addDocument": "Added a new file",
+      "removeDocument": "Removed a file"
+    },
+    "title": "History"
+  },
+  "conversations": {
+    "modal": {
+      "participants": "Participants"
+    }
+  },
+  "conversions": {
+    "range": {},
+    "add": "Add conversion",
+    "edit": "Edit conversion"
+  },
+  "invoice": {},
+  "projects": {
+    "access": {
+      "partners": {},
+      "planners": {}
+    },
+    "general": {
+      "location": {}
+    },
+    "settings": {
+      "modal": {}
+    },
+    "table": {
+      "dates": {}
+    },
+    "tabs": {
+      "General": "General",
+      "Inbound": "Inbound",
+      "KPI": "KPI",
+      "Outbound": "Outbound",
+      "Notes": "Notes"
+    },
+    "title": "Projects"
+  },
+  "reporting": {
+    "download": {
+      "${key}": {
+        "label": "__ignore__",
+        "placeholder": "__ignore__"
+      },
+      "shipFromCountryCode": {
+        "label": "Ship From",
+        "placeholder": "country code"
+      },
+      "shipToCountryCode": {
+        "label": "Ship To",
+        "placeholder": "country code"
+      },
+      "date_pickup:from": {
+        "label": "Pickup Start Date"
+      },
+      "date_pickup:to": {
+        "label": "Pickup End Date"
+      },
+      "status": {
+        "label": "Status",
+        "placeholder": "status"
+      },
+      "hasPriceRequest": {
+        "label": "Filter with/without Price Request"
+      }
+    }
+  },
+  "'shipment": {
+    "stage": {
+      "confirm": {
+        "save'": ""
+      }
+    }
+  },
+  "priceRequest": {
+    "header": {}
+  },
+  "${overviewName}": {},
+  ", ": ", ",
+  "modal": {
+    "priceListSelect": {}
+  }
+}

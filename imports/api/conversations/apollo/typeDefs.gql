@@ -1,0 +1,69 @@
+enum CONVERSATION_STATUS {
+  open
+  archived
+}
+
+enum CONVERSATION_DOCUMENT_TYPE {
+  tender
+  invoice
+  pricerequest
+}
+
+type ConversationComment {
+  id: String
+  value: String
+  created: ByType
+
+  # projection:
+  user: User
+}
+
+type Conversation {
+  id: String
+  status: CONVERSATION_STATUS
+  private: Boolean
+  broadcast: Boolean
+  participants: [String]
+  subject: String
+  commentsId: String
+  created: ByType
+  documentType: CONVERSATION_DOCUMENT_TYPE
+  documentId: String
+  meta: JSONObject
+
+  # projection:
+  user: User
+  comments: [ConversationComment]
+  participantCount: Int
+}
+
+input UpdateConversationCommentInput {
+  commentId: String!
+  value: String!
+}
+
+input AddConversationCommentInput {
+  conversationId: String!
+  value: String!
+}
+
+input CreateConversationInput {
+  participants: [String]
+  subject: String!
+  message: String
+  documentType: String
+  documentId: String
+  broadcast: Boolean
+}
+
+extend type Query {
+  getConversation(conversationId: String!): Conversation
+  getConversations(filters: JSONObject!): [Conversation]
+}
+
+extend type Mutation {
+  createConversation(input: CreateConversationInput!): Conversation
+  removeConversationComment(commentId: String!): String
+  updateConversationComment(input: UpdateConversationCommentInput!): String
+  addConversationComment(input: AddConversationCommentInput!): String
+}

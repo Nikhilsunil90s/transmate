@@ -1,0 +1,29 @@
+type TaskReferencesType {
+  id: String
+  type: String
+}
+
+type Task {
+  id: String
+  title: String
+  icon: String
+  taskType: String
+  dueDate: Date
+  active: Boolean
+  references: TaskReferencesType
+}
+
+input UpdateTaskInput {
+  taskId: String
+  update: JSONObject
+  options: JSONObject
+}
+
+extend type Query {
+  getMyTasks(filters: JSONObject): [Task]
+  getTaskOverView(filters: JSONObject): [Task]
+}
+
+extend type Mutation {
+  updateTask(input: UpdateTaskInput!): Boolean
+}

@@ -1,0 +1,15 @@
+@import '{}/imports/client/styles/sizes.import.less';
+
+main.AnalyticsPowerBI {
+	> div > div {
+		height: 100%;
+	}
+
+	.ui.tabs.menu {
+		margin-bottom: 0;
+	}
+
+	.report-powerbi-container {
+		height: calc( ~"100% - " @tabsHeight );
+	}
+}

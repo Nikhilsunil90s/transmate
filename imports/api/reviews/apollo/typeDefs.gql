@@ -1,0 +1,19 @@
+# type PartnerScore {
+#   personal:
+#   global:
+# }
+
+input PartnerScoringInput {
+  id: String!
+  category: String!
+  text: String
+  rating: Int
+}
+
+# extend type Query {
+#   getScoring(partnerId:String!): PartnerScore
+# }
+
+extend type Mutation {
+  addPartnerReview(partnerId: String!, scoring: [PartnerScoringInput]): String
+}

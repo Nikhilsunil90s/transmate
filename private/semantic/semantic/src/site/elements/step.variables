@@ -1,0 +1,23 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@stepsBorder: none;
+@stepsBorderRadius: 8px;
+@backgroundColor: @pageBackground;
+@borderWidth: 0;
+@horizontalPadding: 2.2em;
+
+@hoverBackground: darken( @darkWhite, 3% );
+@activeHoverBackground: darken( @darkWhite, 3% );
+
+@iconDistance: 1.25rem;
+@iconSize: 2.1em;
+
+@titleFontSize: @fontSize;
+@titleColor: @textColor;
+@descriptionColor: fade( @textColor, 70% );
+@hoveredTextColor: @textColor;
+@iconColor: #b9bfcc;
+@activeColor: @darkTextColor;
+@activeIconColor: @blue;
+@disabledColor: #b5bec7;

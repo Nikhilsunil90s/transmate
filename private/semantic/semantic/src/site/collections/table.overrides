@@ -1,0 +1,153 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.table {
+	tr {
+		height: 45px;
+	}
+
+	thead {
+		th {
+			font-size: 12px;
+			line-height: 22px;
+		}
+	}
+}
+
+
+.ui.table td.noWrap, .ui.table th.noWrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// dataTable
+table.dataTable {
+  &:extend(.ui.table all);
+
+  width: 100%;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  border: none;
+
+  thead {
+    th {
+      white-space: nowrap;
+
+      &.sorting_asc,
+      &.sorting_desc {
+        color: @headerColor;
+      }
+    }
+  }
+  tbody tr {
+    cursor: pointer;
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: tint( @pageBackground, 35% );
+    }
+  }
+  td {
+    .ui.circular.label {
+      box-sizing: border-box;
+    }
+  }
+}
+
+table.dataTable.overview {
+  th, td {
+    &:first-child {
+      padding-left: @basePadding;
+      padding-right: @basePadding;
+    }
+    &:nth-child(n+2):nth-last-child(n+2) {
+      padding-right: @basePadding;
+    }
+
+    &:last-child {
+      padding-left: @basePadding;
+      padding-right: @basePadding;
+    }
+  }
+}
+
+.app footer .dataTables_paginate {
+  .ui.pagination.menu {
+    background: transparent;
+    border: none;
+    box-shadow: inset 0 0 0 1px #ddd; // so the active bg overlaps
+  
+    .item {
+      font-size: 11px;
+      line-height: 1;
+      color: #3e8acc;
+      &.previous,
+      &.next {
+        font-size: 13px;
+      }
+    }
+    .active.item {
+      background-color: #428bca;
+      color: white;
+    }
+  }
+}
+
+// handsontable
+
+.handsontable {
+  margin-bottom: @basePadding;
+  z-index: 0;
+
+  th {
+    // height: auto !important; // wtf handsontable
+    box-sizing: border-box;
+    border: none !important;
+
+    &:extend( .ui.table thead th all );
+
+    &.ht__highlight {
+      background-color: @HoTinputLineHeight;
+    }
+  }
+
+  tbody {
+    td {
+      &:extend( .ui.table td all );
+      font-size: @medium; // this is not applied to the <td> but the <table>
+      border-color: transparent;
+    }
+  }
+
+}
+textarea.handsontableInput {
+    line-height: @HoTinputLineHeight;
+  }
+
+// rate grid
+main.PriceList .segment.rates {
+		td.dropdown {
+			position: relative;
+			font-size: 12px;
+			color: #6d7173;
+	
+			.htAutocompleteArrow {
+				position: absolute;
+				right: 0;
+				top: 10px;
+				cursor: pointer;
+				transform: scale(.8);
+			}
+		}
+
+		td.header {
+			font-size: 12px;
+			color: @headerColor;
+			background-color: @gridHeaderBGColor;
+			border-color: @gridHeaderBGColor;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}

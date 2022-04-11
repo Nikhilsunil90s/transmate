@@ -1,0 +1,192 @@
+enum USER_PREFERENCE_TOPIC {
+  shipmentsView
+}
+
+type UserViewsPreferencesType {
+  shipments: String
+}
+
+type UserPreferencesNotifications {
+  group: String
+  subGroup: String
+  mail: Boolean
+  app: Boolean
+}
+
+type UserPreferencesPicking {
+  addressId: String
+}
+
+type UserPreferencesType {
+  views: UserViewsPreferencesType
+  notifications: [UserPreferencesNotifications]
+  picking: UserPreferencesPicking
+}
+
+type UserProfileType {
+  name: String
+  first: String
+  last: String
+  avatar: String
+  apiKey: String
+}
+
+type UserLastLoginStatusType {
+  date: Date
+  ipAddr: String
+}
+
+type UserStatusType {
+  lastlogin: UserLastLoginStatusType
+  userAgent: String
+  idle: Boolean
+  lastActivity: Date
+  online: Boolean
+}
+
+type User {
+  id: String
+  preferences: UserPreferencesType
+  profile: UserProfileType
+  status: UserStatusType
+  emailRating: Int
+  lastActivity: Date
+
+  # projections:
+  email: String
+  name: String
+  avatar: String
+
+  # role projection:
+  baseRoles: [String]
+  roles: [String]
+  entities: [String]
+}
+
+type ViewsPreferences {
+  shipments: String
+}
+
+type UserPreferences {
+  views: ViewsPreferences
+  notifications: JSONObject
+}
+
+type UserActivity {
+  id: String
+  userId: String
+  accountId: String
+  activity: String
+  data: JSONObject
+  ts: Date
+}
+
+type MeteorToken {
+  token: String
+}
+
+type RouteData {
+  _id: String
+  page: String
+  section: String
+}
+
+type UserTokenCredential {
+  route: RouteData
+  meteorToken: MeteorToken
+  userId: String
+  reason: String
+  err: String
+}
+
+input UserPreferenceNotificationsInput {
+  group: String
+  subGroup: String
+  mail: Boolean
+  app: Boolean
+}
+
+input UserPreferenceUpdateInput {
+  views: JSONObject
+  notifications: [UserPreferenceNotificationsInput]
+}
+
+input GetUserActivityInput {
+  userIds: [String]
+  activity: String
+  thisMonthOnly: Boolean
+  limit: Int
+}
+
+input manuallySetTokenRouteInput {
+  page: String!
+  _id: String!
+  section: String
+}
+
+input manuallySetTokenInput {
+  route: manuallySetTokenRouteInput!
+  userId: String!
+}
+
+type manuallySetTokenForUserResponse {
+  link: String
+  tokenLink: String
+}
+
+input UpdateUserPreferenceByTopicInput {
+  topic: USER_PREFERENCE_TOPIC
+  update: String
+}
+
+input createUserInputUser {
+  email: String!
+  firstName: String
+  lastName: String
+}
+
+input createUserInputAccount {
+  id: String
+  company: String
+  type: String
+}
+
+input createUserInputOptions {
+  sendMail: Boolean
+}
+
+input createUserInput {
+  user: createUserInputUser!
+  account: createUserInputAccount!
+  options: createUserInputOptions
+}
+
+input UpdateUserProfileInput {
+  first: String!
+  last: String
+}
+input UpdateUserInput {
+  profile: UpdateUserProfileInput!
+}
+
+extend type Query {
+  getCurrentUser: User
+  getUsersForOwnAccount(roles: [String]): [User] # old method: "account.getUsers"
+  getUsersForAccount(accountId: String!, roles: [String]): [User]
+  getUserPreferences: UserPreferences
+  getContactInfo(userId: String!): User
+  getUserActivity(input: GetUserActivityInput): [UserActivity]
+  decodeToken(token: String!): UserTokenCredential
+}
+
+extend type Mutation {
+  createUser(input: createUserInput!): String
+  setApiKeyForUser: User
+  updateUserSelf(updates: UpdateUserInput!): User
+  updateUserPreferences(updates: UserPreferenceUpdateInput!): User
+  updateUserPreferenceByTopic(input: UpdateUserPreferenceByTopicInput!): User
+  upgradeRequest(reference: String!): Boolean
+  manuallySetTokenForUser(
+    input: manuallySetTokenInput!
+  ): manuallySetTokenForUserResponse
+}

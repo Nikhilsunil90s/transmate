@@ -1,0 +1,13 @@
+span.details.tooltip {
+	display: inline-block;
+	cursor: pointer;
+
+	&:after {
+		min-width: 20em;
+		white-space: pre-line;
+	}
+
+	&[data-position="bottom center"]:before {
+		margin-left: -8px;
+	}
+}

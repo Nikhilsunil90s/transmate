@@ -1,0 +1,17 @@
+/*******************************
+         Site Overrides
+*******************************/
+@resultsDistance: 10px;
+@resultsWidth: 5*60px;
+@resultFontSize: 12px;
+@resultLineHeight: 1.5;
+@resultsBorder: none;
+
+@categoryBackground: @asideColor;
+@categoryResultLeftBorder: none;
+@categoryNameWidth: 120px;
+@categoryNameFontSize: @relativeSmall;
+@categoryNamePadding: @resultPadding;
+
+@resultTitleFontSize: 1em;
+@resultDescriptionFontSize: 1em;

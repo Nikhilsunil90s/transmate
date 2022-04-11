@@ -1,0 +1,215 @@
+type TenderBidMappingStatus {
+  type: String
+  processing: Boolean
+  dt: Date
+}
+
+type TenderBidMappingMapValuesWarnings {
+  section: String
+  originId: Int
+  description: String
+}
+
+type TenderBidMappingMapValuesLanesData {
+  originId: Int
+  origin_lanesFromCountry: String
+  target_lanesFromCountry: String
+  origin_lanesToCountry: String
+  target_lanesToCountry: String
+  origin_lanesFromCity: String
+  target_lanesFromCity: String
+  origin_lanesToCity: String
+  target_lanesToCity: String
+  origin_lanesFromLocode: String
+  target_lanesFromLocode: String
+  origin_lanesToLocode: String
+  target_lanesToLocode: String
+  origin_lanesOriginService: String
+  target_lanesOriginService: String
+  origin_lanesDestinationService: String
+  target_lanesDestinationService: String
+  origin_lanesId: String
+  target_lanesId: String
+  origin_lanesToZip: String
+  target_lanesToZip: String
+  origin_lanesFromZip: String
+  target_lanesFromZip: String
+  origin_lanesFromRangeFrom: String
+  target_lanesFromRangeFrom: String
+  origin_lanesFromRangeTo: String
+  target_lanesFromRangeTo: String
+  origin_lanesToRangeFrom: String
+  target_lanesToRangeFrom: String
+  origin_lanesToRangeTo: String
+  target_lanesToRangeTo: String
+  origin_lanesFromSampleZipCodes: String
+  target_lanesFromSampleZipCodes: String
+  origin_lanesToSampleZipCodes: String
+  target_lanesToSampleZipCodes: String
+  averageLineDistance: Float
+  targetId: String
+  validated: Boolean
+  skipInUBS: Boolean
+  warnings: [TenderBidMappingMapValuesWarnings]
+}
+
+type TenderBidMappingMapValuesChargesData {
+  originId: Int
+  origin_chargeDescription: String
+  target_chargeDescription: String
+  origin_chargeCurrency: String
+  target_chargeCurrency: String
+  origin_chargeMultiplier: String
+  target_chargeMultiplier: String
+  origin_chargeVolumeGroup: String
+  target_chargeVolumeGroup: String
+  targetId: String
+  validated: Boolean
+  warnings: [TenderBidMappingMapValuesWarnings]
+}
+
+type TenderBidMappingMapValuesEquipmentsData {
+  originId: Int
+  origin_equipmentType: String
+  target_equipmentType: String
+  targetId: String
+  validated: Boolean
+  warnings: [TenderBidMappingMapValuesWarnings]
+}
+
+type TenderBidMappingMapValuesVolumesData {
+  originId: Int
+  origin_volumeDescription: String
+  origin_volumeRangeFrom: String
+  origin_volumeRangeTo: String
+  origin_volumeUOM: String
+  target_volumeDescription: String
+  target_volumeRangeFrom: String
+  target_volumeRangeTo: String
+  target_volumeUOM: String
+  targetId: String
+  validated: Boolean
+  warnings: [TenderBidMappingMapValuesWarnings]
+}
+
+type TenderBidMappingMapValuesNoneData {
+  originId: Int
+  origin_keep: String
+  target_keep: String
+  origin_skip: String
+  target_skip: String
+  targetId: String
+  validated: Boolean
+  warnings: [TenderBidMappingMapValuesWarnings]
+}
+
+type TenderBidMappingMapValuesLanes {
+  colHeaders: [String]
+  data: [TenderBidMappingMapValuesLanesData]
+}
+
+type TenderBidMappingMapValuesCharges {
+  colHeaders: [String]
+  data: [TenderBidMappingMapValuesChargesData]
+}
+
+type TenderBidMappingMapValuesEquipments {
+  colHeaders: [String]
+  data: [TenderBidMappingMapValuesEquipmentsData]
+}
+
+type TenderBidMappingMapValuesVolumes {
+  colHeaders: [String]
+  data: [TenderBidMappingMapValuesVolumesData]
+}
+
+type TenderBidMappingMapValuesNone {
+  colHeaders: [String]
+  data: [TenderBidMappingMapValuesNoneData]
+}
+
+type TenderBidMappingMapValues {
+  lanes: TenderBidMappingMapValuesLanes
+  charges: TenderBidMappingMapValuesCharges
+  equipments: TenderBidMappingMapValuesEquipments
+  volumes: TenderBidMappingMapValuesVolumes
+  none: TenderBidMappingMapValuesNone
+}
+
+type TenderBidMapping {
+  id: String
+  tenderBidId: String
+  fileId: String
+  fileType: String
+  fileName: String
+  name: String
+  workbookFileUrl: String
+  status: TenderBidMappingStatus
+  created: ByType
+
+  header: String
+  mappingH: JSONObject
+
+  mappingV: TenderBidMappingMapValues
+  sections: [String]
+  sheet: String
+  sheets: [String]
+  updated: ByType
+  # warnings: [JSONObject]
+}
+
+input tenderBidMappingInputMapping {
+  fileId: String!
+  fileType: String
+  name: String
+  url: String
+}
+input addTenderBidMappingInput {
+  tenderBidId: String!
+  mapping: tenderBidMappingInputMapping!
+}
+
+input editTenderBidMappingMappingVUpdates {
+  originId: Int! # is this always int?
+  colKey: String
+  value: String
+}
+
+input editTenderBidMappingMappingVInput {
+  key: String!
+  updates: [editTenderBidMappingMappingVUpdates]
+}
+
+input editTenderBidMappingInput {
+  mappingId: String!
+
+  # updates:
+  mappingH: JSONObject
+  mappingV: editTenderBidMappingMappingVInput
+  mappingF: JSONObject # fieldKey : [...mappings]
+}
+
+input generateTenderBidMappingInput {
+  mappingId: String!
+}
+
+input duplicateTenderBidMappingRowInput {
+  mappingId: String!
+  topic: String!
+  originId: Int!
+}
+
+extend type Query {
+  getTenderBidMappings(tenderBidId: String!): TenderBid #with mapping projected
+}
+
+extend type Mutation {
+  addTenderBidMapping(input: addTenderBidMappingInput!): TenderBid # allows to get bid + mappings
+  removeTenderBidMapping(mappingId: String!): TenderBid # allows to get bid + mappings
+  editTenderBidMapping(input: editTenderBidMappingInput!): TenderBidMapping
+  duplicateTenderBidMappingRow(
+    input: duplicateTenderBidMappingRowInput!
+  ): TenderBidMapping
+  generateTenderBidSheet(tenderBidId: String!): Boolean
+  generateTenderBidMapping(mappingId: String!): TenderBid # allows to get bid + mappings
+}

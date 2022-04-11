@@ -1,0 +1,36 @@
+type AnalysisSwitchPoint {
+  id: String
+  analysisId: String
+  name: String
+  accountId: String
+  created: ByType
+  params: JSONObject
+  intervals: [Int]
+  priceListIds: [String]
+  lanes: [JSONObject]
+}
+
+input switchPointGenerateLanesInput {
+  analysisId: String!
+  priceListId: String!
+}
+
+input UpdateSwitchPointUpdateInput {
+  name: String
+  params: JSONObject
+  priceListIds: [String]
+  lanes: [JSONObject]
+}
+
+input UpdateSwitchPointInput {
+  analysisId: String!
+  update: UpdateSwitchPointUpdateInput
+}
+
+extend type Mutation {
+  updateSwitchPoint(input: UpdateSwitchPointInput!): AnalysisSwitchPoint
+  processSwitchPoint(analysisId: String!): AnalysisSwitchPoint
+  switchPointGenerateLanes(
+    input: switchPointGenerateLanesInput!
+  ): AnalysisSwitchPoint
+}

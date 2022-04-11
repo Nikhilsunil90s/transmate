@@ -1,0 +1,27 @@
+export const security = {
+  canEdit: true,
+  canModifyGridStructure: true,
+  canAddFuelModel: true,
+  canModifyLeadTime: true,
+  canAddMasterNotes: true,
+  canAddAttachment: true,
+  canDeleteAttachment: true,
+  canBeReleased: true,
+  canBeApproved: false,
+  canBeSetBackToDraft: false,
+  canBeDeactivated: true,
+  canBeArchived: true,
+  canBeActivated: false,
+  canBeDeleted: false,
+
+  canEditRateInGrid: true,
+  canEditCurrencyInGrid: true,
+  canEditMultiplierInGrid: true,
+  canEditLaneInGrid: true,
+  canEditEquipmentInGrid: true,
+  canEditVolumesInGrid: true,
+  canEditCharge: true,
+  canAddGridComments: true,
+  canFillOut: true,
+  canEditRateInList: true
+};

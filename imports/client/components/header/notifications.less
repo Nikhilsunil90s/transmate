@@ -1,0 +1,134 @@
+@import "{}/imports/client/styles/colors.import.less";
+@import "{}/imports/client/styles/sizes.import.less";
+
+@menuWidth: 280px;
+
+.app > header {
+  .dropdown.notifications {
+    // height: @headerHeight + 20px;
+    // pointer-events: none;
+
+    // .icon.button {
+    // 	position: relative;
+    // 	top: 14px;
+    // 	background: transparent;
+    // 	opacity: 0;
+
+    // 	.icon {
+    // 		font-size: 18px;
+    // 		height: .7em;
+    // 	}
+    // }
+
+    &.unread {
+      pointer-events: auto;
+      .icon.button {
+        opacity: 0.5;
+      }
+    }
+    .item.icon.counter {
+      padding: 2px !important;
+      background: white;
+    }
+
+    .menu {
+      //right: -( @menuWidth / 2 - 24 );
+      //left: auto;
+      max-width: @menuWidth;
+      min-width: @menuWidth !important;
+
+      > div:first-child {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      > div:last-child {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+
+      .notifications {
+        max-height: 50vh;
+        overflow: auto;
+      }
+    }
+
+    .item.header {
+      margin: 0;
+      padding: 1.2rem 1.13333333rem 1rem !important;
+      pointer-events: none;
+      background: white;
+      text-align: center;
+      color: #696e71;
+      text-transform: none;
+      letter-spacing: -0.01em;
+      font-size: 14px;
+      border-bottom: 1px solid #dae2e7;
+
+      //   .label {
+      //     margin-right: 0;
+      //     margin-left: 0.5em;
+      //     font-weight: 600;
+      //     font-size: 10px;
+      //     -webkit-font-smoothing: auto;
+      //   }
+    }
+
+    .item {
+      padding: 0.9rem 1.2rem !important;
+      background: #e9eff2;
+      cursor: pointer;
+
+      &.read {
+        background: tint(#e9eff2, 50%);
+      }
+
+      &:hover {
+        background: tint(#e9eff2, 25%);
+
+        .remove {
+          opacity: 0.5;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+        .remove + .date {
+          opacity: 0;
+        }
+      }
+
+      .notification {
+        position: relative;
+        white-space: normal;
+        color: fade(@textColor, 55%);
+        -webkit-font-smoothing: auto;
+        font-size: 13px;
+
+        strong {
+          color: fade(@textColor, 75%);
+        }
+
+        .date {
+          display: block;
+          transition: opacity 0.2s;
+          margin-top: 10px;
+        }
+
+        .remove {
+          position: absolute;
+          right: 0;
+          z-index: 1;
+          opacity: 0;
+          transition: opacity 0.2s;
+        }
+      }
+
+      & + .item {
+        border-top: 1px solid #dae2e7;
+      }
+      &.read + .item.read {
+        border-top: 1px solid #e0e8ed;
+      }
+    }
+  }
+}

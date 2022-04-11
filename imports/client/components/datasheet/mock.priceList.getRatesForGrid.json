@@ -1,0 +1,5157 @@
+{
+    "data": [
+        {
+            "__is_new": false,
+            "id": "2Epq4Lk9ZadeeankK",
+            "_id": "2Epq4Lk9ZadeeankK",
+            "name": "base rate to 10 Cáceres",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 850,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "3EPTNy"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 10 Cáceres",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "3EPTNy",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "2T62ven57zWNJSK2A",
+            "_id": "2T62ven57zWNJSK2A",
+            "name": "base rate to 08 Barcelona",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 175,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "d7Giqh"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 08 Barcelona",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "d7Giqh",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "3WFu2GniMgfAZLnbM",
+            "_id": "3WFu2GniMgfAZLnbM",
+            "name": "base rate to 04 Almería",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 850,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "PimYLZ"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 04 Almería",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "PimYLZ",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "3Zz28RRhgjsQwPrtP",
+            "_id": "3Zz28RRhgjsQwPrtP",
+            "name": "base rate to 41 Seville",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 237.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "coGepH"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 41 Seville",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "coGepH",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "43xLRoJaM94cSAhnY",
+            "_id": "43xLRoJaM94cSAhnY",
+            "name": "base rate to 40 Segovia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "M9n93g"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 40 Segovia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "M9n93g",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "4NkHXhnie5zZDXnBP",
+            "_id": "4NkHXhnie5zZDXnBP",
+            "name": "base rate to 09 Burgos",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 19.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "EFtpMg"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 09 Burgos",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "EFtpMg",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "4fhjMTL4epHo5nEqJ",
+            "_id": "4fhjMTL4epHo5nEqJ",
+            "name": "base rate to 02 Albacete",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 750,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "AwBqm2"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 02 Albacete",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "AwBqm2",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "5ZKJDddaHGoPKiKS6",
+            "_id": "5ZKJDddaHGoPKiKS6",
+            "name": "base rate to 48 Bizkaia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "nrskMe"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 48 Bizkaia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "nrskMe",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "5Zsf8QPmgtuv5SebF",
+            "_id": "5Zsf8QPmgtuv5SebF",
+            "name": "base rate to 30 Murcia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 22.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "WSG63s"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 30 Murcia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "WSG63s",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "5ZJaKfzJ5Z3BLg5CC",
+            "_id": "5ZJaKfzJ5Z3BLg5CC",
+            "name": "base rate to 01 Araba/Álava",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "c66ySj"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 01 Araba/Álava",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "c66ySj",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "5is2LFQokwvEW8Zxr",
+            "_id": "5is2LFQokwvEW8Zxr",
+            "name": "base rate to 45 Toledo",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 22.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "RnMTBe"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 45 Toledo",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "RnMTBe",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "6m6SQEh22MNXqGXb2",
+            "_id": "6m6SQEh22MNXqGXb2",
+            "name": "base rate to 05 Ávila",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "LuGHXa"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 05 Ávila",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "LuGHXa",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "6bExYJhmZqt6Xui5F",
+            "_id": "6bExYJhmZqt6Xui5F",
+            "name": "base rate to 38 Santa Cruz de Tenerife",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 3500,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "PsfMR9"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 38 Santa Cruz de Tenerife",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "PsfMR9",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "6gACNvS5kDhQEDWfR",
+            "_id": "6gACNvS5kDhQEDWfR",
+            "name": "base rate to 13 Ciudad Real",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 212.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "kiHHyP"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 13 Ciudad Real",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "kiHHyP",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "7QcsZgesYajvYYytc",
+            "_id": "7QcsZgesYajvYYytc",
+            "name": "base rate to 48 Bizkaia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "nrskMe"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 48 Bizkaia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "nrskMe",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "7cuCFGXrfSKF9vZAL",
+            "_id": "7cuCFGXrfSKF9vZAL",
+            "name": "base rate to 49 Zamora",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "9sDpxM"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 49 Zamora",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "9sDpxM",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "85T39s5jFHnHyozDE",
+            "_id": "85T39s5jFHnHyozDE",
+            "name": "base rate to 07 Balearic Islands",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "NFHQxN"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 07 Balearic Islands",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "NFHQxN",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "8GKB4b2PwAgCNPzPG",
+            "_id": "8GKB4b2PwAgCNPzPG",
+            "name": "base rate to 19 Guadalajara",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 750,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "YKPFF4"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 19 Guadalajara",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "YKPFF4",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "8mjqC4DJf5LsyH8Sa",
+            "_id": "8mjqC4DJf5LsyH8Sa",
+            "name": "base rate to 10 Cáceres",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 212.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "3EPTNy"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 10 Cáceres",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "3EPTNy",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "8jzLRYd94fZ8WuMAh",
+            "_id": "8jzLRYd94fZ8WuMAh",
+            "name": "base rate to 26 La Rioja (formerly Logroño)",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "aCgZkk"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 26 La Rioja (formerly Logroño)",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "aCgZkk",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "9CbXu43tvs4tBqJBb",
+            "_id": "9CbXu43tvs4tBqJBb",
+            "name": "base rate to 17 Girona",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 19.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "TJkJP2"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 17 Girona",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "TJkJP2",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "ApHiZNLEhubFoxrCm",
+            "_id": "ApHiZNLEhubFoxrCm",
+            "name": "base rate to 10 Cáceres",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 25.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "3EPTNy"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 10 Cáceres",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "3EPTNy",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "BMDsQZHsiqh6fNti7",
+            "_id": "BMDsQZHsiqh6fNti7",
+            "name": "base rate to 19 Guadalajara",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 22.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "YKPFF4"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 19 Guadalajara",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "YKPFF4",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "BJZKzfNSeH9brFKrq",
+            "_id": "BJZKzfNSeH9brFKrq",
+            "name": "base rate to 09 Burgos",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 162.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "EFtpMg"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 09 Burgos",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "EFtpMg",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "BndTbdq9bNxgNRGv6",
+            "_id": "BndTbdq9bNxgNRGv6",
+            "name": "base rate to 41 Seville",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 950,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "coGepH"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 41 Seville",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "coGepH",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "BtXcMwSWYDTXREjET",
+            "_id": "BtXcMwSWYDTXREjET",
+            "name": "base rate to 42 Soria",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ZkFtqE"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 42 Soria",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ZkFtqE",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "CtZ5Gw6mLWMsQuNqF",
+            "_id": "CtZ5Gw6mLWMsQuNqF",
+            "name": "base rate to 45 Toledo",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 187.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "RnMTBe"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 45 Toledo",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "RnMTBe",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "CmvDcgTT3KmWnZLsS",
+            "_id": "CmvDcgTT3KmWnZLsS",
+            "name": "base rate to 33 Asturias (formerly Oviedo)",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "iLvtgX"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 33 Asturias (formerly Oviedo)",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "iLvtgX",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "DCZ4zCXY25btt5C3Y",
+            "_id": "DCZ4zCXY25btt5C3Y",
+            "name": "base rate to 24 León",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 22.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "DbPFt4"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 24 León",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "DbPFt4",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "DLRTZg4GFKfPFptks",
+            "_id": "DLRTZg4GFKfPFptks",
+            "name": "base rate to 09 Burgos",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 650,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "EFtpMg"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 09 Burgos",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "EFtpMg",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "Dw9GgSe9FHeoQRL2o",
+            "_id": "Dw9GgSe9FHeoQRL2o",
+            "name": "base rate to 04 Almería",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 212.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "PimYLZ"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 04 Almería",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "PimYLZ",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "EG8utWou6S6zx26kc",
+            "_id": "EG8utWou6S6zx26kc",
+            "name": "base rate to 45 Toledo",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 750,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "RnMTBe"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 45 Toledo",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "RnMTBe",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "ERYwAERn6f4ZPRTBq",
+            "_id": "ERYwAERn6f4ZPRTBq",
+            "name": "base rate to 21 Huelva",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 237.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "MDpTGL"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 21 Huelva",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "MDpTGL",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "ETq5zu4XJwiPxTEY3",
+            "_id": "ETq5zu4XJwiPxTEY3",
+            "name": "base rate to 02 Albacete",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 22.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "AwBqm2"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 02 Albacete",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "AwBqm2",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "EetNA9K8GiPLiNzxB",
+            "_id": "EetNA9K8GiPLiNzxB",
+            "name": "base rate to 25 Lleida",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 175,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "FQ2iXg"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 25 Lleida",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "FQ2iXg",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "Gy5th6hvCnGR9cihm",
+            "_id": "Gy5th6hvCnGR9cihm",
+            "name": "base rate to 23 Jaén",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 24,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ESNmdz"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 23 Jaén",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ESNmdz",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "Gy74cgf7PkjrJRpg5",
+            "_id": "Gy74cgf7PkjrJRpg5",
+            "name": "base rate to 33 Asturias (formerly Oviedo)",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "iLvtgX"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 33 Asturias (formerly Oviedo)",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "iLvtgX",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "FfhBF6jJik2jsghhT",
+            "_id": "FfhBF6jJik2jsghhT",
+            "name": "base rate to 38 Santa Cruz de Tenerife",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 875,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "PsfMR9"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 38 Santa Cruz de Tenerife",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "PsfMR9",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "GMvQNgnoBJReQsCCE",
+            "_id": "GMvQNgnoBJReQsCCE",
+            "name": "base rate to 22 Huesca",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "vPzYrJ"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 22 Huesca",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "vPzYrJ",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "GEXi5NnsbLJn62TvZ",
+            "_id": "GEXi5NnsbLJn62TvZ",
+            "name": "base rate to 01 Araba/Álava",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "c66ySj"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 01 Araba/Álava",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "c66ySj",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "GcPkdiYHqhCyZMfC4",
+            "_id": "GcPkdiYHqhCyZMfC4",
+            "name": "base rate to 34 Palencia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 700,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "dz6X87"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 34 Palencia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "dz6X87",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "JB2M5HEmkiaDpRYF9",
+            "_id": "JB2M5HEmkiaDpRYF9",
+            "name": "base rate to 14 Córdoba",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 800,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ktKj73"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 14 Córdoba",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ktKj73",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "Hsoi2WEd3HF9L2Z69",
+            "_id": "Hsoi2WEd3HF9L2Z69",
+            "name": "base rate to 06 Badajoz",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 225,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "fXu8gz"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 06 Badajoz",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "fXu8gz",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "HkFe6kZGKCxvbTKne",
+            "_id": "HkFe6kZGKCxvbTKne",
+            "name": "base rate to 03 Alicante",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 22.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "fY3vuL"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 03 Alicante",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "fY3vuL",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "HhgbqLtQM7QEBR8Lh",
+            "_id": "HhgbqLtQM7QEBR8Lh",
+            "name": "base rate to 28 Madrid",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 22.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "GFYMPd"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 28 Madrid",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "GFYMPd",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "Hxz8pGtpPWjE4eXJi",
+            "_id": "Hxz8pGtpPWjE4eXJi",
+            "name": "base rate to 30 Murcia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 187.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "WSG63s"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 30 Murcia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "WSG63s",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "JLwipiEKrcugjZAWh",
+            "_id": "JLwipiEKrcugjZAWh",
+            "name": "base rate to 22 Huesca",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "vPzYrJ"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 22 Huesca",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "vPzYrJ",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "JhCLN2SFGBARsJjoa",
+            "_id": "JhCLN2SFGBARsJjoa",
+            "name": "base rate to 12 Castellón",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "4JZk9m"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 12 Castellón",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "4JZk9m",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "K6CAvsso7vvGYCAuW",
+            "_id": "K6CAvsso7vvGYCAuW",
+            "name": "base rate to 18 Granada",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 800,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "aGNziq"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 18 Granada",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "aGNziq",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "KEZxbvuvvx7nzngvx",
+            "_id": "KEZxbvuvvx7nzngvx",
+            "name": "base rate to 32 Ourense",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 212.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "FyDSkL"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 32 Ourense",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "FyDSkL",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "KTmJdQM86xkuevbpg",
+            "_id": "KTmJdQM86xkuevbpg",
+            "name": "base rate to 18 Granada",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 24,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "aGNziq"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 18 Granada",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "aGNziq",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "KZJPd86LHdQ5PwubP",
+            "_id": "KZJPd86LHdQ5PwubP",
+            "name": "base rate to 26 La Rioja (formerly Logroño)",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "aCgZkk"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 26 La Rioja (formerly Logroño)",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "aCgZkk",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "KtjuEBudzddxazPWt",
+            "_id": "KtjuEBudzddxazPWt",
+            "name": "base rate to 52 Melilla",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 43.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ra2mKJ"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 52 Melilla",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ra2mKJ",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "KnrffmRhNQtDYBgBA",
+            "_id": "KnrffmRhNQtDYBgBA",
+            "name": "base rate to 27 Lugo",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 25.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "qk4Jch"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 27 Lugo",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "qk4Jch",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "LWJ2cb5TpPhi9DpfE",
+            "_id": "LWJ2cb5TpPhi9DpfE",
+            "name": "base rate to 29 Málaga",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ptM66c"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 29 Málaga",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ptM66c",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "LtfiJx4zmqwiYbAtJ",
+            "_id": "LtfiJx4zmqwiYbAtJ",
+            "name": "base rate to 14 Córdoba",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 24,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ktKj73"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 14 Córdoba",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ktKj73",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "MX6xc7CAXcQbQTgXd",
+            "_id": "MX6xc7CAXcQbQTgXd",
+            "name": "base rate to 34 Palencia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 175,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "dz6X87"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 34 Palencia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "dz6X87",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "MXgBdSy7oTpShBWsQ",
+            "_id": "MXgBdSy7oTpShBWsQ",
+            "name": "base rate to 05 Ávila",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "LuGHXa"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 05 Ávila",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "LuGHXa",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "NSwLt3hdRH2yojXmj",
+            "_id": "NSwLt3hdRH2yojXmj",
+            "name": "base rate to 15 A Coruña",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 850,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "KjgATB"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 15 A Coruña",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "KjgATB",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "NaipEBS5v7akogmTx",
+            "_id": "NaipEBS5v7akogmTx",
+            "name": "base rate to 35 Las Palmas",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 105,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "XLp3u5"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 35 Las Palmas",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "XLp3u5",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "PDN2M2ek47SbmMbXz",
+            "_id": "PDN2M2ek47SbmMbXz",
+            "name": "base rate to 08 Barcelona",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 21,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "d7Giqh"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 08 Barcelona",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "d7Giqh",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "PGE7mpGXZc8jWb9KK",
+            "_id": "PGE7mpGXZc8jWb9KK",
+            "name": "base rate to 28 Madrid",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 750,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "GFYMPd"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 28 Madrid",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "GFYMPd",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "Pq7bpjBLdQJtL3hvk",
+            "_id": "Pq7bpjBLdQJtL3hvk",
+            "name": "base rate to 43 Tarragona",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 175,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "fqQXJT"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 43 Tarragona",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "fqQXJT",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "Q7MB8e7hPcWpepxYH",
+            "_id": "Q7MB8e7hPcWpepxYH",
+            "name": "base rate to 11 Cádiz",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "GLGRqo"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 11 Cádiz",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "GLGRqo",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "QQNMHcGsDPmMhQ8ho",
+            "_id": "QQNMHcGsDPmMhQ8ho",
+            "name": "base rate to 37 Salamanca",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 24,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "D4Dk2Z"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 37 Salamanca",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "D4Dk2Z",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "QpzatrGkdT5sreyYk",
+            "_id": "QpzatrGkdT5sreyYk",
+            "name": "base rate to 42 Soria",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ZkFtqE"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 42 Soria",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ZkFtqE",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "REQvEwJuqWrM2d2Mx",
+            "_id": "REQvEwJuqWrM2d2Mx",
+            "name": "base rate to 38 Santa Cruz de Tenerife",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 105,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "PsfMR9"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 38 Santa Cruz de Tenerife",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "PsfMR9",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "SbyYojw85nF4RpPZd",
+            "_id": "SbyYojw85nF4RpPZd",
+            "name": "base rate to 36 Pontevedra",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 850,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "6mGNAM"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 36 Pontevedra",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "6mGNAM",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "SSARszRMcyM9pwwqn",
+            "_id": "SSARszRMcyM9pwwqn",
+            "name": "base rate to 51 Ceuta",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "TBmbNx"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 51 Ceuta",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "TBmbNx",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "SZ5YYji6AXtACdp7r",
+            "_id": "SZ5YYji6AXtACdp7r",
+            "name": "base rate to 19 Guadalajara",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 187.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "YKPFF4"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 19 Guadalajara",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "YKPFF4",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "Rs2bquQgYpLKwjmrZ",
+            "_id": "Rs2bquQgYpLKwjmrZ",
+            "name": "base rate to 04 Almería",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 25.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "PimYLZ"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 04 Almería",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "PimYLZ",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "Tpmue2nF9bw7DWgSt",
+            "_id": "Tpmue2nF9bw7DWgSt",
+            "name": "base rate to 07 Balearic Islands",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "NFHQxN"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 07 Balearic Islands",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "NFHQxN",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "X6KiAGSux4MP2Mr75",
+            "_id": "X6KiAGSux4MP2Mr75",
+            "name": "base rate to 39 Cantabria (formerly Santander)",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ttoPgr"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 39 Cantabria (formerly Santander)",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ttoPgr",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "XRhXabHtz3jcRLX3b",
+            "_id": "XRhXabHtz3jcRLX3b",
+            "name": "base rate to 23 Jaén",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 800,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ESNmdz"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 23 Jaén",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ESNmdz",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "XCZgcPyzJm4MrPGRv",
+            "_id": "XCZgcPyzJm4MrPGRv",
+            "name": "base rate to 12 Castellón",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "4JZk9m"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 12 Castellón",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "4JZk9m",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "X4Kwt8kz4KfoTg23x",
+            "_id": "X4Kwt8kz4KfoTg23x",
+            "name": "base rate to 52 Melilla",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1450,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ra2mKJ"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 52 Melilla",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ra2mKJ",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "XdDMAJgosabdRinzg",
+            "_id": "XdDMAJgosabdRinzg",
+            "name": "base rate to 51 Ceuta",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "TBmbNx"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 51 Ceuta",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "TBmbNx",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "Xr76qjPmmrPPiXsgN",
+            "_id": "Xr76qjPmmrPPiXsgN",
+            "name": "base rate to 06 Badajoz",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 27,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "fXu8gz"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 06 Badajoz",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "fXu8gz",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "Xw2m7DzqiGxEHF7Aq",
+            "_id": "Xw2m7DzqiGxEHF7Aq",
+            "name": "base rate to 31 Navarre",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "NZTrJc"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 31 Navarre",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "NZTrJc",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "ZMH2A6CABH9JqsjPZ",
+            "_id": "ZMH2A6CABH9JqsjPZ",
+            "name": "base rate to 47 Valladolid",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 21,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "xChtWp"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 47 Valladolid",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "xChtWp",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "ZRLt39FdiyJxtejwN",
+            "_id": "ZRLt39FdiyJxtejwN",
+            "name": "base rate to 13 Ciudad Real",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 850,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "kiHHyP"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 13 Ciudad Real",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "kiHHyP",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "YvRrHvgukdpja44vn",
+            "_id": "YvRrHvgukdpja44vn",
+            "name": "base rate to 11 Cádiz",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "GLGRqo"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 11 Cádiz",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "GLGRqo",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "ZszYsQborMehH5Pw8",
+            "_id": "ZszYsQborMehH5Pw8",
+            "name": "base rate to 26 La Rioja (formerly Logroño)",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "aCgZkk"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 26 La Rioja (formerly Logroño)",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "aCgZkk",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "a9P6RaJTSrrgyWAgj",
+            "_id": "a9P6RaJTSrrgyWAgj",
+            "name": "base rate to 31 Navarre",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "NZTrJc"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 31 Navarre",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "NZTrJc",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "ZfBtdjQpXXpeFFXnr",
+            "_id": "ZfBtdjQpXXpeFFXnr",
+            "name": "base rate to 35 Las Palmas",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 875,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "XLp3u5"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 35 Las Palmas",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "XLp3u5",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "ZvMuQFcgg7GH3BTBA",
+            "_id": "ZvMuQFcgg7GH3BTBA",
+            "name": "base rate to 39 Cantabria (formerly Santander)",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ttoPgr"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 39 Cantabria (formerly Santander)",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ttoPgr",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "aqu4repoZswdPJuCm",
+            "_id": "aqu4repoZswdPJuCm",
+            "name": "base rate to 46 Valencia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 700,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "aawCoH"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 46 Valencia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "aawCoH",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "amvcrCiiGWTAyr6DN",
+            "_id": "amvcrCiiGWTAyr6DN",
+            "name": "base rate to 21 Huelva",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 950,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "MDpTGL"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 21 Huelva",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "MDpTGL",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "buPwBG59dApha8ZDB",
+            "_id": "buPwBG59dApha8ZDB",
+            "name": "base rate to 33 Asturias (formerly Oviedo)",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "iLvtgX"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 33 Asturias (formerly Oviedo)",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "iLvtgX",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "caCkrb8vDzkdSKMAp",
+            "_id": "caCkrb8vDzkdSKMAp",
+            "name": "base rate to 40 Segovia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "M9n93g"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 40 Segovia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "M9n93g",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "dBFxQBDm5zSMMQMuo",
+            "_id": "dBFxQBDm5zSMMQMuo",
+            "name": "base rate to 03 Alicante",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 187.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "fY3vuL"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 03 Alicante",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "fY3vuL",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "csyLcbNArPPuJ9kYQ",
+            "_id": "csyLcbNArPPuJ9kYQ",
+            "name": "base rate to 42 Soria",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ZkFtqE"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 42 Soria",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ZkFtqE",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "beXYL9ejSGsyhdfoN",
+            "_id": "beXYL9ejSGsyhdfoN",
+            "name": "base rate to 50 Zaragoza",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 700,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "TejysG"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 50 Zaragoza",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "TejysG",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "cnzuCzYbt6s7aFdTN",
+            "_id": "cnzuCzYbt6s7aFdTN",
+            "name": "base rate to 28 Madrid",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 187.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "GFYMPd"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 28 Madrid",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "GFYMPd",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "dNH865PZHpDyY56HZ",
+            "_id": "dNH865PZHpDyY56HZ",
+            "name": "base rate to 43 Tarragona",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 21,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "fqQXJT"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 43 Tarragona",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "fqQXJT",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "eNQ2YQi7JniCXNpDG",
+            "_id": "eNQ2YQi7JniCXNpDG",
+            "name": "base rate to 36 Pontevedra",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 212.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "6mGNAM"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 36 Pontevedra",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "6mGNAM",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "e8zBPnhdixjSreFYz",
+            "_id": "e8zBPnhdixjSreFYz",
+            "name": "base rate to 47 Valladolid",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 175,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "xChtWp"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 47 Valladolid",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "xChtWp",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "ezBG3dokTsrtaknfY",
+            "_id": "ezBG3dokTsrtaknfY",
+            "name": "base rate to 39 Cantabria (formerly Santander)",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ttoPgr"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 39 Cantabria (formerly Santander)",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ttoPgr",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "fDxPwLg2i6GxrgYAF",
+            "_id": "fDxPwLg2i6GxrgYAF",
+            "name": "base rate to 44 Teruel",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "whRrBN"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 44 Teruel",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "whRrBN",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "fJb3TZGzCec7FQ2fp",
+            "_id": "fJb3TZGzCec7FQ2fp",
+            "name": "base rate to 30 Murcia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 750,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "WSG63s"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 30 Murcia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "WSG63s",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "g5KcHoYp8STaK79TK",
+            "_id": "g5KcHoYp8STaK79TK",
+            "name": "base rate to 37 Salamanca",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 800,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "D4Dk2Z"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 37 Salamanca",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "D4Dk2Z",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "gp2EzdEqQS86AiXbi",
+            "_id": "gp2EzdEqQS86AiXbi",
+            "name": "base rate to 50 Zaragoza",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 175,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "TejysG"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 50 Zaragoza",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "TejysG",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "gu5sDwSXgi77DHs3Z",
+            "_id": "gu5sDwSXgi77DHs3Z",
+            "name": "base rate to 32 Ourense",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 25.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "FyDSkL"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 32 Ourense",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "FyDSkL",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "h7MWxpq2H9HqoWbee",
+            "_id": "h7MWxpq2H9HqoWbee",
+            "name": "base rate to 12 Castellón",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "4JZk9m"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 12 Castellón",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "4JZk9m",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "hbLHTtGx8EJYcrtJB",
+            "_id": "hbLHTtGx8EJYcrtJB",
+            "name": "base rate to 29 Málaga",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 24,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ptM66c"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 29 Málaga",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ptM66c",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "iBqHKCasbwa4pWRAE",
+            "_id": "iBqHKCasbwa4pWRAE",
+            "name": "base rate to 20 Gipuzkoa",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "hJZpBy"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 20 Gipuzkoa",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "hJZpBy",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "ipTdCrSdrH7bFMcuP",
+            "_id": "ipTdCrSdrH7bFMcuP",
+            "name": "base rate to 43 Tarragona",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 700,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "fqQXJT"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 43 Tarragona",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "fqQXJT",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "jAGsA6XQitdAF2cxF",
+            "_id": "jAGsA6XQitdAF2cxF",
+            "name": "base rate to 01 Araba/Álava",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "c66ySj"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 01 Araba/Álava",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "c66ySj",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "iy6ArmmsEHnhbmfoH",
+            "_id": "iy6ArmmsEHnhbmfoH",
+            "name": "base rate to 05 Ávila",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "LuGHXa"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 05 Ávila",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "LuGHXa",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "jC5FBvGkzPnZ2QMk2",
+            "_id": "jC5FBvGkzPnZ2QMk2",
+            "name": "base rate to 17 Girona",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 650,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "TJkJP2"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 17 Girona",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "TJkJP2",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "k4xRnqdTv3xasKvqT",
+            "_id": "k4xRnqdTv3xasKvqT",
+            "name": "base rate to 47 Valladolid",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 700,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "xChtWp"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 47 Valladolid",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "xChtWp",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "k366WMDs6JCxYqrD8",
+            "_id": "k366WMDs6JCxYqrD8",
+            "name": "base rate to 50 Zaragoza",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 21,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "TejysG"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 50 Zaragoza",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "TejysG",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "jS9WXsKv2ZjMu3J2C",
+            "_id": "jS9WXsKv2ZjMu3J2C",
+            "name": "base rate to 15 A Coruña",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 212.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "KjgATB"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 15 A Coruña",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "KjgATB",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "jxZJJXCSNZkd5H9t6",
+            "_id": "jxZJJXCSNZkd5H9t6",
+            "name": "base rate to 20 Gipuzkoa",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "hJZpBy"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 20 Gipuzkoa",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "hJZpBy",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "kGmpi7FaeRvucA3JD",
+            "_id": "kGmpi7FaeRvucA3JD",
+            "name": "base rate to 03 Alicante",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 750,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "fY3vuL"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 03 Alicante",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "fY3vuL",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "k7uEss3P8hQqv53t6",
+            "_id": "k7uEss3P8hQqv53t6",
+            "name": "base rate to 32 Ourense",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 850,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "FyDSkL"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 32 Ourense",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "FyDSkL",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "kJiBTfMx6xDK6RApP",
+            "_id": "kJiBTfMx6xDK6RApP",
+            "name": "base rate to 37 Salamanca",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "D4Dk2Z"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 37 Salamanca",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "D4Dk2Z",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "m5qWhyKCsvjutFcb7",
+            "_id": "m5qWhyKCsvjutFcb7",
+            "name": "base rate to 08 Barcelona",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 700,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "d7Giqh"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 08 Barcelona",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "d7Giqh",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "kkAzbmXjCLEgFjzQX",
+            "_id": "kkAzbmXjCLEgFjzQX",
+            "name": "base rate to 46 Valencia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 21,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "aawCoH"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 46 Valencia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "aawCoH",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "m87Yhp36scm7NDDYh",
+            "_id": "m87Yhp36scm7NDDYh",
+            "name": "base rate to 25 Lleida",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 700,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "FQ2iXg"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 25 Lleida",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "FQ2iXg",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "mS8erbGemxWhZWb8L",
+            "_id": "mS8erbGemxWhZWb8L",
+            "name": "base rate to 34 Palencia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 21,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "dz6X87"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 34 Palencia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "dz6X87",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "mRxaX7kracaaiLxLt",
+            "_id": "mRxaX7kracaaiLxLt",
+            "name": "base rate to 40 Segovia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "M9n93g"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 40 Segovia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "M9n93g",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "mpxJXXNzTkMBAQtJE",
+            "_id": "mpxJXXNzTkMBAQtJE",
+            "name": "base rate to 02 Albacete",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 187.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "AwBqm2"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 02 Albacete",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "AwBqm2",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "mmqeqte9jzg5r54Si",
+            "_id": "mmqeqte9jzg5r54Si",
+            "name": "base rate to 52 Melilla",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 362.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ra2mKJ"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 52 Melilla",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ra2mKJ",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "n9qE87zS2SoPoLJQu",
+            "_id": "n9qE87zS2SoPoLJQu",
+            "name": "base rate to 29 Málaga",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 800,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ptM66c"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 29 Málaga",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ptM66c",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "oyQYXuzGHSEFEFGPB",
+            "_id": "oyQYXuzGHSEFEFGPB",
+            "name": "base rate to 17 Girona",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 162.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "TJkJP2"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 17 Girona",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "TJkJP2",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "q2NQdPxyciTDLyjNf",
+            "_id": "q2NQdPxyciTDLyjNf",
+            "name": "base rate to 48 Bizkaia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "nrskMe"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 48 Bizkaia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "nrskMe",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "r669DY39Hv36eLkwb",
+            "_id": "r669DY39Hv36eLkwb",
+            "name": "base rate to 16 Cuenca",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "nsN7zq"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 16 Cuenca",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "nsN7zq",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "qDbzCMJDxRnJKg4dh",
+            "_id": "qDbzCMJDxRnJKg4dh",
+            "name": "base rate to 46 Valencia",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 175,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "aawCoH"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 46 Valencia",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "aawCoH",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "qwMDvCr4RDvW4CoFJ",
+            "_id": "qwMDvCr4RDvW4CoFJ",
+            "name": "base rate to 51 Ceuta",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "TBmbNx"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 51 Ceuta",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "TBmbNx",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "rEwydMXP4Ng63KG38",
+            "_id": "rEwydMXP4Ng63KG38",
+            "name": "base rate to 25 Lleida",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 21,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "FQ2iXg"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 25 Lleida",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "FQ2iXg",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "rS4cq5f9JoKuNJcrx",
+            "_id": "rS4cq5f9JoKuNJcrx",
+            "name": "base rate to 49 Zamora",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "9sDpxM"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 49 Zamora",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "9sDpxM",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "rRPgRdPWxb4K4n7R4",
+            "_id": "rRPgRdPWxb4K4n7R4",
+            "name": "base rate to 20 Gipuzkoa",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "hJZpBy"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 20 Gipuzkoa",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "hJZpBy",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "rQb2cQZwvgeHzbREc",
+            "_id": "rQb2cQZwvgeHzbREc",
+            "name": "base rate to 06 Badajoz",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 900,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "fXu8gz"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 06 Badajoz",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "fXu8gz",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "rfSoNe3ftakFdJsjJ",
+            "_id": "rfSoNe3ftakFdJsjJ",
+            "name": "base rate to 24 León",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 187.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "DbPFt4"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 24 León",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "DbPFt4",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "rzeTXBT548CbDwXjZ",
+            "_id": "rzeTXBT548CbDwXjZ",
+            "name": "base rate to 41 Seville",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 28.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "coGepH"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 41 Seville",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "coGepH",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "s254K5EGvH8aSDktb",
+            "_id": "s254K5EGvH8aSDktb",
+            "name": "base rate to 44 Teruel",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "whRrBN"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 44 Teruel",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "whRrBN",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "sfcDKg3wzogkAAfBM",
+            "_id": "sfcDKg3wzogkAAfBM",
+            "name": "base rate to 49 Zamora",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "9sDpxM"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 49 Zamora",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "9sDpxM",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "siwh7vn5ZFzzLCWcM",
+            "_id": "siwh7vn5ZFzzLCWcM",
+            "name": "base rate to 07 Balearic Islands",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "NFHQxN"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 07 Balearic Islands",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "NFHQxN",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "sPR6tjLXPCnpTvuxd",
+            "_id": "sPR6tjLXPCnpTvuxd",
+            "name": "base rate to 27 Lugo",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 212.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "qk4Jch"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 27 Lugo",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "qk4Jch",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "tD3jFhfmbBuRNg2G7",
+            "_id": "tD3jFhfmbBuRNg2G7",
+            "name": "base rate to 21 Huelva",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 28.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "MDpTGL"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 21 Huelva",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "MDpTGL",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "t6aXGW4AsuwnpEDBm",
+            "_id": "t6aXGW4AsuwnpEDBm",
+            "name": "base rate to 22 Huesca",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 1200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "vPzYrJ"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 22 Huesca",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "vPzYrJ",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "tNg8Kny3dC6yHhqiq",
+            "_id": "tNg8Kny3dC6yHhqiq",
+            "name": "base rate to 18 Granada",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "aGNziq"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 18 Granada",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "aGNziq",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "syhL7HKucHD6TnWZN",
+            "_id": "syhL7HKucHD6TnWZN",
+            "name": "base rate to 36 Pontevedra",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 25.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "6mGNAM"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 36 Pontevedra",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "6mGNAM",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "ue2HyXLnwKKsphnMT",
+            "_id": "ue2HyXLnwKKsphnMT",
+            "name": "base rate to 27 Lugo",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 850,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "qk4Jch"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 27 Lugo",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "qk4Jch",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "vZ9x3CY3Ez35WNxxX",
+            "_id": "vZ9x3CY3Ez35WNxxX",
+            "name": "base rate to 13 Ciudad Real",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 25.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "kiHHyP"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 13 Ciudad Real",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "kiHHyP",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "wP3L6nNYPWhQqod5f",
+            "_id": "wP3L6nNYPWhQqod5f",
+            "name": "base rate to 31 Navarre",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "NZTrJc"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 31 Navarre",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "NZTrJc",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "wABNZzChZdhEku35a",
+            "_id": "wABNZzChZdhEku35a",
+            "name": "base rate to 44 Teruel",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "whRrBN"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 44 Teruel",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "whRrBN",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "wqA3s5iQXYuuPSjYK",
+            "_id": "wqA3s5iQXYuuPSjYK",
+            "name": "base rate to 15 A Coruña",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 25.5,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "KjgATB"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 15 A Coruña",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "KjgATB",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "wx3EqbkQpi3QGv7eS",
+            "_id": "wx3EqbkQpi3QGv7eS",
+            "name": "base rate to 24 León",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 750,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "DbPFt4"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 24 León",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "DbPFt4",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "xNdX6uqv9E4gbGgcG",
+            "_id": "xNdX6uqv9E4gbGgcG",
+            "name": "base rate to 16 Cuenca",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "nsN7zq"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 16 Cuenca",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "nsN7zq",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "xzi6JJ6ePpu92xwAC",
+            "_id": "xzi6JJ6ePpu92xwAC",
+            "name": "base rate to 23 Jaén",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ESNmdz"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 23 Jaén",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ESNmdz",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "yK3rmByjCMviCzki9",
+            "_id": "yK3rmByjCMviCzki9",
+            "name": "base rate to 11 Cádiz",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 300,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "GLGRqo"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 11 Cádiz",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "GLGRqo",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "yF4LW9pYnwyRZikWC",
+            "_id": "yF4LW9pYnwyRZikWC",
+            "name": "base rate to 14 Córdoba",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 200,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "ktKj73"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "bQWjTo"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 14 Córdoba",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "ktKj73",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "zN8v6LekNHcrnCChk",
+            "_id": "zN8v6LekNHcrnCChk",
+            "name": "base rate to 16 Cuenca",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 36,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "nsN7zq"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "7BbXKW"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 16 Cuenca",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "nsN7zq",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        },
+        {
+            "__is_new": false,
+            "id": "zcNvkLKk8tZRSQyx5",
+            "_id": "zcNvkLKk8tZRSQyx5",
+            "name": "base rate to 35 Las Palmas",
+            "type": "calculated",
+            "costId": "o6fLThAWhaWW3uDaj",
+            "multiplier": "shipment",
+            "amount": {
+                "value": 3500,
+                "unit": "EUR"
+            },
+            "rules": [
+                {
+                    "laneId": "XLp3u5"
+                },
+                {
+                    "volumeGroupId": "xciTT7"
+                },
+                {
+                    "volumeRangeId": "ez5F9B"
+                }
+            ],
+            "priceListId": "bS7DWfRe7eE3vkrjz",
+            "comment": "base rate to 35 Las Palmas",
+            "meta": {
+                "source": "table"
+            },
+            "laneId": "XLp3u5",
+            "updated": {
+                "price_lists_rates": "synced"
+            }
+        }
+    ],
+    "stats": {
+        "totalCount": 156,
+        "queryCount": 156,
+        "curCount": 156
+    }
+}

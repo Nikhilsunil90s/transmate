@@ -1,0 +1,34 @@
+enum ANALYSIS_TYPE {
+  simulation
+  switchPoint
+}
+
+type Analysis {
+  id: String
+  name: String
+  type: String
+  created: ByType
+
+  #projections:
+  simulation: AnalysisSimulation
+  switchPoint: AnalysisSwitchPoint
+}
+
+input AnalysisFiltersInput {
+  type: String
+}
+
+input createAnalysisInput {
+  type: ANALYSIS_TYPE!
+  name: String
+}
+
+extend type Query {
+  getAnalysesOverview(viewKey: String!): [Analysis] # overview
+  getAnalyses(filters: AnalysisFiltersInput): [Analysis]
+  getAnalysis(analysisId: String!): Analysis
+}
+
+extend type Mutation {
+  createAnalysis(input: createAnalysisInput!): String
+}

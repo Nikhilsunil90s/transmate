@@ -1,0 +1,14 @@
+type CostType {
+  id: String
+  type: String
+  group: String
+  cost: String
+  isDummy: Boolean
+
+  accountId: String # account specific only
+}
+
+extend type Query {
+  getCost(costId: String!): CostType
+  getCostTypes(includeDummy: Boolean): [CostType]
+}

@@ -1,0 +1,60 @@
+@import "{}/imports/client/styles/colors.import.less";
+@import "{}/imports/client/styles/sizes.import.less";
+
+.main-fixed-footer {
+  // Make sure the <main> itself doens't overflow (to prevent double scrollbars
+  // with the app container scroll kicking in)
+  > div {
+    height: calc(~"100vh - " @headerHeight);
+  }
+
+  // Main content scroll container
+  > div > div {
+    height: calc(~"100% - " @footerHeight);
+    overflow: auto;
+  }
+
+  // Push content upwards to make place for footer
+  // > div > div,
+  + aside {
+    padding-bottom: @footerHeight;
+  }
+  // > div > div > .ui.container {
+  // 	padding-bottom: @basePadding + @footerHeight;
+  // }
+
+  // Fix footers to bottom
+  > div > footer.ui.segment,
+  &.ShipmentRequest footer.ui.segment,
+  & + aside > footer.ui.segment {
+    position: fixed;
+    bottom: 0;
+    width: calc(~"100% - " @baseSize);
+    z-index: 1;
+  }
+
+  + aside > footer.ui.segment {
+    min-width: @asideMinWidth;
+    width: @asideWidth; // 100% is not an option as aside is not relative container
+  }
+}
+
+.main-fixed-footer-and-toolbar {
+  > div > div {
+    height: calc(~"100% - " @footerHeight + @baseSize);
+    min-height: calc(~"100% - " @footerHeight + @baseSize);
+  }
+}
+
+// Use this when the aside footer is just a placeholder without (important) content
+.aside-autohide-footer {
+  & + aside {
+    @media all and (max-height: ( @fixedFooterFrom - 1px )) {
+      footer.ui.segment {
+        // Hide the footer on smaller screens, as it's only there for decoration
+        // purposes at the moment
+        display: none;
+      }
+    }
+  }
+}

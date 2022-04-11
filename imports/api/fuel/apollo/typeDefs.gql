@@ -1,0 +1,63 @@
+type FuelBaseType {
+  rate: Float
+  month: Int
+  year: Int
+}
+
+type FuelPeriodsType {
+  month: Int
+  year: Int
+  index: Float # this is the one that is used!! the other one is not
+  fuel: Float
+}
+
+type Fuel {
+  id: String
+  accountId: String
+  created: ByType
+  name: String
+  description: String
+  fuel: Float
+  acceptance: Float
+  costId: String
+  base: FuelBaseType
+  periods: [FuelPeriodsType]
+}
+
+input FuelPeriodsInput {
+  month: Int
+  year: Int
+  index: Float
+  fuel: Float
+}
+
+input FuelBaseInput {
+  rate: Float
+  month: Int
+  year: Int
+}
+
+input FuelIndexInput {
+  name: String
+  description: String
+  fuel: Float
+  acceptance: Float
+  base: FuelBaseInput
+  periods: [FuelPeriodsInput]
+}
+
+input FuelIndexUpdateInput {
+  fuelIndexId: String!
+  updates: FuelIndexInput!
+}
+
+extend type Query {
+  getFuelIndexes: [Fuel]
+  getFuelIndex(fuelIndexId: String!): Fuel
+}
+
+extend type Mutation {
+  addFuelIndex(fuel: FuelIndexInput!): Fuel
+  updateFuelIndex(input: FuelIndexUpdateInput!): Fuel
+  removeFuelIndex(fuelIndexId: String!): Boolean
+}

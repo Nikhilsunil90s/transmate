@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES6",
+    "paths": {
+      "/*": ["./*"]
+    },
+    "jsx": "react"
+  },
+  "exclude": ["node_modules", "./deploy", "**/node_modules/*"]
+}

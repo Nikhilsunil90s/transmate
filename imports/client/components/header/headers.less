@@ -1,0 +1,27 @@
+@import '{}/imports/client/styles/colors.import.less';
+@import '{}/imports/client/styles/sizes.import.less';
+
+.app header {
+	> a.button {
+		font-size: 16px;
+		margin: 18px 20px;
+		color: @infoHeaderColor;
+	}
+
+	&.view {
+		height: @baseSize;
+		padding-left: @headerFooterPadding;
+		padding-right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&.ui.segment { // overrides
+			margin-bottom: 0;
+		}
+
+		> .close {
+			background: @pageBackground;
+		}
+	}
+}

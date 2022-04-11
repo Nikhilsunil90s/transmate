@@ -1,0 +1,118 @@
+type ShipmentImportMapping {
+  headers: JSONObject
+  values: JSONObject
+  samples: JSONObject
+}
+
+type ShipmentImportProgress {
+  data: Int
+  lookup: Int
+  mapping: Int
+  jobs: Int
+  process: Int
+}
+
+type ShipmentImportTotals {
+  empty: Int
+  shipments: Int
+  jobs: Int
+}
+
+type ShipmentImportSettings {
+  numberFormat: String
+  dateFormat: String
+}
+
+type ShipmentImportRow {
+  id: String
+  data: JSONObject
+  status: String
+  result: JSONObject
+  failures: [JSONObject]
+  log: [JSONObject]
+}
+
+type ShipmentImportError {
+  error: String
+  message: String
+}
+
+type ShipmentImport {
+  id: String
+  type: String
+  accountId: String
+  headers: [String]
+  errors: [ShipmentImportError]
+  mapping: ShipmentImportMapping
+  progress: ShipmentImportProgress
+  total: ShipmentImportTotals
+  settings: ShipmentImportSettings
+
+  # Time stamps
+  created: ByType
+
+  # projections:
+  rows: [ShipmentImportRow]
+}
+
+input ShipmentImportRowInput {
+  importId: String!
+  i: Int!
+  data: JSONObject!
+  headers: [String]
+  progress: Float
+}
+
+input ShipmentImportValueMapInput {
+  importId: String!
+  header: String!
+  importValue: String!
+  systemValue: String!
+}
+
+input ShipmentImportHeaderMapInput {
+  importId: String!
+  header: String!
+  key: String!
+}
+
+input InitializeShipmentImportMappingInput {
+  importId: String!
+  force: Boolean
+}
+
+input UpdateShipmentImportSettingsInput {
+  dateFormat: String!
+  numberFormat: String
+}
+
+input UpdateShipmentImportUpdatesInput {
+  settings: UpdateShipmentImportSettingsInput
+  type: String!
+}
+
+input UpdateShipmentImportInput {
+  importId: String!
+  updates: UpdateShipmentImportUpdatesInput!
+}
+
+extend type Query {
+  getShipmentImport(importId: String!): ShipmentImport
+  getShipmentImportRows(importId: String!): ShipmentImport
+}
+
+extend type Mutation {
+  initializeShipmentImportMapping(
+    input: InitializeShipmentImportMappingInput!
+  ): ShipmentImport
+  createShipmentImport: ShipmentImport
+  updateShipmentImport(input: UpdateShipmentImportInput!): ShipmentImport
+  insertShipmentImportRow(input: ShipmentImportRowInput!): String
+  importDoneShipmentImport(importId: String!): ShipmentImport
+  cancelShipmentImport(importId: String!): ShipmentImport
+  revertShipmentImport(importId: String!): ShipmentImport
+  restartShipmentImport(importId: String!): ShipmentImport
+  mapShipmentImportValue(input: ShipmentImportValueMapInput!): ShipmentImport
+  mapShipmentImportHeader(input: ShipmentImportHeaderMapInput!): ShipmentImport
+  processShipmentImport(importId: String!): String
+}

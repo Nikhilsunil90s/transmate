@@ -1,0 +1,136 @@
+enum STAGE_STOP {
+  from
+  to
+}
+
+enum STAGE_STATUS {
+  release
+  draft
+  planned
+}
+
+type PlannedScheduledActualType {
+  planned: Date
+  scheduled: Date
+  actual: Date
+}
+
+type DateStopType {
+  arrival: PlannedScheduledActualType
+  start: PlannedScheduledActualType
+  end: PlannedScheduledActualType
+  documents: PlannedScheduledActualType
+  departure: PlannedScheduledActualType
+}
+
+type StageDatesType {
+  pickup: DateStopType
+  delivery: DateStopType
+  eta: Date
+}
+
+type Stage {
+  id: String
+  mode: String
+  status: String
+  shipmentId: String
+  sequence: Int
+  carrierId: String
+  from: FromToType
+  to: FromToType
+
+  drivingDistance: Float
+  drivingDuration: Float
+  sphericalDistance: Float
+
+  vehicleId: String
+  trailerId: String
+  plate: String
+  driverId: String
+  instructions: String
+  created: ByType
+  released: ByType
+  dates: StageDatesType
+}
+
+# LocationSchema
+enum LOCATION_INPUT_TYPE {
+  address
+  location
+}
+
+input LocationInput {
+  type: LOCATION_INPUT_TYPE
+  id: String!
+}
+
+input StageConfirmDatesInput {
+  pickupArrival: Date
+  pickupStart: Date
+  pickupEnd: Date
+  deliveryArrival: Date
+  deliveryStart: Date
+  deliveryEnd: Date
+}
+
+input StageConfirmInput {
+  stageId: String!
+  dates: StageConfirmDatesInput!
+}
+
+input StageUpdatesInput {
+  dates: JSONObject #
+  carrierId: String #
+  mode: String #
+}
+
+input StageUpdateInput {
+  stageId: String!
+  updates: StageUpdatesInput
+}
+
+input LocationOverridesInput {
+  city: String
+  zipCode: String
+  countryCode: String
+  street: String
+  number: String
+  name: String
+  phoneNumber: String
+  companyName: String
+}
+
+input StageLocationUpdate {
+  stageId: String!
+  stop: STAGE_STOP!
+  location: LocationInput
+  overrides: LocationOverridesInput
+}
+
+input StageAllocationInput {
+  plate: String
+  driverId: String
+  instructions: String
+}
+
+input StageAllocationUpdate {
+  stageId: String
+  allocation: StageAllocationInput
+}
+
+input StageScheduleInput {
+  stageId: String
+  loading: Date
+  unloading: Date
+}
+
+extend type Mutation {
+  setStageStatus(stageId: String!, status: STAGE_STATUS!): ShipmentAggr
+  mergeStage(stageId: String!): ShipmentAggr
+  splitStage(stageId: String!, location: LocationInput!): ShipmentAggr
+  scheduleStage(input: StageScheduleInput!): ShipmentAggr
+  confirmStage(input: StageConfirmInput!): ShipmentAggr
+  updateStage(input: StageUpdateInput!): ShipmentAggr # it can modify a shipment status change
+  updateStageLocation(input: StageLocationUpdate!): ShipmentAggr
+  allocateStage(input: StageAllocationUpdate!): Stage
+}

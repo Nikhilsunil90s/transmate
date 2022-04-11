@@ -1,0 +1,528 @@
+enum PRICE_LIST_STATUS_ACTION {
+  draft
+  delete
+  archive
+  activate
+  deactivate
+  decline
+  approve
+  release
+}
+
+enum PRICE_LIST_VIEW_TYPE {
+  activePriceLists
+  myRateCards
+  forApproval
+  draftPriceLists
+  allPriceListsSpot
+  allPriceLists
+}
+
+type PriceListShipmentsType {
+  shipmentId: String
+  reference: String
+  params: JSONObject
+}
+
+type LeadTimeDefinitionLaneType {
+  name: String
+  from: JSONObject
+  to: JSONObject
+}
+
+type LeadTimeDefinitionType {
+  leadTimeHours: Int
+  days: [Boolean]
+  frequency: String
+
+  # extended :
+  lane: LeadTimeDefinitionLaneType
+  rules: JSONObject
+}
+type fromToRange {
+  from: Float
+  to: Float
+}
+
+type UOMConversionFrom {
+  uom: String!
+  range: fromToRange
+}
+type UOMConversionTo {
+  uom: String!
+  multiplier: Float
+  fixed: Float
+  min: Float
+  max: Float
+}
+
+type UOMConversion {
+  from: UOMConversionFrom
+  to: UOMConversionTo
+}
+
+type UOMDefinitionType {
+  allowed: [String]
+  conversions: [UOMConversion] # UOMConversionSchema
+}
+
+type ChargeDefinitionType {
+  id: String
+  name: String
+  costId: String
+  type: String
+  min: Float
+  max: Float
+  comment: String
+  meta: JSONObject
+
+  currency: String
+  multiplier: String
+  volumeRangeIndex: Int
+}
+
+type PriceListSummaryType {
+  laneCount: Int
+  rangesCount: Int
+  rateCount: Int
+}
+
+type PriceListUpdateType {
+  action: String
+  userId: String
+  accountId: String
+  links: JSONObject
+  ts: Date
+}
+
+type PaymentTermsType {
+  days: Int
+  condition: String
+}
+
+type PLTemplateType {
+  type: String
+  structure: JSONObject
+  masterTemplateId: String
+}
+
+type EquipmentDefinitionType {
+  id: String
+  name: String
+  types: [String]
+  triggersRules: [JSONObject]
+}
+
+type LaneStopType {
+  type: String
+  addressId: String
+  locationId: String
+}
+
+type LaneDefinitionType {
+  id: String
+  name: String
+  from: AddressLocationZonesType
+  to: AddressLocationZonesType
+  stops: [LaneStopType]
+  incoterm: String
+  triggersRules: [JSONObject]
+}
+
+type VolumeRangeType {
+  id: String
+  from: Float
+  to: Float
+  multiplier: String
+  name: String
+  triggersRules: [JSONObject]
+}
+
+type VolumeDefinitionType {
+  id: String
+  uom: String
+  serviceLevel: String
+  name: String
+  triggersRules: [JSONObject]
+  ranges: [VolumeRangeType]
+}
+
+type PriceList {
+  id: String
+  title: String
+
+  type: String
+  status: String
+
+  customerId: String
+  carrierId: String
+  carrierName: String
+  creatorId: String
+
+  template: PLTemplateType
+  currency: String
+  category: String
+  mode: String
+  validFrom: Date
+  validTo: Date
+
+  # allowed uoms and conversions:
+  uoms: UOMDefinitionType
+
+  lanes: [LaneDefinitionType]
+  volumes: [VolumeDefinitionType]
+  equipments: [EquipmentDefinitionType]
+
+  shipments: [PriceListShipmentsType]
+  charges: [ChargeDefinitionType]
+
+  leadTimes: [LeadTimeDefinitionType]
+  defaultLeadTime: LeadTimeDefinitionType
+  attachments: [DocumentType]
+
+  terms: PaymentTermsType
+  created: ByType
+
+  updates: [PriceListUpdateType]
+
+  fuelIndexId: String
+  tenderId: String
+  priceRequestId: String
+  notes: String
+  summary: PriceListSummaryType
+
+  rules: JSONObject
+  xlsUrl: JSONObject
+
+  # projections
+  expired: Boolean
+  customer: AccountType
+  carrier: AccountType
+}
+
+type PriceListRateAmountType {
+  value: Float
+  unit: String
+  on: String
+}
+
+type PriceListRateCalculationType {
+  formula: String
+}
+
+type PriceListRateMetaType {
+  source: String
+  color: String
+  leg: String
+  type: String
+}
+
+type PriceListRate {
+  id: String # objectId... -> converted in resolver
+  priceListId: String
+  costId: String
+  laneId: String
+  type: String
+  name: String
+  amount: PriceListRateAmountType
+  multiplier: String
+  min: Float
+  max: Float
+  rules: [JSONObject]
+  rulesUI: JSONObject
+  filters: JSONObject
+  calculation: PriceListRateCalculationType
+  comment: String
+  meta: PriceListRateMetaType
+
+  tooltip: String # used in calculation results
+}
+
+type PriceListRateResponseStats {
+  totalCount: Int
+  queryCount: Int
+  curCount: Int
+}
+
+type PriceListRateResponse {
+  rates: [PriceListRate]
+  stats: PriceListRateResponseStats
+}
+
+#region price lookup
+type PriceLookupAudit {
+  count: Int
+  step: String
+  msg: String
+}
+
+type PriceLookupCostTotal {
+  convertedCurrency: String
+  convertedValue: Float
+  exchange: Float
+  listCurrency: String
+  listValue: Float
+}
+
+type PriceLookupCost {
+  rate: PriceListRate
+  total: PriceLookupCostTotal
+}
+
+type PriceLookupLeadtime {
+  definition: JSONObject
+  hours: Float
+}
+
+type PriceRequestMeta {
+  #will this cache? seems to give back same note for same Id (should not do this)
+  id: String # needs resolver
+  notes: String
+}
+
+type PriceLookupItem {
+  _id: String
+  id: String # needs resolver
+  bestCost: Boolean
+  bestLeadTime: Boolean
+  calculation: JSONObject
+  carrierId: String
+  carrierName: String
+  category: String
+  costs: [PriceLookupCost]
+  customerId: String
+  leadTime: PriceLookupLeadtime
+  mode: String
+  priceRequestId: String
+  biddingNotes: String # might be better to avoid caching and given back same note for same pr id!
+  priceRequest: PriceRequestMeta
+  status: String
+  title: String
+  totalCost: Float
+  validFrom: Date
+  validTo: Date
+}
+
+type PriceLookupResponse {
+  audits: [PriceLookupAudit]
+  calculationParams: JSONObject
+  costs: [PriceLookupItem]
+  errors: [String]
+}
+#endregion
+
+input GetPriceListsInput {
+  carrierId: String
+  status: String
+  type: String
+}
+
+input PriceListUpdatesInput {
+  title: String
+
+  type: String
+  status: String
+
+  customerId: String
+  carrierId: String
+  carrierName: String
+
+  template: JSONObject
+  currency: String
+  category: String
+  mode: String
+  validFrom: Date
+  validTo: Date
+
+  # allowed uoms and conversions:
+  uoms: JSONObject
+  lanes: [JSONObject]
+  volumes: [JSONObject]
+  equipments: [JSONObject]
+  shipments: [JSONObject]
+  charges: [JSONObject]
+  leadTimes: [JSONObject]
+  defaultLeadTime: JSONObject
+  attachments: [JSONObject]
+  terms: JSONObject
+  updates: [JSONObject]
+  fuelIndexId: String
+  tenderId: String
+  priceRequestId: String
+  notes: String
+
+  rules: JSONObject
+}
+
+input UpdatePriceListAttachmentInput {
+  priceListId: String!
+  index: Int
+  attachment: JSONObject
+}
+
+input SetPriceListStatusInput {
+  priceListId: String!
+  action: PRICE_LIST_STATUS_ACTION!
+}
+
+# this uses Object rules (db == [{<rules}}])
+input GetPriceListRateQueryInput {
+  volumeGroupId: String
+  volumeRangeId: String
+  laneId: String
+  laneIndex: Int
+  equipmentGroupId: String
+  shipmentId: String
+  equipmentType: String
+  dangerous: Boolean
+  dangerousClass: Int
+  #itemLength: String
+  #itemWidth: String
+  #itemHeight: String
+  incoterm: String
+  #date: Date
+  #weekday: Int
+  #month: Int
+
+  serviceLevel: String
+  taxRoad: Boolean
+  taxRoadId: String
+  formula: String
+}
+
+input CreatePriceListInput {
+  template: JSONObject
+  mode: String
+}
+
+input PriceListRateUpdateSelector {
+  id: String
+  rules: JSONObject
+  rulesUI: JSONObject
+}
+
+input PriceListRateGridUpdate {
+  selector: PriceListRateUpdateSelector
+  isHeader: Boolean
+  update: JSONObject
+}
+
+input PriceListRateUpdate {
+  priceListId: String!
+  id: String
+  update: JSONObject
+}
+
+input PriceLookupOptions {
+  resetCarrier: Boolean
+  resetPriceList: Boolean
+  resetServiceLevel: Boolean
+  currency: String
+}
+
+input ShipmentPriceLookupInput {
+  shipmentId: String!
+  options: PriceLookupOptions
+}
+
+input PriceLookupParams {
+  from: ShipmentLocationInput!
+  to: ShipmentLocationInput!
+  mode: SHIPMENT_MODES
+  serviceLevel: SHIPMENT_SERVICE_LEVELS
+  equipment: ToolsEquipmentInput # {code, amount}
+  goods: ToolsGoodsInputQuantity # {code, amount}
+  currency: String
+  DG: Boolean
+  regrigerated: Boolean
+  priceListIds: [String]
+  carrierIds: [String]
+}
+
+input ManualPriceLookupInput {
+  params: PriceLookupParams
+  options: PriceLookupOptions
+}
+
+input DuplicatePriceListOptionsInput {
+  copyToOtherAccount: Boolean
+  tenderTemplate: Boolean
+  data: JSONObject
+}
+
+input DuplicatePriceListInput {
+  priceListId: String!
+  rates: Boolean!
+  overrides: DuplicatePriceListOptionsInput
+}
+
+input UpdatePriceListInput {
+  priceListId: String!
+  updates: PriceListUpdatesInput
+}
+
+input UpdatePriceListConversionsInput {
+  priceListId: String!
+  conversions: [JSONObject]
+}
+
+input PriceViewListInput {
+  viewKey: PRICE_LIST_VIEW_TYPE!
+  filters: JSONObject
+}
+
+input CopyPriceListAdditionalRatesInput {
+  priceListId: String!
+  sourcePriceListId: String!
+}
+
+input CopyPriceListConversionsInput {
+  priceListId: String!
+  sourcePriceListId: String!
+}
+type updatePriceListFuelIndexResponse {
+  priceList: PriceList
+  fuel: Fuel
+}
+
+extend type Query {
+  getOwnPriceLists(input: GetPriceListsInput!): [PriceList]
+  getPriceList(priceListId: String!): PriceList
+  getPriceListRates(
+    priceListId: String!
+    query: GetPriceListRateQueryInput
+    inGrid: Boolean
+  ): PriceListRateResponse
+  getPriceLookupShipment(input: ShipmentPriceLookupInput!): PriceLookupResponse
+  getPriceViewList(input: PriceViewListInput!): [PriceList]
+}
+
+extend type Mutation {
+  createPriceList(input: CreatePriceListInput): PriceList
+  createPriceListFromUpload(xlsUrl: String!, partnerId: String): PriceList
+  duplicatePriceList(input: DuplicatePriceListInput!): PriceList
+  updatePriceList(input: UpdatePriceListInput!): PriceList
+  updatePriceListConversions(input: UpdatePriceListConversionsInput!): PriceList
+  removeAttachment(input: UpdatePriceListAttachmentInput!): [DocumentType]
+  addAttachment(input: UpdatePriceListAttachmentInput!): [DocumentType]
+  setPriceListStatus(input: SetPriceListStatusInput): PriceList
+  updatePriceListRatesGrid(
+    priceListId: String!
+    updates: [PriceListRateGridUpdate]
+  ): JSONObject
+  updatePriceListRate(input: PriceListRateUpdate): PriceListRate
+  copyPriceListAdditionalRates(
+    input: CopyPriceListAdditionalRatesInput!
+  ): PriceListRate
+
+  # FIXME: UI button needed for this:
+  copyPriceListConversions(input: CopyPriceListConversionsInput!): PriceList
+  priceListLeadTimesCopyLanes(priceListId: String!): PriceList
+  getManualPriceLookupResult(
+    input: ManualPriceLookupInput!
+  ): PriceLookupResponse
+  updatePriceListFuelIndex(
+    fuelIndexId: String!
+    priceListId: String!
+  ): updatePriceListFuelIndexResponse
+}

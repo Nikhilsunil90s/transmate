@@ -1,0 +1,45 @@
+@import "{}/imports/client/styles/footer.import.less";
+@import "{}/imports/client/styles/sections.import.less";
+
+main.Partner {
+  .aside-autohide-footer;
+  .icon-sections;
+
+  .banner {
+    color: grey;
+    height: 250px;
+    width: 100%;
+    background: url(/images/repeat_background_horizontal.png);
+    background-color: #eee;
+  }
+
+  .logo {
+    float: left;
+    color: grey;
+    height: 250px;
+    width: 250px;
+    background-color: #fff;
+    padding: 25px;
+    position: relative;
+
+    img {
+      width: 200px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  ul.distributed {
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+
+    li {
+      list-style-type: none;
+    }
+  }
+}

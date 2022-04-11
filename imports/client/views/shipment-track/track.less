@@ -1,0 +1,81 @@
+@import "{}/imports/client/styles/colors.import.less";
+
+main.Track {
+  .row.fromto {
+    background-color: #fff;
+    border-radius: 5px;
+
+    .column {
+      >div {
+        height: 140px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h5 {
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+
+      .time {
+        margin-top: 2em;
+
+        i {
+          color: @purpleColor;
+        }
+      }
+    }
+  }
+
+  .status {
+    h5+div {
+      margin-top: 2em;
+    }
+
+    .truck {
+      margin-bottom: 0.75em;
+      color: @blue;
+      text-align: left;
+    }
+
+    .track,
+    .track .fill {
+      height: 8px;
+      background-color: #ccc;
+      border-radius: 8px;
+    }
+
+    .track .fill {
+      background-color: @blue;
+    }
+  }
+
+  .updates {
+    h4 {
+      padding-bottom: 1em;
+    }
+
+    .grid .column {
+      padding-top: 0.5em;
+      padding-bottom: 0;
+      white-space: nowrap;
+    }
+  }
+}
+
+body>.track {
+  background: white;
+  padding: 50px;
+  height: 260px;
+}
+
+.timeline {
+  width: 100%;
+  text-align: center;
+}
+
+.statusbox {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+}

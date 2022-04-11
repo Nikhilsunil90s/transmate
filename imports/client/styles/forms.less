@@ -1,0 +1,29 @@
+@import "{}/imports/client/styles/colors.import.less";
+
+main .form {
+  h1.ui.header {
+    color: @infoHeaderColor;
+  }
+
+  .icon-header {
+    display: flex;
+
+    .circle.icon {
+      margin-right: 10px;
+    }
+    svg {
+      flex: 1;
+    }
+  }
+}
+
+.semantic-select {
+  .ui.dropdown {
+    height: 48px;
+  }
+}
+
+// for in dropdown searches:
+.ui.dropdown.dropdown .menu > .input {
+  width: auto !important;
+}

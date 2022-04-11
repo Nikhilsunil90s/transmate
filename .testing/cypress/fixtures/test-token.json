@@ -1,0 +1,10 @@
+{
+  "route": {
+    "page": "priceRequestEdit",
+    "_id": "zgSR5RRWJoHMDSEDy",
+    "section": "data"
+  },
+  "userId": "jsBor6o3uRBTFoRQY",
+  "tokenString": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb3V0ZSI6eyJwYWdlIjoicHJpY2VSZXF1ZXN0RWRpdCIsIl9pZCI6InpnU1I1UlJXSm9ITURTRUR5Iiwic2VjdGlvbiI6ImRhdGEifSwidXNlcklkIjoianNCb3I2bzN1UkJURm9SUVkiLCJyZWFzb24iOiJsb2dpbi1yZWRpcmVjdCIsImlhdCI6MTYxMjI1NTE5MSwiZXhwIjoxNjk4NjU1MTkxfQ.3vUcFLZPN1-o32ZKSChG1AqXraj7AZW-ZiWl2xGsxSc",
+  "expiresIn": "1000d"
+}

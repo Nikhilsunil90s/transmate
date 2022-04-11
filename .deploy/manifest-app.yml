@@ -1,0 +1,20 @@
+---
+applications:
+- name: ${CF_APP_NAME}
+  env:
+    DOPPLER_TOKEN: ${DOPPLER_TOKEN}
+    RELEASE_NAME: ${RELEASE_NAME}
+    DEPLOY_DATE: ${DEPLOY_TS}
+  stack: cflinuxfs3
+  buildpacks:
+  - nodejs_buildpack
+  routes:
+  - route: ${CF_APP_ROUTE}
+    protocol: http1
+  processes:
+  - type: web
+    instances: ${CF_APP_INSTANCES}
+    memory: 1024M
+    disk_quota: 1000M
+    health-check-type: port
+    timeout: 360

@@ -1,0 +1,375 @@
+[
+  {
+    "key": "analysis-created",
+    "type": "transactional",
+    "group": "analysis",
+    "mail": false,
+    "notification": false
+  },
+  {
+    "key": "document-added-notification",
+    "type": "transactional",
+    "group": "documents",
+    "subGroup": "documents",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "document-added-update",
+    "type": "transactional",
+    "group": "documents",
+    "subGroup": "documents",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "non-conformance-added-notification",
+    "type": "transactional",
+    "group": "shipments",
+    "subGroup": "updates",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "non-conformance-added-update",
+    "type": "transactional",
+    "group": "shipments",
+    "subGroup": "updates",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "partner-created",
+    "type": "transactional",
+    "group": "general",
+    "mail": false,
+    "notification": false
+  },
+  {
+    "key": "partnership-accepted-notification",
+    "type": "transactional",
+    "group": "general",
+    "subGroup": "partners",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "partnership-rejected-notification",
+    "type": "transactional",
+    "group": "general",
+    "subGroup": "partners",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "partnership-requested-notification",
+    "type": "transactional",
+    "group": "general",
+    "subGroup": "partners",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "price-list-created",
+    "type": "transactional",
+    "group": "priceLists",
+    "mail": false,
+    "notification": false
+  },
+  {
+    "key": "price-list-approved",
+    "type": "transactional",
+    "group": "priceLists",
+    "subGroup": "status-updates",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "price-list-declined-email",
+    "type": "transactional",
+    "group": "priceLists",
+    "subGroup": "status-updates",
+    "mail": true,
+    "notification": false
+  },
+  {
+    "key": "price-list-declined-notification",
+    "type": "transactional",
+    "group": "priceLists",
+    "subGroup": "status-updates",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "price-list-released",
+    "type": "transactional",
+    "group": "priceLists",
+    "subGroup": "status-updates",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "price-list-request-cancelled-email",
+    "type": "transactional",
+    "group": "priceLists",
+    "subGroup": "request",
+    "mail": true,
+    "notification": false
+  },
+  {
+    "key": "price-list-request-cancelled-notification",
+    "type": "transactional",
+    "group": "priceLists",
+    "subGroup": "request",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "price-list-requested-email",
+    "type": "transactional",
+    "group": "priceLists",
+    "subGroup": "request",
+    "mail": true,
+    "notification": false
+  },
+  {
+    "key": "price-list-requested-notification",
+    "type": "transactional",
+    "group": "priceLists",
+    "subGroup": "request",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "price-request-created",
+    "type": "transactional",
+    "group": "priceRequest",
+    "mail": false,
+    "notification": false
+  },
+  {
+    "key": "price-request-draft",
+    "type": "transactional",
+    "group": "priceRequest",
+    "subGroup": "updates",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "price-request-requested",
+    "type": "transactional",
+    "group": "priceRequest",
+    "subGroup": "updates",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "price-request-cancelled",
+    "type": "transactional",
+    "group": "priceRequest",
+    "subGroup": "updates",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "price-request-selected",
+    "type": "transactional",
+    "group": "priceRequest",
+    "subGroup": "bidding",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "price-request-bidReceived",
+    "type": "transactional",
+    "group": "priceRequest",
+    "subGroup": "bidding",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "price-request-modified",
+    "type": "transactional",
+    "group": "priceRequest",
+    "subGroup": "updates",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "price-request-expired",
+    "type": "transactional",
+    "group": "priceRequest",
+    "subGroup": "bidding",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "shipment-created",
+    "type": "transactional",
+    "group": "shipments",
+    "mail": false,
+    "notification": false
+  },
+  {
+    "key": "shipment-request",
+    "type": "transactional",
+    "group": "shipments",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "shipment-canceled-notification",
+    "type": "transactional",
+    "group": "shipments",
+    "subGroup": "updates",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "shipment-delayed-email",
+    "type": "transactional",
+    "group": "shipments",
+    "subGroup": "tracking",
+    "mail": true,
+    "notification": false
+  },
+  {
+    "key": "shipment-delayed-notification",
+    "type": "transactional",
+    "group": "shipments",
+    "subGroup": "tracking",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "shipment-note-notification",
+    "type": "transactional",
+    "group": "shipments",
+    "subGroup": "updates",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "shipment-received-notification",
+    "type": "transactional",
+    "group": "shipments",
+    "subGroup": "updates",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "shipment-reference-notification",
+    "type": "transactional",
+    "group": "shipments",
+    "subGroup": "updates",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "shipment-stage-released",
+    "type": "transactional",
+    "group": "shipments",
+    "subGroup": "status-updates",
+    "mail": false,
+    "notification": false
+  },
+  {
+    "key": "shipment-stage-released-generateDoc",
+    "type": "transactional",
+    "group": "shipments",
+    "subGroup": "documents",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "stage-eta-email",
+    "type": "tracking",
+    "group": "shipments",
+    "subGroup": "tracking",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "stage-eta-flags",
+    "type": "tracking",
+    "group": "shipments",
+    "subGroup": "tracking",
+    "mail": false,
+    "notification": false
+  },
+  {
+    "key": "stage-eta-notification",
+    "type": "tracking",
+    "group": "shipments",
+    "subGroup": "tracking",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "shipment-project-created",
+    "type": "transactional",
+    "group": "shipments",
+    "subGroup": "updates",
+    "mail": false,
+    "notification": false
+  },
+  {
+    "key": "tender-created",
+    "type": "transactional",
+    "group": "tenders",
+    "subGroup": "updates",
+    "mail": false,
+    "notification": false
+  },
+  {
+    "key": "tender-released-notification",
+    "type": "transactional",
+    "group": "tenders",
+    "subGroup": "status-updates",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "tender-reviewed-notification",
+    "type": "transactional",
+    "group": "tenders",
+    "subGroup": "status-updates",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "tender-submitted-notification",
+    "type": "transactional",
+    "group": "tenders",
+    "subGroup": "status-updates",
+    "mail": false,
+    "notification": true
+  },
+  {
+    "key": "conversation-added-notification",
+    "type": "transactional",
+    "group": "shipments",
+    "subGroup": "updates",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "shipment-alert-will-load",
+    "type": "cron",
+    "group": "shipments",
+    "subGroup": "shipment-load-alert",
+    "mail": true,
+    "notification": true
+  },
+  {
+    "key": "shipment-alert-fillout",
+    "type": "cron",
+    "group": "shipments",
+    "subGroup": "shipment-fillout-alert",
+    "restrictToRoles": [
+      "carrier"
+    ],
+    "mail": true,
+    "notification": true
+  }
+]

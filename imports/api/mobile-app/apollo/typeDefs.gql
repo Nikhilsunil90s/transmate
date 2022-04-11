@@ -1,0 +1,81 @@
+enum APP_TRIP_STOP {
+  pickup
+  delivery
+}
+
+enum APP_CONFIRM_EVENT {
+  arrival
+  departure
+}
+
+type MobileAppUploadSignResult {
+  signedUrl: String
+  filename: String
+  region: String
+  bucket: String
+  key: String
+}
+
+type TripTime {
+  ts: Date
+  type: String
+}
+
+type TripOverview {
+  id: String # stageId
+  shipmentId: String
+  sequence: Int
+  type: APP_TRIP_STOP
+  title: String
+  time: TripTime
+}
+
+type Trip {
+  id: String # stageId
+  type: String
+  shipment: ShipmentAggr
+  stage: Stage
+  items: [ShipmentItemType]
+  documents: [DocumentType]
+  nonConformances: [NonConformance]
+}
+
+input MobileAppConfirmInput {
+  stageId: String!
+  type: APP_TRIP_STOP!
+  event: APP_CONFIRM_EVENT
+}
+
+input MobileAppUploadSignInput {
+  filename: String!
+  type: String!
+  meta: JSONObject
+}
+input MobileAppGetTripInput {
+  stageId: String!
+  trip: APP_TRIP_STOP
+}
+
+input getTripInput {
+  stageId: String!
+  type: APP_TRIP_STOP!
+}
+
+input addIssueInput {
+  stageId: String!
+  issue: String!
+  delay: Float
+}
+
+extend type Query {
+  getTrips: [Trip]
+  getTrip(input: getTripInput!): Trip
+}
+
+extend type Mutation {
+  mobileAppConfirm(input: MobileAppConfirmInput!): String
+  mobileAppUploadSign(
+    input: MobileAppUploadSignInput
+  ): MobileAppUploadSignResult
+  mobileAppAddIssue(input: addIssueInput!): String
+}

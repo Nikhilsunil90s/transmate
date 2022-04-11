@@ -1,0 +1,92 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.form {
+	.ui.labeled.input {
+		input {
+			flex-shrink: 1;
+			width: inherit;
+		}
+
+		.ui.dropdown > .text {
+			letter-spacing: 0;
+			font-weight: normal;
+		}
+	}
+
+	.fields > .ui.icon.field > i.icon {
+		left: @gutterWidth / 2 + 1px;
+	}
+
+	.disabled.input,
+	.disabled.fields .field,
+	.disabled.field,
+	.field :disabled {
+		background: @disabledBackground;
+		// input fields background only effect on input element itself
+		input {
+			background: @disabledBackground;
+		}
+	}
+
+	.ui.selection.dropdown {
+		//border: none;
+		min-width: 5em;
+		width: 100%;
+
+		&.no-caret .dropdown.icon {
+			display: none
+		}
+	}
+	.ui.search.selection.dropdown > input.search {
+		margin-left: 0;
+	}
+	.input-field .ui.selection.dropdown {
+		margin-bottom: 1px;
+	}
+	.ui.dropdown.value {
+		+ label {
+			left: 0;
+			top: -14px;
+			transform: translateY( -50% );
+		}
+	}
+
+	.inline {
+		margin-top: 1rem;
+
+	.input-field {
+		// display: inline-block;
+		// width: 100%;
+		margin-top: 0;
+
+		label.active,
+			.select-wrapper + label {
+				font-size: 13px;
+				line-height: 22.5px;
+				color: @primaryColor !important;
+			}
+
+			+ .input-field {
+				margin-left: .8rem;
+			}
+			+ input[type="checkbox"] + label {
+				margin-left: 2rem;
+			}
+		}
+	}
+	
+	input[type=number]::-webkit-inner-spin-button,
+	input[type=number]::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+}
+
+
+main.ShipmentsView {
+
+	.ui.header {
+		&:extend(.ui.form .field > label all);
+	}
+}

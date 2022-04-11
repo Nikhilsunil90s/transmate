@@ -1,0 +1,167 @@
+enum SHIPMENT_DIRECTION {
+  INBOUND
+  OUTBOUND
+}
+
+enum PROJECT_REMOVE_SHIPMENT_ACTION {
+  REMOVE
+  UNLINK
+}
+
+enum PROJECT_STATUS {
+  active
+  disabled
+}
+
+type ProjectBudgetType {
+  unit: String
+  value: Float
+}
+
+type ShipmentProject {
+  id: String
+  type: ProjectCodeType
+  title: String
+  year: Int
+  planners: [User]
+  partners: [PlannerPartnerType]
+  inShippmentIds: [String]
+  outShippmentIds: [String]
+  status: String
+  eventDate: Date
+  accountId: String
+  attendees: Int
+  location: FromToType
+  budget: ProjectBudgetType
+  notes: String
+  lessons: String
+
+  # projection:
+  canEdit: Boolean
+  inCount: Int
+  outCount: Int
+}
+
+type ProjectCodeType {
+  group: String
+  code: String
+  name: String
+  description: String # used?
+  lastActiveYear: Int
+}
+
+type PlannerPartnerType {
+  id: String
+  name: String
+}
+
+type AvailableShipmentsType {
+  id: String
+  number: String
+  shipperReference: String
+  projectTitle: String
+  status: String
+}
+
+input ShipmentProjectTypeInput {
+  code: String
+  group: String
+  name: String
+}
+
+input ShipmentProjectInput {
+  type: ShipmentProjectTypeInput
+  title: String
+  year: Int
+  status: String
+  group: String
+  event: String
+}
+
+input AddExistingShipmentToProjectType {
+  shipmentId: String
+  projectId: String
+  type: SHIPMENT_DIRECTION
+}
+
+input RemoveExistingShipmentFromProjectType {
+  shipmentId: String
+  projectId: String
+  type: SHIPMENT_DIRECTION
+}
+
+input EditProjectInput {
+  projectId: String!
+  type: ShipmentProjectTypeInput
+  title: String
+  year: Int
+  status: String
+  eventDate: Date
+  attendees: Int
+  planners: [PlannerPartnerInput]
+  partners: [PlannerPartnerInput]
+  budget: JSONObject
+}
+
+input EditProjectLocationInput {
+  projectId: String!
+  location: LocationInput!
+}
+
+input ShipmentsByShipmentProjectInput {
+  shipmentProjectId: String!
+  type: SHIPMENT_DIRECTION
+}
+
+input ProjectCodeYearInitInput {
+  projectCode: String!
+  projectGroup: String!
+  newYear: Int!
+  oldYear: Int
+}
+
+type InitYearForProjectCodeResponse {
+  projectIds: [String]
+  shipmentIds: [String]
+}
+
+input GetShipmentProjectsInput {
+  status: String
+  group: String
+  year: Int
+}
+
+input EditProjectNotesInput {
+  projectId: String!
+  update: JSONObject
+}
+
+input RemoveProjectInput {
+  projectId: String!
+  linkedShipmentAction: PROJECT_REMOVE_SHIPMENT_ACTION
+}
+
+extend type Query {
+  getShipmentProject(shipmentProjectId: String!): ShipmentProject
+  getShipmentProjects(filters: GetShipmentProjectsInput): [ShipmentProject]
+  getShipmentsByShipmentProject(
+    input: ShipmentsByShipmentProjectInput!
+  ): [ShipmentAggr]
+  getAvailableShipments(type: String): [AvailableShipmentsType]
+}
+
+extend type Mutation {
+  createShipmentProject(input: ShipmentProjectInput): ShipmentProject
+  editShipmentProject(input: EditProjectInput): ShipmentProject
+  editShipmentProjectLocation(input: EditProjectLocationInput!): ShipmentProject
+  editShipmentProjectNotes(input: EditProjectNotesInput!): ShipmentProject
+  addExistingShipmentToProject(input: AddExistingShipmentToProjectType): Boolean
+  removeExistingShipmentFromProject(
+    input: RemoveExistingShipmentFromProjectType
+  ): Boolean
+  refreshProjectPartners(shipmentProjectId: String!): ShipmentProject
+  initYearForProjectCode(
+    input: ProjectCodeYearInitInput!
+  ): InitYearForProjectCodeResponse
+  removeShipmentProject(input: RemoveProjectInput!): Boolean
+}

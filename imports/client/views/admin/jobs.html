@@ -1,0 +1,81 @@
+<template name="JobsAdmin">
+	<div>
+		<div class="ui fluid container">
+			<section class="ui padded segment">
+				<h3>Active jobs</h3>
+				<table class="ui selectable table">
+					<thead>
+						<tr>
+							<th>Type</th>
+							<th>ID</th>
+							<th>Ready to Run</th>
+							<th>Updated</th>
+							<th>Run</th>
+							<th>Fails</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						{{#each jobs}}
+							<tr>
+								<td>{{type}}</td>
+								<td>{{truncateId _id}}</td>
+								<td>{{relativeTime after}}</td>
+								<td>{{relativeTime updated}}</td>
+								<td>{{repeated}}{{#if numRepeats}}/{{numRepeats}}{{/if}}</td>
+								<td>
+									{{#if retried}}
+										{{retried}}{{#if numRetries}}/{{numRetries}}{{/if}}
+									{{else}}
+										-
+									{{/if}}
+								</td>
+								<td>
+									{{#if is status 'running'}}
+										<div class="ui tiny indicating progress" data-percent="{{progress.percent}}">
+											<div class="bar" style="width: {{progress.percent}}%"></div>
+											<div class="label">Running&nbsp;{{progress.percent}}%</div>
+										</div>
+									{{else}}
+										{{#if and (is status 'waiting') failures.length}}
+											<div
+												class="ui small label orange failures"
+												data-inverted
+												data-position="left center"
+												data-tooltip="Failures: {{unique failures}}"
+											>retrying</div>
+										{{else}}
+											<div class="ui small label {{statusClass status}}">{{status}}</div>
+										{{/if}}
+									{{/if}}
+								</td>
+							</tr>
+						{{/each}}
+					</tbody>
+				</table>
+			</section>
+
+			<section class="ui padded segment">
+				<h3>Recent events</h3>
+				<div class="ui feed">
+					{{#each recentEvents}}
+						<div class="event">
+							<div class="content">
+								<div class="summary">
+									<div class="user">{{type}} {{truncateId jobId}}</div>
+									{{#if runId}}<div class="meta">Run: {{truncateId runId}}</div>{{/if}}
+									<div class="date">{{relativeTime time}}</div>
+								</div>
+								<div class="extra text">
+									<div class="ui message">
+										{{level}} | {{message}}
+									</div>
+								</div>
+							</div>
+						</div>
+					{{/each}}
+				</div>
+			</section>
+		</div>
+	</div>
+</template>

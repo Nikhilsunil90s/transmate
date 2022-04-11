@@ -1,0 +1,118 @@
+type printPickingListResponse {
+  shipment: ShipmentAggr
+  documentUrl: String
+}
+
+type PickingLabelOptionServiceLevel {
+  name: String
+  token: String
+  terms: String
+}
+
+type PickingLabelOption {
+  # specific for postMan:
+  rateId: String!
+  amount: Float
+  currency: String
+  amountLocal: Float
+  currencyLocal: String
+  provider: String
+  providerImage75: String
+  providerImage200: String
+  serviceLevel: PickingLabelOptionServiceLevel
+  days: Float
+  arrivesBy: Date
+  durationTerms: String
+  messages: [String]
+  carrierAccount: String
+  test: Boolean
+  zone: String # or int??
+  # Transmate:
+  accountId: String # accountId of carrier in Transmate
+  charges: [JSONObject]
+}
+
+type packShipmentItemsResult {
+  errors: [String]
+  successCount: Int
+  errorCount: Int
+}
+
+type packShipmentItemsResponse {
+  shipment: ShipmentAggr
+  result: packShipmentItemsResult
+}
+
+type pickingManifestType {
+  carrierId: String
+  name: String
+  shipments: [ShipmentAggr]
+}
+
+type confirmShipmentLabelOptionResponse {
+  shipment: ShipmentAggr
+  labelUrl: String
+}
+input getPickingOverviewInput {
+  addressId: String!
+  viewKey: String # defaults to defaultKey
+  filters: JSONObject
+}
+
+input packShipmentItemsParentItemInput {
+  id: String
+  weight: JSONObject
+  dimensions: JSONObject
+  weight_net: Float
+  weight_tare: Float
+  weight_gross: Float
+  weight_unit: String
+
+  code: String
+  description: String
+  # quantity: { type: Object },
+  # "quantity.amount": { type: Number },
+  # "quantity.code": { type: String },
+  # "quantity.description": { type: String, optional: true },
+}
+
+input packShipmentItemsInput {
+  shipmentId: String!
+  shipmentItemIds: [String]!
+  parentItem: packShipmentItemsParentItemInput!
+}
+
+input confirmShipmentLabelOptionInput {
+  packingItemIds: [String]!
+  rateOptionId: String!
+  rate: JSONObject
+}
+
+input printPickingManifestInput {
+  shipmentIds: [String]!
+  printManifest: Boolean
+}
+
+input getDataForManifestInput {
+  addressId: String!
+  printDocument: Boolean
+}
+
+extend type Query {
+  getPickingOverview(input: getPickingOverviewInput!): [ShipmentAggr]
+  getPickingDetail(shipmentId: String!): ShipmentAggr
+  getShipmentLabelOptions(packingItemIds: [String]!): [PickingLabelOption]
+  getDataForManifest(addressId: String!): [pickingManifestType]
+}
+
+extend type Mutation {
+  printPickingList(shipmentId: String!): printPickingListResponse
+  cancelPackingLabel(packingItemIds: [String], shipmentId: String): ShipmentAggr
+  packShipmentItems(input: packShipmentItemsInput!): packShipmentItemsResponse
+  unpackShipmentItems(packingUnitsIds: [String]!): packShipmentItemsResponse
+
+  confirmShipmentLabelOption(
+    input: confirmShipmentLabelOptionInput!
+  ): confirmShipmentLabelOptionResponse
+  printPickingManifest(input: printPickingManifestInput!): [ShipmentAggr]
+}

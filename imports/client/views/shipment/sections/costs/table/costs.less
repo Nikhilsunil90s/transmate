@@ -1,0 +1,40 @@
+table.costDetail {
+  border-collapse: collapse !important;
+  border-left-width: 0 !important;
+  border-top-width: 0 !important;
+  border-bottom-width: 0 !important;
+  border-right-width: 0 !important;
+
+  tr td {
+    border-top: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  td.descriptionColumn {
+    max-width: 250px !important;
+    width: 250px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  td.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      visibility: hidden;
+    }
+  }
+
+  tr:hover {
+    td.actions button {
+      visibility: visible;
+    }
+  }
+
+  tr.declined {
+    text-decoration-line: line-through;
+    opacity: 0.5;
+  }
+}

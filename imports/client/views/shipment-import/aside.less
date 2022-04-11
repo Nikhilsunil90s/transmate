@@ -1,0 +1,220 @@
+@import "{}/imports/client/styles/colors.import.less";
+
+@bigPadding: 0;
+@smallPadding: 10px;
+
+@dotSize: 0;
+@dotPadding: 4px;
+@dotBorderPadding: 9px;
+@dotBorderSize: 1px;
+@lineHeight: 25px;
+@normalHeight: @lineHeight + 10px + @smallPadding;
+@extraHeight: 19px;
+
+@dotTop: ((@lineHeight - @dotSize) / 2);
+@dividerHeight: (@normalHeight - @dotTop - @dotSize - @dotPadding);
+@dividerHeightActive: @dividerHeight - @dotBorderPadding - @dotBorderSize;
+
+aside ol.steps {
+  list-style: none;
+  padding: @bigPadding 0 0 18px;
+  margin: 0;
+
+  li {
+    position: relative;
+    padding-bottom: @smallPadding;
+    user-select: none;
+
+    &:before {
+      position: absolute;
+      left: (@dotSize - 1px) / 2;
+      content: "";
+      z-index: -1;
+      width: 1px;
+    }
+
+    &:first-of-type:before {
+      top: -@bigPadding;
+      height: @bigPadding + @dotTop - @dotPadding;
+
+      display: none;
+    }
+
+    &.active:first-of-type:before {
+      top: -@bigPadding;
+      height: @bigPadding + @dotTop - @dotBorderPadding - @dotBorderSize -
+        @dotPadding;
+    }
+
+    &.active:after {
+      top: @dotTop + @dotSize + @dotBorderPadding + @dotBorderSize + @dotPadding;
+    }
+
+    &:before {
+      top: -@dividerHeight;
+      height: @dividerHeight + (@dotTop - @dotPadding);
+    }
+
+    &.active,
+    &.active + li {
+      &:before {
+        height: @dividerHeightActive + (@dotTop - @dotPadding);
+      }
+    }
+
+    &.active + li:before {
+      top: -@dividerHeightActive;
+    }
+
+    &.extra + li:before {
+      top: -(@dividerHeight + @extraHeight);
+      height: @dividerHeight + @extraHeight + (@dotTop - @dotPadding);
+    }
+
+    &.extra.active + li:before,
+    &.extra + li.active:before {
+      height: @dividerHeight + @extraHeight +
+        (@dotTop - @dotBorderPadding - @dotBorderSize - @dotPadding);
+    }
+
+    &.extra.active + li:before {
+      top: -(@dividerHeight + @extraHeight - @dotBorderPadding - @dotBorderSize);
+    }
+
+    label,
+    span {
+      padding-left: 0;
+      cursor: pointer;
+    }
+
+    label {
+      display: block;
+      font: 14px Roboto;
+      font-weight: 600;
+      color: fade(@textColor, 26%);
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: @dotTop;
+        left: 0;
+        width: @dotSize;
+        height: @dotSize;
+        background-color: @secondaryColor;
+        border-radius: @dotSize;
+      }
+    }
+
+    span {
+      display: none;
+      font-size: 12px;
+      color: fade(@textColor, 54%);
+    }
+
+    &.active,
+    &.done {
+      label {
+        color: fade(@textColor, 87%);
+      }
+      span {
+        display: block;
+      }
+    }
+
+    &.done label:before,
+    &.active label:before,
+    &.active .percentage {
+      top: 0;
+      left: -20px;
+      width: 46px;
+      height: 46px;
+      background-color: @chromeColor;
+      border-radius: 40px;
+      line-height: 40px;
+      text-align: center;
+      border: 2px solid @chromeColor; // for masking the percentage gradient edge
+    }
+
+    &.done label:before {
+      content: "√";
+      color: @secondaryColor;
+
+      box-shadow: 0 0 0 @dotBorderPadding @primaryColor,
+        0 0 0 (@dotBorderPadding + @dotBorderSize) fade(@textColor, 54%);
+      box-shadow: inset 0 0 0 3px @secondaryColor;
+    }
+
+    &.active {
+      position: relative;
+
+      .percentage-circular( @percent: 0 ) when ( @percent =< 100 ) {
+        .percentage-circular(@percent + 1);
+
+        &.p-@{percent} when ( @percent < 50 ) {
+          &:before {
+            background-image: linear-gradient(
+                90deg,
+                @chromeColor 50%,
+                transparent 50%,
+                transparent
+              ),
+              linear-gradient(
+                90deg + (3.6deg * @percent),
+                @secondaryColor 50%,
+                @chromeColor 50%,
+                @chromeColor
+              );
+          }
+
+          .percentage:before {
+            content: "@{percent}%";
+          }
+        }
+        &.p-@{percent} when ( @percent >= 50 ) {
+          &:before {
+            background-image: linear-gradient(
+                (-90deg + (3.6deg * (@percent - 50))),
+                @secondaryColor 50%,
+                transparent 50%,
+                transparent
+              ),
+              linear-gradient(
+                270deg,
+                @secondaryColor 50%,
+                @chromeColor 50%,
+                @chromeColor
+              );
+          }
+
+          .percentage:before {
+            content: "@{percent}%";
+          }
+        }
+      }
+
+      label {
+        &:before {
+          z-index: 1;
+        }
+
+        .percentage-circular();
+      }
+
+      .percentage {
+        position: absolute;
+
+        top: 5px;
+        left: -15px;
+        width: 36px;
+        height: 36px;
+
+        z-index: 2;
+        background-color: @chromeColor;
+        color: @textColor;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+  }
+}

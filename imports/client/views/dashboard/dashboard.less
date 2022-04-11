@@ -1,0 +1,71 @@
+@import "{}/imports/client/styles/colors.import.less";
+@import "{}/imports/client/styles/sizes.import.less";
+@import "{}/imports/client/styles/sections.import.less";
+
+main.Dashboard {
+  .icon-sections;
+  section {
+    &.big {
+      height: 472px;
+
+      i {
+        font-size: 45px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: @blue;
+      }
+    }
+
+    .section-container {
+      height: 100%;
+      display: block;
+      position: relative;
+      color: @textColor;
+    }
+
+    .section-content {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .section-title {
+      font-size: 45px;
+      margin-bottom: 0;
+      font-weight: normal;
+    }
+    .section-subtitle {
+      margin-top: 0;
+    }
+  }
+
+  .card {
+    i {
+      font-size: 20px;
+      color: @blue;
+    }
+  }
+
+  .ui.icon.message.profile {
+    background-color: #ffffff;
+    color: #3c4144;
+    margin-top: 0;
+    border-bottom: 2px solid #e0e1e2;
+  }
+
+  .profileprogress {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .notopmargin {
+    margin-top: 0;
+  }
+
+  #limit {
+    max-width: 1400px;
+    overflow: initial;
+  }
+}

@@ -1,0 +1,120 @@
+enum TENDERBID_COLUMN_CALCULATION_OPERATION {
+  add
+  multiply
+  none
+}
+type TenderBidDataStatsResult {
+  totalCount: Int
+  queryCount: Int
+  curCount: Int
+}
+
+type TenderBidDataLine {
+  lineId: String!
+  tenderBidId: String!
+  rowData: JSONObject
+}
+
+type TenderBidDataHeader {
+  label: String
+  key: String
+  cKey: String
+  dataKey: String
+  cType: String
+  group: String
+  edit: Boolean
+  isFoldKey: Boolean
+}
+
+type TenderBidDataResult {
+  id: String # tenderBidId
+  headerDefs: [TenderBidDataHeader]
+  data: [TenderBidDataLine]
+  stats: TenderBidDataStatsResult
+}
+
+type TenderBidDataFilterValuesResult {
+  tenderBidId: String
+  key: String
+  values: [String]
+}
+input RangeInput {
+  start: Int
+  limit: Int
+}
+
+input TenderBidDataFilterMap {
+  key: String!
+  filterType: String!
+  values: [String]
+  type: String
+  filter: Any
+  filterTo: Any
+}
+
+input getTenderBidDataGridInput {
+  tenderBidId: String!
+  filters: [TenderBidDataFilterMap]
+  range: RangeInput
+}
+
+input updateTenderBidDataGridCellInput {
+  lineId: String!
+  colKey: String!
+  cType: String
+  newValue: Any
+  oldValue: Any
+}
+
+input updateTenderBidDataGridInput {
+  tenderBidId: String!
+  updates: [updateTenderBidDataGridCellInput]!
+}
+
+input generateTenderBidDataGridFromPriceListInput {
+  tenderBidId: String!
+  lineIds: [String]!
+  priceListId: String #optional > let code figure it out...
+}
+
+input resetTenderBidDataGridInput {
+  tenderBidId: String!
+  lineIds: [String]!
+}
+
+input GetTenderBidDataFilterValuesInput {
+  tenderBidId: String!
+  key: String!
+}
+
+input InsertCalculationColumnTenderBidDataGridInput {
+  tenderBidId: String!
+  newColumnName: String!
+  newColumnKey: String!
+  defaultValue: Float
+
+  #add to bidColumn value
+  operation: TENDERBID_COLUMN_CALCULATION_OPERATION
+  refColumn: String
+  # filters: // active filters or selected rows (lineIds)
+}
+
+extend type Query {
+  getTenderBidDataGrid(input: getTenderBidDataGridInput!): TenderBidDataResult
+  getTenderBidDataFilterValues(
+    input: GetTenderBidDataFilterValuesInput!
+  ): TenderBidDataFilterValuesResult
+}
+
+extend type Mutation {
+  updateTenderBidDataGrid(
+    input: updateTenderBidDataGridInput!
+  ): [TenderBidDataLine]
+  generateTenderBidDataGridFromPriceList(
+    input: generateTenderBidDataGridFromPriceListInput!
+  ): TenderBid # will return {worker: calculating: true} so the polling can start / stop
+  resetTenderBidDataGrid(input: resetTenderBidDataGridInput!): Boolean
+  insertCalculationColumnTenderBidDataGrid(
+    input: InsertCalculationColumnTenderBidDataGridInput!
+  ): Boolean
+}

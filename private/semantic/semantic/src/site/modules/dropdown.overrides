@@ -1,0 +1,15 @@
+/*******************************
+        User Overrides
+*******************************/
+
+@import "../collections/form.variables";
+
+.ui.selection.dropdown {
+  min-width: 100px;
+}
+
+.ui.dropdown {
+  &.disabled {
+    background: @disabledBackground;
+  }
+}

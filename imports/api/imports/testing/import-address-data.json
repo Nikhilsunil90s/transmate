@@ -1,0 +1,248 @@
+{
+  "csvUploadData": [
+    {
+      "name": "Warehouse Location",
+      "country": "Belgie",
+      "city": "Antwerpen",
+      "zipCode": "2000",
+      "street": "Meir",
+      "nr": "1",
+      "bus": "",
+      "id": "test1",
+      "notes": "test notes",
+      "notesLoading": "test",
+      "notesPacking": "test",
+      "openingHours": "testing opening hours"
+    },
+    {
+      "name": "Warehouse Location 2",
+      "country": "Belgie",
+      "city": "Gent",
+      "zipCode": "9000",
+      "street": "Hoogstraat",
+      "nr": "1",
+      "bus": "",
+      "id": "test3",
+      "notes": "test notes",
+      "notesLoading": "test",
+      "notesPacking": "test",
+      "openingHours": "testing opening hours"
+    },
+    {
+      "name": "Warehouse Location 3",
+      "country": "",
+      "city": "",
+      "zipCode": "",
+      "street": "",
+      "nr": "",
+      "bus": "",
+      "id": "test2",
+      "notes": "test notes",
+      "notesLoading": "test",
+      "notesPacking": "test",
+      "openingHours": "testing opening hours",
+      "input": "Grote Markt 1, Brussel"
+    }
+  ],
+  "workersDocuments": [
+    {
+      "_id": "wgTYAfxEfWD9DNSyG",
+      "runId": null,
+      "type": "process.method",
+      "data": {
+        "action": "dataImport.address",
+        "type": "address",
+        "importId": "ewfJtiwqXzCfJ36mF",
+        "data": {
+          "name": "Warehouse Location",
+          "country": "Belgie",
+          "city": "Antwerpen",
+          "zipCode": "2000",
+          "street": "Meir",
+          "nr": "1",
+          "bus": "",
+          "id": "test1",
+          "notes": "test notes",
+          "notesLoading": "test",
+          "notesPacking": "test",
+          "openingHours": "testing opening hours"
+        },
+        "userId": "CASZLLA2oJDvTCGrg",
+        "accountId": "S56205"
+      },
+      "status": "ready",
+      "updated": "2020-03-30T13:17:21.710Z",
+      "created": "2020-03-30T13:17:21.707Z",
+      "priority": 0,
+      "retries": 1,
+      "repeatRetries": 1,
+      "retryWait": 300000,
+      "retried": 0,
+      "retryBackoff": "constant",
+      "retryUntil": "+275760-09-13T00:00:00.000Z",
+      "repeats": 0,
+      "repeatWait": 300000,
+      "repeated": 0,
+      "repeatUntil": "+275760-09-13T00:00:00.000Z",
+      "after": "2020-03-30T13:17:21.710Z",
+      "progress": {
+        "completed": 0,
+        "total": 1,
+        "percent": 0
+      },
+      "depends": [],
+      "resolved": [],
+      "log": [
+        {
+          "time": "2020-03-30T13:17:21.705Z",
+          "runId": null,
+          "level": "info",
+          "message": "Constructed"
+        },
+        {
+          "time": "2020-03-30T13:17:21.707Z",
+          "runId": null,
+          "message": "Job Submitted",
+          "level": "info"
+        },
+        {
+          "time": "2020-03-30T13:17:21.711Z",
+          "runId": null,
+          "message": "Promoted to ready",
+          "level": "info"
+        }
+      ]
+    },
+    {
+      "_id": "DRZaHPqr7jEoCMMtP",
+      "runId": null,
+      "type": "process.method",
+      "data": {
+        "action": "dataImport.address",
+        "type": "address",
+        "importId": "ewfJtiwqXzCfJ36mF",
+        "data": {
+          "name": "Warehouse Location 2",
+          "country": "Belgie",
+          "city": "Gent",
+          "zipCode": "9000",
+          "street": "Hoogstraat",
+          "nr": "1",
+          "bus": "",
+          "id": "test3",
+          "notes": "test notes",
+          "notesLoading": "test",
+          "notesPacking": "test",
+          "openingHours": "testing opening hours"
+        },
+        "userId": "CASZLLA2oJDvTCGrg",
+        "accountId": "S56205"
+      },
+      "status": "ready",
+      "updated": "2020-03-30T13:17:21.721Z",
+      "created": "2020-03-30T13:17:21.716Z",
+      "priority": 0,
+      "retries": 1,
+      "repeatRetries": 1,
+      "retryWait": 300000,
+      "retried": 0,
+      "retryBackoff": "constant",
+      "retryUntil": "+275760-09-13T00:00:00.000Z",
+      "repeats": 0,
+      "repeatWait": 300000,
+      "repeated": 0,
+      "repeatUntil": "+275760-09-13T00:00:00.000Z",
+      "after": "2020-03-30T13:17:21.721Z",
+      "progress": {
+        "completed": 0,
+        "total": 1,
+        "percent": 0
+      },
+      "depends": [],
+      "resolved": [],
+      "log": [
+        {
+          "time": "2020-03-30T13:17:21.716Z",
+          "runId": null,
+          "level": "info",
+          "message": "Constructed"
+        },
+        {
+          "time": "2020-03-30T13:17:21.716Z",
+          "runId": null,
+          "message": "Job Submitted",
+          "level": "info"
+        },
+        {
+          "time": "2020-03-30T13:17:21.721Z",
+          "runId": null,
+          "message": "Promoted to ready",
+          "level": "info"
+        }
+      ]
+    },
+    {
+      "_id": "ZCeuKEqkXAe7FHDeg",
+      "runId": null,
+      "type": "process.method",
+      "data": {
+        "action": "dataImport.address",
+        "type": "address",
+        "importId": "ewfJtiwqXzCfJ36mF",
+        "data": {
+          "name": "Warehouse Location 3",
+          "id": "test2",
+          "notes": "test notes",
+          "notesLoading": "test",
+          "notesPacking": "test",
+          "openingHours": "testing opening hours",
+          "input": "Grote Markt 1, Brussel"
+        },
+        "userId": "CASZLLA2oJDvTCGrg",
+        "accountId": "S56205"
+      },
+      "status": "ready",
+      "updated": "2020-03-30T13:17:21.733Z",
+      "created": "2020-03-30T13:17:21.726Z",
+      "priority": 0,
+      "retries": 1,
+      "repeatRetries": 1,
+      "retryWait": 300000,
+      "retried": 0,
+      "retryBackoff": "constant",
+      "retryUntil": "+275760-09-13T00:00:00.000Z",
+      "repeats": 0,
+      "repeatWait": 300000,
+      "repeated": 0,
+      "repeatUntil": "+275760-09-13T00:00:00.000Z",
+      "after": "2020-03-30T13:17:21.733Z",
+      "progress": {
+        "completed": 0,
+        "total": 1,
+        "percent": 0
+      },
+      "depends": [],
+      "resolved": [],
+      "log": [
+        {
+          "time": "2020-03-30T13:17:21.726Z",
+          "runId": null,
+          "level": "info",
+          "message": "Constructed"
+        },
+        {
+          "time": "2020-03-30T13:17:21.726Z",
+          "runId": null,
+          "message": "Job Submitted",
+          "level": "info"
+        },
+        {
+          "time": "2020-03-30T13:17:21.733Z",
+          "runId": null,
+          "message": "Promoted to ready",
+          "level": "info"
+        }
+      ]
+    }
+  ]
+}

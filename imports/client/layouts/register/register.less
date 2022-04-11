@@ -1,0 +1,50 @@
+@import "{}/imports/client/styles/colors.import.less";
+@import "{}/imports/client/styles/sizes.import.less";
+
+.register.container {
+  display: flex;
+  justify-content: stretch;
+  height: 100%;
+
+  main {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: @purple;
+    padding: 2 * @basePadding;
+    color: white;
+
+    @media (min-width: 701px) and (max-width: 850px) {
+      width: 70%;
+    }
+    @media (min-width: 851px) and (max-width: 1000px) {
+      width: 60%;
+    }
+    @media (min-width: 1001px) and (max-width: 1200px) {
+      width: 50%;
+    }
+    @media (min-width: 1201px) {
+      width: 40%;
+    }
+
+    > * {
+      flex: 1 0 auto;
+      max-width: 400px;
+    }
+
+    .ui.image.logo {
+      width: 250px;
+      margin-bottom: 30px;
+      margin-left: -15px;
+    }
+  }
+
+  aside {
+    flex: 1 0 auto;
+    background: url("https://assets.transmate.eu/app/bg-1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}

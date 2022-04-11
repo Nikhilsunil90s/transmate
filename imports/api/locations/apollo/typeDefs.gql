@@ -1,0 +1,13 @@
+type Location {
+  id: String
+  countryCode: String
+  locationCode: String
+  latLng: LatLngType
+  timeZone: String
+  name: String
+  subdivision: String
+  status: String
+  function: String
+  date: String
+  remarks: String
+}

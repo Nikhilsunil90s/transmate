@@ -1,0 +1,125 @@
+@import "{}/imports/client/styles/colors.import.less";
+@import "{}/imports/client/styles/sizes.import.less";
+@import "{}/imports/client/styles/footer.import.less";
+
+main.Tender {
+  .icon-sections;
+  .main-fixed-footer;
+
+  // > div > div {
+  //   height: calc(~"100% - " @tabsHeight);
+  // }
+  .item.horizontal {
+    float: left;
+    margin-right: 30px;
+  }
+
+  .tabs + .container {
+    height: calc(~"100% - " @tabsHeight);
+  }
+
+  section .ui.form,
+  section .requirement,
+  section .milestone,
+  .intro {
+    .documents,
+    .button {
+      margin: 1em 0;
+    }
+
+    .clickable.card {
+      cursor: pointer;
+    }
+  }
+
+  .requirement,
+  .milestone {
+    cursor: pointer;
+
+    i {
+      font-weight: bold;
+      opacity: 0.5;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  .requirement {
+    margin-bottom: 3em;
+  }
+
+  .requirements {
+    button,
+    h4 {
+      margin: 2em 0;
+    }
+
+    .response {
+      textarea,
+      .dropdown {
+        width: 300px;
+      }
+    }
+  }
+
+  .requirements,
+  .milestones {
+    .ui.form {
+      margin-top: 2em;
+    }
+  }
+
+  .milestone {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 30px;
+    padding-bottom: 3em;
+
+    border-left: 1px solid tint(black, 85%);
+
+    > .icon {
+      position: absolute;
+      top: 0;
+      left: -15px;
+      //font-size: 24px;
+      background-color: white;
+      opacity: 1;
+      color: tint(black, 70%);
+    }
+
+    &.button,
+    &.button .icon {
+      color: @primaryColor;
+      cursor: pointer;
+    }
+
+    &:last-of-type {
+      border-left-color: transparent;
+    }
+  }
+
+  .partners {
+    button {
+      margin-top: 2em;
+    }
+  }
+
+  .profile {
+    .review-result {
+      margin-left: 0.5em;
+      color: tint(black, 70%);
+    }
+  }
+
+  .analysis {
+    height: 100%;
+
+    .powerbi {
+      height: 100%;
+
+      iframe {
+        border: none;
+        height: 100%;
+      }
+    }
+  }
+}

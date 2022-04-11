@@ -1,0 +1,7 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.input.disabled {
+    background: #f5f7fa;
+}

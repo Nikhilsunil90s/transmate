@@ -1,0 +1,18 @@
+.form-date-picker-container {
+  display: flex;
+  justify-content: space-between;
+  .field {
+    margin-bottom: 0 !important;
+    .fields {
+      margin-bottom: 0 !important;
+    }
+  }
+  > .field {
+    &.dateTime {
+      width: calc(100% - 30px);
+      > .fields {
+        align-items: center;
+      }
+    }
+  }
+}

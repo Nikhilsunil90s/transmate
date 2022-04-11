@@ -1,0 +1,60 @@
+type DocumentStoreType {
+  service: String
+  region: String
+  bucket: String
+  key: String
+  url: String
+}
+
+type DocumentMetaType {
+  type: String
+  size: Int
+  name: String
+  lastModifiedDate: Date
+}
+
+type DocumentType {
+  id: String
+  shipmentId: String
+  tenderId: String
+  stageId: String
+
+  type: String
+  store: DocumentStoreType
+  meta: DocumentMetaType
+  created: ByType
+
+  # projected:
+  icon: String
+  url: String
+
+  # when in document
+  added: ByType
+  accountId: String
+}
+
+input DocumentInput {
+  link: JSONObject # {shipmentId: xx} | {tenderId} | ...
+  data: JSONObject
+}
+
+input RemoveShipmentDocInput {
+  shipmentId: String!
+  documentId: String!
+}
+
+input GenerateShipmentDocInput {
+  shipmentId: String!
+  type: String!
+}
+
+extend type Query {
+  getDocument(id: String!): DocumentType
+}
+
+extend type Mutation {
+  addShipmentDocument(input: DocumentInput!): ShipmentAggr
+  addDocument(input: DocumentInput!): String
+  removeShipmentDocument(input: RemoveShipmentDocInput!): ShipmentAggr
+  generateShipmentDocument(input: GenerateShipmentDocInput!): ShipmentAggr
+}

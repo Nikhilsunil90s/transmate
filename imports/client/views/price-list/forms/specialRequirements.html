@@ -1,0 +1,21 @@
+<template name="PriceListFormSpecialRequirements">
+		{{#if specialRequirements.[0].items}}
+			<div class="{{#if parent}}ui styled{{/if}} accordion">
+				{{#each specialRequirements}}
+					<div class="title"><i class="dropdown icon"></i>{{name}}</div>
+					<div class="content" data-name="{{name}}">
+						{{> PriceListFormSpecialRequirements specialRequirements=items parent=false}}
+					</div>
+				{{/each }}
+			</div>
+		{{else}}
+			{{#each specialRequirements}}
+				<div class="item">
+					<div class="ui checkbox">
+						<input class="special-requirement-checkbox" type="checkbox" name="{{name}}" checked={{isChecked name}}>
+						<label>{{name}}</label>
+					</div>
+				</div>
+			{{/each}}
+		{{/if}}
+</template>

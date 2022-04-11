@@ -1,0 +1,30 @@
+type Notification {
+  id: String
+  type: String
+  data: JSONObject
+  created: Date
+  text: String
+  event: String
+
+  read: Date
+}
+
+input MarkNotificationsReadInput {
+  type: String!
+  events: [String]!
+  data: JSONObject
+}
+
+input MarkAllNotificationsAsReadInput {
+  notificationIds: [String]
+}
+
+extend type Query {
+  getNotifications: [Notification]
+}
+
+extend type Mutation {
+  removeNotifications(ids: [String]!): Boolean
+  markNotificationsRead(input: MarkNotificationsReadInput!): Boolean,
+  markAllNotificationsAsRead(input: MarkAllNotificationsAsReadInput!): Boolean,
+}

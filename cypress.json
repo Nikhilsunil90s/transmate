@@ -1,0 +1,22 @@
+{
+  "video": false,
+  "screenshotsFolder": ".testing/cypress/screenshots",
+  "baseUrl": "http://localhost:3050",
+  "fixturesFolder": ".testing/cypress/fixtures",
+  "pluginsFile": ".testing/cypress/plugins",
+  "supportFile": ".testing/cypress/support",
+  "videosFolder": ".testing/cypress/videos",
+  "execTimeout": 500000,
+  "defaultCommandTimeout": 20000,
+  "ignoreTestFiles": "*.hot-update.js",
+  "integrationFolder": ".testing/cypress/integration",
+  "numTestsKeptInMemory": 2,
+  "testFiles_OLD": [
+    ".testing/cypress/integration/login.spec.js",
+    ".testing/cypress/integration/priceRequest.spec.js",
+    ".testing/cypress/integration/tender.spec.js",
+    ".testing/cypress/integration/account.spec.js",
+    ".testing/cypress/integration/shipment.spec.js",
+    ".testing/cypress/integration/shipmentView.spec.js"
+  ]
+}

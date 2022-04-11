@@ -1,0 +1,23 @@
+@import '{}/imports/client/styles/sizes.import.less';
+
+main.JobsAdmin {
+	.ui.container {
+		padding-top: @basePadding;
+	}
+
+	.progress {
+		.bar {
+			transition: width .1s;
+		}
+		.label {
+			font-size: 8pt;
+		}
+	}
+
+	.failures.label[data-tooltip] {
+		&:after {
+			width: 500px;
+			white-space: normal;
+		}
+	}
+}

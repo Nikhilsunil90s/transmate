@@ -1,0 +1,76 @@
+enum SORT_DIRECTION {
+  asc
+  desc
+}
+
+enum SHIPMENT_OVERVIEW_TYPE {
+  mongo
+  GBQ
+}
+
+type ShipmentViewOrderType {
+  col: String
+  dir: SORT_DIRECTION
+}
+
+type ShipmentViewType {
+  id: String
+  name: String
+  type: String
+  accountId: String
+  isShared: Boolean
+  columns: [String]
+  filters: JSONObject
+  order: ShipmentViewOrderType
+  shipmentOverviewType: SHIPMENT_OVERVIEW_TYPE
+  created: ByType
+}
+
+type PagedShipmentOverview {
+  data: [JSONObject]
+  recordsTotal: Int
+  recordsFiltered: Int
+  jobId: String
+}
+
+input PagedShipmentOverviewSortInput {
+  column: String
+  dir: SORT_DIRECTION
+}
+
+input PagedShipmentOverviewInput {
+  viewId: String
+  jobId: String
+  start: Int
+  length: Int
+  sort: PagedShipmentOverviewSortInput
+  filters: JSONObject
+}
+
+input UpsertShipmentViewDataInput {
+  name: String
+  shipmentOverviewType: String
+  isShared: Boolean
+  filters: JSONObject
+  columns: [String]
+  order: PagedShipmentOverviewSortInput
+}
+
+input UpsertShipmentViewInput {
+  viewId: String
+  asNew: Boolean
+  data: UpsertShipmentViewDataInput
+}
+
+extend type Query {
+  getShipmentViews: [ShipmentViewType]
+  getShipmentView(viewId: String!, full: Boolean): ShipmentViewType
+  getPagedShipmentOverview(
+    input: PagedShipmentOverviewInput!
+  ): PagedShipmentOverview
+}
+
+extend type Mutation {
+  upsertShipmentView(input: UpsertShipmentViewInput!): ShipmentViewType
+  removeShipmentView(viewId: String!): Boolean
+}

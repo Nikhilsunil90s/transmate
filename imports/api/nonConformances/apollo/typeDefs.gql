@@ -1,0 +1,45 @@
+type FollowUpType {
+  action: String
+  owner: String
+  created: ByType
+  closed: ByType
+}
+
+type ReasonCodeType {
+  event: String
+  reason: String
+  owner: String
+  occurance: String
+}
+
+type NonConformance {
+  id: String
+  reasonCode: ReasonCodeType
+  comment: String
+  date: Date
+  status: String
+  shipmentId: String
+  description: String
+
+  initialResponse: String
+  investigation: String
+  rootcauseSummary: String
+  nonConformanceConclusion: String
+  actions: [FollowUpType]
+
+  created: ByType
+  initiated: ByType
+  investigationReady: ByType
+  followUpReady: ByType
+  closed: ByType
+}
+
+extend type Mutation {
+  addNonConformance(shipmentId: String!, data: JSONObject!): ShipmentAggr
+  updateNonConformance(id: String!, update: JSONObject!): ShipmentAggr
+  deleteNonConformance(id: String!): ShipmentAggr
+}
+
+extend type Query {
+  getNonConformances(shipmentId: String!): [NonConformance]
+}

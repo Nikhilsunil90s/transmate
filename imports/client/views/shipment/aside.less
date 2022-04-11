@@ -1,0 +1,68 @@
+@import "{}/imports/client/styles/colors.import.less";
+
+main.Shipment .mainSubWrapper > aside {
+  .statusaside {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 50px;
+    font-size: 14px;
+    background-color: @primaryColor;
+    border-radius: 25px;
+    display: inline;
+  }
+
+  .tracklink {
+    color: white;
+    border-radius: 25px;
+    white-space: nowrap;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .stop {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 30px;
+    padding-bottom: 3em;
+
+    border-left: 1px solid tint(black, 85%);
+
+    > .icon {
+      position: absolute;
+      top: 0;
+      left: -15px;
+      //font-size: 24px;
+      background-color: @asideColor;
+      opacity: 1;
+      color: tint(black, 70%);
+    }
+
+    .icon {
+      color: @primaryColor;
+      cursor: pointer;
+    }
+
+    &:last-of-type {
+      border-left-color: transparent;
+    }
+
+    .relative {
+      border: 1px solid transparent;
+
+      &.editable:hover {
+        border: 1px solid @borderColor;
+
+        .icon {
+          visibility: visible !important;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
